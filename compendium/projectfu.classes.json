@@ -1,0 +1,96 @@
+{
+	"label": "Классы",
+	"mapping": {
+		"summary": "system.summary.value",
+		"description": "system.description"
+	},
+	"entries": {
+		"Ace of Cards": {
+			"name": "Картёжник",
+			"summary": "Не проморгай!",
+			"description": "<h5><strong>ТАКЖЕ: Мастер Колоды, Дуэлянт Судьбы, Крупье</strong></h5><p><strong>Картёжники</strong> используют специальные колоды, чтобы улавливать постоянные колебания потока душ. Каждая колода неразрывно связана со своим пользователем и отражает его вкус и характер: выбирая определённые комбинации в нужный момент, Картёжник манипулирует магической энергией для получения сверхъестественных эффектов. В некоторых мирах Картёжники сражаются друг с другом, используя свои личные колоды, в поисках славы или драгоценных артефактов.</p><hr><h5><strong>БЕСПЛАТНЫЕ ПРЕИМУЩЕСТВА КАРТЁЖНИКА</strong></h5><ul>    <li>Навсегда увеличьте ваши максимальные Очки Здоровья <strong>или</strong> Очки Разума на 5. (на ваш выбор)</li></ul><h2><strong>НАВЫКИ КАРТЁЖНИКА</strong></h2><p>@UUID[Compendium.projectfu.skills.Item.sfIxI8t0XlJMMVFC]{Double or Nothing}</p><p>Before you perform an Accuracy Check, a Magic Check for an offensive spell ( @ICON[offensive] ), or a Check to    advance or turn back a Clock, you may declare <strong>double or nothing</strong>. If you do and the Check triggers a    <strong>critical success</strong>, double the damage dealt by that attack or spell or the filled or erased sections    of that Clock, respectively; however, any other Result is considered a <strong>critical failure</strong>.</p><hr><p>@UUID[Compendium.projectfu.skills.Item.tFbGtEfIudpck8vL]{High or Low}</p><p>When you generate a <strong>critical success</strong> or a <strong>critical failure</strong>, you may draw 1 card    from your <strong>deck</strong>. If you do, discard 1 card from your <strong>hand</strong>.</p><hr><p>@UUID[Compendium.projectfu.skills.Item.5zF6JTf6nhKbXr69]{Magic Cards} <strong>(SL3)</strong></p><p>You gain a <strong>deck</strong>, a <strong>hand</strong>, and a <strong>discard pile</strong>.</p><p>During a conflict, you may use an action and spend up to <strong>【10 + (SL × 5)】</strong> Mind Points (minimum 10).    If you do, resolve 1 card from your <strong>hand</strong> for every 5 MP spent this way (to a maximum of 5 cards;    these cards form a <strong>set</strong>). After you resolve the effect of the <strong>set</strong> (if any), discard    these cards and draw that many cards from your <strong>deck</strong>.</p><hr><p>@UUID[Compendium.projectfu.skills.Item.ry0CUZsygSpySLBZ]{Mulligan} <strong>(SL5)</strong></p><p>At the end of your turn during a conflict, you may discard up to <strong>【SL】</strong> cards from your    <strong>hand</strong>. If you do, draw that many cards from your <strong>deck</strong>.</p><hr><p>@UUID[Compendium.projectfu.skills.Item.dHurcgjvmwVBJPvM]{Trap Card} <strong>(SL4)</strong></p><p>After an enemy you can see performs an action during a conflict, you may declare one of your <strong>deck</strong>'s    <strong>suits</strong> (after the action has been resolved) and put the first card on the bottom of your <strong>deck</strong>    in your <strong>discard pile</strong>, face up. If that card is a <strong>joker</strong> or its    <strong>suit</strong> matches the one you declared, you may immediately perform the <strong>Spell</strong> action    for free, casting a spell with a <strong>total Mind Point cost equal to or lower than</strong> <strong>【SL ×        5】</strong> (you must still pay its MP cost).</p><h2><strong>MANAGING THE DECK</strong></h2><ul>    <li>        <p>For <strong>deck</strong> breakdown and a list of Effects, refer to:            @UUID[Compendium.projectfu.handouts.JournalEntry.hs3GyWJls59GhaNz]{Deck Rules}</p></li></ul>"
+		},
+		"Arcanist": {
+			"name": "Арканист",
+			"summary": "От некоторых судеб легко не убежать."
+		},
+		"Chanter": {
+			"name": "Chanter"
+		},
+		"Chimerist": {
+			"name": "Chimerist"
+		},
+		"Commander": {
+			"name": "Commander"
+		},
+		"Dancer": {
+			"name": "Dancer"
+		},
+		"Darkblade": {
+			"name": "Darkblade"
+		},
+		"Elementalist": {
+			"name": "Elementalist"
+		},
+		"Entropist": {
+			"name": "Entropist"
+		},
+		"Esper": {
+			"name": "Esper"
+		},
+		"Floralist": {
+			"name": "Floralist"
+		},
+		"Fury": {
+			"name": "Fury"
+		},
+		"Gourmet": {
+			"name": "Gourmet"
+		},
+		"Guardian": {
+			"name": "Guardian"
+		},
+		"Invoker": {
+			"name": "Invoker"
+		},
+		"Loremaster": {
+			"name": "Loremaster"
+		},
+		"Merchant": {
+			"name": "Merchant"
+		},
+		"Mutant": {
+			"name": "Mutant"
+		},
+		"Necromancer": {
+			"name": "Necromancer"
+		},
+		"Orator": {
+			"name": "Orator"
+		},
+		"Pilot": {
+			"name": "Pilot"
+		},
+		"Rogue": {
+			"name": "Rogue"
+		},
+		"Sharpshooter": {
+			"name": "Sharpshooter"
+		},
+		"Spiritist": {
+			"name": "Spiritist"
+		},
+		"Symbolist": {
+			"name": "Symbolist"
+		},
+		"Tinkerer": {
+			"name": "Tinkerer"
+		},
+		"Wayfarer": {
+			"name": "Wayfarer"
+		},
+		"Weaponmaster": {
+			"name": "Weaponmaster"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "label": "Conditions",
+  "folders": {},
+  "entries": {
+    "Dazed": {
+      "name": "Dazed"
+    },
+    "Enraged": {
+      "name": "Enraged"
+    },
+    "Poisoned": {
+      "name": "Poisoned"
+    },
+    "Shaken": {
+      "name": "Shaken"
+    },
+    "Slow": {
+      "name": "Slow"
+    },
+    "Weak": {
+      "name": "Weak"
+    }
+  }
+}

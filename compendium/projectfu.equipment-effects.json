@@ -1,0 +1,49 @@
+{
+  "label": "Equipment Effects",
+  "folders": {
+    "Alter Damage Type": "Alter Damage Type",
+    "Alter Target Defense": "Alter Target Defense",
+    "Item Damage Bonuses": "Item Damage Bonuses"
+  },
+  "entries": {
+    "Alter Damage Type (Air)": {
+      "name": "Alter Damage Type (Air)"
+    },
+    "Alter Damage Type (Bolt)": {
+      "name": "Alter Damage Type (Bolt)"
+    },
+    "Alter Damage Type (Dark)": {
+      "name": "Alter Damage Type (Dark)"
+    },
+    "Alter Damage Type (Earth)": {
+      "name": "Alter Damage Type (Earth)"
+    },
+    "Alter Damage Type (Fire)": {
+      "name": "Alter Damage Type (Fire)"
+    },
+    "Alter Damage Type (Ice)": {
+      "name": "Alter Damage Type (Ice)"
+    },
+    "Alter Damage Type (Light)": {
+      "name": "Alter Damage Type (Light)"
+    },
+    "Alter Damage Type (Physical)": {
+      "name": "Alter Damage Type (Physical)"
+    },
+    "Alter Damage Type (Poison)": {
+      "name": "Alter Damage Type (Poison)"
+    },
+    "Alter Damage Type (Untyped)": {
+      "name": "Alter Damage Type (Untyped)"
+    },
+    "Alter Target Defense (DEF)": {
+      "name": "Alter Target Defense (DEF)"
+    },
+    "Alter Target Defense (MDEF)": {
+      "name": "Alter Target Defense (MDEF)"
+    },
+    "Weapon Damage Up": {
+      "name": "Weapon Damage Up"
+    }
+  }
+}

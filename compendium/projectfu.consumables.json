@@ -1,0 +1,117 @@
+{
+  "label": "Consumables",
+  "mapping": {
+    "description": "system.description",
+    "summary": "system.summary.value"
+  },
+  "folders": {
+    "Alchemy": "Alchemy",
+    "Infusion": "Infusion",
+    "Items": "Items",
+    "Magicannon": "Magicannon",
+    "Magisphere": "Magisphere",
+    "Tinkerer Only": "Tinkerer Only"
+  },
+  "entries": {
+    "Advanced Alchemy": {
+      "name": "Advanced Alchemy",
+      "description": "<h5>Required: Advanced Benefits in @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]{Gadget - Alchemy}</h5><p>For 4 Inventory Points, roll <strong>three d20s</strong> and assign one to <strong>target </strong>and one to <strong>effect</strong>.</p>",
+      "summary": ""
+    },
+    "Basic Alchemy": {
+      "name": "Basic Alchemy",
+      "description": "<h5>Required: Basic Benefits in @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]{Gadget - Alchemy}</h5><p>For 3 Inventory Points, roll <strong>two d20s</strong> and assign one to <strong>target </strong>and one to <strong>effect</strong>.</p>",
+      "summary": ""
+    },
+    "Elemental Shard": {
+      "name": "Elemental Shard",
+      "description": "<p>For 2 Inventory Points, one creature suffers 10 damage of a type of your choice (<strong>air</strong>, <strong>bolt</strong>, <strong>earth</strong>, <strong>fire</strong>, or <strong>ice</strong>).</p><hr /><ul><li><p><strong>Target Suffers:</strong> @DMG[10 air], @DMG[10 bolt], @DMG[10 earth], @DMG[10 fire], or @DMG[10 ice]</p></li></ul>",
+      "summary": "One creature suffers 10 damage of a type of your choice (10 Air, 10 Bolt, 10 Earth, 10 Fire, or 10 Ice)."
+    },
+    "Elixir": {
+      "name": "Elixir",
+      "description": "<p>For 3 Inventory Points, one creature recovers @HEAL[50 mp].</p>",
+      "summary": "One creature recovers 50 MP."
+    },
+    "Infusion: Advanced": {
+      "name": "Infusion: Advanced",
+      "description": "<h5>Required: Advanced Benefits in @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Gadget - Infusion}</h5><p>For 2 Inventory Points, the attack deals 5 extra damage, and its damage becomes: <strong>air</strong>, <strong>light</strong>, <strong>earth</strong>, or <strong>dark</strong>.</p>",
+      "summary": "For 2 IP the attack deals 5 extra damage, and its damage becomes: air, light, earth, OR dark."
+    },
+    "Infusion: Basic": {
+      "name": "Infusion: Basic",
+      "description": "<h5>Required: Basic Benefits in @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Gadget - Infusion}</h5><p>For 2 Inventory Points, the attack deals 5 extra damage, and its damage becomes: <strong>ice</strong>, <strong>fire</strong>, or <strong>bolt</strong>.</p>",
+      "summary": "For 2 IP, the attack deals 5 extra damage, and its damage becomes: ice, fire, or bolt."
+    },
+    "Infusion: Vampire (Superior)": {
+      "name": "Infusion: Vampire (Superior)",
+      "description": "<h5>Required: Superior Benefits in @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Gadget - Infusion}</h5><p>For 2 Inventory Points, choose one option: you recover an amount of HP equal to half the HP loss suffered by the target of the attack; <strong>or</strong> you recover an amount of MP equal to half the HP loss suffered by the target of the attack.</p><p>This infusion can only be used if the attack targeted a single creature.</p>",
+      "summary": ""
+    },
+    "Infusion: Venom (Superior)": {
+      "name": "Infusion: Venom (Superior)",
+      "description": "<h5>Required: Superior Benefits in @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Gadget - Infusion}</h5><p>For 2 Inventory Points, the attack deals 5 extra damage, its damage becomes <strong>poison</strong>, and each creature hit by the attack suffers <strong>poisoned</strong>.</p>",
+      "summary": ""
+    },
+    "Magic Tent": {
+      "name": "Magic Tent",
+      "description": "<p>For 4 Inventory Points, this allows the entire group to <strong>rest</strong> in the wilderness and at sea.</p>",
+      "summary": "This allows the entire group to rest in the wilderness and at sea."
+    },
+    "Magicannon (Air)": {
+      "name": "Magicannon (Air)",
+      "description": "<p>A magitech firearm that deals <strong>air </strong>@ICON[air] damage.</p>",
+      "summary": "A magitech firearm that deals air damage."
+    },
+    "Magicannon (Bolt)": {
+      "name": "Magicannon (Bolt)",
+      "description": "<p>A magitech firearm that deals <strong>bolt</strong> @ICON[bolt] damage.</p>",
+      "summary": "A magitech firearm that deals bolt damage."
+    },
+    "Magicannon (Earth)": {
+      "name": "Magicannon (Earth)",
+      "description": "<p>A magitech firearm that deals <strong>earth </strong>@ICON[earth] damage.</p>",
+      "summary": "A magitech firearm that deals earth damage."
+    },
+    "Magicannon (Fire)": {
+      "name": "Magicannon (Fire)",
+      "description": "<p>A magitech firearm that deals <strong>fire</strong> @ICON[fire] damage.</p>",
+      "summary": "A magitech firearm that deals fire damage."
+    },
+    "Magicannon (Ice)": {
+      "name": "Magicannon (Ice)",
+      "description": "<p>A magitech firearm that deals <strong>ice</strong> @ICON[ice] damage.</p>",
+      "summary": "A magitech firearm that deals ice damage."
+    },
+    "Magicannon (Item)": {
+      "name": "Magicannon (Item)",
+      "description": "<h5>Required: Advanced Benefits in @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Gadget- Magitech}</h5><p>For <strong>@LOSS[3 ip]</strong> creates a firearm that deals <strong>air</strong>, <strong>bolt</strong>, <strong>earth</strong>, <strong>fire</strong>, <strong>ice</strong>, OR <strong>physical </strong>damage. Drag and drop the one you create onto your character sheet.</p><p><strong>@UUID[Compendium.projectfu.consumables.Item.EGvZsEWEhaTqoCgG]{Magicannon (Air)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.uuKKqm81klCOiDjO]{Magicannon (Bolt)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.sREYRTy6TfK8fe53]{Magicannon (Earth)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.jHbcjw8RW9Ywesyu]{Magicannon (Fire)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.eVOnHgRLTnL695cP]{Magicannon (Ice)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.MJoIwfTvo0FHcDqL]{Magicannon (Physical)}</strong></p>",
+      "summary": "Create a firearm that deals air, bolt, earth, fire, ice, or physical."
+    },
+    "Magicannon (Physical)": {
+      "name": "Magicannon (Physical)",
+      "description": "<p>A magitech firearm that deals <strong>physical</strong> @ICON[physical] damage.</p>",
+      "summary": "A magitech firearm that deals physical damage."
+    },
+    "Magisphere (Superior)": {
+      "name": "Magisphere (Superior)",
+      "description": "<h5>Required: Superior Benefits in @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Gadget- Magitech}</h5><p>For 2 Inventory Points, create and use one of your magisphere prototypes, replicating the effects of a spell.</p>",
+      "summary": ""
+    },
+    "Remedy": {
+      "name": "Remedy",
+      "description": "<p>For 3 Inventory Points, one creature recovers @HEAL[50 hp].</p>",
+      "summary": "One creature recovers 50 HP."
+    },
+    "Superior Alchemy": {
+      "name": "Superior Alchemy",
+      "description": "<h5>Required: Superior Benefits in @UUID[Compendium.projectfu.skills.Item.SsR6UJXT65Q1qNO2]{Gadget - Alchemy}</h5><p>For 5 Inventory Points, roll <strong>four d20s</strong> and assign one to <strong>target</strong> and one to <strong>effect</strong>.</p>",
+      "summary": ""
+    },
+    "Tonic": {
+      "name": "Tonic",
+      "description": "<p>For 2 Inventory Points, one creature recovers from a single status effect.</p>",
+      "summary": "One creature recovers from a single status effect."
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "label": "Rollable Tables",
+  "folders": {},
+  "entries": {
+    "Alchemy: Effect": {
+      "name": "Alchemy: Effect",
+      "description": "<p><span class=\"fontstyle0\">When you create a mix, roll the amount of twenty-sided dice indicated by that mix, then assign one of those rolls to the </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.rollable-tables.RollTable.vZa3GMOzrEVma2Hv]{target} </span><span class=\"fontstyle0\">table and one to the </span><span class=\"fontstyle2\"><strong>effect</strong> </span><span class=\"fontstyle0\">table (below). Discard all remaining dice, then describe the effects of the mix!</span></p>",
+      "results": {
+        "1-1": "... treats their Dexterity (@EFFECT[dex-up e:eot i:2 t:source]) and Might (@EFFECT[mig-up e:eot i:2 t:source]) dice as if they were one size higher (up to a maximum of d12) until the end of your next turn.",
+        "2-2": "... treats their Insight (@EFFECT[ins-up e:eot i:2 t:source]) and Willpower (@EFFECT[wlp-up e:eot i:2 t:source]) dice as if they were one size higher (up to a maximum of d12) until the end of your next turn.",
+        "3-3": "... suffers @DMG[20 air] damage. This amount increases to @DMG[30 air] damage if you are level 20 or higher, or to @DMG[40 air] damage if you are level 40 or higher.",
+        "4-4": "... suffers @DMG[20 bolt] damage. This amount increases to @DMG[30 bolt] damage if you are level 20 or higher, or to @DMG[40 bolt] damage if you are level 40 or higher.",
+        "5-5": "... suffers @DMG[20 dark] damage. This amount increases to @DMG[30 dark] damage if you are level 20 or higher, or to @DMG[40 dark] damage if you are level 40 or higher.",
+        "6-6": "... suffers @DMG[20 earth] damage. This amount increases to @DMG[30 earth] damage if you are level 20 or higher, or to @DMG[40 earth] damage if you are level 40 or higher.",
+        "7-7": "... suffers @DMG[20 fire] damage. This amount increases to @DMG[30 fire] damage if you are level 20 or higher, or to @DMG[40 fire] damage if you are level 40 or higher.",
+        "8-8": "... suffers @DMG[20 ice] damage. This amount increases to @DMG[30 ice] damage if you are level 20 or higher, or to @DMG[40 ice] damage if you are level 40 or higher.",
+        "9-9": "... gains Resistance to air (@TYPE[affinity air resistance e:eos i:1 t:source]) and fire (@TYPE[affinity fire resistance e:eos i:1 t:source]) damage until the end of the scene.",
+        "10-10": "... gains Resistance to bolt (@TYPE[affinity bolt resistance e:eos i:1 t:source]) and ice (@TYPE[affinity ice resistance e:eos i:1 t:source]) damage until the end of the scene.",
+        "11-11": "... gains Resistance to dark (@TYPE[affinity dark resistance e:eos i:1 t:source]) and earth (@TYPE[affinity earth resistance e:eos i:1 t:source]) damage until the end of the scene.",
+        "12-12": "... suffers @EFFECT[enraged].",
+        "13-13": "... suffers @EFFECT[poisoned].",
+        "14-14": "... suffers @EFFECT[dazed], @EFFECT[shaken], @EFFECT[slow], and @EFFECT[weak].",
+        "15-15": "... recovers from all status effects.",
+        "16-17": "... recovers @GAIN[50 hp] and @GAIN[50 mp].",
+        "18-18": "... recovers @GAIN[100 hp].",
+        "19-19": "... recovers @GAIN[100 mp].",
+        "20-20": "... recovers @GAIN[100 hp] and @GAIN[100 mp]."
+      }
+    },
+    "Alchemy: Target": {
+      "name": "Alchemy: Target",
+      "description": "<p><span class=\"fontstyle0\">When you create a mix, roll the amount of twenty-sided dice indicated by that mix, then assign one of those rolls to the </span><span class=\"fontstyle2\"><strong>target</strong> </span><span class=\"fontstyle0\">table (below) and one to the </span><span class=\"fontstyle2\">effect </span><span class=\"fontstyle0\">table @UUID[Compendium.projectfu.rollable-tables.RollTable.TvH7gOE0xQYeimUF]{Alchemy: Effect}. Discard all remaining dice, then describe the effects of the mix!</span> <br style=\"font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:-webkit-auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-size-adjust:auto;-webkit-text-stroke-width:0px\" /></p>",
+      "results": {
+        "1-6": "... you or one ally you can see that is present on the scene.",
+        "7-11": "... one enemy you can see that is present on the scene.",
+        "12-16": "... you and every ally present on the scene.",
+        "17-20": "... every enemy present on the scene."
+      }
+    },
+    "Delicacy Effect": {
+      "name": "Delicacy Effect",
+      "description": "<p>When you combine two tastes you <strong>never combined before</strong>, determine the <strong>effect</strong> of that combination by rolling a <strong>d12</strong>; most entries also require you to make a choice (such as a specific damage type or status effect). Once you're done, record the resulting effect on your @UUID[Compendium.projectfu.skills.Item.HQTDIy6suF8u6dAl]{Cookbook}: from this moment on, that <strong>combination</strong> of tastes will <strong>always</strong> produce that exact <strong>effect</strong> when you use it. Follow @UUID[Compendium.projectfu.handouts.JournalEntry.vsXmQQBeh7FSTCc4]{Ingredients &amp; Delicacies Rules} for more instructions.</p>",
+      "results": {
+        "1-1": "Each of this delicacy's targets recovers from the (choose one: dazed, enraged, poisoned, shaken, slow, weak) status effect.",
+        "2-2": "Each of this delicacy's targets suffers the (choose one: @EFFECT[dazed]; @EFFECT[shaken]; @EFFECT[slow]; @EFFECT[weak]) status effect",
+        "3-3": "Each of this delicacy's targets recovers @GAIN[40 hp]. This amount increases to @GAIN[50 hp] if you are level 30 or higher.",
+        "4-4": "Each of this delicacy's targets recovers @GAIN[40 mp]. This amount increases to @GAIN[50 mp] if you are level 30 or higher.",
+        "5-5": "Each of this delicacy's targets suffers @DMG[20 untyped] (choose one: air; bolt; earth; fire; ice; poison) damage. This amount increases to @DMG[30 untyped] damage if you are level 30 or higher.",
+        "6-6": "Until the end of your next turn, every source that deals (choose one: air; bolt; earth; fire; ice; poison) damage deals 5 extra damage to each of this delicacy's targets",
+        "7-7": "Each of this delicacy's targets cannot perform the Guard action during their next turn",
+        "8-8": "Each of this delicacy's targets cannot perform the Spell action during their next turn.",
+        "9-9": "Each of this delicacy's targets cannot perform the Skill action during their next turn.",
+        "10-10": "Each of this delicacy's targets gains Resistance to (choose one: @UUID[Compendium.projectfu.actor-effects.Item.3tMyw1mCjd7SfGTD]{Air}; @UUID[Compendium.projectfu.actor-effects.Item.QrEztsujMpK33cpj]{Bolt}; @UUID[Compendium.projectfu.actor-effects.Item.H3SJ1fej3GSyHdKG]{Earth}; @UUID[Compendium.projectfu.actor-effects.Item.FAfKTXxluiqIVP5t]{Fire}; @UUID[Compendium.projectfu.actor-effects.Item.SWdZeuJTEq1ig6S8]{Ice}; @UUID[Compendium.projectfu.actor-effects.Item.3xPA7x9S3fggYHkX]{Poison}) damage until the end of your next turn.",
+        "11-11": "Each of this delicacy's targets treats their (choose one: @UUID[Compendium.projectfu.actor-effects.Item.vv2cqUDHaCJLmEYw]{Dexterity}; @UUID[Compendium.projectfu.actor-effects.Item.4G5iaieFDwGiIVrw]{Insight}; @UUID[Compendium.projectfu.actor-effects.Item.hX70STpGG5fgAAkp]{Might}; @UUID[Compendium.projectfu.actor-effects.Item.nXxz7GyqeIGtQpMG]{Willpower}) as if it were one die size higher (up to a maximum of d12) until the end of your next turn.",
+        "12-12": "During the next turn of each of this delicacy's targets, all damage they deal becomes (choose one: air; bolt; earth; fire; ice; poison) and its type cannot change."
+      }
+    },
+    "Gamble": {
+      "name": "Gamble",
+      "description": "<p>You summon a vortex of chaotic energy. Roll your current <strong>Willpower </strong>die once for every 10 Mind Points spent while casting this spell, then keep the <strong>single</strong> die you prefer: the number on that die determines the effects of this spell.</p>",
+      "results": {
+        "1-1": "You lose half of your current Hit Points (@LOSS[(@actor.resources.hp.value/2){Half Current HP}) and half of your current Mind Points (@LOSS[(@actor.resources.mp.value/2) mp]).",
+        "2-3": "Each creature present on the scene, including yourself, suffers @EFFECT[poisoned].",
+        "4-6": "Each creature present on the scene, including yourself, suffers @EFFECT[slow].",
+        "7-8": "Choose up to three creatures you can see: each of them recovers @GAIN[50 hp] and also recovers from all status effects.",
+        "9-12": "Choose any number of creatures you can see: each of them suffers 30 damage. The damage type is determined randomly by rolling a d6: 1. @DMG[30 air] 2. @DMG[30 bolt] 3. @DMG[30 dark] 4. @DMG[30 earth] 5. @DMG[30 fire] 6. @DMG[30 poison]"
+      }
+    },
+    "Ingredient Taste": {
+      "name": "Ingredient Taste",
+      "description": "<p>Roll a <strong>d6</strong> to determine the <strong>ingredient’s taste</strong> using the table below, then describe its appearance and give it a name.</p>",
+      "results": {
+        "1-1": "Bitter",
+        "2-2": "Salty",
+        "3-3": "Sour",
+        "4-4": "Sweet",
+        "5-5": "Umami",
+        "6-6": "Your choice"
+      }
+    }
+  }
+}

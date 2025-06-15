@@ -1,0 +1,242 @@
+{
+  "label": "Actor Effects",
+  "folders": {
+    "Absorption": "Absorption",
+    "Accuracy Bonuses": "Accuracy Bonuses",
+    "Affinities": "Affinities",
+    "Attributes": "Attributes",
+    "Damage Bonuses": "Damage Bonuses",
+    "Immunity": "Immunity",
+    "Improve Defenses": "Improve Defenses",
+    "NPC Bonuses": "NPC Bonuses",
+    "Resistance": "Resistance",
+    "Special": "Special",
+    "Status Effect Immunities": "Status Effect Immunities",
+    "Vulnerability": "Vulnerability",
+    "Weakness": "Weakness"
+  },
+  "entries": {
+    "Accuracy Check Up": {
+      "name": "Accuracy Check Up"
+    },
+    "Air Absorption": {
+      "name": "Air Absorption"
+    },
+    "Air Immunity": {
+      "name": "Air Immunity"
+    },
+    "Air Resistance": {
+      "name": "Air Resistance"
+    },
+    "Air Vulnerability": {
+      "name": "Air Vulnerability"
+    },
+    "Air Weakness": {
+      "name": "Air Weakness"
+    },
+    "All Check Up": {
+      "name": "All Check Up"
+    },
+    "All Damage Up": {
+      "name": "All Damage Up"
+    },
+    "Bolt Absorption": {
+      "name": "Bolt Absorption"
+    },
+    "Bolt Immunity": {
+      "name": "Bolt Immunity"
+    },
+    "Bolt Resistance": {
+      "name": "Bolt Resistance"
+    },
+    "Bolt Vulnerability": {
+      "name": "Bolt Vulnerability"
+    },
+    "Bolt Weakness": {
+      "name": "Bolt Weakness"
+    },
+    "Custom NPC": {
+      "name": "Custom NPC"
+    },
+    "DEF Up": {
+      "name": "DEF Up"
+    },
+    "DEF/MDEF Up": {
+      "name": "DEF/MDEF Up"
+    },
+    "DEX Base Cap": {
+      "name": "DEX Base Cap"
+    },
+    "DEX Up": {
+      "name": "DEX Up"
+    },
+    "Dark Absorption": {
+      "name": "Dark Absorption"
+    },
+    "Dark Immunity": {
+      "name": "Dark Immunity"
+    },
+    "Dark Resistance": {
+      "name": "Dark Resistance"
+    },
+    "Dark Vulnerability": {
+      "name": "Dark Vulnerability"
+    },
+    "Dark Weakness": {
+      "name": "Dark Weakness"
+    },
+    "Dazed Immunity": {
+      "name": "Dazed Immunity"
+    },
+    "Earth Absorption": {
+      "name": "Earth Absorption"
+    },
+    "Earth Immunity": {
+      "name": "Earth Immunity"
+    },
+    "Earth Resistance": {
+      "name": "Earth Resistance"
+    },
+    "Earth Vulnerability": {
+      "name": "Earth Vulnerability"
+    },
+    "Earth Weakness": {
+      "name": "Earth Weakness"
+    },
+    "Enraged Immunity": {
+      "name": "Enraged Immunity"
+    },
+    "Fire Absorption": {
+      "name": "Fire Absorption"
+    },
+    "Fire Immunity": {
+      "name": "Fire Immunity"
+    },
+    "Fire Resistance": {
+      "name": "Fire Resistance"
+    },
+    "Fire Vulnerability": {
+      "name": "Fire Vulnerability"
+    },
+    "Fire Weakness": {
+      "name": "Fire Weakness"
+    },
+    "INS Base Cap": {
+      "name": "INS Base Cap"
+    },
+    "INS Up": {
+      "name": "INS Up"
+    },
+    "Ice Absorption": {
+      "name": "Ice Absorption"
+    },
+    "Ice Immunity": {
+      "name": "Ice Immunity"
+    },
+    "Ice Resistance": {
+      "name": "Ice Resistance"
+    },
+    "Ice Vulnerability": {
+      "name": "Ice Vulnerability"
+    },
+    "Ice Weakness": {
+      "name": "Ice Weakness"
+    },
+    "Light Absorption": {
+      "name": "Light Absorption"
+    },
+    "Light Immunity": {
+      "name": "Light Immunity"
+    },
+    "Light Resistance": {
+      "name": "Light Resistance"
+    },
+    "Light Vulnerability": {
+      "name": "Light Vulnerability"
+    },
+    "Light Weakness": {
+      "name": "Light Weakness"
+    },
+    "Lone Wolf": {
+      "name": "Lone Wolf"
+    },
+    "MDEF Up": {
+      "name": "MDEF Up"
+    },
+    "MIG Base Cap": {
+      "name": "MIG Base Cap"
+    },
+    "MIG Up": {
+      "name": "MIG Up"
+    },
+    "Magic Check Up": {
+      "name": "Magic Check Up"
+    },
+    "Melee Damage Up": {
+      "name": "Melee Damage Up"
+    },
+    "Open Check Up": {
+      "name": "Open Check Up"
+    },
+    "Opposed Check Up": {
+      "name": "Opposed Check Up"
+    },
+    "Physical Absorption": {
+      "name": "Physical Absorption"
+    },
+    "Physical Immunity": {
+      "name": "Physical Immunity"
+    },
+    "Physical Resistance": {
+      "name": "Physical Resistance"
+    },
+    "Physical Vulnerability": {
+      "name": "Physical Vulnerability"
+    },
+    "Physical Weakness": {
+      "name": "Physical Weakness"
+    },
+    "Poison Absorption": {
+      "name": "Poison Absorption"
+    },
+    "Poison Immunity": {
+      "name": "Poison Immunity"
+    },
+    "Poison Resistance": {
+      "name": "Poison Resistance"
+    },
+    "Poison Vulnerability": {
+      "name": "Poison Vulnerability"
+    },
+    "Poison Weakness": {
+      "name": "Poison Weakness"
+    },
+    "Poisoned Immunity": {
+      "name": "Poisoned Immunity"
+    },
+    "Range Damage Up": {
+      "name": "Range Damage Up"
+    },
+    "Shaken Immunity": {
+      "name": "Shaken Immunity"
+    },
+    "Slow Immunity": {
+      "name": "Slow Immunity"
+    },
+    "Spell Damage Up": {
+      "name": "Spell Damage Up"
+    },
+    "WLP Base Cap": {
+      "name": "WLP Base Cap"
+    },
+    "WLP Up": {
+      "name": "WLP Up"
+    },
+    "Weak Immunity": {
+      "name": "Weak Immunity"
+    },
+    "Zero Shield": {
+      "name": "Zero Shield"
+    }
+  }
+}

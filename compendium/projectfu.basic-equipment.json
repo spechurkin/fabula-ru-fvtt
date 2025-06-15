@@ -1,0 +1,137 @@
+{
+  "label": "Basic Equipment",
+  "mapping": {
+    "description": "system.description"
+  },
+  "folders": {
+    "Armor": "Armor",
+    "Shields": "Shields",
+    "Weapons": "Weapons"
+  },
+  "entries": {
+    "Brigandine": {
+      "name": "Brigandine",
+      "description": ""
+    },
+    "Broadaxe": {
+      "name": "Broadaxe",
+      "description": ""
+    },
+    "Bronze Plate": {
+      "name": "Bronze Plate",
+      "description": ""
+    },
+    "Bronze Shield": {
+      "name": "Bronze Shield",
+      "description": ""
+    },
+    "Bronze Sword": {
+      "name": "Bronze Sword",
+      "description": ""
+    },
+    "Chain Whip": {
+      "name": "Chain Whip",
+      "description": ""
+    },
+    "Combat Tunic": {
+      "name": "Combat Tunic",
+      "description": ""
+    },
+    "Crossbow": {
+      "name": "Crossbow",
+      "description": ""
+    },
+    "Greatsword": {
+      "name": "Greatsword",
+      "description": ""
+    },
+    "Heavy Spear": {
+      "name": "Heavy Spear",
+      "description": ""
+    },
+    "Improvised (Melee)": {
+      "name": "Improvised (Melee)",
+      "description": "<p>Breaks after the attack.</p>"
+    },
+    "Improvised (Ranged)": {
+      "name": "Improvised (Ranged)",
+      "description": "<p>Breaks after the attack.</p>"
+    },
+    "Iron Hammer": {
+      "name": "Iron Hammer",
+      "description": ""
+    },
+    "Iron Knuckle": {
+      "name": "Iron Knuckle",
+      "description": ""
+    },
+    "Katana": {
+      "name": "Katana",
+      "description": ""
+    },
+    "Light Spear": {
+      "name": "Light Spear",
+      "description": ""
+    },
+    "Pistol": {
+      "name": "Pistol",
+      "description": ""
+    },
+    "Rapier": {
+      "name": "Rapier",
+      "description": ""
+    },
+    "Runic Plate": {
+      "name": "Runic Plate",
+      "description": ""
+    },
+    "Runic Shield": {
+      "name": "Runic Shield",
+      "description": ""
+    },
+    "Sage Robe": {
+      "name": "Sage Robe",
+      "description": ""
+    },
+    "Shortbow": {
+      "name": "Shortbow",
+      "description": ""
+    },
+    "Shuriken": {
+      "name": "Shuriken",
+      "description": ""
+    },
+    "Silk Shirt": {
+      "name": "Silk Shirt",
+      "description": ""
+    },
+    "Staff": {
+      "name": "Staff",
+      "description": ""
+    },
+    "Steel Dagger": {
+      "name": "Steel Dagger",
+      "description": ""
+    },
+    "Steel Plate": {
+      "name": "Steel Plate",
+      "description": ""
+    },
+    "Tome": {
+      "name": "Tome",
+      "description": ""
+    },
+    "Travel Garb": {
+      "name": "Travel Garb",
+      "description": ""
+    },
+    "Unarmed Strike": {
+      "name": "Unarmed Strike",
+      "description": "<p>Automatically equipped in each empty hand slot.</p>"
+    },
+    "Waraxe": {
+      "name": "Waraxe",
+      "description": ""
+    }
+  }
+}

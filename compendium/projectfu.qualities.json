@@ -1,0 +1,513 @@
+{
+  "label": "Qualities",
+  "folders": {
+    "Absorbing": "Absorbing",
+    "Check": "Check",
+    "Damage Change": "Damage Change",
+    "Defensive": "Defensive",
+    "Effects": "Effects",
+    "Immunity": "Immunity",
+    "Offensive": "Offensive",
+    "Resistance": "Resistance",
+    "Resource": "Resource",
+    "Skill": "Skill",
+    "Status": "Status"
+  },
+  "entries": {
+    "Absorbing (Air)": {
+      "name": "Absorbing (Air)"
+    },
+    "Absorbing (Bolt)": {
+      "name": "Absorbing (Bolt)"
+    },
+    "Absorbing (Dark)": {
+      "name": "Absorbing (Dark)"
+    },
+    "Absorbing (Earth)": {
+      "name": "Absorbing (Earth)"
+    },
+    "Absorbing (Fire)": {
+      "name": "Absorbing (Fire)"
+    },
+    "Absorbing (Ice)": {
+      "name": "Absorbing (Ice)"
+    },
+    "Absorbing (Light)": {
+      "name": "Absorbing (Light)"
+    },
+    "Absorbing (Poison)": {
+      "name": "Absorbing (Poison)"
+    },
+    "Accuracy Up": {
+      "name": "Accuracy Up"
+    },
+    "Alchemist": {
+      "name": "Alchemist"
+    },
+    "Amulet": {
+      "name": "Amulet"
+    },
+    "Antistatus (Dazed)": {
+      "name": "Antistatus (Dazed)"
+    },
+    "Antistatus (Enraged)": {
+      "name": "Antistatus (Enraged)"
+    },
+    "Antistatus (Poisoned)": {
+      "name": "Antistatus (Poisoned)"
+    },
+    "Antistatus (Shaken)": {
+      "name": "Antistatus (Shaken)"
+    },
+    "Antistatus (Slow)": {
+      "name": "Antistatus (Slow)"
+    },
+    "Antistatus (Weak)": {
+      "name": "Antistatus (Weak)"
+    },
+    "Assassin": {
+      "name": "Assassin"
+    },
+    "Bond Boost": {
+      "name": "Bond Boost"
+    },
+    "Bulwark": {
+      "name": "Bulwark"
+    },
+    "Challenger": {
+      "name": "Challenger"
+    },
+    "Crisis Shock (Dazed)": {
+      "name": "Crisis Shock (Dazed)"
+    },
+    "Crisis Shock (Shaken)": {
+      "name": "Crisis Shock (Shaken)"
+    },
+    "Crisis Shock (Slow)": {
+      "name": "Crisis Shock (Slow)"
+    },
+    "Crisis Shock (Weak)": {
+      "name": "Crisis Shock (Weak)"
+    },
+    "Damage Change": {
+      "name": "Damage Change"
+    },
+    "Damage Change (Air)": {
+      "name": "Damage Change (Air)"
+    },
+    "Damage Change (Bolt)": {
+      "name": "Damage Change (Bolt)"
+    },
+    "Damage Change (Dark)": {
+      "name": "Damage Change (Dark)"
+    },
+    "Damage Change (Earth)": {
+      "name": "Damage Change (Earth)"
+    },
+    "Damage Change (Fire)": {
+      "name": "Damage Change (Fire)"
+    },
+    "Damage Change (Ice)": {
+      "name": "Damage Change (Ice)"
+    },
+    "Damage Change (Light)": {
+      "name": "Damage Change (Light)"
+    },
+    "Damage Change (Physical)": {
+      "name": "Damage Change (Physical)"
+    },
+    "Damage Change (Poison)": {
+      "name": "Damage Change (Poison)"
+    },
+    "Damage Change (Untyped)": {
+      "name": "Damage Change (Untyped)"
+    },
+    "Deaththrow": {
+      "name": "Deaththrow"
+    },
+    "Desperado": {
+      "name": "Desperado"
+    },
+    "Disenchanting": {
+      "name": "Disenchanting"
+    },
+    "Dual Hunter": {
+      "name": "Dual Hunter"
+    },
+    "Dual Immunity": {
+      "name": "Dual Immunity"
+    },
+    "Dual Resistance": {
+      "name": "Dual Resistance"
+    },
+    "Elemental Bath": {
+      "name": "Elemental Bath"
+    },
+    "Encouraging": {
+      "name": "Encouraging"
+    },
+    "Envious": {
+      "name": "Envious"
+    },
+    "Exhausting": {
+      "name": "Exhausting"
+    },
+    "Expansive": {
+      "name": "Expansive"
+    },
+    "Extra M. Healing": {
+      "name": "Extra M. Healing"
+    },
+    "Fabulous": {
+      "name": "Fabulous"
+    },
+    "Flowing": {
+      "name": "Flowing"
+    },
+    "Friendly": {
+      "name": "Friendly"
+    },
+    "Grounding": {
+      "name": "Grounding"
+    },
+    "Healing Up": {
+      "name": "Healing Up"
+    },
+    "Health Absorbtion": {
+      "name": "Health Absorbtion"
+    },
+    "Heroic": {
+      "name": "Heroic"
+    },
+    "Hounding": {
+      "name": "Hounding"
+    },
+    "Hunter": {
+      "name": "Hunter"
+    },
+    "Immunity (Air)": {
+      "name": "Immunity (Air)"
+    },
+    "Immunity (Bolt)": {
+      "name": "Immunity (Bolt)"
+    },
+    "Immunity (Dark)": {
+      "name": "Immunity (Dark)"
+    },
+    "Immunity (Earth)": {
+      "name": "Immunity (Earth)"
+    },
+    "Immunity (Fire)": {
+      "name": "Immunity (Fire)"
+    },
+    "Immunity (Ice)": {
+      "name": "Immunity (Ice)"
+    },
+    "Immunity (Light)": {
+      "name": "Immunity (Light)"
+    },
+    "Immunity (Poison)": {
+      "name": "Immunity (Poison)"
+    },
+    "Initiative Up": {
+      "name": "Initiative Up"
+    },
+    "Killer": {
+      "name": "Killer"
+    },
+    "Lesser Accuracy Up (Arcane)": {
+      "name": "Lesser Accuracy Up (Arcane)"
+    },
+    "Lesser Accuracy Up (Bow)": {
+      "name": "Lesser Accuracy Up (Bow)"
+    },
+    "Lesser Accuracy Up (Brawling)": {
+      "name": "Lesser Accuracy Up (Brawling)"
+    },
+    "Lesser Accuracy Up (Dagger)": {
+      "name": "Lesser Accuracy Up (Dagger)"
+    },
+    "Lesser Accuracy Up (Firearm)": {
+      "name": "Lesser Accuracy Up (Firearm)"
+    },
+    "Lesser Accuracy Up (Flail)": {
+      "name": "Lesser Accuracy Up (Flail)"
+    },
+    "Lesser Accuracy Up (Heavy)": {
+      "name": "Lesser Accuracy Up (Heavy)"
+    },
+    "Lesser Accuracy Up (Spear)": {
+      "name": "Lesser Accuracy Up (Spear)"
+    },
+    "Lesser Accuracy Up (Sword)": {
+      "name": "Lesser Accuracy Up (Sword)"
+    },
+    "Lesser Accuracy Up (Thrown)": {
+      "name": "Lesser Accuracy Up (Thrown)"
+    },
+    "Lesser Perfect Health": {
+      "name": "Lesser Perfect Health"
+    },
+    "Lesser Weapon Up (Arcane)": {
+      "name": "Lesser Weapon Up (Arcane)"
+    },
+    "Lesser Weapon Up (Bow)": {
+      "name": "Lesser Weapon Up (Bow)"
+    },
+    "Lesser Weapon Up (Brawling)": {
+      "name": "Lesser Weapon Up (Brawling)"
+    },
+    "Lesser Weapon Up (Firearm)": {
+      "name": "Lesser Weapon Up (Firearm)"
+    },
+    "Lesser Weapon Up (Flail)": {
+      "name": "Lesser Weapon Up (Flail)"
+    },
+    "Lesser Weapon Up (Heavy)": {
+      "name": "Lesser Weapon Up (Heavy)"
+    },
+    "Lesser Weapon Up (Spear)": {
+      "name": "Lesser Weapon Up (Spear)"
+    },
+    "Lesser Weapon Up (Sword)": {
+      "name": "Lesser Weapon Up (Sword)"
+    },
+    "Lesser Weapon Up (Thrown)": {
+      "name": "Lesser Weapon Up (Thrown)"
+    },
+    "Looting": {
+      "name": "Looting"
+    },
+    "M. Status (Dazed)": {
+      "name": "M. Status (Dazed)"
+    },
+    "M. Status (Shaken)": {
+      "name": "M. Status (Shaken)"
+    },
+    "M. Status (Slow)": {
+      "name": "M. Status (Slow)"
+    },
+    "M. Status (Weak)": {
+      "name": "M. Status (Weak)"
+    },
+    "M. Status Plus (Enraged)": {
+      "name": "M. Status Plus (Enraged)"
+    },
+    "M. Status Plus (Poisoned)": {
+      "name": "M. Status Plus (Poisoned)"
+    },
+    "Magic Up": {
+      "name": "Magic Up"
+    },
+    "Magical": {
+      "name": "Magical"
+    },
+    "Mastered": {
+      "name": "Mastered"
+    },
+    "Meditative": {
+      "name": "Meditative"
+    },
+    "Melee Weapon Up": {
+      "name": "Melee Weapon Up"
+    },
+    "Mind Drain": {
+      "name": "Mind Drain"
+    },
+    "Minstrel": {
+      "name": "Minstrel"
+    },
+    "Multi": {
+      "name": "Multi"
+    },
+    "Multi Accuracy": {
+      "name": "Multi Accuracy"
+    },
+    "Multi Plus": {
+      "name": "Multi Plus"
+    },
+    "Omnishield": {
+      "name": "Omnishield"
+    },
+    "Onion": {
+      "name": "Onion"
+    },
+    "Opposing": {
+      "name": "Opposing"
+    },
+    "Perfect Health": {
+      "name": "Perfect Health"
+    },
+    "Piercing": {
+      "name": "Piercing"
+    },
+    "Piercing Plus": {
+      "name": "Piercing Plus"
+    },
+    "Piercing Spell": {
+      "name": "Piercing Spell"
+    },
+    "Protection from Species": {
+      "name": "Protection from Species"
+    },
+    "Punishing (Enraged)": {
+      "name": "Punishing (Enraged)"
+    },
+    "Punishing (Poisoned)": {
+      "name": "Punishing (Poisoned)"
+    },
+    "Punishing (Shaken)": {
+      "name": "Punishing (Shaken)"
+    },
+    "Punishing (Slow)": {
+      "name": "Punishing (Slow)"
+    },
+    "Punishing (Weak)": {
+      "name": "Punishing (Weak)"
+    },
+    "Ranged Weapon Up": {
+      "name": "Ranged Weapon Up"
+    },
+    "Reaching": {
+      "name": "Reaching"
+    },
+    "Resistance (Air)": {
+      "name": "Resistance (Air)"
+    },
+    "Resistance (Bolt)": {
+      "name": "Resistance (Bolt)"
+    },
+    "Resistance (Dark)": {
+      "name": "Resistance (Dark)"
+    },
+    "Resistance (Earth)": {
+      "name": "Resistance (Earth)"
+    },
+    "Resistance (Fire)": {
+      "name": "Resistance (Fire)"
+    },
+    "Resistance (Ice)": {
+      "name": "Resistance (Ice)"
+    },
+    "Resistance (Light)": {
+      "name": "Resistance (Light)"
+    },
+    "Resistance (Poison)": {
+      "name": "Resistance (Poison)"
+    },
+    "Rookie": {
+      "name": "Rookie"
+    },
+    "Servant (HP)": {
+      "name": "Servant (HP)"
+    },
+    "Servant (MP)": {
+      "name": "Servant (MP)"
+    },
+    "Specialized": {
+      "name": "Specialized"
+    },
+    "Spell Boost": {
+      "name": "Spell Boost"
+    },
+    "Spell Up": {
+      "name": "Spell Up"
+    },
+    "Stat Up (DEX)": {
+      "name": "Stat Up (DEX)"
+    },
+    "Stat Up (INS)": {
+      "name": "Stat Up (INS)"
+    },
+    "Stat Up (MIG)": {
+      "name": "Stat Up (MIG)"
+    },
+    "Stat Up (WLP)": {
+      "name": "Stat Up (WLP)"
+    },
+    "Status (Dazed)": {
+      "name": "Status (Dazed)"
+    },
+    "Status (Shaken)": {
+      "name": "Status (Shaken)"
+    },
+    "Status (Slow)": {
+      "name": "Status (Slow)"
+    },
+    "Status (Weak)": {
+      "name": "Status (Weak)"
+    },
+    "Status Pierce (Dazed)": {
+      "name": "Status Pierce (Dazed)"
+    },
+    "Status Pierce (Enraged)": {
+      "name": "Status Pierce (Enraged)"
+    },
+    "Status Pierce (Poisoned)": {
+      "name": "Status Pierce (Poisoned)"
+    },
+    "Status Pierce (Shaken)": {
+      "name": "Status Pierce (Shaken)"
+    },
+    "Status Pierce (Slow)": {
+      "name": "Status Pierce (Slow)"
+    },
+    "Status Pierce (Weak)": {
+      "name": "Status Pierce (Weak)"
+    },
+    "Status Plus (Enraged)": {
+      "name": "Status Plus (Enraged)"
+    },
+    "Status Plus (Poisoned)": {
+      "name": "Status Plus (Poisoned)"
+    },
+    "Swordbreaker": {
+      "name": "Swordbreaker"
+    },
+    "Unburdened": {
+      "name": "Unburdened"
+    },
+    "Valkyrie": {
+      "name": "Valkyrie"
+    },
+    "Vengeful": {
+      "name": "Vengeful"
+    },
+    "Vengeful (Air)": {
+      "name": "Vengeful (Air)"
+    },
+    "Vengeful (Bolt)": {
+      "name": "Vengeful (Bolt)"
+    },
+    "Vengeful (Dark)": {
+      "name": "Vengeful (Dark)"
+    },
+    "Vengeful (Earth)": {
+      "name": "Vengeful (Earth)"
+    },
+    "Vengeful (Fire)": {
+      "name": "Vengeful (Fire)"
+    },
+    "Vengeful (Ice)": {
+      "name": "Vengeful (Ice)"
+    },
+    "Vengeful (Light)": {
+      "name": "Vengeful (Light)"
+    },
+    "Vengeful (Physical)": {
+      "name": "Vengeful (Physical)"
+    },
+    "Vengeful (Poison)": {
+      "name": "Vengeful (Poison)"
+    },
+    "Vitality Up": {
+      "name": "Vitality Up"
+    },
+    "Wanderer": {
+      "name": "Wanderer"
+    },
+    "Warding": {
+      "name": "Warding"
+    }
+  }
+}
