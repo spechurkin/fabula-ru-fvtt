@@ -1,5 +1,5 @@
 ## Translation: Russian [Fabula Ultima]
-Перевод системы НРИ [Fabula Ultima](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) от команды [Ultima Team](https://t.me/Ultima_Team_Localization)
+Перевод НРИ [Fabula Ultima](https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima) от команды [Ultima Team](https://t.me/Ultima_Team_Localization)
 
 [![Foundry]][Foundry URL] ![Version]
 ___
