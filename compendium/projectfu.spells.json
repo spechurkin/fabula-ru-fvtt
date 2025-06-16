@@ -1,13 +1,13 @@
 {
-  "label": "Spells",
+  "label": "Заклинания",
   "mapping": {
     "description": "system.description"
   },
   "folders": {
-    "Effects": "Effects",
-    "Elementalist": "Elementalist",
-    "Entropist": "Entropist",
-    "Spiritist": "Spiritist"
+    "Effects": "Эффекты",
+    "Elementalist": "Элементалист",
+    "Entropist": "Энтропист",
+    "Spiritist": "Спиритист"
   },
   "entries": {
     "Acceleration": {

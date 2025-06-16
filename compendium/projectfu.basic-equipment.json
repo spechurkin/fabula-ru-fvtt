@@ -1,136 +1,136 @@
 {
-  "label": "Basic Equipment",
+  "label": "Базовая Экипировка",
   "mapping": {
     "description": "system.description"
   },
   "folders": {
-    "Armor": "Armor",
-    "Shields": "Shields",
-    "Weapons": "Weapons"
+    "Armor": "Броня",
+    "Weapons": "Оружие",
+    "Shields": "Щиты"
   },
   "entries": {
     "Brigandine": {
-      "name": "Brigandine",
+      "name": "Бригантина",
       "description": ""
     },
     "Broadaxe": {
-      "name": "Broadaxe",
+      "name": "Секира",
       "description": ""
     },
     "Bronze Plate": {
-      "name": "Bronze Plate",
+      "name": "Бронзовые Латы",
       "description": ""
     },
     "Bronze Shield": {
-      "name": "Bronze Shield",
+      "name": "Бронзовый Щит",
       "description": ""
     },
     "Bronze Sword": {
-      "name": "Bronze Sword",
+      "name": "Бронзовый Меч",
       "description": ""
     },
     "Chain Whip": {
-      "name": "Chain Whip",
+      "name": "Цепной Кнут",
       "description": ""
     },
     "Combat Tunic": {
-      "name": "Combat Tunic",
+      "name": "Боевая Туника",
       "description": ""
     },
     "Crossbow": {
-      "name": "Crossbow",
+      "name": "Арбалет",
       "description": ""
     },
     "Greatsword": {
-      "name": "Greatsword",
+      "name": "Двуручный Меч",
       "description": ""
     },
     "Heavy Spear": {
-      "name": "Heavy Spear",
+      "name": "Тяжёлое Копье",
       "description": ""
     },
     "Improvised (Melee)": {
-      "name": "Improvised (Melee)",
-      "description": "<p>Breaks after the attack.</p>"
+      "name": "Импровизированное (Ближнего Боя)",
+      "description": "<p>Ломается после атаки.</p>"
     },
     "Improvised (Ranged)": {
-      "name": "Improvised (Ranged)",
-      "description": "<p>Breaks after the attack.</p>"
+      "name": "Импровизированное (Дальнего Боя)",
+      "description": "<p>Ломается после атаки.</p>"
     },
     "Iron Hammer": {
-      "name": "Iron Hammer",
+      "name": "Железный Молот",
       "description": ""
     },
     "Iron Knuckle": {
-      "name": "Iron Knuckle",
+      "name": "Железный Кастет",
       "description": ""
     },
     "Katana": {
-      "name": "Katana",
+      "name": "Катана",
       "description": ""
     },
     "Light Spear": {
-      "name": "Light Spear",
+      "name": "Лёгкое Копье",
       "description": ""
     },
     "Pistol": {
-      "name": "Pistol",
+      "name": "Пистолет",
       "description": ""
     },
     "Rapier": {
-      "name": "Rapier",
+      "name": "Рапира",
       "description": ""
     },
     "Runic Plate": {
-      "name": "Runic Plate",
+      "name": "Рунические Латы",
       "description": ""
     },
     "Runic Shield": {
-      "name": "Runic Shield",
+      "name": "Рунический Щит",
       "description": ""
     },
     "Sage Robe": {
-      "name": "Sage Robe",
+      "name": "Мантия Мудреца",
       "description": ""
     },
     "Shortbow": {
-      "name": "Shortbow",
+      "name": "Короткий Лук",
       "description": ""
     },
     "Shuriken": {
-      "name": "Shuriken",
+      "name": "Сюрикен",
       "description": ""
     },
     "Silk Shirt": {
-      "name": "Silk Shirt",
+      "name": "Шёлковая Рубаха",
       "description": ""
     },
     "Staff": {
-      "name": "Staff",
+      "name": "Посох",
       "description": ""
     },
     "Steel Dagger": {
-      "name": "Steel Dagger",
+      "name": "Стальной Кинжал",
       "description": ""
     },
     "Steel Plate": {
-      "name": "Steel Plate",
+      "name": "Стальные Латы",
       "description": ""
     },
     "Tome": {
-      "name": "Tome",
+      "name": "Фолиант",
       "description": ""
     },
     "Travel Garb": {
-      "name": "Travel Garb",
+      "name": "Походная Одежда",
       "description": ""
     },
     "Unarmed Strike": {
-      "name": "Unarmed Strike",
-      "description": "<p>Automatically equipped in each empty hand slot.</p>"
+      "name": "Безоружный Удар",
+      "description": "<p>Автоматически экипируется в пустой слот для рук.</p>"
     },
     "Waraxe": {
-      "name": "Waraxe",
+      "name": "Боевой Топор",
       "description": ""
     }
   }
