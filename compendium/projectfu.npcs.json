@@ -1,11 +1,363 @@
 {
   "label": "НИПы",
+  "mapping": {
+    "effects": "effects"
+  },
+  "folders": {},
   "entries": {
     "Decoy Bait": {
-      "name": "Приманка"
+      "name": "Приманка",
+      "tokenName": "Приманка",
+      "items": {
+        "Unarmed Strike": {
+          "name": "Безоружный Удар"
+        }
+      },
+      "effects": [
+        {
+          "img": "icons/magic/perception/eye-ringed-green.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": 13,
+            "startTurn": 1
+          },
+          "disabled": false,
+          "name": "Эффект: Приманка",
+          "_id": "bCHuTwOI0jSpbmjO",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.resources.hp.bonus",
+              "mode": 2,
+              "value": "(@refActor.level.value/2)+(@refSkill.level.value*5)",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы создаёте <strong>приманку</strong> с Очками Здоровья, равными <strong>【Половина вашего уровня + (УН Соколиного Глаза, умноженного на 5)】</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "lastModifiedBy": null
+          }
+        },
+        {
+          "name": "Кризис",
+          "img": "systems/projectfu/styles/static/statuses/Crisis.webp",
+          "statuses": [
+            "crisis"
+          ],
+          "flags": {
+            "projectfu": {
+              "Temporary": true,
+              "Source": {
+                "name": "Приманка",
+                "actorUuid": "Compendium.projectfu.npcs.Actor.3Nt3Kj1uUlYg7P1E",
+                "itemUuid": null
+              }
+            }
+          },
+          "_id": "3YFqp6E4lBjkeimZ",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {}
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": 13,
+            "startTurn": 1
+          },
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": false,
+          "sort": 0,
+          "_stats": {
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "lastModifiedBy": null
+          }
+        },
+        {
+          "name": "Повержен",
+          "img": "systems/projectfu/styles/static/statuses/KO.webp",
+          "statuses": [
+            "ko"
+          ],
+          "flags": {
+            "projectfu": {
+              "Temporary": true,
+              "Source": {
+                "name": "Приманка",
+                "actorUuid": "Compendium.projectfu.npcs.Actor.3Nt3Kj1uUlYg7P1E",
+                "itemUuid": null
+              }
+            }
+          },
+          "_id": "Ep32xgkxmgWUvwAQ",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {}
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": 13,
+            "startTurn": 1
+          },
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": false,
+          "sort": 0,
+          "_stats": {
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "lastModifiedBy": null
+          }
+        }
+      ]
     },
     "Faithful Companion": {
-      "name": "Верный спутник"
+      "name": "Верный Спутник",
+      "tokenName": "Верный Спутник",
+      "items": {
+        "Unarmed Strike": {
+          "name": "Безоружный Удар"
+        }
+      },
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/wayfarer/wayfarer_faithful_companion.png",
+          "duration": {
+            "rounds": null,
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": 4,
+            "startTurn": 0
+          },
+          "disabled": false,
+          "name": "Эффект: Верный Спутник",
+          "_id": "1PE4407la2PKSESD",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyCheck",
+              "mode": 2,
+              "value": "@refSkill.level.value",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.accuracy.magicCheck",
+              "mode": 2,
+              "value": "@refSkill.level.value",
+              "priority": null
+            }
+          ],
+          "description": "<p>Компаньон получает бонус, равный <strong>【УН】</strong> к Проверкам Точности и Магии</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "13.346",
+            "systemId": "projectfu",
+            "systemVersion": "#{VERSION}#",
+            "createdTime": 1744074593378,
+            "modifiedTime": 1744074729084,
+            "lastModifiedBy": "uG2TkwmswfdRqaAv",
+            "exportSource": null
+          }
+        },
+        {
+          "name": "Повержен",
+          "img": "systems/projectfu/styles/static/statuses/KO.webp",
+          "statuses": [
+            "ko"
+          ],
+          "flags": {
+            "projectfu": {
+              "Temporary": true,
+              "Source": {
+                "name": "Верный Спутник",
+                "actorUuid": "Compendium.projectfu.npcs.Actor.7J6fSVwbaWwi3Ojv",
+                "itemUuid": null
+              }
+            }
+          },
+          "_id": "8vS32pwR9yfxKdCq",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {}
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": 0,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": 4,
+            "startTurn": 0
+          },
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": false,
+          "sort": 0,
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "13.346",
+            "systemId": "projectfu",
+            "systemVersion": "#{VERSION}#",
+            "createdTime": 1744074803387,
+            "modifiedTime": 1744074803387,
+            "lastModifiedBy": "uG2TkwmswfdRqaAv",
+            "exportSource": null
+          }
+        },
+        {
+          "name": "Кризис",
+          "img": "systems/projectfu/styles/static/statuses/Crisis.webp",
+          "statuses": [
+            "crisis"
+          ],
+          "flags": {
+            "projectfu": {
+              "Temporary": true,
+              "Source": {
+                "name": "Верный Спутник",
+                "actorUuid": "Compendium.projectfu.npcs.Actor.7J6fSVwbaWwi3Ojv",
+                "itemUuid": null
+              }
+            }
+          },
+          "_id": "TBHcOblcvcDUlCSt",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {}
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": 0,
+            "combat": null
+          },
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": false,
+          "sort": 0,
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "createdTime": 1756939742116,
+            "modifiedTime": 1756939742116,
+            "lastModifiedBy": "APsElO0v2bvSX2NM"
+          }
+        }
+      ]
     }
   }
 }
