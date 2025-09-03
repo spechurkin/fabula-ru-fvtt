@@ -1,10 +1,10 @@
 {
-  "label": "Game Master",
+  "label": "Мастеру",
   "mapping": {
     "description": "system.description"
   },
   "folders": {
-    "NPC Spells": "NPC Spells"
+    "NPC Spells": "Заклинания НИП"
   },
   "entries": {
     "Area Status": {

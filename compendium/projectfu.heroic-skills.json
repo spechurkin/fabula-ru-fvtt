@@ -1,17 +1,17 @@
 {
-  "label": "Heroic Skills",
+  "label": "Героические Навыки",
   "mapping": {
     "summary": "system.summary.value",
     "description": "system.description"
   },
   "folders": {
-    "Effects": "Effects",
-    "Heroic Skills [BC]": "Heroic Skills [BC]",
-    "Heroic Skills [CR]": "Heroic Skills [CR]",
-    "Heroic Skills [HF]": "Heroic Skills [HF]",
-    "Heroic Skills [HS2024]": "Heroic Skills [HS2024]",
-    "Heroic Skills [NF]": "Heroic Skills [NF]",
-    "Heroic Skills [TF]": "Heroic Skills [TF]"
+    "Effects": "Эффекты",
+    "Heroic Skills [BC]": "Героические Навыки [BC]",
+    "Heroic Skills [CR]": "Героические Навыки [ОК]",
+    "Heroic Skills [HF]": "Героические Навыки [ВФ]",
+    "Heroic Skills [HS2024]": "Героические Навыки [Х2024]",
+    "Heroic Skills [NF]": "Героические Навыки [ПФ]",
+    "Heroic Skills [TF]": "Героические Навыки [ТФ]"
   },
   "entries": {
     "Adversity": {

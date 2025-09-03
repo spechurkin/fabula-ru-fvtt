@@ -1,242 +1,242 @@
 {
-  "label": "Actor Effects",
+  "label": "Эффекты",
   "folders": {
-    "Absorption": "Absorption",
-    "Accuracy Bonuses": "Accuracy Bonuses",
-    "Affinities": "Affinities",
-    "Attributes": "Attributes",
-    "Damage Bonuses": "Damage Bonuses",
-    "Immunity": "Immunity",
-    "Improve Defenses": "Improve Defenses",
-    "NPC Bonuses": "NPC Bonuses",
-    "Resistance": "Resistance",
-    "Special": "Special",
-    "Status Effect Immunities": "Status Effect Immunities",
-    "Vulnerability": "Vulnerability",
-    "Weakness": "Weakness"
+    "Absorption": "Поглощение",
+    "Accuracy Bonuses": "Бонусы Точности",
+    "Affinities": "Подверженность",
+    "Attributes": "Характеристики",
+    "Damage Bonuses": "Бонусы Урона",
+    "Immunity": "Иммунитет",
+    "Improve Defenses": "Улучшение Защиты",
+    "NPC Bonuses": "Бонусы НИП",
+    "Resistance": "Сопротивление",
+    "Special": "Особые",
+    "Status Effect Immunities": "Статусные Иммунитеты",
+    "Vulnerability": "Уязвимость",
+    "Weakness": "Слабости"
   },
   "entries": {
     "Accuracy Check Up": {
-      "name": "Accuracy Check Up"
+      "name": "Проверка Точности пов."
     },
     "Air Absorption": {
-      "name": "Air Absorption"
+      "name": "Поглощение (Воздух)"
     },
     "Air Immunity": {
-      "name": "Air Immunity"
+      "name": "Иммунитет (Воздух)"
     },
     "Air Resistance": {
-      "name": "Air Resistance"
+      "name": "Сопротивление (Воздух)"
     },
     "Air Vulnerability": {
-      "name": "Air Vulnerability"
+      "name": "Уязвимость (Воздух)"
     },
     "Air Weakness": {
-      "name": "Air Weakness"
+      "name": "Слабость (Воздух)"
     },
     "All Check Up": {
-      "name": "All Check Up"
+      "name": "Все Проверки пов."
     },
     "All Damage Up": {
-      "name": "All Damage Up"
+      "name": "Весь урон пов."
     },
     "Bolt Absorption": {
-      "name": "Bolt Absorption"
+      "name": "Поглощение (Молния)"
     },
     "Bolt Immunity": {
-      "name": "Bolt Immunity"
+      "name": "Иммунитет (Молния)"
     },
     "Bolt Resistance": {
-      "name": "Bolt Resistance"
+      "name": "Сопротивление (Молния)"
     },
     "Bolt Vulnerability": {
-      "name": "Bolt Vulnerability"
+      "name": "Уязвимость (Молния)"
     },
     "Bolt Weakness": {
-      "name": "Bolt Weakness"
+      "name": "Слабость (Молния)"
     },
     "Custom NPC": {
-      "name": "Custom NPC"
+      "name": "Пользовательский НИП"
     },
     "DEF Up": {
-      "name": "DEF Up"
+      "name": "Защита пов."
     },
     "DEF/MDEF Up": {
-      "name": "DEF/MDEF Up"
+      "name": "Защита/М.Защита пов."
     },
     "DEX Base Cap": {
-      "name": "DEX Base Cap"
+      "name": "ЛВК базовый уровень"
     },
     "DEX Up": {
-      "name": "DEX Up"
+      "name": "ЛВК пов."
     },
     "Dark Absorption": {
-      "name": "Dark Absorption"
+      "name": "Поглощение (Тьма)"
     },
     "Dark Immunity": {
-      "name": "Dark Immunity"
+      "name": "Иммунитет (Тьма)"
     },
     "Dark Resistance": {
-      "name": "Dark Resistance"
+      "name": "Сопротивление (Тьма)"
     },
     "Dark Vulnerability": {
-      "name": "Dark Vulnerability"
+      "name": "Уязвимость (Тьма)"
     },
     "Dark Weakness": {
-      "name": "Dark Weakness"
+      "name": "Слабость (Тьма)"
     },
     "Dazed Immunity": {
-      "name": "Dazed Immunity"
+      "name": "Иммунитет (Оглушение)"
     },
     "Earth Absorption": {
-      "name": "Earth Absorption"
+      "name": "Поглощение (Земля)"
     },
     "Earth Immunity": {
-      "name": "Earth Immunity"
+      "name": "Иммунитет (Земля)"
     },
     "Earth Resistance": {
-      "name": "Earth Resistance"
+      "name": "Сопротивление (Земля)"
     },
     "Earth Vulnerability": {
-      "name": "Earth Vulnerability"
+      "name": "Уязвимость (Земля)"
     },
     "Earth Weakness": {
-      "name": "Earth Weakness"
+      "name": "Слабость (Земля)"
     },
     "Enraged Immunity": {
-      "name": "Enraged Immunity"
+      "name": "Иммунитет (Ярость)"
     },
     "Fire Absorption": {
-      "name": "Fire Absorption"
+      "name": "Поглощение (Огонь)"
     },
     "Fire Immunity": {
-      "name": "Fire Immunity"
+      "name": "Иммунитет (Огонь)"
     },
     "Fire Resistance": {
-      "name": "Fire Resistance"
+      "name": "Сопротивление (Огонь)"
     },
     "Fire Vulnerability": {
-      "name": "Fire Vulnerability"
+      "name": "Уязвимость (Огонь)"
     },
     "Fire Weakness": {
-      "name": "Fire Weakness"
+      "name": "Слабость (Огонь)"
     },
     "INS Base Cap": {
-      "name": "INS Base Cap"
+      "name": "ПРН базовый уровень"
     },
     "INS Up": {
-      "name": "INS Up"
+      "name": "ПРН пов."
     },
     "Ice Absorption": {
-      "name": "Ice Absorption"
+      "name": "Поглощение (Лёд)"
     },
     "Ice Immunity": {
-      "name": "Ice Immunity"
+      "name": "Иммунитет (Лёд)"
     },
     "Ice Resistance": {
-      "name": "Ice Resistance"
+      "name": "Сопротивление (Лёд)"
     },
     "Ice Vulnerability": {
-      "name": "Ice Vulnerability"
+      "name": "Уязвимость (Лёд)"
     },
     "Ice Weakness": {
-      "name": "Ice Weakness"
+      "name": "Слабость (Лёд)"
     },
     "Light Absorption": {
-      "name": "Light Absorption"
+      "name": "Поглощение (Свет)"
     },
     "Light Immunity": {
-      "name": "Light Immunity"
+      "name": "Иммунитет (Свет)"
     },
     "Light Resistance": {
-      "name": "Light Resistance"
+      "name": "Сопротивление (Свет)"
     },
     "Light Vulnerability": {
-      "name": "Light Vulnerability"
+      "name": "Уязвимость (Свет)"
     },
     "Light Weakness": {
-      "name": "Light Weakness"
+      "name": "Слабость (Свет)"
     },
     "Lone Wolf": {
-      "name": "Lone Wolf"
+      "name": "Одинокий Волк"
     },
     "MDEF Up": {
-      "name": "MDEF Up"
+      "name": "М.Защита пов."
     },
     "MIG Base Cap": {
-      "name": "MIG Base Cap"
+      "name": "МГЩ базовый уровень"
     },
     "MIG Up": {
-      "name": "MIG Up"
+      "name": "МГЩ пов."
     },
     "Magic Check Up": {
-      "name": "Magic Check Up"
+      "name": "Проверка Магии пов."
     },
     "Melee Damage Up": {
-      "name": "Melee Damage Up"
+      "name": "Урон Ближний бой пов."
     },
     "Open Check Up": {
-      "name": "Open Check Up"
+      "name": "Открытая Проверка пов."
     },
     "Opposed Check Up": {
-      "name": "Opposed Check Up"
+      "name": "Проверка Противостояния пов."
     },
     "Physical Absorption": {
-      "name": "Physical Absorption"
+      "name": "Поглощение (Физический)"
     },
     "Physical Immunity": {
-      "name": "Physical Immunity"
+      "name": "Иммунитет (Физический)"
     },
     "Physical Resistance": {
-      "name": "Physical Resistance"
+      "name": "Сопротивление (Физический)"
     },
     "Physical Vulnerability": {
-      "name": "Physical Vulnerability"
+      "name": "Уязвимость (Физический)"
     },
     "Physical Weakness": {
-      "name": "Physical Weakness"
+      "name": "Слабость (Физический)"
     },
     "Poison Absorption": {
-      "name": "Poison Absorption"
+      "name": "Поглощение (Яд)"
     },
     "Poison Immunity": {
-      "name": "Poison Immunity"
+      "name": "Иммунитет (Яд)"
     },
     "Poison Resistance": {
-      "name": "Poison Resistance"
+      "name": "Сопротивление (Яд)"
     },
     "Poison Vulnerability": {
-      "name": "Poison Vulnerability"
+      "name": "Слабость (Яд)"
     },
     "Poison Weakness": {
-      "name": "Poison Weakness"
+      "name": "Слабость (Яд)"
     },
     "Poisoned Immunity": {
-      "name": "Poisoned Immunity"
+      "name": "Иммунитет (Отравление)"
     },
     "Range Damage Up": {
-      "name": "Range Damage Up"
+      "name": "Урон Дальний бой пов."
     },
     "Shaken Immunity": {
-      "name": "Shaken Immunity"
+      "name": "Иммунитет (Потрясение)"
     },
     "Slow Immunity": {
-      "name": "Slow Immunity"
+      "name": "Иммунитет (Замедление)"
     },
     "Spell Damage Up": {
-      "name": "Spell Damage Up"
+      "name": "Урон Заклинаний пов."
     },
     "WLP Base Cap": {
-      "name": "WLP Base Cap"
+      "name": "ВОЛ базовый уровень"
     },
     "WLP Up": {
-      "name": "WLP Up"
+      "name": "ВОЛ пов."
     },
     "Weak Immunity": {
-      "name": "Weak Immunity"
+      "name": "Иммунитет (Слабость)"
     },
     "Zero Shield": {
-      "name": "Zero Shield"
+      "name": "Нуль-щит"
     }
   }
 }

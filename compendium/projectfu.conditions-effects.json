@@ -1,24 +1,24 @@
 {
-  "label": "Conditions",
+  "label": "Состояния",
   "folders": {},
   "entries": {
     "Dazed": {
-      "name": "Dazed"
+      "name": "Оглушение"
     },
     "Enraged": {
-      "name": "Enraged"
+      "name": "Ярость"
     },
     "Poisoned": {
-      "name": "Poisoned"
+      "name": "Отравление"
     },
     "Shaken": {
-      "name": "Shaken"
+      "name": "Потрясение"
     },
     "Slow": {
-      "name": "Slow"
+      "name": "Замедление"
     },
     "Weak": {
-      "name": "Weak"
+      "name": "Слабость"
     }
   }
 }
