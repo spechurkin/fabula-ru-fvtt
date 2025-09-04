@@ -132,7 +132,7 @@
     },
     "Agony": {
       "name": "Агония",
-      "description0": "<p>После того как вы нанесёте урон одному или нескольким существам, если у вас есть <strong>Узы</strong> хотя бы с одним из этих существ, вы можете восстановить <strong>【УН × 2】</strong>Очков Здоровья и <strong>【УН × 2】</strong>Очков Разума.</p><hr><ul>    <li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[$sl*2 hp]{УН × 2 ОЗ}, и @GAIN[$sl*2 mp]{УН × 2 ОР}</p>    </li></ul>"
+      "description0": "<p>После того как вы нанесёте урон одному или нескольким существам, если у вас есть <strong>Узы</strong> хотя бы с одним из этих существ, вы можете восстановить <strong>【УН × 2】</strong>Очков Здоровья и <strong>【УН × 2】</strong>Очков Разума.</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[$sl*2 hp]{УН × 2 ОЗ}, и @GAIN[$sl*2 mp]{УН × 2 ОР}</p></li></ul>"
     },
     "Akromorphosis": {
       "name": "Akromorphosis",
@@ -157,8 +157,8 @@
     "Arcanum of the Forge": {
       "name": "Аркана Кузницы",
       "domains": "огонь, жар, метал",
-      "merge": "<ul>    <li>        <p>Вы имеете Сопротивление к урону от <strong>огня</strong>.</p>    </li>    <li>        <p>Любой наносимый вами урон от <strong>огня</strong> игнорирует Сопротивление.</p>    </li></ul>",
-      "dismiss": "<p>Когда вы <strong>отзовёте</strong> эту Аркану, выберите <strong>Кузницу</strong> или <strong>Инферно</strong>: </p><ul>    <li>        <p><strong>Кузница.</strong> Вы создаёте <strong>базовую броню</strong>, <strong>щит</strong> или <strong>оружие</strong> по вашему выбору (см. <strong>Основная Книга</strong>, стр. <strong>130-133</strong>). Если вы снова выберете эту опцию, ранее созданный предмет исчезнет. Если вы создадите оружие таким образом, оно наносит урон <strong>огнём</strong>, а не <strong>физический</strong>.</p>    </li>    <li>        <p><strong>Инферно.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 урона от <strong>огня</strong> @DMG[30 fire]. Этот урон игнорирует Сопротивление.</p>    </li></ul><p></p>",
+      "merge": "<ul><li>        <p>Вы имеете Сопротивление к урону от <strong>огня</strong>.</p></li><li>        <p>Любой наносимый вами урон от <strong>огня</strong> игнорирует Сопротивление.</p></li></ul>",
+      "dismiss": "<p>Когда вы <strong>отзовёте</strong> эту Аркану, выберите <strong>Кузницу</strong> или <strong>Инферно</strong>: </p><ul><li>        <p><strong>Кузница.</strong> Вы создаёте <strong>базовую броню</strong>, <strong>щит</strong> или <strong>оружие</strong> по вашему выбору (см. <strong>Основная Книга</strong>, стр. <strong>130-133</strong>). Если вы снова выберете эту опцию, ранее созданный предмет исчезнет. Если вы создадите оружие таким образом, оно наносит урон <strong>огнём</strong>, а не <strong>физический</strong>.</p></li><li>        <p><strong>Инферно.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 урона от <strong>огня</strong> @DMG[30 fire]. Этот урон игнорирует Сопротивление.</p></li></ul><p></p>",
       "effects": [
         {
           "origin": "Compendium.projectfu.skills.Item.BhLHFeKBx3zZRZD5",
@@ -197,7 +197,7 @@
               "priority": null
             }
           ],
-          "description": "<ul>    <li>        <p>Вы имеете Сопротивление к урону от <strong>огня</strong>.</p>    </li>    <li>        <p>Любой наносимый вами урон от <strong>огня</strong> игнорирует Сопротивление.</p>    </li></ul>",
+          "description": "<ul><li>        <p>Вы имеете Сопротивление к урону от <strong>огня</strong>.</p></li><li>        <p>Любой наносимый вами урон от <strong>огня</strong> игнорирует Сопротивление.</p></li></ul>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -213,8 +213,8 @@
     "Arcanum of the Frost": {
       "name": "Аркана Мороза",
       "domains": "холод, лёд, молчание",
-      "merge": "<ul>    <li>        <p>Вы имеете Сопротивление к урону <strong>льдом</strong> и иммунитет к <strong>ярости</strong>.</p>    </li>    <li>        <p>Любой наносимый вами урон <strong>льдом</strong> игнорирует Сопротивление.</p>    </li></ul>",
-      "dismiss": "<ul>    <li>        <p><strong>Ледниковый период.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 урона <strong>льдом</strong> @DMG[30 ice]. Этот урон игнорирует Сопротивление.</p>    </li></ul>",
+      "merge": "<ul><li>        <p>Вы имеете Сопротивление к урону <strong>льдом</strong> и иммунитет к <strong>ярости</strong>.</p></li><li>        <p>Любой наносимый вами урон <strong>льдом</strong> игнорирует Сопротивление.</p></li></ul>",
+      "dismiss": "<ul><li>        <p><strong>Ледниковый период.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 урона <strong>льдом</strong> @DMG[30 ice]. Этот урон игнорирует Сопротивление.</p></li></ul>",
       "effects": [
         {
           "origin": "Compendium.projectfu.skills.Item.TKOESZqheitutkKB",
@@ -259,7 +259,7 @@
               "priority": null
             }
           ],
-          "description": "<ul>    <li>        <p>Вы имеете Сопротивление к урону <strong>льдом</strong> и иммунитет к <strong>ярости</strong>.</p>    </li>    <li>        <p>Любой наносимый вами урон <strong>льдом</strong> игнорирует Сопротивление.</p>    </li></ul>",
+          "description": "<ul><li>        <p>Вы имеете Сопротивление к урону <strong>льдом</strong> и иммунитет к <strong>ярости</strong>.</p></li><li>        <p>Любой наносимый вами урон <strong>льдом</strong> игнорирует Сопротивление.</p></li></ul>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -275,8 +275,8 @@
     "Arcanum of the Gate": {
       "name": "Аркана Врат",
       "domains": "космос, путешествия, пустота",
-      "merge": "<ul>    <li>        <p>Вы имеете Сопротивление к урону от <strong>тьмы</strong>.</p>    </li>    <li>        <p>Вы получаете бонус +1 к Магической Защите.</p>        <p></p>    </li></ul>",
-      "dismiss": "<p>Когда вы <strong>отзываете</strong> эту Аркану, выберите <strong>Забвение</strong> или <strong>Прыжок</strong>:</p><ul>    <li>        <p><strong>Забвение.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 <strong>тёмного</strong> урона @DMG[30 dark]. Этот урон игнорирует Сопротивление.</p>    </li>    <li>        <p><strong>Прыжок.</strong> Вы телепортируете себя и до пяти других находящихся поблизости согласных существ в место, которое вы ранее посещали, если это место находится в пределах <strong>1 дня пути</strong>.</p>    </li></ul>",
+      "merge": "<ul><li>        <p>Вы имеете Сопротивление к урону от <strong>тьмы</strong>.</p></li><li>        <p>Вы получаете бонус +1 к Магической Защите.</p>        <p></p></li></ul>",
+      "dismiss": "<p>Когда вы <strong>отзываете</strong> эту Аркану, выберите <strong>Забвение</strong> или <strong>Прыжок</strong>:</p><ul><li>        <p><strong>Забвение.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 <strong>тёмного</strong> урона @DMG[30 dark]. Этот урон игнорирует Сопротивление.</p></li><li>        <p><strong>Прыжок.</strong> Вы телепортируете себя и до пяти других находящихся поблизости согласных существ в место, которое вы ранее посещали, если это место находится в пределах <strong>1 дня пути</strong>.</p></li></ul>",
       "effects": [
         {
           "origin": "Compendium.projectfu.skills.Item.UVmSApdqYNDILSFo",
@@ -321,7 +321,7 @@
               "priority": null
             }
           ],
-          "description": "<ul>    <li>        <p>Вы имеете Сопротивление к урону от <strong>тьмы</strong>.</p>    </li>    <li>        <p>Вы получаете бонус +1 к Магической Защите.</p>        <p></p>    </li></ul>",
+          "description": "<ul><li>        <p>Вы имеете Сопротивление к урону от <strong>тьмы</strong>.</p></li><li>        <p>Вы получаете бонус +1 к Магической Защите.</p>        <p></p></li></ul>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -337,8 +337,8 @@
     "Arcanum of the Grimoire": {
       "name": "Аркана Гримуара",
       "domains": "знания, откровения, понимание",
-      "merge": "<ul>    <li>        <p>Вы умеете читать, писать, говорить и понимать все языки.</p>    </li>    <li>        <p>Ваша <strong>проницательность</strong> считается на один размер Кости больше (максимум до <strong>d12</strong>).</p>    </li></ul>",
-      "dismiss": "<ul>    <li>        <p><strong>Оракул.</strong> Вы задаёте Мастеру один вопрос. Мастер должен правдиво ответить, описав видение, показанное вам Гримуаром.</p>    </li>    <li>        <p>После использования этот эффект <strong>отзыва</strong> будет недоступен до следующего рассвета. Более того, один и тот же вопрос нельзя задавать более одного раза. За Мастером остаётся последнее слово в отношении того, какие вопросы слишком похожи, чтобы их можно было задавать повторно.</p>    </li></ul>",
+      "merge": "<ul><li>        <p>Вы умеете читать, писать, говорить и понимать все языки.</p></li><li>        <p>Ваша <strong>проницательность</strong> считается на один размер Кости больше (максимум до <strong>d12</strong>).</p></li></ul>",
+      "dismiss": "<ul><li>        <p><strong>Оракул.</strong> Вы задаёте Мастеру один вопрос. Мастер должен правдиво ответить, описав видение, показанное вам Гримуаром.</p></li><li>        <p>После использования этот эффект <strong>отзыва</strong> будет недоступен до следующего рассвета. Более того, один и тот же вопрос нельзя задавать более одного раза. За Мастером остаётся последнее слово в отношении того, какие вопросы слишком похожи, чтобы их можно было задавать повторно.</p></li></ul>",
       "effects": [
         {
           "origin": "Compendium.projectfu.skills.Item.QbjAsEWA7R2HfFNg",
@@ -377,7 +377,7 @@
               "priority": null
             }
           ],
-          "description": "<ul>    <li>        <p>Вы умеете читать, писать, говорить и понимать все языки.</p>    </li>    <li>        <p>Ваша <strong>проницательность</strong> считается на один размер Кости больше (максимум до <strong>d12</strong>).</p>    </li></ul>",
+          "description": "<ul><li>        <p>Вы умеете читать, писать, говорить и понимать все языки.</p></li><li>        <p>Ваша <strong>проницательность</strong> считается на один размер Кости больше (максимум до <strong>d12</strong>).</p></li></ul>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -393,8 +393,8 @@
     "Arcanum of the Oak": {
       "name": "Аркана Дуба",
       "domains": "земля, растения, яд",
-      "merge": "<ul>    <li>        <p>Вы имеете Сопротивление к урону от <strong>земли</strong> и <strong>яда</strong>, а также иммунитет к <strong>отравлению</strong>.</p>    </li>    <li>        <p>Всякий раз, когда вы восстанавливаете Очки Здоровья, вы восстанавливаете 5 дополнительных Очков Здоровья.</p>    </li></ul><p></p>",
-      "dismiss": "<ul>    <li>        <p><strong>Цветение.</strong> Выберите любое количество существ, которых вы можете увидеть (вы также можете выбрать себя): каждое из них очищается от состояния <strong>отравление</strong> и восстанавливает 40 Очков Здоровья. Это количество увеличивается до 50 Очков Здоровья, если вы <strong>20-го уровня или выше</strong>, или до 60 Очков Здоровья, если вы <strong>40-го уровня или выше</strong>.</p>    </li></ul><hr><p>@GAIN[&step(40,50,60) hp]{Цветение}</p>",
+      "merge": "<ul><li>        <p>Вы имеете Сопротивление к урону от <strong>земли</strong> и <strong>яда</strong>, а также иммунитет к <strong>отравлению</strong>.</p></li><li>        <p>Всякий раз, когда вы восстанавливаете Очки Здоровья, вы восстанавливаете 5 дополнительных Очков Здоровья.</p></li></ul><p></p>",
+      "dismiss": "<ul><li>        <p><strong>Цветение.</strong> Выберите любое количество существ, которых вы можете увидеть (вы также можете выбрать себя): каждое из них очищается от состояния <strong>отравление</strong> и восстанавливает 40 Очков Здоровья. Это количество увеличивается до 50 Очков Здоровья, если вы <strong>20-го уровня или выше</strong>, или до 60 Очков Здоровья, если вы <strong>40-го уровня или выше</strong>.</p></li></ul><hr><p>@GAIN[&step(40,50,60) hp]{Цветение}</p>",
       "effects": [
         {
           "origin": "Compendium.projectfu.skills.Item.Y3OzDHLCogR32RlH",
@@ -451,7 +451,7 @@
               "priority": null
             }
           ],
-          "description": "<ul>    <li>        <p>Вы имеете Сопротивление к урону от <strong>земли</strong> и <strong>яда</strong>, а также иммунитет к <strong>отравлению</strong>.</p>    </li>    <li>        <p>Всякий раз, когда вы восстанавливаете Очки Здоровья, вы восстанавливаете 5 дополнительных Очков Здоровья.</p>    </li></ul><p></p>",
+          "description": "<ul><li>        <p>Вы имеете Сопротивление к урону от <strong>земли</strong> и <strong>яда</strong>, а также иммунитет к <strong>отравлению</strong>.</p></li><li>        <p>Всякий раз, когда вы восстанавливаете Очки Здоровья, вы восстанавливаете 5 дополнительных Очков Здоровья.</p></li></ul><p></p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -467,8 +467,8 @@
     "Arcanum of the Sky": {
       "name": "Аркана Небес",
       "domains": "туман, дождь, шторм",
-      "merge": "<ul>    <li>        <p>Вы имеете Сопротивление к урону <strong>ветром</strong> и <strong>молнией</strong>.</p>    </li>    <li>        <p>Вы можете выполнить действие, чтобы точно предсказать погодные условия на следующий день в пределах <strong>двух дней путешествия</strong> — Мастер сообщит вам, какими будут погодные условия.</p>    </li></ul>",
-      "dismiss": "<ul>    <li>        <p><strong>Буря.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 урона <strong>молнией </strong>@DMG[30 bolt]. Этот урон игнорирует Сопротивление.</p>    </li></ul>",
+      "merge": "<ul><li>        <p>Вы имеете Сопротивление к урону <strong>ветром</strong> и <strong>молнией</strong>.</p></li><li>        <p>Вы можете выполнить действие, чтобы точно предсказать погодные условия на следующий день в пределах <strong>двух дней путешествия</strong> — Мастер сообщит вам, какими будут погодные условия.</p></li></ul>",
+      "dismiss": "<ul><li>        <p><strong>Буря.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 урона <strong>молнией </strong>@DMG[30 bolt]. Этот урон игнорирует Сопротивление.</p></li></ul>",
       "effects": [
         {
           "origin": "Compendium.projectfu.skills.Item.zabsA5F47r9B5h4f",
@@ -513,7 +513,7 @@
               "priority": null
             }
           ],
-          "description": "<ul>    <li>        <p>Вы имеете Сопротивление к урону <strong>ветром</strong> и <strong>молнией</strong>.</p>    </li>    <li>        <p>Вы можете выполнить действие, чтобы точно предсказать погодные условия на следующий день в пределах <strong>двух дней путешествия</strong> — Мастер сообщит вам, какими будут погодные условия.</p>    </li></ul>",
+          "description": "<ul><li>        <p>Вы имеете Сопротивление к урону <strong>ветром</strong> и <strong>молнией</strong>.</p></li><li>        <p>Вы можете выполнить действие, чтобы точно предсказать погодные условия на следующий день в пределах <strong>двух дней путешествия</strong> — Мастер сообщит вам, какими будут погодные условия.</p></li></ul>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -529,7 +529,7 @@
     "Arcanum of the Sword": {
       "name": "Аркана Меча",
       "domains": "завоевание, героизм, лидерство",
-      "merge": "<ul>    <li>        <p>Ваши атаки наносят 5 дополнительного урона, и весь урон, наносимый вашими атаками, считается не имеющим типа (на него не влияет Подверженность Урону). Урон, наносимый вашими атаками, не может быть изменён, пока вы едины с этой Арканой.</p>    </li>    <li>        <p>Когда вы выполняете атаку, вы можете заставить эту атаку получить свойство <strong>мульти (любое количество целей)</strong>. Если вы это сделаете, эта Аркана будет автоматически отозвана после разрешения атаки (это <strong>не</strong> считается добровольным отзывом).</p>    </li></ul>",
+      "merge": "<ul><li>        <p>Ваши атаки наносят 5 дополнительного урона, и весь урон, наносимый вашими атаками, считается не имеющим типа (на него не влияет Подверженность Урону). Урон, наносимый вашими атаками, не может быть изменён, пока вы едины с этой Арканой.</p></li><li>        <p>Когда вы выполняете атаку, вы можете заставить эту атаку получить свойство <strong>мульти (любое количество целей)</strong>. Если вы это сделаете, эта Аркана будет автоматически отозвана после разрешения атаки (это <strong>не</strong> считается добровольным отзывом).</p></li></ul>",
       "dismiss": "",
       "effects": [
         {
@@ -587,7 +587,7 @@
               "priority": null
             }
           ],
-          "description": "<ul>    <li>        <p>Ваши атаки наносят 5 дополнительного урона, и весь урон, наносимый вашими атаками, считается не имеющим типа (на него не влияет Подверженность Урону). Урон, наносимый вашими атаками, не может быть изменён, пока вы едины с этой Арканой.</p>    </li>    <li>        <p>Когда вы выполняете атаку, вы можете заставить эту атаку получить свойство <strong>мульти (любое количество целей)</strong>. Если вы это сделаете, эта Аркана будет автоматически отозвана после разрешения атаки (это <strong>не</strong> считается добровольным отзывом).</p>    </li></ul>",
+          "description": "<ul><li>        <p>Ваши атаки наносят 5 дополнительного урона, и весь урон, наносимый вашими атаками, считается не имеющим типа (на него не влияет Подверженность Урону). Урон, наносимый вашими атаками, не может быть изменён, пока вы едины с этой Арканой.</p></li><li>        <p>Когда вы выполняете атаку, вы можете заставить эту атаку получить свойство <strong>мульти (любое количество целей)</strong>. Если вы это сделаете, эта Аркана будет автоматически отозвана после разрешения атаки (это <strong>не</strong> считается добровольным отзывом).</p></li></ul>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -603,8 +603,8 @@
     "Arcanum of the Tower": {
       "name": "Аркана Башни",
       "domains": "правосудие, защита, самопожертвование",
-      "merge": "<ul>    <li>        <p>Когда вы призываете Аркану, выберите тип урона: <strong>воздух</strong>, <strong>молния</strong>, <strong>тьма</strong>, <strong>земля</strong>, <strong>огонь</strong> или <strong>лёд</strong>. Пока эта Аркана не отозвана, каждый из ваших союзников, присутствующих в сцене, обладает Сопротивлением к выбранному типу урона (вы <strong>не получаете</strong> это Сопротивление).</p>    </li></ul><hr><ul>    <li>        <p><strong>Союзники получают:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance], or @TYPE[affinity ice resistance]</p>    </li></ul>",
-      "dismiss": "<ul>    <li>        <p><strong>Правосудие.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 урона <strong>светом</strong> @DMG[30 light]. Этот урон игнорирует Сопротивление.</p>    </li></ul>",
+      "merge": "<ul><li>        <p>Когда вы призываете Аркану, выберите тип урона: <strong>воздух</strong>, <strong>молния</strong>, <strong>тьма</strong>, <strong>земля</strong>, <strong>огонь</strong> или <strong>лёд</strong>. Пока эта Аркана не отозвана, каждый из ваших союзников, присутствующих в сцене, обладает Сопротивлением к выбранному типу урона (вы <strong>не получаете</strong> это Сопротивление).</p></li></ul><hr><ul><li>        <p><strong>Союзники получают:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance], or @TYPE[affinity ice resistance]</p></li></ul>",
+      "dismiss": "<ul><li>        <p><strong>Правосудие.</strong> Выберите любое количество существ, которых вы можете увидеть: каждое из них получает 30 урона <strong>светом</strong> @DMG[30 light]. Этот урон игнорирует Сопротивление.</p></li></ul>",
       "effects": [
         {
           "origin": "Compendium.projectfu.skills.Item.stLDj4YpAoyQFFid",
@@ -636,7 +636,7 @@
             "rules": {}
           },
           "changes": [],
-          "description": "<ul>    <li>        <p>Когда вы призываете Аркану, выберите тип урона: <strong>воздух</strong>, <strong>молния</strong>, <strong>тьма</strong>, <strong>земля</strong>, <strong>огонь</strong> или <strong>лёд</strong>. Пока эта Аркана не отозвана, каждый из ваших союзников, присутствующих в сцене, обладает Сопротивлением к выбранному типу урона (вы <strong>не получаете</strong> это Сопротивление).</p>    </li></ul><hr><ul>    <li>        <p><strong>Союзники получают:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance], or @TYPE[affinity ice resistance]</p>    </li></ul>",
+          "description": "<ul><li>        <p>Когда вы призываете Аркану, выберите тип урона: <strong>воздух</strong>, <strong>молния</strong>, <strong>тьма</strong>, <strong>земля</strong>, <strong>огонь</strong> или <strong>лёд</strong>. Пока эта Аркана не отозвана, каждый из ваших союзников, присутствующих в сцене, обладает Сопротивлением к выбранному типу урона (вы <strong>не получаете</strong> это Сопротивление).</p></li></ul><hr><ul><li>        <p><strong>Союзники получают:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance], or @TYPE[affinity ice resistance]</p></li></ul>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -652,8 +652,8 @@
     "Arcanum of the Wheel": {
       "name": "Аркана Колеса",
       "domains": "судьба, скорость, время",
-      "merge": "<ul>    <li>        <p>Вы имунны к <strong>замедлению</strong>.</p>    </li>    <li>        <p>Вы получаете бонус +1 к своей Защите.</p>    </li></ul>",
-      "dismiss": "<ul>    <li>        <p><strong>Остановка времени.</strong> Выберите любое количество существ, которые вы можете видеть: каждое из них страдает от <strong>замедления</strong> @EFFECT[slow]. Если существо, выбранное таким образом, уже <strong>замедлено</strong>, вместо этого существо выполнит на одно действие меньше во время своего следующего хода (минимум 0 действий).</p>    </li></ul>",
+      "merge": "<ul><li>        <p>Вы имунны к <strong>замедлению</strong>.</p></li><li>        <p>Вы получаете бонус +1 к своей Защите.</p></li></ul>",
+      "dismiss": "<ul><li>        <p><strong>Остановка времени.</strong> Выберите любое количество существ, которые вы можете видеть: каждое из них страдает от <strong>замедления</strong> @EFFECT[slow]. Если существо, выбранное таким образом, уже <strong>замедлено</strong>, вместо этого существо выполнит на одно действие меньше во время своего следующего хода (минимум 0 действий).</p></li></ul>",
       "effects": [
         {
           "origin": "Compendium.projectfu.skills.Item.Dwq6JSEYmSlhpL3b",
@@ -698,7 +698,7 @@
               "priority": null
             }
           ],
-          "description": "<ul>    <li>        <p>Вы имунны к <strong>замедлению</strong>.</p>    </li>    <li>        <p>Вы получаете бонус +1 к своей Защите.</p>    </li></ul>",
+          "description": "<ul><li>        <p>Вы имунны к <strong>замедлению</strong>.</p></li><li>        <p>Вы получаете бонус +1 к своей Защите.</p></li></ul>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -727,8 +727,8 @@
       "description1": "<p>Choose another creature that is able to see you. If that creature is already <strong>slow</strong>, they immediately suffer <strong>shaken</strong>.</p><hr><ul><li><p><strong>You Spend:</strong> @LOSS[10 mp]</p></li><li><p><strong>Target Suffers: </strong>@EFFECT[shaken]</p></li></ul>"
     },
     "Barrage": {
-      "name": "Barrage",
-      "description0": "<p>When you perform a <strong>ranged</strong> attack, you may spend 10 Mind Points to choose one option: the attack gains <strong>multi (2)</strong>; <strong>or</strong> you increase the attack's <strong>multi</strong> property by one, up to a maximum of <strong>multi (3)</strong>.</p>"
+      "name": "Заградительный Огонь",
+      "description0": "<p>Когда вы выполняете атаку <strong>дальнего боя</strong> вы можете потратить 10 Очков Разума, чтобы выбрать один из вариантов: атака получает <strong>мульти (2)</strong>; <strong>или</strong> вы увеличиваете свойство <strong>мульти</strong> на одно, с максимумом в <strong>мульти (3)</strong>.</p>"
     },
     "Bat Dance": {
       "name": "Bat Dance",
@@ -759,27 +759,27 @@
       "description1": ""
     },
     "Bladestorm": {
-      "name": "Bladestorm",
-      "description0": "<p>When you perform a <strong>melee</strong> attack, you may spend 10 Mind Points to choose one option: the attack gains <strong>multi (2)</strong>; <strong>or</strong> you increase the attack's <strong>multi</strong> property by one, up to a maximum of <strong>multi (3)</strong>.</p>"
+      "name": "Буря Клинков",
+      "description0": "<p>Когда вы выполняете атаку в <strong>ближнем</strong> бою, вы можете потратить 10 Очков Разума, чтобы выбрать один из вариантов: атака получает <strong>мульти (2)</strong>; <strong>или</strong> вы увеличиваете свойство <strong>мульти</strong> на одно, с максимумом в <strong>мульти (3)</strong>.</p>"
     },
     "Blazing Chrysanthemum": {
       "name": "Blazing Chrysanthemum"
     },
     "Bodyguard": {
-      "name": "Bodyguard",
-      "description0": "<p>If you perform the <strong>Guard</strong> action and choose to provide cover to another creature, that creature gains Resistance to all damage types until the start of your next turn.</p><hr /><ul><li><p><strong>Target Receive:</strong> @EFFECT[cover] + @TYPE[affinity all resistance e:sot i:1 t:source]</p></li></ul>"
+      "name": "Телохранитель",
+      "description0": "<p>@UUID[Compendium.projectfu.skills.Item.ZvZT5jWlBZVm1Gmd]{Телохранитель}</p><p>Если вы выполняете действие <strong>Оборона</strong> и решаете заслонить другое существо, это существо получает Сопротивление ко всем типам урона до начала вашего следующего хода.</p><hr><ul><li>        <p><strong>Цель получает:</strong> @EFFECT[cover] + @TYPE[affinity all resistance e:sot i:1 t:source]</p></li></ul>"
     },
     "Bone Crusher": {
-      "name": "Bone Crusher",
-      "description0": "<p>When you hit one or more targets with a <strong>melee</strong> attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict <strong>dazed </strong>on each target hit by the attack; <strong>or</strong> inflict <strong>weak</strong> on each target hit by the attack; <strong>or</strong> each target hit by the attack loses <strong>【SL × 10】</strong> Mind Points. Describe your maneuver!</p><hr /><ul><li><p><strong>Target Suffers: </strong>@EFFECT[dazed], @EFFECT[weak], or @LOSS[$sl*10 mp]{SL × 10 MP}</p></li></ul>"
+      "name": "Костолом",
+      "description0": "<p>Когда вы поражаете одну или несколько целей атакой <strong>ближнего боя</strong>, которая наносит урон, вы можете не наносить никакого урона. Если вы это сделаете, выберите один из вариантов: сделайте <strong>оглушённой</strong> каждую цель, поражённую атакой; или сделайте <strong>слабой</strong> каждую цель, поражённую атакой; <strong>или</strong> каждая цель, поражённая атакой, теряет <strong>【УН × 10】</strong> Очков Разума. Опишите свой манёвр!</p><hr><ul><li><p><strong>Цель страдает от: </strong>@EFFECT[dazed], @EFFECT[weak], or @LOSS[$sl*10 mp]{УН × 10 ОР}</p></li></ul>"
     },
     "Brainwave Clock": {
       "name": "Brainwave Clock",
       "description0": "<ul><li><p>For <strong>gift</strong> breakdown and a list of Psychic Gifts, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc]{Psychic Gift Rules}</p></li></ul>"
     },
     "Breach": {
-      "name": "Breach",
-      "description0": "<p>You may use an action and spend 5 Mind Points to perform a <strong>free attack</strong> with a <strong>melee</strong> weapon you have equipped. This attack must target a <strong>single creature</strong>. If the attack is successful, it deals no damage and you choose one option: you destroy one shield equipped by the target; <strong>or</strong> you destroy the target's equipped armor; <strong>or</strong> whenever the target suffers damage from a source before the start of your next turn, that source deals <strong>【SL × 2】</strong> extra damage to them.</p><hr><ul><li><p><strong>Target Suffers</strong>: @EFFECT[Compendium.projectfu.skills.Cc1391vhlS1yIMrI]</p></li></ul>"
+      "name": "Брешь",
+      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума, чтобы выполнить <strong>свободную атаку</strong> экипированным оружием <strong>ближнего боя</strong>. Эта атака должна быть нацелена на <strong>одно существо</strong>. Если атака успешна, то она не наносит урона, а вы выбираете один из вариантов: вы уничтожаете один щит, экипированный целью; <strong>или</strong> вы уничтожаете экипированную броню цели; <strong>или</strong> всякий раз, когда цель получает урон от любого источника, она получает дополнительно <strong>【УН × 2】</strong> урона до начала вашего следующего.</p><hr><ul><li><p><strong>Цель страдает от:</strong> @EFFECT[Compendium.projectfu.skills.Cc1391vhlS1yIMrI]</p></li></ul>"
     },
     "Calm Tone": {
       "name": "Calm Tone",
@@ -822,7 +822,7 @@
     },
     "Condemn": {
       "name": "Обличение",
-      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума, чтобы выполнить Противостояния <strong>【ПРН + ВОЛ】</strong> против существа, которое может слышать и понимать вас — опишите свои обвинения! Если вы преуспеете, цель потеряет <strong>【УН × 10】</strong> Очков Разума и становится <strong>оглушена</strong> или <strong>потрясена</strong> (на ваш выбор).</p><p>Вы получаете бонус, равный <strong>【УН】</strong> к вашим Проверкам <strong>【ПРН + ВОЛ】</strong> для этого Навыка.</p><hr><ul>    <li>        <p><strong>Вы совершаете: </strong>@CHECK[ins wlp ($sl)]</p>    </li>    <li>        <p><strong>Цель теряет</strong>: @LOSS[$sl*10 mp]</p>    </li>    <li>        <p><strong>Цель страдает от:</strong> @EFFECT[dazed] или @EFFECT[shaken]</p>    </li></ul>"
+      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума, чтобы выполнить Противостояния <strong>【ПРН + ВОЛ】</strong> против существа, которое может слышать и понимать вас — опишите свои обвинения! Если вы преуспеете, цель потеряет <strong>【УН × 10】</strong> Очков Разума и становится <strong>оглушена</strong> или <strong>потрясена</strong> (на ваш выбор).</p><p>Вы получаете бонус, равный <strong>【УН】</strong> к вашим Проверкам <strong>【ПРН + ВОЛ】</strong> для этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[ins wlp ($sl)]</p></li><li>        <p><strong>Цель теряет</strong>: @LOSS[$sl*10 mp]</p></li><li>        <p><strong>Цель страдает от:</strong> @EFFECT[dazed] или @EFFECT[shaken]</p></li></ul>"
     },
     "Consume": {
       "name": "Поглощение",
@@ -836,12 +836,12 @@
       "description0": "<p><span>When you </span><strong>rest</strong><span> inside a settlement, you gain <strong>【SL】 ingredients</strong></span> (see <strong>Natural Fantasy Atlas</strong>, page <strong>150</strong>).</p><p>You may use an action and combine <strong>2 or 3 ingredients</strong> to prepare a <strong>delicacy</strong> (see page <strong>150</strong>) and choose one option: you apply its effects to yourself or an ally you can see; <strong>or</strong> you perform a <strong>free attack</strong> with a weapon you have equipped. This attack deals no damage, but you apply the delicacy's effects to each enemy hit by the attack.</p><p>You may carry <strong>up to 10 +【SL × 5】ingredients</strong>, and they <strong>will never spoil until you use them</strong>; if you take this Skill during character creation, you begin play with <strong>ten </strong>ingredients with random tastes.</p><hr /><ul><li><p>For <strong>cooking</strong> breakdown and a list of Ingredients &amp; Delicacies, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.vsXmQQBeh7FSTCc4]{Ingredients &amp; Delicacies Rules}</p></li><li><p>To <strong>automate</strong>, VTT Instructions can be found here: @UUID[Compendium.projectfu.handouts.JournalEntry.vsXmQQBeh7FSTCc4.JournalEntryPage.fDzgptyBKkS5y2YY]{Cookbook VTT Instructions}</p></li></ul>"
     },
     "Counterattack": {
-      "name": "Counterattack",
-      "description0": "<p>After an enemy <strong>hits or misses you with a melee attack</strong>, if the Result of their Accuracy Check was an <strong>even number</strong>, you may perform a <strong>free attack</strong> against that enemy (after their attack has been fully resolved). This attack must be a <strong>melee</strong> attack and must have that enemy as its <strong>only</strong> target; treat your <strong>High Roll (HR)</strong> as 0 when calculating damage dealt by this attack.</p>"
+      "name": "Контратака",
+      "description0": "<p>После того как враг <strong>поразил вас атакой ближнего боя или промахнулся по вам</strong>, если результатом Проверки Точности было <strong>чётное число</strong>, вы можете выполнить <strong>свободную атаку</strong> против этого врага (после того, как его атака будет полностью разрешена). Эта атака должна быть атакой <strong>ближнего боя</strong>, и её <strong>единственной</strong> целью должен быть этот враг; учитывайте свой <strong>Лучший Бросок (ЛБ)</strong> как 0 при расчёте урона, наносимого этой атакой.</p>"
     },
     "Crossfire": {
-      "name": "Crossfire",
-      "description0": "<p>After a creature you can see performs a <strong>ranged</strong> attack, you may spend an amount of Mind Points equal to the total Result of their Accuracy Check in order to have the attack fail automatically against all targets. You can only use this Skill if you have a <strong>ranged</strong> weapon equipped, and it has no effect if the Accuracy Check was a <strong>critical success</strong>.</p>"
+      "name": "Перекрёстный Огонь",
+      "description0": "<p>После того как существо, которое вы видите, выполнит атаку <strong>дальнего боя</strong>, вы можете потратить количество Очков Разума, равное общему результату его Проверки Точности, чтобы атака автоматически завершилась неудачей по всем целям. Вы можете использовать этот Навык только в том случае, если у вас экипировано оружие <strong>дальнего боя</strong>, и он не имеет никакого эффекта, если Проверка Точности <strong>критически успешна</strong>.</p>"
     },
     "Crushing Chariot": {
       "name": "Crushing Chariot",
@@ -912,8 +912,58 @@
       ]
     },
     "Defensive Mastery": {
-      "name": "Defensive Mastery",
-      "description0": "<p>As long as you have a <strong>shield</strong> or <strong>martial armor</strong> equipped, all damage you suffer is reduced by <strong>【SL】</strong> (applied <strong>before</strong> damage Affinities).</p>"
+      "name": "Мастерство Обороны",
+      "description0": "<p>Пока у вас есть <strong>щит</strong> или <strong>воинская броня</strong>, весь наносимый по вам урон уменьшается на <strong>【УН】</strong> (применяется <strong>перед</strong> Подверженностью Урону).</p>",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/guardian/guardian_defensive_mastery.png",
+          "origin": "Compendium.projectfu.skills.Item.7wF1oulk0Zn7ITTF",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Мастерство Обороны",
+          "_id": "w7qI5rqewX56TrEC",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.all",
+              "mode": 2,
+              "value": "-@system.level.value",
+              "priority": null
+            }
+          ],
+          "description": "<p>Пока у вас есть <strong>щит</strong> или <strong>воинская броня</strong>, весь наносимый по вам урон уменьшается на <strong>【УН】</strong> (применяется <strong>перед</strong> Подверженностью Урону).</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR196"
+            }
+          }
+        }
+      ]
     },
     "Desert Dahlia": {
       "name": "Desert Dahlia"
@@ -978,8 +1028,8 @@
       "class": "Картёжник"
     },
     "Dual Shieldbearer": {
-      "name": "Dual Shieldbearer",
-      "description0": "<p>You may now equip a <strong>shield</strong> in your <strong>main hand</strong> slot. As long as you have two shields equipped, you gain the benefits of both items and may treat them as the following combined two-handed melee <strong>brawling</strong> weapon:</p><table style=\"width:98.7597%\" border=\"1\"><colgroup><col style=\"width:14.4654%\"></col><col style=\"width:20.7547%\"></col><col style=\"width:23.2618%\"></col><col style=\"width:41.5181%\"></col></colgroup><tbody><tr><td><strong>WEAPON</strong></td><td><strong>ACCURACY</strong></td><td><strong>DAMAGE</strong></td><td><strong>QUALITY</strong></td></tr><tr><td><strong>Twin Shields</strong></td><td><strong>【MIG + MIG】</strong></td><td><strong>【HR + 5】</strong> <strong>physical</strong></td><td>Deals extra damage equal to your <strong>【SL】</strong> in <strong>defensive mastery</strong>.</td></tr></tbody></table><hr /><ul><li><p>To <strong>automate</strong>, add the following @UUID[Compendium.projectfu.skills.Item.2LyT2btVVPDPYY4h]{Twin Shields} to your character sheet. Navigate to the '<strong>Items</strong>\" tab where <strong>Twin Shields</strong> is located and press <strong>Ctrl+Click</strong> the icon in <strong>Equip?</strong> column. The item will be added to the <strong>Phantom Slot</strong>. Make sure this skill is added to your character sheet. Now you can equip shields on both your main and off hand slot.</p></li></ul>"
+      "name": "Бой Двумя Щитами",
+      "description0": "<p>@UUID[Compendium.projectfu.skills.Item.aPQXTQegswRisA1R]{Бой Двумя Щитами}</p><p>Теперь вы можете экипировать <strong>щит</strong> в <strong>основной ячейке руки</strong>. Пока у вас есть два щита, вы получаете преимущества обоих предметов и можете использовать их как следующее комбинированное <strong>рукопашное</strong> двуручное оружие ближнего боя:</p><table border=\"1\" style=\"width:98.7597%;height:53px\"><colgroup>        <col style=\"width:14.4654%\">        <col style=\"width:20.7547%\">        <col style=\"width:23.2618%\">        <col style=\"width:41.5181%\"></colgroup><tbody>        <tr style=\"height:17px\"> <td style=\"height:17px\"><strong>ОРУЖИЕ</strong></td> <td style=\"height:17px\"><strong>ТОЧНОСТЬ</strong></td> <td style=\"height:17px\"><strong>УРОН</strong></td> <td style=\"height:17px\"><strong>КАЧЕСТВО</strong></td>        </tr>        <tr style=\"height:36px\"> <td style=\"height:36px\"><strong>Два Щита</strong></td> <td style=\"height:36px\"><strong>【МГЩ + МГЩ】</strong></td> <td style=\"height:36px\"><strong>【ЛБ + 5】физ.</strong></td> <td style=\"height:36px\">Наносит дополнительный урон, равный <strong>【УН】</strong> Навыка <strong>мастерство обороны</strong>.</td>        </tr></tbody></table><hr><ul><li>        <p>Для <strong>автоматизации</strong> добавьте следующе @UUID[Compendium.projectfu.skills.Item.2LyT2btVVPDPYY4h]{Два Щита} в свой лист персонажа. Пройдите во вкладку \"<strong>Предметы</strong>\", где находится <strong>Два Щита</strong> и нажмите <strong>Ctrl+ЛКМ</strong> на иконку <strong>\"Экипировать?</strong>\". Предмет будет добавлен в <strong>Фантомную Руку</strong>. Убедитесь, что этот навык добавлен в лист персонажа. Теперь вы можете экипировать щиты как в основной, так и в свободной руке.</p></li></ul>"
     },
     "Dynamotheria": {
       "name": "Dynamotheria",
@@ -1005,7 +1055,62 @@
       "name": "Effect: Bishop's Edict (Extra Damage)"
     },
     "Effect: Breach": {
-      "name": "Effect: Breach"
+      "name": "Эффект: Брешь",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/weaponmaster/weaponmaster_breach.png",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Брешь",
+          "_id": "zoOqCdNwgemMCpvA",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 1,
+              "tracking": "source",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.all",
+              "mode": 2,
+              "value": "~&sl(\"breach\")*2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Всякий раз, когда вы получаете урон от любого источника, вы получаете дополнительно 【УН × 2】 урона до начала вашего следующего.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        }
+      ]
     },
     "Effect: Cognitive Focus": {
       "name": "Effect: Cognitive Focus"
@@ -1026,7 +1131,62 @@
       "name": "Effect: Gravitokinesis (Physical)"
     },
     "Effect: Hawkeye (Range Weapon Up)": {
-      "name": "Effect: Hawkeye (Range Weapon Up)"
+      "name": "Эффект: Соколиный Глаз",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/sharpshooter/sharpshooter_hawkeye.png",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Соколиный Глаз",
+          "_id": "6aO2CAugt4Ec5wfC",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfScene",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.ranged",
+              "mode": 2,
+              "value": "&sl(\"hawkeye\")*2",
+              "priority": null
+            }
+          ],
+          "description": "<p>При выполнении действия <strong>Оборона</strong>, если вы решите <strong>не</strong> заслонять другое существо, вы можете выбрать один из вариантов: следующая атака <strong>дальнего боя</strong>, которую вы проведёте до конца текущей сцены, нанесёт дополнительный урон <strong>【УН × 2】</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        }
+      ]
     },
     "Effect: Heart in the Engine (Defensive)": {
       "name": "Effect: Heart in the Engine (Defensive)"
@@ -1320,8 +1480,8 @@
       "description0": "<p><span>When a <strong>potion</strong> or <strong>delicacy</strong> </span>(see <strong>Natural Fantasy Atlas</strong>, page <strong>150</strong>)<span> you created that <strong>does not</strong> deal damage causes one or more creatures to recover Hit Points, you may instead have it deal <strong>poison</strong> damage equal to <strong>【half your level + (SL × 10)】 </strong>to each of those creatures. This damage type cannot change, and it is <strong>halved</strong> if you are dealing damage to <strong>two or more creatures</strong>.</span></p><hr /><ul><li><p><strong>Target Loses:</strong> @DMG[ ($cl/2)+($sl*10) poison]{Level/2 + (SL × 10) poison (single)}, or @DMG[ (($cl/2)+($sl*10)/2) poison]{Level/2 + (SL × 10) /2 poison (multi)}</p></li></ul>"
     },
     "Faithful Companion": {
-      "name": "Faithful Companion",
-      "description0": "<p>Together with your group, create a <strong>level 5 beast, construct, elemental </strong>or<strong> plant</strong> NPC (see <strong>Core Rulebook</strong>, page <strong>302</strong>), that becomes your <strong>companion</strong>: this creature has <strong>no initiative score</strong> and <strong>does not level up</strong>, can have a <strong>maximum of two basic attacks</strong>, gains a bonus equal to <strong>【SL】</strong> to Accuracy Checks and Magic Checks, and their maximum Hit Points are equal to <strong>【(SL, multiplied by the companion's base Might size) + half your level】</strong>.</p><p>Your companion doesn't get an independent turn during conflicts, but you can use an action to have them perform an action (once per turn). If your companion is affected by any <strong>turn-related effects</strong> (see <strong>Core Rulebook</strong>, page <strong>77</strong>), these are based on <strong>your</strong> turn.</p><p>Your companion joins and leaves scenes when you do, and gains your same benefits for <strong>rests</strong>. If reduced to 0 HP, your companion flees the scene and rejoins you at the start of the next scene in which you are present, with current HP equal to their <strong>Crisis</strong> score.</p><hr /><ul><li><p>To <strong>automate</strong>, import the following actor into the world: @UUID[Compendium.projectfu.npcs.Actor.7J6fSVwbaWwi3Ojv]{Faithful Companion}</p></li><li><p>Then, navigate to the '<strong>Settings</strong>' tab. For '<strong>Player</strong>,' select the actor who owns this companion, and for '<strong>Skill</strong>,' select the '<strong>Faithful Companion</strong>' skill.</p></li></ul>"
+      "name": "Верный Спутник",
+      "description0": "<p>Вместе с остальными членами вашей группы создайте НИП <strong>зверя, конструкта, элементаля</strong> или <strong>растение 5-го уровня</strong>(см. <strong>Основная Книга</strong>, стр.<strong>302</strong>), которое станет вашим <strong>спутником</strong>: Это существо <strong>не имеет своего показателя инициативы</strong> и <strong>не повышает уровень</strong>, может использовать <strong>до двух базовых атак</strong>, получает бонус, равный <strong>【УК】</strong> к Проверкам Точности и Магии, а его максимальные Очки Здоровья равны <strong>【(УН, умноженное на базовый размер Кости Могущества спутника) + половина вашего уровня】</strong>.</p><p>Ваш компаньон не получает независимого хода во время конфликтов, но в свой ход вы можете выполнить действие, чтобы дать компаньону выполнить собственное действие (только один раз за ход). Если компаньон получает любой <strong>зависимый от хода эффект</strong> (см. <strong>Основная Книга</strong>, стр. <strong>77</strong>), он проявляется в <strong>ваш</strong> ход.</p><p>Ваш спутник входит в сцену и покидает её вместе с вами, как и получает эффекты <strong>отдыха</strong>. Если у вашего спутника остаётся 0 Очков Здоровья, он убегает и присоединяется к вам в начале следующей сцены, в которой вы присутствуете, с ОЗ, равным <strong>Кризисному</strong>.</p><hr><ul><li>        <p>Для <strong>автоматизации</strong> импортируйте следующего актёра в мир: @UUID[Compendium.projectfu.npcs.Actor.7J6fSVwbaWwi3Ojv]{Верный Спутник}</p></li><li>        <p>Затем пройдите во вкладку \"<strong>Настройки</strong>\". Для \"<strong>Игрока</strong>\" выберите владельца компаньона, а для \"<strong>Навыка</strong>\" — Навык \"<strong>Верный Спутник</strong>\".</p></li></ul>"
     },
     "Fear Is The Key": {
       "name": "Fear Is The Key",
@@ -1384,7 +1544,7 @@
     },
     "Focused": {
       "name": "Концентрация",
-      "description0": "<p>Навсегда увеличьте ваши максимальные Очки Разума на <strong>【УН × 3】</strong>.</p><p>Когда вы выполняете Открытую Проверку, используя <strong>【ПРН + ПРН】</strong>, вы получаете бонус, равный <strong>【УН】</strong> к этой Проверке (это относится <strong>только</strong> к Открытым Проверкам).</p><hr><ul>    <li><p><strong>Вы совершаете: </strong>@CHECK[ins ins ($sl)]</p>    </li></ul>",
+      "description0": "<p>Навсегда увеличьте ваши максимальные Очки Разума на <strong>【УН × 3】</strong>.</p><p>Когда вы выполняете Открытую Проверку, используя <strong>【ПРН + ПРН】</strong>, вы получаете бонус, равный <strong>【УН】</strong> к этой Проверке (это относится <strong>только</strong> к Открытым Проверкам).</p><hr><ul><li><p><strong>Вы совершаете: </strong>@CHECK[ins ins ($sl)]</p></li></ul>",
       "effects": [
         {
           "duration": {
@@ -1445,8 +1605,56 @@
       "description0": "<p>When you <strong>deal damage to a creature with a spell</strong>, if that spell <strong>only deals damage to that creature</strong>, you may spend 1 Grave Point. If you do, choose one option: if that creature is suffering from one or more status effects, the spell deals extra damage equal to <strong>【(SL × 2) + the number of status effects on that creature】</strong>; or if that creature is suffering from no status effects, they suffer <strong>shaken</strong>.</p><hr /><ul><li><p><strong>Resource:</strong> @PROGRESS[beyond-the-realms-of-death update -1]{Spend 1 Grave Point}</p></li><li><p><strong>Target Suffers:</strong> @EFFECT[Compendium.projectfu.skills.Item.Jc1KEmU0iN7Ul8dZ]{Effect: For Whom The Bell Tolls}, or @EFFECT[shaken]</p></li></ul>"
     },
     "Fortress": {
-      "name": "Fortress",
-      "description0": "<p>Permanently increase your maximum Hit Points by <strong>【SL × 3】</strong>.</p>"
+      "name": "Крепость",
+      "description0": "<p>Навсегда увеличьте ваши максимальные Очки Здоровья на <strong>【УН × 3】</strong>.</p>",
+      "effects": [
+        {
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Крепость",
+          "_id": "6qHoygYUxyY8biDV",
+          "changes": [
+            {
+              "key": "system.resources.hp.bonus",
+              "mode": 2,
+              "value": "3*@system.level.value",
+              "priority": null
+            }
+          ],
+          "description": "<p>Навсегда увеличьте ваши максимальные Очки Здоровья на <strong>【УН × 3】</strong>.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {}
+          },
+          "tint": "#ffffff",
+          "img": "systems/projectfu/styles/static/compendium/classes/guardian/guardian_fortress.png",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Frantic Tone": {
       "name": "Frantic Tone",
@@ -1530,16 +1738,16 @@
     },
     "Gadget - Alchemy": {
       "name": "Гаджет - Алхимия",
-      "description1": "<h3>АЛХИМИЯ</h3><p><span class=\"fontstyle0\"><strong>Также:</strong> Химикаты, Бомбы, Мутации</span></p><hr><p><span class=\"fontstyle0\">Вы можете выполнить действие </span><span class=\"fontstyle2\"><strong>Инвентаря</strong></span>, чтобы быстро приготовить <span class=\"fontstyle2\"><strong>зелье</strong></span> с мощными, но несколько непредсказуемыми эффектами. Когда вы это делаете, выберите один тип <span class=\"fontstyle2\"><strong>смеси</strong></span> из тех, которые вы разблокировали (<span class=\"fontstyle2\"><strong>базовая</strong></span>, <span class=\"fontstyle2\"><strong>продвинутая</strong></span> или <span class=\"fontstyle2\"><strong>превосходная</strong></span>) и потратьте соответствующее количество Очков Инвентаря.</p><hr><table border=\"1\" style=\"width:100%\">    <colgroup>        <col style=\"width:14.8891%\">        <col style=\"width:14.71909%\">        <col style=\"width:70.3918%\">    </colgroup>    <tbody>        <tr>            <td><strong>СМЕСЬ</strong></td>            <td><strong>ЦЕНА ОИ</strong></td>            <td><strong>ОПИСАНИЕ</strong></td>        </tr>        <tr>            <td><strong>Базовая</strong></td>            <td>3</td>            <td>Бросьте два <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</td>        </tr>        <tr>            <td><strong>Продвинутая</strong></td>            <td>4</td>            <td>Бросьте три <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</td>        </tr>        <tr>            <td><strong>Превосходная</strong></td>            <td>5</td>            <td>Бросьте четыре <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</td>        </tr>    </tbody></table><p></p><p>Когда вы создаёте смесь, бросьте количество двадцатигранных Костей, указанное в этой смеси, затем примените один результат к таблице <strong>цели</strong> (ниже) и один — таблице <strong>эффекта</strong> (справа). Выбросьте все оставшиеся Кости, затем опишите эффекты смеси!</p><blockquote>    <p><strong>Пример:</strong> Вы тратите 5 Очков Инвентаря на создание <strong>превосходной смеси</strong> и бросаете четыре двадцатигранных Кости. Вы бросаете <strong>3</strong>, <strong>14</strong>, <strong>9</strong> и <strong>4</strong>. Вы можете назначить <strong>14</strong> для <strong>цели</strong> и <strong>9</strong> для <strong>эффекта</strong>, чтобы обеспечить себе и всем союзникам Сопротивление к <strong>воздуху</strong> и <strong>огню</strong>; или вы можете перейти в наступление и назначить <strong>9</strong> для цели и <strong>4</strong> для <strong>эффекта</strong>, чтобы нанести урон от <strong>молнии</strong> одному врагу; или даже назначить <strong>9</strong> для цели и <strong>14</strong> для <strong>эффекта</strong>, чтобы наложить четыре состояния на этого врага!</p>    <p>Каким бы ни был ваш выбор, две кости, которые вы не назначили, будут выброшены.</p></blockquote><p><span class=\"fontstyle0\">Два эффекта, помеченные \"<strong>Любая</strong>\" в таблице <strong>эффектов</strong>, всегда доступны и могут быть выбраны, если ни один из доступных эффектов вам не подходит.</span></p><p></p><p><span class=\"fontstyle0\"><strong>ЦЕЛЬ</strong></span></p><table border=\"1\" style=\"width:96.0876%\">    <colgroup>        <col style=\"width:14.2534%\">        <col style=\"width:85.7502%\">    </colgroup>    <tbody>        <tr>            <td style=\"text-align:center\"><strong>Кость</strong></td>            <td><span class=\"fontstyle0\"><strong>Зелье действует на…</strong></span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>1-6</strong></td>            <td><span class=\"fontstyle0\">... вас </span><span class=\"fontstyle2\"><strong>или</strong></span><span class=\"fontstyle0\"> одного союзника, которого вы видите, присутствующего в сцене.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>7-11</strong></td>            <td><span class=\"fontstyle0\">... врага, которого вы видите, присутствующего в сцене.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>12-16</strong></td>            <td><span class=\"fontstyle0\">... вас </span><span class=\"fontstyle2\"><strong>и</strong></span><span class=\"fontstyle0\"> каждого союзника, присутствующего в сцене.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>17-20</strong></td>            <td><span class=\"fontstyle0\">... каждого врага, присутствующего в сцене.</span></td>        </tr>    </tbody></table><p></p><p><strong>ЭФФЕКТ</strong></p><table border=\"1\" style=\"width:100%\">    <colgroup>        <col style=\"width:9.24765%\">        <col style=\"width:90.7524%\">    </colgroup>    <tbody>        <tr>            <td style=\"text-align:center\"><strong>Кость</strong></td>            <td><span class=\"fontstyle0\"><strong>Каждое существо, на которое подействовало зелье...</strong></span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>Любая</strong></td>            <td><span class=\"fontstyle0\">... получает @DMG[20 poison]</span><span class=\"fontstyle2\"> </span><span class=\"fontstyle0\">урона ядом.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>Любая</strong></td>            <td><span class=\"fontstyle0\">... восстанавливает @GAIN[30 hp] Очков Здоровья.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>1</strong></td>            <td><span class=\"fontstyle0\">... считайте свои Кости <strong>Ловкости</strong> (@EFFECT[dex-up]) и <strong>Могущества</strong> (@EFFECT[mig-up]) на один размер больше (максимум до <strong>d12</strong>) до конца вашего следующего хода.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>2</strong></td>            <td>... Как эффект <strong>1</strong>, но с <strong>Проницательностью</strong> (@EFFECT[ins-up]) и <strong>Волей</strong> (@EFFECT[wlp-up]).</td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>3</strong></td>            <td><span class=\"fontstyle0\">... получает 20 урона от <strong>воздуха</strong> @DMG[20 air]. Это количество увеличивается до 30 урона @DMG[30 air], если вы <strong>20-го уровня или выше</strong>, или до 40 урона @DMG[40 air], если вы <strong>40-го уровня или выше</strong>.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>4</strong></td>            <td>Как эффект <strong>3</strong>, но с уроном от <strong>молний</strong>. @DMG[20 bolt], @DMG[30 bolt], @DMG[40 bolt]</td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>5</strong></td>            <td>Как эффект <strong>3</strong>, но с уроном от <strong>тьмы</strong>. @DMG[20 dark], @DMG[30 dark], @DMG[40 dark]</td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>6</strong></td>            <td>Как эффект <strong>3</strong>, но с уроном от <strong>земли</strong>. @DMG[20 earth], @DMG[30 earth], @DMG[40 earth]</td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>7</strong></td>            <td>Как эффект <strong>3</strong>, но с уроном от <strong>огня</strong>. @DMG[20 fire], @DMG[30 fire], @DMG[40 fire]</td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>8</strong></td>            <td>Как эффект <strong>3</strong>, но с уроном от <strong>льда</strong>. @DMG[20 ice], @DMG[30 ice], @DMG[40 ice]</td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>9</strong></td>            <td><span class=\"fontstyle0\">... получает Сопротивление к урону от <strong>воздуха</strong> (@TYPE[affinity air resistance]) и <strong>огня</strong> (@TYPE[affinity fire resistance]) до конца сцены.</span></td>            <td></td>            <td></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>10</strong></td>            <td>Как эффект <strong>9</strong>, но для <strong>молний</strong> (@TYPE[affinity bolt resistance]) и <strong>льда</strong> (@TYPE[affinity ice resistance]).</td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>11</strong></td>            <td><span class=\"fontstyle0\">Как эффект <strong>9</strong>, но для <strong>тьмы</strong> (@TYPE[affinity dark resistance]) и земли (@TYPE[affinity earth resistance]).</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>12</strong></td>            <td><span class=\"fontstyle0\">... страдает от @EFFECT[enraged].</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>13</strong></td>            <td><span class=\"fontstyle0\">... страдает от @EFFECT[poisoned].</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>14</strong></td>            <td><span class=\"fontstyle0\">... страдает от @EFFECT[dazed], @EFFECT[shaken], @EFFECT[slow] и @EFFECT[weak].</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>15</strong></td>            <td><span class=\"fontstyle0\">... очищается от всех состояний.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>16-17</strong></td>            <td><span class=\"fontstyle0\">... восстанавливает @GAIN[50 hp] Очков Здоровья и @GAIN[50 mp] Очков Разума.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>18</strong></td>            <td><span class=\"fontstyle0\">... восстанавливает @GAIN[100 hp] Очков Здоровья</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>19</strong></td>            <td><span class=\"fontstyle0\">... восстанавливает @GAIN[100 mp] Очков Разума.</span></td>        </tr>        <tr>            <td style=\"text-align:center\"><strong>20</strong></td>            <td><span class=\"fontstyle0\">... восстанавливает @GAIN[100 hp] Очков Здоровья и @GAIN[100 mp] Очков Разума.</span></td>        </tr>    </tbody></table><p></p>",
-      "basic": "<p>За 3 Очка Инвентаря бросьте два <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</p><hr><ul>    <li>        <p><strong>Вы теряете: </strong>@LOSS[3 ip]</p>    </li></ul>",
-      "advanced": "<p>За 4 Очка Инвентаря бросьте три <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</p><hr><ul>    <li>        <p><strong>Вы теряете: </strong>@LOSS[4 ip]</p>    </li></ul>",
-      "superior": "<p>За 5 Очков Инвентаря бросьте четыре <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</p><hr><ul>    <li>        <p><strong>Вы теряете: </strong>@LOSS[5 ip]</p>    </li></ul>",
+      "description1": "<h3>АЛХИМИЯ</h3><p><span class=\"fontstyle0\"><strong>Также:</strong> Химикаты, Бомбы, Мутации</span></p><hr><p><span class=\"fontstyle0\">Вы можете выполнить действие </span><span class=\"fontstyle2\"><strong>Инвентаря</strong></span>, чтобы быстро приготовить <span class=\"fontstyle2\"><strong>зелье</strong></span> с мощными, но несколько непредсказуемыми эффектами. Когда вы это делаете, выберите один тип <span class=\"fontstyle2\"><strong>смеси</strong></span> из тех, которые вы разблокировали (<span class=\"fontstyle2\"><strong>базовая</strong></span>, <span class=\"fontstyle2\"><strong>продвинутая</strong></span> или <span class=\"fontstyle2\"><strong>превосходная</strong></span>) и потратьте соответствующее количество Очков Инвентаря.</p><hr><table border=\"1\" style=\"width:100%\"><colgroup>        <col style=\"width:14.8891%\">        <col style=\"width:14.71909%\">        <col style=\"width:70.3918%\"></colgroup><tbody>        <tr> <td><strong>СМЕСЬ</strong></td> <td><strong>ЦЕНА ОИ</strong></td> <td><strong>ОПИСАНИЕ</strong></td>        </tr>        <tr> <td><strong>Базовая</strong></td> <td>3</td> <td>Бросьте два <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</td>        </tr>        <tr> <td><strong>Продвинутая</strong></td> <td>4</td> <td>Бросьте три <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</td>        </tr>        <tr> <td><strong>Превосходная</strong></td> <td>5</td> <td>Бросьте четыре <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</td>        </tr></tbody></table><p></p><p>Когда вы создаёте смесь, бросьте количество двадцатигранных Костей, указанное в этой смеси, затем примените один результат к таблице <strong>цели</strong> (ниже) и один — таблице <strong>эффекта</strong> (справа). Выбросьте все оставшиеся Кости, затем опишите эффекты смеси!</p><blockquote><p><strong>Пример:</strong> Вы тратите 5 Очков Инвентаря на создание <strong>превосходной смеси</strong> и бросаете четыре двадцатигранных Кости. Вы бросаете <strong>3</strong>, <strong>14</strong>, <strong>9</strong> и <strong>4</strong>. Вы можете назначить <strong>14</strong> для <strong>цели</strong> и <strong>9</strong> для <strong>эффекта</strong>, чтобы обеспечить себе и всем союзникам Сопротивление к <strong>воздуху</strong> и <strong>огню</strong>; или вы можете перейти в наступление и назначить <strong>9</strong> для цели и <strong>4</strong> для <strong>эффекта</strong>, чтобы нанести урон от <strong>молнии</strong> одному врагу; или даже назначить <strong>9</strong> для цели и <strong>14</strong> для <strong>эффекта</strong>, чтобы наложить четыре состояния на этого врага!</p><p>Каким бы ни был ваш выбор, две кости, которые вы не назначили, будут выброшены.</p></blockquote><p><span class=\"fontstyle0\">Два эффекта, помеченные \"<strong>Любая</strong>\" в таблице <strong>эффектов</strong>, всегда доступны и могут быть выбраны, если ни один из доступных эффектов вам не подходит.</span></p><p></p><p><span class=\"fontstyle0\"><strong>ЦЕЛЬ</strong></span></p><table border=\"1\" style=\"width:96.0876%\"><colgroup>        <col style=\"width:14.2534%\">        <col style=\"width:85.7502%\"></colgroup><tbody>        <tr> <td style=\"text-align:center\"><strong>Кость</strong></td> <td><span class=\"fontstyle0\"><strong>Зелье действует на…</strong></span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>1-6</strong></td> <td><span class=\"fontstyle0\">... вас </span><span class=\"fontstyle2\"><strong>или</strong></span><span class=\"fontstyle0\"> одного союзника, которого вы видите, присутствующего в сцене.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>7-11</strong></td> <td><span class=\"fontstyle0\">... врага, которого вы видите, присутствующего в сцене.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>12-16</strong></td> <td><span class=\"fontstyle0\">... вас </span><span class=\"fontstyle2\"><strong>и</strong></span><span class=\"fontstyle0\"> каждого союзника, присутствующего в сцене.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>17-20</strong></td> <td><span class=\"fontstyle0\">... каждого врага, присутствующего в сцене.</span></td>        </tr></tbody></table><p></p><p><strong>ЭФФЕКТ</strong></p><table border=\"1\" style=\"width:100%\"><colgroup>        <col style=\"width:9.24765%\">        <col style=\"width:90.7524%\"></colgroup><tbody>        <tr> <td style=\"text-align:center\"><strong>Кость</strong></td> <td><span class=\"fontstyle0\"><strong>Каждое существо, на которое подействовало зелье...</strong></span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>Любая</strong></td> <td><span class=\"fontstyle0\">... получает @DMG[20 poison]</span><span class=\"fontstyle2\"> </span><span class=\"fontstyle0\">урона ядом.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>Любая</strong></td> <td><span class=\"fontstyle0\">... восстанавливает @GAIN[30 hp] Очков Здоровья.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>1</strong></td> <td><span class=\"fontstyle0\">... считайте свои Кости <strong>Ловкости</strong> (@EFFECT[dex-up]) и <strong>Могущества</strong> (@EFFECT[mig-up]) на один размер больше (максимум до <strong>d12</strong>) до конца вашего следующего хода.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>2</strong></td> <td>... Как эффект <strong>1</strong>, но с <strong>Проницательностью</strong> (@EFFECT[ins-up]) и <strong>Волей</strong> (@EFFECT[wlp-up]).</td>        </tr>        <tr> <td style=\"text-align:center\"><strong>3</strong></td> <td><span class=\"fontstyle0\">... получает 20 урона от <strong>воздуха</strong> @DMG[20 air]. Это количество увеличивается до 30 урона @DMG[30 air], если вы <strong>20-го уровня или выше</strong>, или до 40 урона @DMG[40 air], если вы <strong>40-го уровня или выше</strong>.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>4</strong></td> <td>Как эффект <strong>3</strong>, но с уроном от <strong>молний</strong>. @DMG[20 bolt], @DMG[30 bolt], @DMG[40 bolt]</td>        </tr>        <tr> <td style=\"text-align:center\"><strong>5</strong></td> <td>Как эффект <strong>3</strong>, но с уроном от <strong>тьмы</strong>. @DMG[20 dark], @DMG[30 dark], @DMG[40 dark]</td>        </tr>        <tr> <td style=\"text-align:center\"><strong>6</strong></td> <td>Как эффект <strong>3</strong>, но с уроном от <strong>земли</strong>. @DMG[20 earth], @DMG[30 earth], @DMG[40 earth]</td>        </tr>        <tr> <td style=\"text-align:center\"><strong>7</strong></td> <td>Как эффект <strong>3</strong>, но с уроном от <strong>огня</strong>. @DMG[20 fire], @DMG[30 fire], @DMG[40 fire]</td>        </tr>        <tr> <td style=\"text-align:center\"><strong>8</strong></td> <td>Как эффект <strong>3</strong>, но с уроном от <strong>льда</strong>. @DMG[20 ice], @DMG[30 ice], @DMG[40 ice]</td>        </tr>        <tr> <td style=\"text-align:center\"><strong>9</strong></td> <td><span class=\"fontstyle0\">... получает Сопротивление к урону от <strong>воздуха</strong> (@TYPE[affinity air resistance]) и <strong>огня</strong> (@TYPE[affinity fire resistance]) до конца сцены.</span></td> <td></td> <td></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>10</strong></td> <td>Как эффект <strong>9</strong>, но для <strong>молний</strong> (@TYPE[affinity bolt resistance]) и <strong>льда</strong> (@TYPE[affinity ice resistance]).</td>        </tr>        <tr> <td style=\"text-align:center\"><strong>11</strong></td> <td><span class=\"fontstyle0\">Как эффект <strong>9</strong>, но для <strong>тьмы</strong> (@TYPE[affinity dark resistance]) и земли (@TYPE[affinity earth resistance]).</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>12</strong></td> <td><span class=\"fontstyle0\">... страдает от @EFFECT[enraged].</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>13</strong></td> <td><span class=\"fontstyle0\">... страдает от @EFFECT[poisoned].</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>14</strong></td> <td><span class=\"fontstyle0\">... страдает от @EFFECT[dazed], @EFFECT[shaken], @EFFECT[slow] и @EFFECT[weak].</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>15</strong></td> <td><span class=\"fontstyle0\">... очищается от всех состояний.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>16-17</strong></td> <td><span class=\"fontstyle0\">... восстанавливает @GAIN[50 hp] Очков Здоровья и @GAIN[50 mp] Очков Разума.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>18</strong></td> <td><span class=\"fontstyle0\">... восстанавливает @GAIN[100 hp] Очков Здоровья</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>19</strong></td> <td><span class=\"fontstyle0\">... восстанавливает @GAIN[100 mp] Очков Разума.</span></td>        </tr>        <tr> <td style=\"text-align:center\"><strong>20</strong></td> <td><span class=\"fontstyle0\">... восстанавливает @GAIN[100 hp] Очков Здоровья и @GAIN[100 mp] Очков Разума.</span></td>        </tr></tbody></table><p></p>",
+      "basic": "<p>За 3 Очка Инвентаря бросьте два <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</p><hr><ul><li>        <p><strong>Вы теряете: </strong>@LOSS[3 ip]</p></li></ul>",
+      "advanced": "<p>За 4 Очка Инвентаря бросьте три <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</p><hr><ul><li>        <p><strong>Вы теряете: </strong>@LOSS[4 ip]</p></li></ul>",
+      "superior": "<p>За 5 Очков Инвентаря бросьте четыре <strong>d20</strong> и назначьте один результат для <strong>цели</strong>, а другой для <strong>эффекта</strong>.</p><hr><ul><li>        <p><strong>Вы теряете: </strong>@LOSS[5 ip]</p></li></ul>",
       "alchemyConfig0": "... получает @DMG[20 poison] урона ядом.",
       "alchemyConfig1": "... восстанавливает @GAIN[30 hp] ОЗ."
     },
     "Gadget - Infusion": {
       "name": "Гаджет - Отвары",
-      "description1": "<h3>ОТВАРЫ</h3><p><span class=\"fontstyle0\"><strong>Также:</strong> </span><span class=\"fontstyle2\">Арканная Амуниция, Масла для Клинков, Боевые Руны</span></p><hr><p><span class=\"fontstyle0\">Когда вы успешно поражаете атакой одну или несколько целей, вы можете потратить </span><span class=\"fontstyle2\">@LOSS[2 ip]</span><span class=\"fontstyle0\"> Очка Инвентаря, чтобы создать </span><strong>отвар</strong><span class=\"fontstyle0\"> и применить соответствующий эффект к этой атаке (если атака обладала свойством </span><strong>мульти</strong><span class=\"fontstyle0\"> примените эффекты отвара к каждой цели).</span></p><hr><p><span class=\"fontstyle0\">Вы не можете применить более одного отвара к одной и той же атаке; производство и использование вливания отваров является частью действия, которое вы использовали для атаки оружием</span> </p><hr><p><span class=\"fontstyle2\"><strong>Базовые отвары</strong></span></p><table style=\"width:97.2093%\" border=\"1\">    <colgroup>        <col style=\"width:17.4333%\">        <col style=\"width:82.4937%\">    </colgroup>    <tbody>        <tr>            <td><strong>ОТВАР</strong></td>            <td><strong>ЭФФЕКТ</strong></td>        </tr>        <tr>            <td><strong>Крио</strong></td>            <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>льдом</strong> @ICON[ice]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr>            <td><strong>Пиро</strong></td>            <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>огнём</strong> @ICON[fire]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr>            <td><strong>Вольт</strong></td>            <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>молнией</strong> @ICON[bolt]</span><span class=\"fontstyle0\">.</span> </td>        </tr>    </tbody></table><p></p><p><strong>Продвинутые отвары</strong></p><table style=\"width:96.5571%\" border=\"1\">    <colgroup>        <col style=\"width:17.2065%\">        <col style=\"width:82.7935%\">    </colgroup>    <tbody>        <tr>            <td><strong>ОТВАР</strong></td>            <td><strong>ЭФФЕКТ</strong></td>        </tr>        <tr>            <td><strong>Циклон</strong></td>            <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>воздухом</strong> @ICON[air]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr>            <td><strong>Экзорцизм</strong></td>            <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>светом</strong> @ICON[light]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr>            <td><strong>Сейсмический</strong></td>            <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>землёй</strong> @ICON[earth]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr>            <td><strong>Теневой</strong></td>            <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>тьмой</strong> @ICON[dark]</span><span class=\"fontstyle0\">.</span> </td>        </tr>    </tbody></table><p> </p><p><strong>Превосходные отвары</strong></p><table style=\"width:95.9311%\" border=\"1\">    <colgroup>        <col style=\"width:17.3909%\">        <col style=\"width:82.6091%\">    </colgroup>    <tbody>        <tr>            <td><strong>ОТВАР</strong></td>            <td><strong>ЭФФЕКТ</strong></td>        </tr>        <tr>            <td><strong>Вампирский</strong></td>            <td>                <p> Выберите один из вариантов: вы восстанавливаете количество ОЗ, равное половине потери ОЗ, понесённой целью атаки; <strong>или</strong> вы восстанавливаете количество ОР, равное половине потери ОЗ, понесённой целью атаки. </p>                <p> Этот отвар можно использовать только в том случае, если атака была направлена на <strong>одно существо</strong>.</p>            </td>        </tr>        <tr>            <td><strong>Отравленный</strong></td>            <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, это урон </span><span class=\"fontstyle2\"><strong>ядом </strong>@ICON[poison]</span><span class=\"fontstyle0\">, и каждое существо, поражённое атакой, страдает от </span><span class=\"fontstyle2\"><strong>отравления</strong></span><span class=\"fontstyle0\">.</span> </td>        </tr>    </tbody></table>",
+      "description1": "<h3>ОТВАРЫ</h3><p><span class=\"fontstyle0\"><strong>Также:</strong> </span><span class=\"fontstyle2\">Арканная Амуниция, Масла для Клинков, Боевые Руны</span></p><hr><p><span class=\"fontstyle0\">Когда вы успешно поражаете атакой одну или несколько целей, вы можете потратить </span><span class=\"fontstyle2\">@LOSS[2 ip]</span><span class=\"fontstyle0\"> Очка Инвентаря, чтобы создать </span><strong>отвар</strong><span class=\"fontstyle0\"> и применить соответствующий эффект к этой атаке (если атака обладала свойством </span><strong>мульти</strong><span class=\"fontstyle0\"> примените эффекты отвара к каждой цели).</span></p><hr><p><span class=\"fontstyle0\">Вы не можете применить более одного отвара к одной и той же атаке; производство и использование вливания отваров является частью действия, которое вы использовали для атаки оружием</span> </p><hr><p><span class=\"fontstyle2\"><strong>Базовые отвары</strong></span></p><table style=\"width:97.2093%\" border=\"1\"><colgroup>        <col style=\"width:17.4333%\">        <col style=\"width:82.4937%\"></colgroup><tbody>        <tr> <td><strong>ОТВАР</strong></td> <td><strong>ЭФФЕКТ</strong></td>        </tr>        <tr> <td><strong>Крио</strong></td> <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>льдом</strong> @ICON[ice]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr> <td><strong>Пиро</strong></td> <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>огнём</strong> @ICON[fire]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr> <td><strong>Вольт</strong></td> <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>молнией</strong> @ICON[bolt]</span><span class=\"fontstyle0\">.</span> </td>        </tr></tbody></table><p></p><p><strong>Продвинутые отвары</strong></p><table style=\"width:96.5571%\" border=\"1\"><colgroup>        <col style=\"width:17.2065%\">        <col style=\"width:82.7935%\"></colgroup><tbody>        <tr> <td><strong>ОТВАР</strong></td> <td><strong>ЭФФЕКТ</strong></td>        </tr>        <tr> <td><strong>Циклон</strong></td> <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>воздухом</strong> @ICON[air]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr> <td><strong>Экзорцизм</strong></td> <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>светом</strong> @ICON[light]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr> <td><strong>Сейсмический</strong></td> <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>землёй</strong> @ICON[earth]</span><span class=\"fontstyle0\">.</span> </td>        </tr>        <tr> <td><strong>Теневой</strong></td> <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, и урон становится уроном </span><span class=\"fontstyle2\"><strong>тьмой</strong> @ICON[dark]</span><span class=\"fontstyle0\">.</span> </td>        </tr></tbody></table><p> </p><p><strong>Превосходные отвары</strong></p><table style=\"width:95.9311%\" border=\"1\"><colgroup>        <col style=\"width:17.3909%\">        <col style=\"width:82.6091%\"></colgroup><tbody>        <tr> <td><strong>ОТВАР</strong></td> <td><strong>ЭФФЕКТ</strong></td>        </tr>        <tr> <td><strong>Вампирский</strong></td> <td>     <p> Выберите один из вариантов: вы восстанавливаете количество ОЗ, равное половине потери ОЗ, понесённой целью атаки; <strong>или</strong> вы восстанавливаете количество ОР, равное половине потери ОЗ, понесённой целью атаки. </p>     <p> Этот отвар можно использовать только в том случае, если атака была направлена на <strong>одно существо</strong>.</p> </td>        </tr>        <tr> <td><strong>Отравленный</strong></td> <td> <span class=\"fontstyle0\">Атака наносит 5 дополнительного урона, это урон </span><span class=\"fontstyle2\"><strong>ядом </strong>@ICON[poison]</span><span class=\"fontstyle0\">, и каждое существо, поражённое атакой, страдает от </span><span class=\"fontstyle2\"><strong>отравления</strong></span><span class=\"fontstyle0\">.</span> </td>        </tr></tbody></table>",
       "basicInfusionsName0": "Крио",
       "basicInfusions0": "Атака наносит 5 дополнительного урона, и урон становится уроном льдом.",
       "basicInfusionsName1": "Пиро",
@@ -1563,12 +1771,12 @@
       "name": "Гаджет - Магитех",
       "description1": "<h3>МАГИТЕХ</h3><p><strong>Также:</strong> Инженерия, Создание Големов, Робототехника</p><hr><p>Этот тип изобретения предоставляет множество различных преимуществ</p><hr><h3>ПЕРЕХВАТ МАГИТЕХА (Базовый)</h3><p>Добавьте @UUID[Compendium.projectfu.skills.Item.aPfawWXZqKuHAAqj]{Перехват Магитеха} в свой лист персонажа.</p><p>Вы можете выполнить действие и потратить @LOSS[10 mp] Очков Разума на выполнение Проверки Противостояния с <strong>конструктом【ПРН + ПРН】</strong> ранга <strong>солдата</strong>, которого вы видите (Мастер должен сказать вам, кто является допустимой целью). Если вам это удастся, вы получите контроль над существом до конца сцены (Мастер предоставит вам его профиль). Вы можете контролировать только одного <strong>конструкта</strong> в любой момент времени, но можете освободить его, когда захотите; <strong>конструкт</strong> также освобождается, как только вы или один из ваших союзников причиняете ему вред. Оказавшись на свободе, <strong>конструкт</strong> снова контролирует свои действия и может обернуться против вас.</p><h3>МАГИПУШКА (Продвинутый)</h3><p>Добавьте the@UUID[Compendium.projectfu.consumables.Item.AbazTRyaMTW4ouhx]{Магипушка (Предмет)} в свой лист персонажа.</p><p>Вы можете выполнить действие <strong>Инвентаря</strong> и потратить 3 @LOSS[3 ip] Очка Инвентаря на создание <strong>огнестрельного</strong> оружия, известного как <strong>магипушка</strong> (смотрите ниже). Магипушка рассыпается на куски, как только вы создадите новую магипушку. Когда вы создаёте магипушку, выберите тип наносимого ею урона (<strong>воздух, молния, земля, огонь, лёд</strong> или <strong>физический</strong>).</p><table border=\"1\"><colgroup><col><col><col><col></colgroup><tbody><tr><td><strong>ОРУЖИЕ</strong></td><td><strong>ТОЧНОСТЬ</strong></td><td><strong>УРОН</strong></td><td><strong>КАЧЕСТВА</strong></td></tr><tr><td>Магипушка</td><td>【ЛВК+ ПРН】+1</td><td>【ЛБ + 10】</td><td>Двуручное -Дальнего Боя -Нет Свойства.</td></tr></tbody></table><h3>МАГИСФЕРЫ (Превосходный)</h3><p>Добавьте 4 @UUID[Compendium.projectfu.consumables.Item.7dUU12f8IHa2tESo]{Магисферы (Превосходный)} в свой лист персонажа.</p><p>Вы разрабатываете три прототипа магисферы; каждый из них может воспроизводить заклинание, выбранное из следующих списков: <strong>Элементалиста</strong>, <strong>Энтрописта</strong> и <strong>Спиритиста</strong>. Выбранные вами заклинания могут быть из одного списка или из разных списков.</p><p>Вы также разрабатываете ещё два прототипа по достижении <strong>20-го уровня</strong> и ещё два — по достижении <strong>40-го</strong> (Обращайтесь также, если вы уже достигли этих уровней).</p><p>Вы можете выполнить действие <strong>Инвентаря</strong> и потратить @LOSS[2 ip] Очка Инвентаря, чтобы создать <strong>магисферу</strong> и немедленно выполнить бесплатное действие <strong>Заклинания</strong>, сотворив одно из заклинаний, для которых вы разработали прототип. Заклинание выполняется по обычным правилам (включая затраты ОР и Проверку Магии), и магисфера уничтожается при использовании.</p>",
       "basic": "<h3>ПЕРЕХВАТ МАГИТЕХА (Базовый)</h3><p>Добавьте @UUID[Compendium.projectfu.skills.Item.aPfawWXZqKuHAAqj]{Перехват Магитеха} в свой лист персонажа.</p><p>Вы можете выполнить действие и потратить @LOSS[10 mp] Очков Разума на выполнение Проверки Противостояния с <strong>конструктом【ПРН + ПРН】</strong> ранга <strong>солдата</strong>, которого вы видите (Мастер должен сказать вам, кто является допустимой целью). Если вам это удастся, вы получите контроль над существом до конца сцены (Мастер предоставит вам его профиль). Вы можете контролировать только одного <strong>конструкта</strong> в любой момент времени, но можете освободить его, когда захотите; <strong>конструкт</strong> также освобождается, как только вы или один из ваших союзников причиняете ему вред. Оказавшись на свободе, <strong>конструкт</strong> снова контролирует свои действия и может обернуться против вас.</p>",
-      "advanced": "<h3>МАГИПУШКА (Продвинутый)</h3><p>Добавьте the@UUID[Compendium.projectfu.consumables.Item.AbazTRyaMTW4ouhx]{Магипушка (Предмет)} в свой лист персонажа.</p><p>Вы можете выполнить действие <strong>Инвентаря</strong> и потратить 3 @LOSS[3 ip] Очка Инвентаря на создание <strong>огнестрельного</strong> оружия, известного как <strong>магипушка</strong> (смотрите ниже). Магипушка рассыпается на куски, как только вы создадите новую магипушку. Когда вы создаёте магипушку, выберите тип наносимого ею урона (<strong>воздух, молния, земля, огонь, лёд</strong> или <strong>физический</strong>).</p><table border=\"\\&quot;1\\&quot;\">    <colgroup>        <col>        <col>        <col>        <col>    </colgroup>    <tbody>        <tr>            <td><strong>ОРУЖИЕ</strong></td>            <td><strong>ТОЧНОСТЬ</strong></td>            <td><strong>УРОН</strong></td>            <td><strong>КАЧЕСТВА</strong></td>        </tr>        <tr>            <td>Магипушка</td>            <td>【ЛВК+ ПРН】+1</td>            <td>【ЛБ + 10】</td>            <td>Двуручное -Дальнего Боя -Нет Свойства.</td>        </tr>    </tbody></table>",
+      "advanced": "<h3>МАГИПУШКА (Продвинутый)</h3><p>Добавьте the@UUID[Compendium.projectfu.consumables.Item.AbazTRyaMTW4ouhx]{Магипушка (Предмет)} в свой лист персонажа.</p><p>Вы можете выполнить действие <strong>Инвентаря</strong> и потратить 3 @LOSS[3 ip] Очка Инвентаря на создание <strong>огнестрельного</strong> оружия, известного как <strong>магипушка</strong> (смотрите ниже). Магипушка рассыпается на куски, как только вы создадите новую магипушку. Когда вы создаёте магипушку, выберите тип наносимого ею урона (<strong>воздух, молния, земля, огонь, лёд</strong> или <strong>физический</strong>).</p><table border=\"\\&quot;1\\&quot;\"><colgroup>        <col>        <col>        <col>        <col></colgroup><tbody>        <tr> <td><strong>ОРУЖИЕ</strong></td> <td><strong>ТОЧНОСТЬ</strong></td> <td><strong>УРОН</strong></td> <td><strong>КАЧЕСТВА</strong></td>        </tr>        <tr> <td>Магипушка</td> <td>【ЛВК+ ПРН】+1</td> <td>【ЛБ + 10】</td> <td>Двуручное -Дальнего Боя -Нет Свойства.</td>        </tr></tbody></table>",
       "superior": "<h3>МАГИСФЕРЫ (Превосходный)</h3><p>Добавьте 4 @UUID[Compendium.projectfu.consumables.Item.7dUU12f8IHa2tESo]{Магисферы (Превосходный)} в свой лист персонажа.</p><p>Вы разрабатываете три прототипа магисферы; каждый из них может воспроизводить заклинание, выбранное из следующих списков: <strong>Элементалиста</strong>, <strong>Энтрописта</strong> и <strong>Спиритиста</strong>. Выбранные вами заклинания могут быть из одного списка или из разных списков.</p><p>Вы также разрабатываете ещё два прототипа по достижении <strong>20-го уровня</strong> и ещё два — по достижении <strong>40-го</strong> (Обращайтесь также, если вы уже достигли этих уровней).</p><p>Вы можете выполнить действие <strong>Инвентаря</strong> и потратить @LOSS[2 ip] Очка Инвентаря, чтобы создать <strong>магисферу</strong> и немедленно выполнить бесплатное действие <strong>Заклинания</strong>, сотворив одно из заклинаний, для которых вы разработали прототип. Заклинание выполняется по обычным правилам (включая затраты ОР и Проверку Магии), и магисфера уничтожается при использовании.</p>"
     },
     "Gadgets": {
       "name": "Гаджеты",
-      "description0": "<p>Когда вы впервые приобретаете этот Навык, выберите тип изобретения: <strong>алхимия, отвары</strong> или <strong>магитех</strong> (см. <strong>Основная Книга</strong>, стр. <strong>212</strong>). Вы получаете его <strong>базовые преимущества</strong>.</p><p>Всякий раз, когда вы снова овладеете этим Навыком, выбирайте один из вариантов: вы получаете <strong>базовые преимущества</strong> нового типа гаджетов; <strong>или</strong> вы получаете <strong>продвинутые преимущества</strong> гаджета, <strong>базовые преимущества</strong> которого вы уже получили; <strong>или</strong> вы получаете <strong>превосходные преимущества</strong> типа гаджета, <strong>продвинутые преимущества</strong> которого вы уже получили.</p><hr><ul>    <li>        <p><span>Разбор</span> <strong>гаджетов</strong> и список <strong>Гаджетов</strong> могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk]{Правила Гаджетов}</p>    </li>    <li>        <p>Для <strong>автоматизации</strong>, Инструкции VTT могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk.JournalEntryPage.7D5mpbaYddiztH1W]{Инструкции VTT к Гаджетам}</p>    </li></ul>"
+      "description0": "<p>Когда вы впервые приобретаете этот Навык, выберите тип изобретения: <strong>алхимия, отвары</strong> или <strong>магитех</strong> (см. <strong>Основная Книга</strong>, стр. <strong>212</strong>). Вы получаете его <strong>базовые преимущества</strong>.</p><p>Всякий раз, когда вы снова овладеете этим Навыком, выбирайте один из вариантов: вы получаете <strong>базовые преимущества</strong> нового типа гаджетов; <strong>или</strong> вы получаете <strong>продвинутые преимущества</strong> гаджета, <strong>базовые преимущества</strong> которого вы уже получили; <strong>или</strong> вы получаете <strong>превосходные преимущества</strong> типа гаджета, <strong>продвинутые преимущества</strong> которого вы уже получили.</p><hr><ul><li>        <p><span>Разбор</span> <strong>гаджетов</strong> и список <strong>Гаджетов</strong> могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk]{Правила Гаджетов}</p></li><li>        <p>Для <strong>автоматизации</strong>, Инструкции VTT могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk.JournalEntryPage.7D5mpbaYddiztH1W]{Инструкции VTT к Гаджетам}</p></li></ul>"
     },
     "Garden": {
       "name": "Garden"
@@ -1604,8 +1812,8 @@
       "description1": "<p>Each target suffers<strong>【@EFFECT[@DATA[key.status]]】</strong>. Each target also <strong>loses Resistance</strong> to<strong>【@DATA[key.type]】</strong>damage until the <strong>start of your next turn.</strong></p><ul><li><p><strong>Target:【</strong>@TYPE[affinity @DATA[key.type] none e:sot i:1 t:source]{Haunting Tune}<strong>】</strong>if they have that resistance.</p></li></ul>"
     },
     "Hawkeye": {
-      "name": "Hawkeye",
-      "description0": "<p>When you perform the <strong>Guard</strong> action, if you choose <strong>not</strong> to provide cover to another creature, you may choose one option: the next <strong>ranged</strong> attack you perform before the end of the current scene will deal <strong>【SL × 2】</strong> extra damage; <strong>or</strong> you may immediately perform a <strong>free attack</strong> with a <strong>bow</strong> or <strong>firearm</strong> you have equipped, treating your <strong>High Roll (HR)</strong> as <strong>0</strong> when calculating damage dealt by this attack.</p><hr /><ul><li><p><strong>You Receive:</strong> @EFFECT[Compendium.projectfu.skills.Item.enboiNabyACt4OUB]{Effect: Hawkeye (Range Weapon Up)}</p></li></ul>"
+      "name": "Соколиный Глаз",
+      "description0": "<p>При выполнении действия <strong>Оборона</strong>, если вы решите <strong>не</strong> заслонять другое существо, вы можете выбрать один из вариантов: следующая атака <strong>дальнего боя</strong>, которую вы проведёте до конца текущей сцены, нанесёт дополнительный урон <strong>【УН × 2】</strong>; <strong>или</strong> вы можете немедленно выполнить <strong>свободную атаку</strong> из экипированного <strong>лука</strong> или <strong>огнестрельного</strong> оружия; считайте свой <strong>Лучший Бросок (ЛБ)</strong> равным 0 при расчёте урона, наносимого этой атакой.</p><hr><ul><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.skills.Item.enboiNabyACt4OUB]{Эффект: Соколиный Глаз}</p></li></ul>"
     },
     "Healing Power": {
       "name": "Healing Power",
@@ -1694,7 +1902,7 @@
     },
     "Indomitable Spirit": {
       "name": "Неукротимый Дух",
-      "description0": "<p>Когда вы тратите одно или несколько Очков Фабулы, вы получаете дополнительное преимущество — выберите один из вариантов: вы восстанавливаете <strong>【УН × 5】</strong>】Очков Здоровья; <strong>или</strong> вы восстанавливаете <strong>【УН × 5】</strong>Очков Разума; <strong>или</strong> вы очиститесь от состояния по вашему выбору.</p><hr><ul>    <li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[5*$sl hp]{УО × 5 ОЗ} или @GAIN[5*$sl mp]{УО × 5 ОР}</p>    </li></ul>"
+      "description0": "<p>Когда вы тратите одно или несколько Очков Фабулы, вы получаете дополнительное преимущество — выберите один из вариантов: вы восстанавливаете <strong>【УН × 5】</strong>】Очков Здоровья; <strong>или</strong> вы восстанавливаете <strong>【УН × 5】</strong>Очков Разума; <strong>или</strong> вы очиститесь от состояния по вашему выбору.</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[5*$sl hp]{УО × 5 ОЗ} или @GAIN[5*$sl mp]{УО × 5 ОР}</p></li></ul>"
     },
     "Invocation": {
       "name": "Invocation",
@@ -1847,8 +2055,67 @@
       "description0": "<p><strong>Требование:</strong> Базовые Преимущество в @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Гаджет - Магитех}</p><p>Вы можете выполнить действие и потратить 10 Очков Разума на выполнение Проверки Противостояния с <strong>конструктом 【ПРН + ПРН】</strong> ранга <strong>солдата</strong>, которого вы видите (Мастер должен сказать вам, кто является допустимой целью). Если вам это удастся, вы получите контроль над существом до конца сцены (Мастер предоставит вам его профиль). Вы можете контролировать только одного <strong>конструкта</strong> в любой момент времени, но можете освободить его, когда захотите; <strong>конструкт</strong> также освобождается, как только вы или один из ваших союзников причиняете ему вред. Оказавшись на свободе, <strong>конструкт</strong> снова контролирует свои действия и может обернуться против вас.</p>"
     },
     "Melee Weapon Mastery": {
-      "name": "Melee Weapon Mastery",
-      "description0": "<p><span>You gain a bonus equal to <strong>【SL】</strong> to all Accuracy Checks with <strong>melee</strong> weapons.</span></p>"
+      "name": "Мастер Ближнего Боя",
+      "description0": "<p>Вы получаете бонус, равный <strong>【УН】</strong>, ко всем Проверкам Точности при использовании оружия <strong>ближнего боя</strong>.</p>",
+      "effects": [
+        {
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Мастер Ближнего Боя",
+          "_id": "Sks7cSsjFlEgMg53",
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyMelee",
+              "mode": 2,
+              "value": "@system.level.value",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус, равный <strong>【УН】</strong>, ко всем Проверкам Точности при использовании оружия <strong>ближнего боя</strong>.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {
+              "source": "FUCR219"
+            }
+          },
+          "tint": "#ffffff",
+          "img": "systems/projectfu/styles/static/compendium/classes/weaponmaster/weaponmaster_melee_weapon_mastery.png",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Menacing Tone": {
       "name": "Menacing Tone",
@@ -1865,7 +2132,7 @@
     },
     "My Trust In You": {
       "name": "Моя Вера В Тебя",
-      "description0": "<p>После того как другой Персонаж Игрока, способный вас слышать, выполнит Проверку, вы можете потратить 1 Очко Фабулы и задействовать одну из его <strong>Черт</strong> или <strong>Уз</strong>, чтобы позволить ему повторно бросить кости или улучшить Результат Проверки (следуя обычным правилам). Затем, если у вас есть <strong>Узы</strong> с этим персонажем, он восстанавливает <strong>【УН × 10】</strong>Очков Разума.</p><hr><ul>    <li>        <p><strong>Цель восстанавливает: </strong>@GAIN[10*$sl mp]{УО × 10 ОР}</p>    </li></ul>"
+      "description0": "<p>После того как другой Персонаж Игрока, способный вас слышать, выполнит Проверку, вы можете потратить 1 Очко Фабулы и задействовать одну из его <strong>Черт</strong> или <strong>Уз</strong>, чтобы позволить ему повторно бросить кости или улучшить Результат Проверки (следуя обычным правилам). Затем, если у вас есть <strong>Узы</strong> с этим персонажем, он восстанавливает <strong>【УН × 10】</strong>Очков Разума.</p><hr><ul><li>        <p><strong>Цель восстанавливает: </strong>@GAIN[10*$sl mp]{УО × 10 ОР}</p></li></ul>"
     },
     "Myrmidon Dance": {
       "name": "Myrmidon Dance",
@@ -1896,7 +2163,7 @@
     },
     "Pathogenesis": {
       "name": "Патогенез",
-      "description0": "<p>При нанесении урона одному или нескольким существам заклинанием Химериста, каждое существо того же <strong>Вида</strong> что и то, у которого вы первоначально изучили это заклинание, страдает от <strong>отравления</strong>.</p><hr><ul>    <li>        <p><strong>Цель страдает от: </strong>@EFFECT[poisoned]</p>    </li></ul>"
+      "description0": "<p>При нанесении урона одному или нескольким существам заклинанием Химериста, каждое существо того же <strong>Вида</strong> что и то, у которого вы первоначально изучили это заклинание, страдает от <strong>отравления</strong>.</p><hr><ul><li>        <p><strong>Цель страдает от: </strong>@EFFECT[poisoned]</p></li></ul>"
     },
     "Peacock Dance": {
       "name": "Peacock Dance",
@@ -1939,7 +2206,7 @@
     },
     "Potion Rain": {
       "name": "Дождь из Зелий",
-      "description0": "<p>Когда вы создаёте <strong>зелье</strong>, восстанавливающее ОЗ и/или ОР <strong>одного</strong> существа, вы можете распространить его эффект на <strong>【УН】</strong> дополнительных существ. Если вы это сделаете, зелье восстановит только половину обычного количества ОЗ и ОР каждому существу.</p><hr><ul>    <li>        <p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]{Лекарство}: @GAIN[25 hp]</p>    </li>    <li>        <p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]{Эликсир}: @GAIN[25 mp]</p>    </li></ul>"
+      "description0": "<p>Когда вы создаёте <strong>зелье</strong>, восстанавливающее ОЗ и/или ОР <strong>одного</strong> существа, вы можете распространить его эффект на <strong>【УН】</strong> дополнительных существ. Если вы это сделаете, зелье восстановит только половину обычного количества ОЗ и ОР каждому существу.</p><hr><ul><li>        <p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]{Лекарство}: @GAIN[25 hp]</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]{Эликсир}: @GAIN[25 mp]</p></li></ul>"
     },
     "Prancing Dandelion": {
       "name": "Prancing Dandelion"
@@ -1949,12 +2216,12 @@
       "description0": "<p>When you or another Player Character spend <strong>【SL + 2】</strong>or fewer Inventory Points, you may spend 1 Trade Point to ignore that cost.</p><hr /><ul><li><p><strong>Resource:</strong> @PROGRESS[winds-of-trade update -1]{Spend 1 Trade Point}</p></li></ul>"
     },
     "Protect": {
-      "name": "Protect",
-      "description0": "<p>When another creature is threatened by an <strong>attack</strong>, <strong>spell</strong>, or other <strong>danger</strong>, you may take their place (any Checks that are part of the danger will be performed against you; you may declare the use of this Skill <strong>before</strong> or <strong>after</strong> the Checks have been made). If the danger already affected you, it affects you <strong>twice</strong> (resolve both instances separately); you also cannot protect multiple creatures from the same danger. If you use this Skill during a conflict, you cannot use it again until the start of your next turn.</p>"
+      "name": "Прикрытие",
+      "description0": "<p>Когда другому существу угрожает <strong>атака</strong>, <strong>заклинание</strong> или другая <strong>опасность</strong>, вы можете занять его место (любые Проверки, которые являются частью опасности, будут выполнены против вас; вы можете объявить об использовании этого Навыка <strong>до или после</strong> того, как Проверки были сделаны). Если опасность уже затронула вас, она затрагивает вас <strong>дважды</strong> (разрешите оба случая отдельно); также, вы не можете прикрыть несколько существ от одной и той же опасности. Если вы используете этот Навык во время конфликта, вы не сможете использовать его снова до начала вашего следующего хода.</p>"
     },
     "Provoke": {
       "name": "Провокация",
-      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума на выполнение Проверки Противостояния <strong>【МГЩ + ВОЛ】</strong> с существом, которые вы видите — опишите, как вы провоцируете его! При успехе цель становится <strong>яростной</strong> и сосредотачивает на вас внимание — её атаки и атакующие заклинания обязательно включают вас в список целей, если это возможно. Это принуждение заканчивается, если вы теряете сознание или покидаете сцену, если существо больше не <strong>яростно</strong> или если его успешно <strong>спровоцировал</strong> кто-то другой.</p><p>Вы получаете бонус, равный<strong>【УН】</strong>к вашим Проверкам<strong>【МГЩ + ВОЛ】</strong>для этого Навыка.</p><hr><ul>    <li>        <p><strong>Вы совершаете: </strong>@CHECK[mig wlp ($sl)]</p>    </li>    <li>        <p><strong>Цель страдает от: </strong>@EFFECT[enraged] @EFFECT[Compendium.projectfu.skills.SBaaNDpwZQDafu3J]{Эффект: Провокация}</p>    </li></ul>"
+      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума на выполнение Проверки Противостояния <strong>【МГЩ + ВОЛ】</strong> с существом, которые вы видите — опишите, как вы провоцируете его! При успехе цель становится <strong>яростной</strong> и сосредотачивает на вас внимание — её атаки и атакующие заклинания обязательно включают вас в список целей, если это возможно. Это принуждение заканчивается, если вы теряете сознание или покидаете сцену, если существо больше не <strong>яростно</strong> или если его успешно <strong>спровоцировал</strong> кто-то другой.</p><p>Вы получаете бонус, равный<strong>【УН】</strong>к вашим Проверкам<strong>【МГЩ + ВОЛ】</strong>для этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[mig wlp ($sl)]</p></li><li>        <p><strong>Цель страдает от: </strong>@EFFECT[enraged] @EFFECT[Compendium.projectfu.skills.SBaaNDpwZQDafu3J]{Эффект: Провокация}</p></li></ul>"
     },
     "Psychic Backlash": {
       "name": "Psychic Backlash",
@@ -1993,8 +2260,73 @@
       "description0": "<p>After you perform a <strong>dance</strong>, you may perform the <strong>Equipment action</strong> for free.</p>"
     },
     "Ranged Weapon Mastery": {
-      "name": "Ranged Weapon Mastery",
-      "description0": "<p>You gain a bonus equal to <strong>【SL】</strong> to all Accuracy Checks with <strong>ranged</strong> weapons.</p>"
+      "name": "Мастер Дальнего Боя",
+      "description0": "<p>Вы получаете бонус, равный <strong>【УН】</strong>, ко всем Проверкам Точности с оружием <strong>дальнего боя</strong>.</p>",
+      "effects": [
+        {
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Мастер Дальнего Боя",
+          "_id": "M8kqwCdFQHllfjGs",
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyRanged",
+              "mode": 2,
+              "value": "@system.level.value",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус, равный <strong>【УН】</strong>, ко всем Проверкам Точности с оружием <strong>дальнего боя</strong>.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {
+              "source": "FUCR205"
+            }
+          },
+          "tint": "#ffffff",
+          "_stats": {
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "lastModifiedBy": null
+          },
+          "img": "systems/projectfu/styles/static/compendium/classes/sharpshooter/sharpshooter_ranged_weapon_mastery.png",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Real Treasure": {
       "name": "Real Treasure",
@@ -2015,8 +2347,8 @@
       "description0": "<p>After you affect one or more enemies with a <strong>verse</strong>, if you have an <strong>arcane</strong> weapon equipped, you may choose one option: until the start of your next turn, your allies deal <strong>【SL】</strong> extra damage to those enemies; <strong>or</strong> until the start of your next turn, you recover <strong>【SL】</strong> Mind Points every time one of those enemies suffers damage (if the same source deals damage to two or more of those enemies at the same time, you recover <strong>【SL】</strong> MP for each damaged enemy).</p><hr /><ul><li><p><strong>You Recover: </strong>@GAIN[$sl mp]{Recover SL MP}</p></li><li><p><strong>Target</strong>: @EFFECT[Compendium.projectfu.skills.KgYNKoG8RE2NvCiV]{Effect: Resonance Damage}</p></li></ul>"
     },
     "Resourceful": {
-      "name": "Resourceful",
-      "description0": "<p>You recover <strong>【SL】</strong> Inventory Points after each <strong>travel roll</strong> (see <strong>Core Rulebook</strong>, page <strong>106</strong>).</p><hr /><ul><li><p><strong>You Recover: </strong>@GAIN[$sl ip]{SL IP}</p></li></ul>"
+      "name": "Находчивый",
+      "description0": "<p>Вы восстанавливаете <strong>【УН】</strong> Очков Инвентаря после каждого броска <strong>путешествия</strong> (см. <strong>Основная Книга</strong>, <span class=\"fontstyle0\">стр. <strong>106</strong></span>).</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[$sl ip]{УН ОИ}</p></li></ul>"
     },
     "Ripples": {
       "name": "Ripples",
@@ -2060,7 +2392,7 @@
     },
     "Secret Formula": {
       "name": "Секретная Формула",
-      "description0": "<p>Когда вы создаёте <strong>зелье</strong> или <strong>магисферу</strong>, эффекты которых восстанавливают ОЗ и/или ОР, каждое восстановленное количество увеличивается на <strong>【УН × 5】</strong>.</p><p>Когда вы создаёте <strong>элементальный осколок</strong>, <strong>зелье</strong> или <strong>магисферу</strong>, наносящие урон, этот предмет наносит <strong>【УН】</strong> дополнительного урон.</p><hr><ul>    <li>        <p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]{Лекарство}: @GAIN[50+($sl*5) hp]{50 + (УН × 5) ОЗ}</p>    </li>    <li>        <p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]{Эликсир}: @GAIN[50+($sl*5) mp]{50 + (УН × 5) ОР}</p>    </li>    <li>        <p>@UUID[Compendium.projectfu.consumables.Item.00h8sKH3ktIFF5ei]{Элементальный Осколок}: @DMG[10+($sl) air]{10 + УН вохдух}, @DMG[10+($sl) bolt]{10 + УН молния}, @DMG[10+($sl) earth]{10 + УН земля}, @DMG[10+($sl) fire]{10 + УН огонь} , or @DMG[10+($sl) ice]{10 + УН лёд}</p>        <p></p>    </li></ul>"
+      "description0": "<p>Когда вы создаёте <strong>зелье</strong> или <strong>магисферу</strong>, эффекты которых восстанавливают ОЗ и/или ОР, каждое восстановленное количество увеличивается на <strong>【УН × 5】</strong>.</p><p>Когда вы создаёте <strong>элементальный осколок</strong>, <strong>зелье</strong> или <strong>магисферу</strong>, наносящие урон, этот предмет наносит <strong>【УН】</strong> дополнительного урон.</p><hr><ul><li>        <p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]{Лекарство}: @GAIN[50+($sl*5) hp]{50 + (УН × 5) ОЗ}</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]{Эликсир}: @GAIN[50+($sl*5) mp]{50 + (УН × 5) ОР}</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.Item.00h8sKH3ktIFF5ei]{Элементальный Осколок}: @DMG[10+($sl) air]{10 + УН вохдух}, @DMG[10+($sl) bolt]{10 + УН молния}, @DMG[10+($sl) earth]{10 + УН земля}, @DMG[10+($sl) fire]{10 + УН огонь} , or @DMG[10+($sl) ice]{10 + УН лёд}</p>        <p></p></li></ul>"
     },
     "See You Later": {
       "name": "Ещё Увидимся",
@@ -2086,7 +2418,7 @@
     },
     "Soul Steal": {
       "name": "Кража Души",
-      "description0": "<p>Вы можете выполнить действие и совершить Проверку <strong>【ЛВК + ВОЛ】</strong> против Магической Защиты существа, которое вы видите. Если вы преуспеваете и цель <strong>солдат</strong>, вы восстанавливаете <strong>【УН】</strong> Очков Инвентаря; если это <strong>элита</strong> или <strong>чемпион</strong>, Мастер даёт вам <strong>сокровище души</strong> цели — предмет, стоимостью в зенитах, <strong>равной или ниже 【уровня цели, умноженного на 30 или на 50, если они злодеи】</strong>. Это <strong>сокровище души</strong> появится в вашем <strong>рюкзаке</strong>; существо можно успешно обокрасть с помощью этого Навыка только один раз. Вы получаете бонус, равный <strong>【УН】</strong> к вашим Проверкам <strong>【ЛВК + ВОЛ】</strong> этого Навыка.</p><hr><ul>    <li>        <p><strong>Вы совершаете: </strong>@CHECK[dex wlp ($sl)]</p>    </li>    <li>        <p><strong>Вы получаете: </strong>@GAIN[$sl ip]{Солдат: УО ОИ}</p>    </li></ul>"
+      "description0": "<p>Вы можете выполнить действие и совершить Проверку <strong>【ЛВК + ВОЛ】</strong> против Магической Защиты существа, которое вы видите. Если вы преуспеваете и цель <strong>солдат</strong>, вы восстанавливаете <strong>【УН】</strong> Очков Инвентаря; если это <strong>элита</strong> или <strong>чемпион</strong>, Мастер даёт вам <strong>сокровище души</strong> цели — предмет, стоимостью в зенитах, <strong>равной или ниже 【уровня цели, умноженного на 30 или на 50, если они злодеи】</strong>. Это <strong>сокровище души</strong> появится в вашем <strong>рюкзаке</strong>; существо можно успешно обокрасть с помощью этого Навыка только один раз. Вы получаете бонус, равный <strong>【УН】</strong> к вашим Проверкам <strong>【ЛВК + ВОЛ】</strong> этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[dex wlp ($sl)]</p></li><li>        <p><strong>Вы получаете: </strong>@GAIN[$sl ip]{Солдат: УО ОИ}</p></li></ul>"
     },
     "Sound Barrier": {
       "name": "Sound Barrier",
@@ -2270,8 +2602,8 @@
       "description1": "<p>You treat your <strong>Dexterity</strong> as if it were one die size higher (to a maximum of <strong>d12</strong>).</p><p>When you succeed on a Check to advance or turn back a Clock, if that Check includes <strong>Dexterity</strong>, you may fill or erase 1 additional section of that Clock.</p><hr><ul><li><p><strong>You Receive: </strong>@EFFECT[dex-up]</p></li></ul>"
     },
     "Tavern Talk": {
-      "name": "Tavern Talk",
-      "description0": "<p>When you <strong>rest </strong>inside an inn or tavern, you may ask the Game Master up to <strong>【SL】</strong> questions about your surroundings and the people who live here; the Game Master will answer truthfully and you describe how you gathered the information.</p>"
+      "name": "Трактирные Сплетни",
+      "description0": "<p>Когда вы <strong>отдыхаете</strong> в гостинице или таверне, вы можете задать Мастеру до <strong>【УН】</strong> вопросов о вашем окружении и людях, которые здесь живут; Мастеру ответит правдиво, а вы опишете, как вы собрали информацию.</p>"
     },
     "Theriomorphosis": {
       "name": "Theriomorphosis",
@@ -2299,16 +2631,75 @@
       "description0": "<p><span>After each <strong>travel roll</strong>, if you acquired the <strong>Cooking</strong> Skill, you gain </span><strong>【SL × 2】</strong><span><strong>ingredients.</strong></span></p>"
     },
     "Treasure Hunter": {
-      "name": "Treasure Hunter",
-      "description0": "<p>When your group journeys on the world map, you will make a <strong>discovery </strong>on a roll of <strong>【SL + 1】</strong> or lower on the <strong>travel roll </strong>(instead of only on a <strong>1</strong>).</p>"
+      "name": "Охотник за Сокровищами",
+      "description0": "<p>Когда ваша группа путешествует по карте мира, вы получаете <strong>находку</strong> при <strong>【УН + 1】или ниже</strong> на броске <strong>путешествия</strong> (вместо только <strong>1</strong>).</p>"
     },
     "Tree of Life": {
       "name": "Tree of Life",
       "description0": "<p><span>When you <strong>remove</strong> a </span><strong>magiseed</strong><span> from your <strong>garden</strong>, you may choose one creature you can see: if that creature is in <strong>Crisis</strong>, they recover <strong>【5 + (SL × 5)】</strong> Hit Points.</span></p><hr /><ul><li><p><strong>Target Recovers:</strong> @GAIN[5+(5*$sl) hp]{5 + (SL × 5) HP}</p></li></ul>"
     },
     "Twin Shields": {
-      "name": "Twin Shields",
-      "description0": "<p>Deals extra damage equal to your <strong>【SL】</strong> in <strong>defensive mastery</strong>.</p>"
+      "name": "Два Щита",
+      "description0": "<p>Наносит дополнительный урон, равный <strong>【УН】</strong> Навыка <strong>мастерство обороны</strong> (выше).</p>",
+      "effects": [
+        {
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Два Щита",
+          "_id": "oaHQT6sqi0iC32QB",
+          "changes": [
+            {
+              "key": "system.damage.value",
+              "mode": 2,
+              "value": "&sl(\"defensive-mastery\")",
+              "priority": null
+            }
+          ],
+          "description": "<p>Наносит дополнительный урон, равный <strong>【УН】</strong> Навыка <strong>мастерство обороны</strong> (выше).</p>",
+          "transfer": false,
+          "statuses": [],
+          "flags": {
+            "projectfu": {
+              "source": "FUCR196"
+            }
+          },
+          "tint": "#ffffff",
+          "img": "systems/projectfu/styles/static/compendium/classes/guardian/twin-shields/twin-shields.png",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Umami": {
       "name": "Umami",
@@ -2353,12 +2744,12 @@
       "name": "Wardwattle"
     },
     "Warning Shot": {
-      "name": "Warning Shot",
+      "name": "Предупредительный Выстрел",
       "description0": "<p>When you hit one or more targets with a <strong>ranged</strong> attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict <strong>shaken</strong> on each target hit by the attack; <strong>or</strong> inflicts <strong>slow</strong> on each target hit by the attack; or each target hit by the attack loses <strong>【SL × 10】</strong> Mind Points. Describe your maneuver!</p><hr><ul><li><p><strong>Targets Suffers: </strong>@EFFECT[shaken], @EFFECT[slow], or @LOSS[10*$sl mp]{SL × 10 MP}</p></li></ul>"
     },
     "Well-Traveled": {
-      "name": "Well-Traveled",
-      "description0": "<p>You reduce the die rolled for your <strong>travel rolls</strong> by one size (to a minimum of <strong>d6</strong>).</p><p>If multiple characters have this Skill, the effects are <strong>not</strong> cumulative.</p>"
+      "name": "Опытный Путешественник",
+      "description0": "<p>Когда вы поражаете одну или несколько целей атакой <strong>дальнего боя</strong>, которая наносит урон, вы можете не наносить никакого урона. Если вы это сделаете, выберите один из вариантов: цели страдает от <strong>потрясения</strong>, поражённой атакой; <strong>или</strong> атакой цели становятся <strong>медленными</strong>; <strong>или</strong> поражённые атакой цели становятся <strong>【УН × 10】</strong>Очков Разума. Опишите свой манёвр!</p><hr><ul><li><p><strong>Цель страдает от: </strong>@EFFECT[shaken], @EFFECT[slow] или @LOSS[10*$sl mp]{УН × 10 ОР}</p></li></ul>"
     },
     "Wellspring Expansion": {
       "name": "Wellspring Expansion",
@@ -2389,12 +2780,12 @@
       "class": "Картёжник"
     },
     "[Handout: Arcana Rules]": {
-      "name": "[Handout: Arcana Rules]",
-      "description0": "<h2>MERGING WITH AN ARCANUM</h2><p>When you summon an Arcanum, you gain its merge benefits; those benefits last until the Arcanum is dismissed.</p><p>You cannot summon an Arcanum while already merged with one; you must first dismiss the current Arcanum.</p><h2>DISMISSING AN ARCANUM</h2><p>An Arcanum can be dismissed in several ways:</p><ul><li>Once the current scene ends, all Arcana are automatically dismissed.</li><li>If you die or fall unconscious while merged with an Arcanum, they are dismissed.</li><li>If you leave the scene while merged with an Arcanum, they are dismissed.</li><li>You may <strong>willingly</strong> dismiss your Arcanum: this doesn't require an action, but during a conflict it can only be done on your turn, <strong>before or after</strong> an action.</li></ul><h2>DISMISS EFFECTS</h2><p>Most Arcana have a powerful dismiss effect, which may only be activated when you <strong>willingly</strong> dismiss the Arcanum as described above — if the Arcanum is dismissed for any other reason, the dismiss effect cannot be triggered.</p><p>If the dismiss effect of an Arcanum deals damage, it will deal 10 extra damage if you are <strong>level 20 or higher</strong>, or 20 extra damage if you are <strong>level 40 or higher</strong>.</p><p>You are also free to ignore the dismiss effect if you don't want to use it.</p><h2>DOMAINS</h2><p>Each Arcanum is associated with a few key concepts or domains. The Game Master should use these to establish the trials needed to bind the Arcanum, and to adjudicate Rituals performed through the <strong>Ritual Arcanism</strong> Skill.</p><p>If you create new Arcana for your world, make sure to associate them with domains that allow for interesting Rituals.</p><h2>ALL ARCANA</h2><p>@UUID[Compendium.projectfu.skills.Item.8ySmNzjYisVduHWP]{[Handout: Arcanum List]}</p>"
+      "name": "[Раздатка: Правила Арканы]",
+      "description0": "<h2>ЕДИНЕНИЕ С АРКАНОЙ</h2><p>Когда вы призываете Аркану, вы получаете преимущества её <strong>единения</strong>; эти преимущества действуют до тех пор, пока Аркана не будет отозвана (смотрите ниже).</p><p>Вы не можете призывать Аркану, если уже слились с другой; сначала вы должны отозвать текущую Аркану.</p><h2>ОТЗЫВ АРКАНЫ</h2><p>Аркана может быть отозвана несколькими способами</p><ul><li>       <p>По окончанию сцены все Арканы автоматически отзываются.</p></li><li>       <p>Если вы погибнете или потеряете сознание, то Аркана будет отозвана.</p></li><li>       <p>Если вы покидаете сцену, то Аркана будет отозвана.</p></li><li>       <p>Вы можете <strong>добровольно</strong> отозвать свою Аркану: это не требует действия, но во время конфликта это можно сделать только в свой ход, <strong>до или после</strong> действия.</p></li></ul><h2>ЭФФЕКТ ОТЗЫВА</h2><p>Большинство Аркан обладают мощным эффектом <strong>отзыва</strong>, который может быть активирован только в том случае, если вы <strong>добровольно</strong> отзываете Аркану, как описано выше — если Аркана <strong>отозвана</strong> по какой-либо другой причине, эффект <strong>отзыва</strong> не может быть активирован.</p><p>Если эффект отзыва Арканы наносит урон, он нанесёт 10 дополнительного урона, если вы <strong>20-го уровня или выше</strong>, или 20 дополнительного урона, если вы <strong>40-го уровня или выше</strong>.</p><p>Вы также можете игнорировать эффект <strong>отзыва</strong>, если не хотите его использовать.</p><h2>ДОМЕНЫ</h2><p>Каждая Аркана связана с несколькими ключевыми концепциями или <strong>доменами</strong>. Мастер должен использовать их для определения испытаний, необходимых для привязки Арканы, и для вынесения решения о Ритуалах, выполняемых с помощью Навыка <strong>Ритуального Арканизма</strong>. </p><p>Если вы создаёте новые Арканы для своего мира, обязательно свяжите их с доменами, которые позволяют проводить интересные Ритуалы.</p><p>Работайте со своей группой и создавайте собственные Арканы для своего мира!</p><h2>ВСЕ АРКАНЫ</h2><p>@UUID[Compendium.projectfu.skills.Item.8ySmNzjYisVduHWP]{[Раздатка: Список Аркан]}</p>"
     },
     "[Handout: Arcanum List]": {
-      "name": "[Handout: Arcanum List]",
-      "description0": "<table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.BhLHFeKBx3zZRZD5]{Arcanum of the Forge}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>fire, heat, metal</p></td></tr></tbody></table><p>-</p><table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.TKOESZqheitutkKB]{Arcanum of the Frost}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>cold, ice, silence</p></td></tr></tbody></table><p>-</p><table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.UVmSApdqYNDILSFo]{Arcanum of the Gate}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>space, travel, void</p></td></tr></tbody></table><p>-</p><table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.QbjAsEWA7R2HfFNg]{Arcanum of the Grimoire}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>knowledge, revelations, understanding</p></td></tr></tbody></table><p>-</p><table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.Y3OzDHLCogR32RlH]{Arcanum of the Oak}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>earth, plants, poison</p></td></tr></tbody></table><p>-</p><table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.zabsA5F47r9B5h4f]{Arcanum of the Sky}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>fog, rain, storms</p></td></tr></tbody></table><p>-</p><table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.n1djlSF3C4c6Hlf4]{Arcanum of the Sword}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>conquest, heroism, leadership</p></td></tr></tbody></table><p>-</p><table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.stLDj4YpAoyQFFid]{Arcanum of the Tower}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>judgment, protection, sacrifice</p></td></tr></tbody></table><p>-</p><table><tbody><tr><td data-colwidth=\"51\"><p><strong>Name</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.Dwq6JSEYmSlhpL3b]{Arcanum of the Wheel}</p></td></tr><tr><td data-colwidth=\"51\"><p><strong>Domain</strong></p></td><td><p>destiny, speed, time</p></td></tr></tbody></table>"
+      "name": "[Раздатка: Список Аркан]",
+      "description0": "<table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.BhLHFeKBx3zZRZD5]{Аркана Кузницы}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>огонь, жар, метал</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.TKOESZqheitutkKB]{Аркана Мороза}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>холод, лёд, молчание</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.UVmSApdqYNDILSFo]{Аркана Врат}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>космос, путешествия, пустота</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.QbjAsEWA7R2HfFNg]{Аркана Гримуара}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>знания, откровения, понимание</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.Y3OzDHLCogR32RlH]{Аркана Дуба}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>земля, растения, яд</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.zabsA5F47r9B5h4f]{Аркана Небес}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>туман, дождь, шторм</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.n1djlSF3C4c6Hlf4]{Аркана Меча}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>завоевание, героизм, лидерство</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.stLDj4YpAoyQFFid]{Аркана Башни}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>правосудие, защита, самопожертвование</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.Dwq6JSEYmSlhpL3b]{Аркана Колеса}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>судьба, скорость, время</p></td></tr></tbody></table>"
     },
     "[Handout: Armor Modules]": {
       "name": "[Handout: Armor Modules]",
