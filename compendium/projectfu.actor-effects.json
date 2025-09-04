@@ -163,7 +163,67 @@
       "name": "Слабость (Свет)"
     },
     "Lone Wolf": {
-      "name": "Одинокий Волк"
+      "name": "Одинокий Волк",
+      "effects": [
+        {
+          "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+          "origin": "Compendium.projectfu.actor-effects.Item.8VUidC7jGyZyDb56",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Одинокий Волк",
+          "_id": "mQzgJKqdYcJo1nNI",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.turns",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            },
+            {
+              "key": "system.resources.hp.max",
+              "mode": 1,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы совершаете <strong>2 хода за раунд</strong> и <strong>удваиваете максимальное количество ОЗ</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "MDEF Up": {
       "name": "М.Защита пов."
@@ -184,7 +244,75 @@
       "name": "Открытая Проверка пов."
     },
     "Opportune Boost": {
-      "name": "Усиление возможностей"
+      "name": "Усиление возможностей",
+      "effects": [
+        {
+          "name": "Усиление возможностей",
+          "img": "icons/magic/control/buff-luck-fortune-clover-green.webp",
+          "system": {
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "combat": null
+          },
+          "disabled": false,
+          "_id": "k3wtbyDJUHiaY6Lz",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyCheck",
+              "mode": 2,
+              "value": "4",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.accuracy.magicCheck",
+              "mode": 2,
+              "value": "4",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.accuracy.opposedCheck",
+              "mode": 2,
+              "value": "4",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.accuracy.openCheck",
+              "mode": 2,
+              "value": "4",
+              "priority": null
+            }
+          ],
+          "description": "<p>Следующая совершённая вами проверка получит <strong>бонус +4</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Opposed Check Up": {
       "name": "Проверка Противостояния пов."
