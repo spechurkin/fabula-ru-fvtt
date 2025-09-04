@@ -1,5 +1,10 @@
 {
   "label": "Эффекты",
+  "mapping": {
+    "effects": {
+      "path": "effects"
+    }
+  },
   "folders": {
     "Absorption": "Поглощение",
     "Accuracy Bonuses": "Бонусы Точности",
@@ -177,6 +182,9 @@
     },
     "Open Check Up": {
       "name": "Открытая Проверка пов."
+    },
+    "Opportune Boost": {
+      "name": "Усиление возможностей"
     },
     "Opposed Check Up": {
       "name": "Проверка Противостояния пов."

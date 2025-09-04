@@ -1,24 +1,341 @@
 {
   "label": "Состояния",
+  "mapping": {
+    "effects": {
+      "path": "effects"
+    }
+  },
   "folders": {},
   "entries": {
     "Dazed": {
-      "name": "Оглушение"
+      "name": "Оглушение",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.conditions-effects.Item.dl04MUhnkGS7KY5x",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Оглушение",
+          "img": "systems/projectfu/styles/static/statuses/Dazed.webp",
+          "_id": "PkMcRHQDizcz7iCP",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.attributes.ins",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Временно уменьшите на один размер свою кость <strong>Проницательности</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [
+            "dazed"
+          ],
+          "sort": 0,
+          "flags": {
+            "projectfu": {}
+          }
+        }
+      ]
     },
     "Enraged": {
-      "name": "Ярость"
+      "name": "Ярость",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.conditions-effects.Item.vuJGp3kTdnZeEqQO",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Ярость",
+          "img": "systems/projectfu/styles/static/statuses/Enraged.webp",
+          "_id": "XRZ9qgG0Cshmngz5",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.attributes.ins",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            },
+            {
+              "key": "system.attributes.dex",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Временно уменьшите на один размер свои кости <strong>Ловкости</strong> и <strong>Проницательности</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [
+            "enraged"
+          ],
+          "sort": 0,
+          "flags": {
+            "projectfu": {}
+          }
+        }
+      ]
     },
     "Poisoned": {
-      "name": "Отравление"
+      "name": "Отравление",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.conditions-effects.Item.C7QdRx0QrJcI2po5",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Отравление",
+          "img": "systems/projectfu/styles/static/statuses/Poisoned.webp",
+          "_id": "eiTjiAQmyOVHwZu3",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.attributes.mig",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            },
+            {
+              "key": "system.attributes.wlp",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Временно уменьшите на один размер свои кости <strong>Могущества</strong> и <strong>Воли</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [
+            "poisoned"
+          ],
+          "sort": 0,
+          "flags": {
+            "projectfu": {}
+          }
+        }
+      ]
     },
     "Shaken": {
-      "name": "Потрясение"
+      "name": "Потрясение",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.conditions-effects.Item.hf6mPrd0GzfLL1ap",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Потрясение",
+          "img": "systems/projectfu/styles/static/statuses/Shaken.webp",
+          "_id": "lhuwRa1M3t5jFhCF",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.attributes.wlp",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Временно уменьшите на один размер свою кость <strong>Воли</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [
+            "shaken"
+          ],
+          "sort": 0,
+          "flags": {
+            "projectfu": {}
+          }
+        }
+      ]
     },
     "Slow": {
-      "name": "Замедление"
+      "name": "Замедление",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.conditions-effects.Item.D9TiA8YXY75bIbNs",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Замедление",
+          "img": "systems/projectfu/styles/static/statuses/Weak.webp",
+          "_id": "Bm2mQDuWRF2HfUNg",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.attributes.mig",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Временно уменьшите на один размер свою кость <strong>Могущества</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [
+            "weak"
+          ],
+          "sort": 0,
+          "flags": {
+            "projectfu": {}
+          }
+        }
+      ]
     },
     "Weak": {
-      "name": "Слабость"
+      "name": "Слабость",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.conditions-effects.Item.E0TVnMZHPXdeop2v",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость",
+          "img": "systems/projectfu/styles/static/statuses/Slow.webp",
+          "_id": "czJ539yK1gfZZMVu",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.attributes.dex",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Временно уменьшите на один размер свою кость <strong>Ловкости</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [
+            "slow"
+          ],
+          "sort": 0,
+          "flags": {
+            "projectfu": {}
+          }
+        }
+      ]
     }
   }
 }

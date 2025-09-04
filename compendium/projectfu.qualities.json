@@ -1,5 +1,10 @@
 {
-  "label": "Qualities",
+  "label": "Качества",
+  "mapping": {
+    "effects": {
+      "path": "effects"
+    }
+  },
   "folders": {
     "Absorbing": "Absorbing",
     "Check": "Check",

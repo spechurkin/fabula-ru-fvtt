@@ -1,21 +1,23 @@
 {
   "id": "fabula-ru",
   "title": "Translation: Russian [Fabula Ultima]",
-  "description": "Русский перевод системы Fabula Ultima от команды Ultima Team",
-  "version": "0.0.1-demo",
+  "description": "<p>Русский перевод системы Fabula Ultima от команды Ultima Team</p>",
+  "version": "0.2",
   "compatibility": {
     "minimum": "12",
-    "verified": "12.343",
+    "verified": "13.348",
     "maximum": "13"
   },
   "authors": [
     {
       "name": "Ultima Team",
-      "url": "https://t.me/Ultima_Team_Localization"
+      "url": "https://t.me/Ultima_Team_Localization",
+      "flags": {}
     },
     {
       "name": "HoloLight17",
-      "discord": "hololight17"
+      "discord": "hololight17",
+      "flags": {}
     }
   ],
   "esmodules": [
@@ -25,7 +27,8 @@
     {
       "lang": "ru",
       "name": "Russian",
-      "path": "ru.json"
+      "path": "ru.json",
+      "flags": {}
     }
   ],
   "relationships": {
@@ -53,5 +56,6 @@
   },
   "url": "https://github.com/spechurkin/fabula-ru-fvtt",
   "readme": "https://github.com/spechurkin/fabula-ru-fvtt/blob/main/README.md",
-  "license": "https://github.com/spechurkin/fabula-ru-fvtt/blob/main/LICENSE.md"
+  "license": "https://github.com/spechurkin/fabula-ru-fvtt/blob/main/LICENSE.md",
+  "flags": {}
 }

@@ -25,7 +25,7 @@
     },
     "Elemental Shard": {
       "name": "Элементальный Осколок",
-      "description": "<p>За 2 Очка Инвентаря одно существо получает 10 урона выбранного типа (по вашему выбору: <strong>воздух</strong>, <strong>молния</strong>, <strong>земля</strong>, <strong>огонь</strong> или <strong>лёд</strong>).</p><hr/><ul><li><p><strong>Цель страдает от:</strong> @DMG[10 air], @DMG[10 bolt], @DMG[10 earth], @DMG[10 fire], или @DMG[10 ice]</p></li></ul>",
+      "description": "<p>За 2 Очка Инвентаря одно существо получает 10 урона выбранного типа (по вашему выбору: <strong>воздух</strong>, <strong>молния</strong>, <strong>земля</strong>, <strong>огонь</strong> или <strong>лёд</strong>).</p><hr/><ul><li><p><strong>Цель страдает от:</strong> @DMG[10 air], @DMG[10 bolt], @DMG[10 earth], @DMG[10 fire] или @DMG[10 ice]</p></li></ul>",
       "summary": "Одно существо получает 10 урона выбранного типа (по вашему выбору: воздух, молния, земля, огонь или лёд)."
     },
     "Elixir": {
@@ -35,22 +35,22 @@
     },
     "Infusion: Advanced": {
       "name": "Отвар: Продвинутый",
-      "description": "<h5>Требуется: Продвинутые Преимущества в @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Гаджеты - Отвары}</h5><p>За 2 Очка Инвентаря, атака наносит 5 дополнительного урона, и урон становится уроном: <strong>воздухом</strong>, <strong>светом</strong>, <strong>землёй</strong>, или <strong>тьмой</strong>.</p>",
-      "summary": "For 2 IP the attack deals 5 extra damage, and its damage becomes: air, light, earth, OR dark."
+      "description": "<h5>Требуется: Продвинутые Преимущества в @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Гаджеты - Отвары}</h5><p>За 2 Очка Инвентаря атака наносит 5 дополнительного урона, и урон становится уроном: <strong>воздухом</strong>, <strong>светом</strong>, <strong>землёй</strong> или <strong>тьмой</strong>.</p>",
+      "summary": "За 2 Очка Инвентаря атака наносит 5 дополнительного урона, и урон становится уроном: воздухом, светом, землёй или тьмой."
     },
     "Infusion: Basic": {
       "name": "Отвар: Базовый",
-      "description": "<h5>Требуется: Базовые Преимущества в @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Гаджеты - Отвары}</h5><p>За 2 Очка Инвентаря, атака наносит 5 дополнительного урона, и урон становится уроном: <strong>льдом</strong>, <strong>огнём</strong>, или <strong>молнией</strong>.</p>",
-      "summary": "For 2 IP, the attack deals 5 extra damage, and its damage becomes: ice, fire, or bolt."
+      "description": "<h5>Требуется: Базовые Преимущества в @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Гаджеты - Отвары}</h5><p>За 2 Очка Инвентаря атака наносит 5 дополнительного урона, и урон становится уроном: <strong>льдом</strong>, <strong>огнём</strong> или <strong>молнией</strong>.</p>",
+      "summary": "За 2 Очка Инвентаря атака наносит 5 дополнительного урона, и урон становится уроном: льдом, огнём ИЛИ молнией."
     },
     "Infusion: Vampire (Superior)": {
       "name": "Отвар: Вампирский (Превосходный)",
-      "description": "<h5>Требуется: Превосходные Преимущества в @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Гаджеты - Отвары}</h5><p>За 2 Очка Инвентаря, выберите один из вариантов: вы восстанавливаете количество ОЗ, равное половине потери ОЗ, понесённой целью атаки; <strong>или</strong> вы восстанавливаете количество ОР, равное половине потери ОЗ, понесённой целью атаки.</p><p>Этот отвар можно использовать только в том случае, если атака была направлена на <strong>одно существо</strong>.</p>",
+      "description": "<h5>Требуется: Превосходные Преимущества в @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Гаджеты - Отвары}</h5><p>За 2 Очка Инвентаря выберите один из вариантов: вы восстанавливаете количество ОЗ, равное половине потери ОЗ, понесённой целью атаки; <strong>или</strong> вы восстанавливаете количество ОР, равное половине потери ОЗ, понесённой целью атаки.</p><p>Этот отвар можно использовать только в том случае, если атака была направлена на <strong>одно существо</strong>.</p>",
       "summary": ""
     },
     "Infusion: Venom (Superior)": {
       "name": "Отвар: Отравленный (Превосходный)",
-      "description": "<h5>Требуется: Превосходные Преимущества в @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Гаджеты - Отвары}</h5><p>За 2 Очка Инвентаря, атака наносит 5 дополнительного урона, это урон <strong>ядом</strong>, и каждое существо, поражённое атакой, страдает от <strong>отравления</strong>.</p>",
+      "description": "<h5>Требуется: Превосходные Преимущества в @UUID[Compendium.projectfu.skills.Item.1tfYFkiXLuTOUmre]{Гаджеты - Отвары}</h5><p>За 2 Очка Инвентаря атака наносит 5 дополнительного урона, это урон <strong>ядом</strong>, и каждое существо, поражённое атакой, страдает от <strong>отравления</strong>.</p>",
       "summary": ""
     },
     "Magic Tent": {
@@ -85,7 +85,7 @@
     },
     "Magicannon (Item)": {
       "name": "Магипушка (Предмет)",
-      "description": "<h5>Требуется: Продвинутые Преимущества в @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Гаджеты - Магитех}</h5><p>За <strong>@LOSS[3 ip]</strong> огнестрельное оружие, наносящее урон <strong>воздухом</strong>, <strong>молнией</strong>, <strong>землёй</strong>, <strong>огнём</strong>, <strong>льдом</strong>, или <strong>физичейкий </strong>урон. Перетяните свой вариант в Лист Персонажа.</p><p><strong>@UUID[Compendium.projectfu.consumables.Item.EGvZsEWEhaTqoCgG]{Магипушка (Воздух)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.uuKKqm81klCOiDjO]{Магипушка (Молния)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.sREYRTy6TfK8fe53]{Магипушка (Земля)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.jHbcjw8RW9Ywesyu]{Магипушка (Огонь)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.eVOnHgRLTnL695cP]{Магипушка (Лёд)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.MJoIwfTvo0FHcDqL]{Магипушка (Физический)}</strong></p>",
+      "description": "<h5>Требуется: Продвинутые Преимущества в @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Гаджеты - Магитех}</h5><p>За <strong>@LOSS[3 ip]</strong> огнестрельное оружие, наносящее урон <strong>воздухом</strong>, <strong>молнией</strong>, <strong>землёй</strong>, <strong>огнём</strong>, <strong>льдом</strong> или <strong>физический </strong>урон. Перетяните свой вариант в Лист Персонажа.</p><p><strong>@UUID[Compendium.projectfu.consumables.Item.EGvZsEWEhaTqoCgG]{Магипушка (Воздух)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.uuKKqm81klCOiDjO]{Магипушка (Молния)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.sREYRTy6TfK8fe53]{Магипушка (Земля)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.jHbcjw8RW9Ywesyu]{Магипушка (Огонь)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.eVOnHgRLTnL695cP]{Магипушка (Лёд)}</strong></p><p><strong>@UUID[Compendium.projectfu.consumables.Item.MJoIwfTvo0FHcDqL]{Магипушка (Физический)}</strong></p>",
       "summary": "Создайте огнестрельное оружие, наносящее урон воздухом, молнией, землёй, огнём, льдом или физический урон."
     },
     "Magicannon (Physical)": {
