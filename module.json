@@ -57,5 +57,7 @@
   "url": "https://github.com/spechurkin/fabula-ru-fvtt",
   "readme": "https://github.com/spechurkin/fabula-ru-fvtt/blob/main/README.md",
   "license": "https://github.com/spechurkin/fabula-ru-fvtt/blob/main/LICENSE.md",
+  "manifest": "https://github.com/League-of-Fabulous-Developers/FoundryVTT-Fabula-Ultima/releases/latest/fabula-ru.json",
+  "download": "https://github.com/spechurkin/fabula-ru-fvtt/releases/latest/download/fabula-ru.zip",
   "flags": {}
 }
