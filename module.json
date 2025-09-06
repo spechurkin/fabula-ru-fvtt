@@ -2,7 +2,7 @@
   "id": "fabula-ru",
   "title": "Translation: Russian [Fabula Ultima]",
   "description": "<p>Русский перевод системы Fabula Ultima от команды Ultima Team</p>",
-  "version": "0.4",
+  "version": "0.5",
   "compatibility": {
     "minimum": "12",
     "verified": "13.348",
@@ -57,7 +57,7 @@
   "url": "https://github.com/spechurkin/fabula-ru-fvtt",
   "readme": "https://github.com/spechurkin/fabula-ru-fvtt/blob/master/README.md",
   "license": "https://github.com/spechurkin/fabula-ru-fvtt/blob/master/LICENSE.txt",
+  "changelog": "https://github.com/spechurkin/fabula-ru-fvtt/blob/master/information/CHANGELOG.md",
   "manifest": "https://github.com/spechurkin/fabula-ru-fvtt/releases/latest/download/module.json",
-  "download": "https://github.com/spechurkin/fabula-ru-fvtt/releases/latest/download/fabula-ru.zip",
-  "flags": {}
+  "download": "https://github.com/spechurkin/fabula-ru-fvtt/releases/latest/download/fabula-ru.zip"
 }

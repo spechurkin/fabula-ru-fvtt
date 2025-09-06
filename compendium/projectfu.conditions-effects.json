@@ -247,7 +247,7 @@
           },
           "disabled": false,
           "name": "Замедление",
-          "img": "systems/projectfu/styles/static/statuses/Weak.webp",
+          "img": "systems/projectfu/styles/static/statuses/Slow.webp",
           "_id": "Bm2mQDuWRF2HfUNg",
           "type": "base",
           "system": {
@@ -300,7 +300,7 @@
           },
           "disabled": false,
           "name": "Слабость",
-          "img": "systems/projectfu/styles/static/statuses/Slow.webp",
+          "img": "systems/projectfu/styles/static/statuses/Weak.webp",
           "_id": "czJ539yK1gfZZMVu",
           "type": "base",
           "system": {
