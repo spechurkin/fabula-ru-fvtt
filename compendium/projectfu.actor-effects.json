@@ -1,9 +1,7 @@
 {
   "label": "Эффекты",
   "mapping": {
-    "effects": {
-      "path": "effects"
-    }
+    "effects": "effects"
   },
   "folders": {
     "Absorption": "Поглощение",
@@ -22,145 +20,3019 @@
   },
   "entries": {
     "Accuracy Check Up": {
-      "name": "Проверка Точности пов."
+      "name": "Проверка Точности пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.62RZnGQvUWIEyeJ7",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Проверка Точности пов.",
+          "img": "systems/projectfu/styles/static/statuses/AccuracyUp.webp",
+          "_id": "VQaSDQX4e1Mv0JXL",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyCheck",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте бонус Проверки Точности на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Air Absorption": {
-      "name": "Поглощение (Воздух)"
+      "name": "Поглощение (Воздух)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.9rWD6UhHYa6sM5JY",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Воздух)",
+          "img": "systems/projectfu/styles/static/affinities/icons/air.png",
+          "_id": "VGuvNCbJJZmrgrTw",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.air.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Air Immunity": {
-      "name": "Иммунитет (Воздух)"
+      "name": "Иммунитет (Воздух)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.ZCe1E7RtKJLMgcn8",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Воздух)",
+          "img": "systems/projectfu/styles/static/affinities/icons/air.png",
+          "_id": "94GdTX2nFEVnsVRR",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.air.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Air Resistance": {
-      "name": "Сопротивление (Воздух)"
+      "name": "Сопротивление (Воздух)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.3tMyw1mCjd7SfGTD",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Воздух)",
+          "img": "systems/projectfu/styles/static/affinities/icons/air.png",
+          "_id": "gcDIqtOEILC8Pukp",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.air",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Air Vulnerability": {
-      "name": "Уязвимость (Воздух)"
+      "name": "Уязвимость (Воздух)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.gDHa66naYcyypisK",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Воздух)",
+          "img": "systems/projectfu/styles/static/affinities/icons/air.png",
+          "_id": "oBdeMO6Mc9Qq3ysY",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.air",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Air Weakness": {
-      "name": "Слабость (Воздух)"
+      "name": "Слабость (Воздух)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/air.svg",
+          "origin": "Compendium.projectfu.actor-effects.Item.aI4tsuVswH5gfGab",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Воздух)",
+          "_id": "BBDEPNCinRNIJDKm",
+          "type": "base",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.air",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "All Check Up": {
-      "name": "Все Проверки пов."
+      "name": "Все Проверки пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.obBS9muc9G5Gn4FK",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Все Проверки пов.",
+          "img": "systems/projectfu/styles/static/statuses/AccuracyUp.webp",
+          "_id": "ZawAzHClEtivFmVp",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyCheck",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.accuracy.magicCheck",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте бонус Проверки Точности и Проверки Магии на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "All Damage Up": {
-      "name": "Весь урон пов."
+      "name": "Весь урон пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.yQzTwETS2QzFY6YW",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Весь урон пов.",
+          "img": "systems/projectfu/styles/static/statuses/AccuracyUp.webp",
+          "_id": "q0yFjkjUgr7JqfkI",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.melee",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.ranged",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.spell",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте Весь Урон на 5.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Bolt Absorption": {
-      "name": "Поглощение (Молния)"
+      "name": "Поглощение (Молния)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.fUx1ict8YZdCMif8",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Молния)",
+          "img": "systems/projectfu/styles/static/affinities/icons/bolt.png",
+          "_id": "GWQinHHAs7AZkc6G",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.bolt.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Bolt Immunity": {
-      "name": "Иммунитет (Молния)"
+      "name": "Иммунитет (Молния)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.51J6SZkx7gIRTosK",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Молния)",
+          "img": "systems/projectfu/styles/static/affinities/icons/bolt.png",
+          "_id": "oxBbQkbSWAeOsGei",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.bolt.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Bolt Resistance": {
-      "name": "Сопротивление (Молния)"
+      "name": "Сопротивление (Молния)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.QrEztsujMpK33cpj",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Молния)",
+          "img": "systems/projectfu/styles/static/affinities/icons/bolt.png",
+          "_id": "d4PESfqdTTnHDNVR",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.bolt",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Bolt Vulnerability": {
-      "name": "Уязвимость (Молния)"
+      "name": "Уязвимость (Молния)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.nNIwjuUtBXu2yGiP",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Молния)",
+          "img": "systems/projectfu/styles/static/affinities/icons/bolt.png",
+          "_id": "4xrvZp2s9AR84Rys",
+          "type": "base",
+          "system": {
+            "duration": {
+              "event": "endOfScene",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default"
+          },
+          "changes": [
+            {
+              "key": "system.affinities.bolt",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Bolt Weakness": {
-      "name": "Слабость (Молния)"
+      "name": "Слабость (Молния)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/icons/bolt.png",
+          "origin": "Compendium.projectfu.actor-effects.Item.MRNCMGIcZStGVV9J",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Молния)",
+          "_id": "8d7eCqdpQlJhgkbn",
+          "type": "base",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.bolt",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Custom NPC": {
-      "name": "Пользовательский НИП"
+      "name": "Пользовательский НИП",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "id": "",
+                "name": ""
+              }
+            }
+          },
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Инициатива",
+          "_id": "rz2zKJDhh7Hx9B35",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.derived.init.value",
+              "mode": 2,
+              "value": "floor((@actor.attributes.dex.base + @actor.attributes.ins.base)/2)",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "id": "",
+                "name": ""
+              }
+            }
+          },
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Максимум ОЗ",
+          "_id": "4gEFtsHgI2hQPIa0",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.resources.hp.max",
+              "mode": 2,
+              "value": "($cl*2)+(5*$mig)",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "id": "",
+                "name": ""
+              }
+            }
+          },
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Максимум ОР",
+          "_id": "dVFOtfXGeEdQ6DVc",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.resources.mp.max",
+              "mode": 2,
+              "value": "($cl)+(5*$wlp)",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "id": "",
+                "name": ""
+              }
+            }
+          },
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Защита",
+          "_id": "OrmoJcptYWdsMnsb",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.derived.def.value",
+              "mode": 2,
+              "value": "@system.attributes.dex.current",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "name": "",
+                "id": ""
+              }
+            }
+          },
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Магическая Защита",
+          "_id": "4jQLg6EumQ1xivgQ",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.derived.mdef.value",
+              "mode": 2,
+              "value": "@system.attributes.ins.current",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "id": "",
+                "name": ""
+              }
+            }
+          },
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Бонусы Проверок",
+          "_id": "awGa5v8uXAmkVDgZ",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyCheck",
+              "mode": 2,
+              "value": "floor($cl/10)",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.accuracy.magicCheck",
+              "mode": 2,
+              "value": "floor($cl/10)floor($cl/10)",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "id": "",
+                "name": ""
+              }
+            }
+          },
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Бонусы Урона",
+          "_id": "wRElOGOUVUWHaQMF",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.damage.melee",
+              "mode": 2,
+              "value": "&step(0,5,10,15)",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.ranged",
+              "mode": 2,
+              "value": "&step(0,5,10,15)",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.spell",
+              "mode": 2,
+              "value": "&step(0,5,10,15)",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "DEF Up": {
-      "name": "Защита пов."
+      "name": "Защита пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.u23K63sVpVJTN5fh",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Защита пов.",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "_id": "2ZSReUCu21yKNMY1",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Увеличьте Защиту на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "DEF/MDEF Up": {
-      "name": "Защита/М.Защита пов."
+      "name": "Защита/М.Защита пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.3tAzuVaQvBJcMCDc",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Защита/М.Защита пов.",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "_id": "cJozbz9OX1ZOAVbW",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            },
+            {
+              "key": "system.derived.mdef.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Увеличьте Защиту и Магическую Защиту на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "DEX Base Cap": {
-      "name": "ЛВК базовый уровень"
+      "name": "ЛВК базовый уровень",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.UwPbW3l5dOc5TawO",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "ЛВК базовый уровень",
+          "img": "systems/projectfu/styles/static/statuses/DexDown.webp",
+          "_id": "e9j3mrbVea7CmKqI",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.attributes.dex.current",
+              "mode": 3,
+              "value": "@system.attributes.dex.base",
+              "priority": null
+            }
+          ],
+          "description": "<p>Установите текущий Атрибут Ловкости на базовый.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "DEX Up": {
-      "name": "ЛВК пов."
+      "name": "ЛВК пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.vv2cqUDHaCJLmEYw",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "ЛВК пов.",
+          "img": "systems/projectfu/styles/static/statuses/DexUp.webp",
+          "_id": "f4rgFsliMvKR15em",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.attributes.dex",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте размер кости Ловкости на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Dark Absorption": {
-      "name": "Поглощение (Тьма)"
+      "name": "Поглощение (Тьма)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.VFfFrNxSyFsBz4jP",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Тьма)",
+          "img": "systems/projectfu/styles/static/affinities/icons/dark.png",
+          "_id": "U41T9GMUyzqAHnvP",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.dark.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Dark Immunity": {
-      "name": "Иммунитет (Тьма)"
+      "name": "Иммунитет (Тьма)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.Rs2GMpu0M7aLHFEC",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Тьма)",
+          "img": "systems/projectfu/styles/static/affinities/icons/dark.png",
+          "_id": "mJuxzT56bsMUggsd",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.dark.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Dark Resistance": {
-      "name": "Сопротивление (Тьма)"
+      "name": "Сопротивление (Тьма)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.fBbLvII5LUEqInQQ",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Тьма)",
+          "img": "systems/projectfu/styles/static/affinities/icons/dark.png",
+          "_id": "4L1rmcuakZ313zy3",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.dark",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Dark Vulnerability": {
-      "name": "Уязвимость (Тьма)"
+      "name": "Уязвимость (Тьма)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.7Vp8dQTW2uTxURrt",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Тьма)",
+          "img": "systems/projectfu/styles/static/affinities/icons/dark.png",
+          "_id": "CvuUyfE9mS6QG4Tj",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.dark",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Dark Weakness": {
-      "name": "Слабость (Тьма)"
+      "name": "Слабость (Тьма)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/icons/dark.png",
+          "origin": "Compendium.projectfu.actor-effects.Item.zFQpa3KcSAmBCWdE",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Тьма)",
+          "_id": "ojEksWbplWQ9QFt3",
+          "type": "base",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.dark",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Dazed Immunity": {
-      "name": "Иммунитет (Оглушение)"
+      "name": "Иммунитет (Оглушение)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.Ki4ReDF50Qs3Ec4B",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Оглушение)",
+          "img": "systems/projectfu/styles/static/statuses/Dazed.webp",
+          "_id": "gI8rDKBFuGCRE2iw",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.immunities.dazed.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Earth Absorption": {
-      "name": "Поглощение (Земля)"
+      "name": "Поглощение (Земля)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.nNMbClOSsYJtQnHV",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Земля)",
+          "img": "systems/projectfu/styles/static/affinities/icons/earth.png",
+          "_id": "KTQezfDp5eqi6wG2",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.earth.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Earth Immunity": {
-      "name": "Иммунитет (Земля)"
+      "name": "Иммунитет (Земля)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.wzssNEeWqZqJEHgJ",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Земля)",
+          "img": "systems/projectfu/styles/static/affinities/icons/earth.png",
+          "_id": "snfg06uZBDhmV7sq",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.earth.current",
+              "mode": 2,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Earth Resistance": {
-      "name": "Сопротивление (Земля)"
+      "name": "Сопротивление (Земля)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.H3SJ1fej3GSyHdKG",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Земля)",
+          "img": "systems/projectfu/styles/static/affinities/icons/earth.png",
+          "_id": "qtuzit3IPq9yaoJ4",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.earth",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Earth Vulnerability": {
-      "name": "Уязвимость (Земля)"
+      "name": "Уязвимость (Земля)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.kGH0nvB5UPJsPDw2",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Земля)",
+          "img": "systems/projectfu/styles/static/affinities/icons/earth.png",
+          "_id": "ZTLpBN6f8igf3pM8",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.earth",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Earth Weakness": {
-      "name": "Слабость (Земля)"
+      "name": "Слабость (Земля)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/icons/earth.png",
+          "origin": "Compendium.projectfu.actor-effects.Item.YpXM5ClzMzIcwCgd",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Земля)",
+          "_id": "zOVD1WzW4Dn6JbeX",
+          "type": "base",
+          "system": {
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.earth",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Enraged Immunity": {
-      "name": "Иммунитет (Ярость)"
+      "name": "Иммунитет (Ярость)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.u4z5KLTgwzfo9VZs",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Ярость)",
+          "img": "systems/projectfu/styles/static/statuses/Enraged.webp",
+          "_id": "JvYyclKZ0P4gGFkQ",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.immunities.enraged.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Fire Absorption": {
-      "name": "Поглощение (Огонь)"
+      "name": "Поглощение (Огонь)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.LKQT6lPRU0kp3v4k",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Огонь)",
+          "img": "systems/projectfu/styles/static/affinities/icons/fire.png",
+          "_id": "kVb5uBGAHziASPY5",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.fire.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Fire Immunity": {
-      "name": "Иммунитет (Огонь)"
+      "name": "Иммунитет (Огонь)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.3UDw6t6oOCavbBrB",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Огонь)",
+          "img": "systems/projectfu/styles/static/affinities/icons/fire.png",
+          "_id": "egEdWLURhPM7GMx4",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.fire.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Fire Resistance": {
-      "name": "Сопротивление (Огонь)"
+      "name": "Сопротивление (Огонь)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.FAfKTXxluiqIVP5t",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Огонь)",
+          "img": "systems/projectfu/styles/static/affinities/icons/fire.png",
+          "_id": "hT7XYI5D90CL5p43",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.fire",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Fire Vulnerability": {
-      "name": "Уязвимость (Огонь)"
+      "name": "Уязвимость (Огонь)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.k2lBFehmZtleydxx",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Огонь)",
+          "img": "systems/projectfu/styles/static/affinities/icons/fire.png",
+          "_id": "0Z0WyBC7m0WHieWy",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.fire",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Fire Weakness": {
-      "name": "Слабость (Огонь)"
+      "name": "Слабость (Огонь)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/icons/fire.png",
+          "origin": "Compendium.projectfu.actor-effects.Item.dAFACJSQzCbcU9We",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Огонь)",
+          "_id": "O4InDqGIoqBQrSLF",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.fire",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "INS Base Cap": {
-      "name": "ПРН базовый уровень"
+      "name": "ПРН базовый уровень",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.3BnJm5HkDhJfm1U1",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "ПРН базовый уровень",
+          "img": "systems/projectfu/styles/static/statuses/InsDown.webp",
+          "_id": "u4go5FNMyYqGUjkF",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.attributes.ins.current",
+              "mode": 3,
+              "value": "@system.attributes.ins.base",
+              "priority": null
+            }
+          ],
+          "description": "<p>Установите текущий Атрибут Проницательности на базовый.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "INS Up": {
-      "name": "ПРН пов."
+      "name": "ПРН пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.4G5iaieFDwGiIVrw",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "ПРН пов.",
+          "img": "systems/projectfu/styles/static/statuses/InsUp.webp",
+          "_id": "PcsvqBjmjPLOLyqI",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.attributes.ins",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте размер кости Проницательности на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Ice Absorption": {
-      "name": "Поглощение (Лёд)"
+      "name": "Поглощение (Лёд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.VhdH4DOOCAJMd197",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Лёд)",
+          "img": "systems/projectfu/styles/static/affinities/icons/ice.png",
+          "_id": "k0HozToRN0chvXz5",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.ice.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Ice Immunity": {
-      "name": "Иммунитет (Лёд)"
+      "name": "Иммунитет (Лёд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.T00l4CRwbgCuXGQJ",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Лёд)",
+          "img": "systems/projectfu/styles/static/affinities/icons/ice.png",
+          "_id": "UcvwlEqnHMfszeHv",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.ice.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Ice Resistance": {
-      "name": "Сопротивление (Лёд)"
+      "name": "Сопротивление (Лёд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.SWdZeuJTEq1ig6S8",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Лёд)",
+          "img": "systems/projectfu/styles/static/affinities/icons/ice.png",
+          "_id": "iErZlChyo26VxsSz",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.ice",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Ice Vulnerability": {
-      "name": "Уязвимость (Лёд)"
+      "name": "Уязвимость (Лёд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.FcQbi9hwRJQwmqYA",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Лёд)",
+          "img": "systems/projectfu/styles/static/affinities/icons/ice.png",
+          "_id": "yZ2WqgbgDXCe4O8L",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.ice",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Ice Weakness": {
-      "name": "Слабость (Лёд)"
+      "name": "Слабость (Лёд)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/icons/ice.png",
+          "origin": "Compendium.projectfu.actor-effects.Item.BVOW692emrw4yxR0",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Лёд)",
+          "_id": "vZsvuOrG5RsJ0nOZ",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.ice",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Light Absorption": {
-      "name": "Поглощение (Свет)"
+      "name": "Поглощение (Свет)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.4uRdxtsvkZvEA3yC",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Свет)",
+          "img": "systems/projectfu/styles/static/affinities/icons/light.png",
+          "_id": "nGaN77pSNYs8pzp8",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.light.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Light Immunity": {
-      "name": "Иммунитет (Свет)"
+      "name": "Иммунитет (Свет)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.9JSSN3qPJS2hlzcD",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Свет)",
+          "img": "systems/projectfu/styles/static/affinities/icons/light.png",
+          "_id": "5RGoWOEqWfpkNRLv",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.light.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Light Resistance": {
-      "name": "Сопротивление (Свет)"
+      "name": "Сопротивление (Свет)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.Xab6AwcRhoxVhygu",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Свет)",
+          "img": "systems/projectfu/styles/static/affinities/icons/light.png",
+          "_id": "TlCLlu54RBjlIDPN",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.light",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Light Vulnerability": {
-      "name": "Уязвимость (Свет)"
+      "name": "Уязвимость (Свет)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.qJIxAZ2HjnYsbhOB",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Свет)",
+          "img": "systems/projectfu/styles/static/affinities/icons/light.png",
+          "_id": "0Yn5vendY9l9K3mt",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.light",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Light Weakness": {
-      "name": "Слабость (Свет)"
+      "name": "Слабость (Свет)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/icons/light.png",
+          "origin": "Compendium.projectfu.actor-effects.Item.aPBdnNy1hA8aRctl",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Свет)",
+          "_id": "SoRR5Nk4iDGg7xtW",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.light",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Lone Wolf": {
       "name": "Одинокий Волк",
@@ -226,22 +3098,352 @@
       ]
     },
     "MDEF Up": {
-      "name": "М.Защита пов."
+      "name": "М.Защита пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.3tAzuVaQvBJcMCDc",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Защита/М.Защита пов.",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "_id": "cJozbz9OX1ZOAVbW",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            },
+            {
+              "key": "system.derived.mdef.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Увеличьте Защиту и Магическую Защиту на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "MIG Base Cap": {
-      "name": "МГЩ базовый уровень"
+      "name": "МГЩ базовый уровень",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.muWeWDQSvZDY0IcI",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "МГЩ базовый уровень",
+          "img": "systems/projectfu/styles/static/statuses/MigDown.webp",
+          "_id": "3aRJkYbELgwTyBOv",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.attributes.mig.current",
+              "mode": 3,
+              "value": "@system.attributes.mig.base",
+              "priority": null
+            }
+          ],
+          "description": "<p>Установите текущий Атрибут Могущества на базовый.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "MIG Up": {
-      "name": "МГЩ пов."
+      "name": "МГЩ пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.hX70STpGG5fgAAkp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "МГЩ пов.",
+          "img": "systems/projectfu/styles/static/statuses/MigUp.webp",
+          "_id": "2nsnoQoiuBKNiKqo",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.attributes.mig",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте размер кости Могущества на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Magic Check Up": {
-      "name": "Проверка Магии пов."
+      "name": "Проверка Магии пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.c9zl1Xr8nOK66ED1",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Проверка Магии пов.",
+          "img": "systems/projectfu/styles/static/statuses/MagicUp.webp",
+          "_id": "dQ7P3tKLUYpLZ0jb",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.magicCheck",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте бонус Проверки Магии на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Melee Damage Up": {
-      "name": "Урон Ближний бой пов."
+      "name": "Урон Ближний бой пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.0WU6Pa5rwEi5Fryo",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Урон Ближний бой пов.",
+          "img": "systems/projectfu/styles/static/statuses/AccuracyUp.webp",
+          "_id": "Hd5k1JDoHHXaOiDh",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.melee",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте Урон Ближнего Боя на 5.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Open Check Up": {
-      "name": "Открытая Проверка пов."
+      "name": "Открытая Проверка пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.JjpKM7hPmzGKt5X3",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Открытая Проверка пов.",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "_id": "FpqG79i3R7xYMGIv",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.openCheck",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте бонус Открытой Проверки на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Opportune Boost": {
       "name": "Усиление возможностей",
@@ -315,64 +3517,1108 @@
       ]
     },
     "Opposed Check Up": {
-      "name": "Проверка Противостояния пов."
+      "name": "Проверка Противостояния пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.bFR5xZ1WYfDZWrru",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Проверка Противостояния пов.",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "_id": "Rf5G1fGWo3JmMKni",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.opposedCheck",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте бонус Проверки Противостояния на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Physical Absorption": {
-      "name": "Поглощение (Физический)"
+      "name": "Поглощение (Физический)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.AJ3s10l6VtnmFvHg",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Физический)",
+          "img": "systems/projectfu/styles/static/affinities/icons/physical.png",
+          "_id": "EnUMtiFQzun4M3t2",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.physical.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Physical Immunity": {
-      "name": "Иммунитет (Физический)"
+      "name": "Иммунитет (Физический)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.SDc9JdC2tHXUi5xk",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Физический)",
+          "img": "systems/projectfu/styles/static/affinities/icons/physical.png",
+          "_id": "TpuTpB1SaLW22zd7",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.physical.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Physical Resistance": {
-      "name": "Сопротивление (Физический)"
+      "name": "Сопротивление (Физический)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.6yf1uUJP4vxmU3eW",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Физический)",
+          "img": "systems/projectfu/styles/static/affinities/icons/physical.png",
+          "_id": "PL4467NyM6rVy2p1",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.physical",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Physical Vulnerability": {
-      "name": "Уязвимость (Физический)"
+      "name": "Уязвимость (Физический)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.ax706lkF7lv1c2nn",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Физический)",
+          "img": "systems/projectfu/styles/static/affinities/icons/physical.png",
+          "_id": "Jy2Ie5Lndef2EoDt",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.physical",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Physical Weakness": {
-      "name": "Слабость (Физический)"
+      "name": "Слабость (Физический)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/icons/physical.png",
+          "origin": "Compendium.projectfu.actor-effects.Item.6JCfyn7Ewt0AJndC",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Физический)",
+          "_id": "LqERg9tlv5DopWCc",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.physical",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Poison Absorption": {
-      "name": "Поглощение (Яд)"
+      "name": "Поглощение (Яд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.qDOeYhLhY3YX9ro2",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Поглощение (Яд)",
+          "img": "systems/projectfu/styles/static/affinities/icons/poison.png",
+          "_id": "bRKKizv7MP6Yg5x4",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.poison.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Poison Immunity": {
-      "name": "Иммунитет (Яд)"
+      "name": "Иммунитет (Яд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.AuQKRUK8sgtUttt3",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Яд)",
+          "img": "systems/projectfu/styles/static/affinities/icons/poison.png",
+          "_id": "Ywma0BnYjgHQzFPv",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.poison.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Poison Resistance": {
-      "name": "Сопротивление (Яд)"
+      "name": "Сопротивление (Яд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.3xPA7x9S3fggYHkX",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Сопротивление (Яд)",
+          "img": "systems/projectfu/styles/static/affinities/icons/poison.png",
+          "_id": "Uco3eDAyfe7ySmUB",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.poison",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Poison Vulnerability": {
-      "name": "Слабость (Яд)"
+      "name": "Уязвимость (Яд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.q1gdoj3MrrAHspQg",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Уязвимость (Яд)",
+          "img": "systems/projectfu/styles/static/affinities/icons/poison.png",
+          "_id": "i4mGTGa14GRURF2X",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.affinities.poison",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Poison Weakness": {
-      "name": "Слабость (Яд)"
+      "name": "Слабость (Яд)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/affinities/icons/poison.png",
+          "origin": "Compendium.projectfu.actor-effects.Item.2sXIFIXiWxRHt8CP",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Слабость (Яд)",
+          "_id": "cYu5F6yJb5nlOMfD",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false
+              }
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.poison",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете <strong>5 дополнительного урона</strong> этого же типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Poisoned Immunity": {
-      "name": "Иммунитет (Отравление)"
+      "name": "Иммунитет (Отравление)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.Ujw6SLorSRl0zQ7q",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Отравление)",
+          "img": "systems/projectfu/styles/static/statuses/Poisoned.webp",
+          "_id": "rpBQNoFUtorB67wG",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.immunities.poisoned.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Range Damage Up": {
-      "name": "Урон Дальний бой пов."
+      "name": "Урон Дальний бой пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.biHVxEgwxC1Px9ZW",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Урон Дальний бой пов.",
+          "img": "systems/projectfu/styles/static/statuses/AccuracyUp.webp",
+          "_id": "xWphD2xWIVYXxODJ",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.ranged",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте Урон Дальнего Боя на 5.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Shaken Immunity": {
-      "name": "Иммунитет (Потрясение)"
+      "name": "Иммунитет (Потрясение)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.zSg3jNvLG1FtqOAz",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Потрясение)",
+          "img": "systems/projectfu/styles/static/statuses/Shaken.webp",
+          "_id": "cphv3kj7mSLTZLLk",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.immunities.shaken.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Slow Immunity": {
-      "name": "Иммунитет (Замедление)"
+      "name": "Иммунитет (Замедление)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.QWbVVZRRKhxwjQAp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Замедление)",
+          "img": "systems/projectfu/styles/static/statuses/Slow.webp",
+          "_id": "BrxOWDu5nPRmcexw",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.immunities.slow.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Spell Damage Up": {
-      "name": "Урон Заклинаний пов."
+      "name": "Урон Заклинаний пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.hQ4zcpGgtwoEOgbR",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Урон Заклинаний пов.",
+          "img": "systems/projectfu/styles/static/statuses/MagicUp.webp",
+          "_id": "JsnTwmVR1MqWVqWL",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.spell",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте Урон Заклинаний на 5.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "WLP Base Cap": {
-      "name": "ВОЛ базовый уровень"
+      "name": "ВОЛ базовый уровень",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.BOVKFGdnuk8xq5EX",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "ВОЛ базовый уровень",
+          "img": "systems/projectfu/styles/static/statuses/WlpDown.webp",
+          "_id": "t1T3A6fojAyovrHa",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.attributes.wlp.current",
+              "mode": 3,
+              "value": "@system.attributes.wlp.base",
+              "priority": null
+            }
+          ],
+          "description": "<p>Установите текущий Атрибут Воли на базовый.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "WLP Up": {
-      "name": "ВОЛ пов."
+      "name": "ВОЛ пов.",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.nXxz7GyqeIGtQpMG",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "ВОЛ пов.",
+          "img": "systems/projectfu/styles/static/statuses/WlpUp.webp",
+          "_id": "6Q0sXzf4i5X6Zu7Q",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.attributes.wlp",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Повысьте размер кости Воли на 1.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Weak Immunity": {
-      "name": "Иммунитет (Слабость)"
+      "name": "Иммунитет (Слабость)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.actor-effects.Item.azrYbcObDaVQ5GBG",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Иммунитет (Слабость)",
+          "img": "systems/projectfu/styles/static/statuses/Weak.webp",
+          "_id": "UdpP2EQc1j0t1Pvp",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.immunities.weak.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Zero Shield": {
-      "name": "Нуль-щит"
+      "name": "Нуль-щит",
+      "effects": [
+        {
+          "img": "icons/magic/defensive/barrier-shield-dome-deflect-blue.webp",
+          "system": {
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "rules": {
+              "progress": {
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "id": "",
+                "name": ""
+              }
+            }
+          },
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Нуль-щит",
+          "_id": "eQuLX93g7C1kKqk6",
+          "type": "base",
+          "changes": [
+            {
+              "key": "flags.projectfu.scaleIncomingDamage",
+              "mode": 5,
+              "value": "0.5",
+              "priority": null
+            }
+          ],
+          "description": "<p>До <strong>начала вашего следующего хода</strong> вы <strong>уменьшаете весь получаемый урон вдвое</strong>. Применяется <strong>перед Подверженностью урону</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     }
   }
 }

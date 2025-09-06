@@ -1,49 +1,634 @@
 {
   "label": "Эффекты Экипировки",
   "folders": {
-    "Alter Damage Type": "Alter Damage Type",
-    "Alter Target Defense": "Alter Target Defense",
-    "Item Damage Bonuses": "Item Damage Bonuses"
+    "Alter Damage Type": "Изменение Типа Урона",
+    "Alter Target Defense": "Изменение Защиты Цели",
+    "Item Damage Bonuses": "Бонус к Урону Оружия"
   },
   "entries": {
     "Alter Damage Type (Air)": {
-      "name": "Alter Damage Type (Air)"
+      "name": "Изменение Типа Урона (Воздух)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.NHP8FASwfMCFYhXb",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Воздух)",
+          "img": "systems/projectfu/styles/static/affinities/air.svg",
+          "_id": "4tay6tc1XdWR8IGm",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "air",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Bolt)": {
-      "name": "Alter Damage Type (Bolt)"
+      "name": "Изменение Типа Урона (Молния)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.sA4Ow3sFpVUnfcII",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Молния)",
+          "img": "systems/projectfu/styles/static/affinities/bolt.svg",
+          "_id": "oZe4OoULtGYRO6od",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "bolt",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Dark)": {
-      "name": "Alter Damage Type (Dark)"
+      "name": "Изменение Типа Урона (Тьма)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.oCoDJyldCweASnBk",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Тьма)",
+          "img": "systems/projectfu/styles/static/affinities/dark.svg",
+          "_id": "XL0xoMW8mFxCsNws",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "dark",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Earth)": {
-      "name": "Alter Damage Type (Earth)"
+      "name": "Изменение Типа Урона (Земля)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.7z4sulLR3j2HIDLd",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Земля)",
+          "img": "systems/projectfu/styles/static/affinities/earth.svg",
+          "_id": "sI51dmD9J3OQLbsb",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "earth",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Fire)": {
-      "name": "Alter Damage Type (Fire)"
+      "name": "Изменение Типа Урона (Огонь)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.L8aFfpKBj5qcoqEx",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Огонь)",
+          "img": "systems/projectfu/styles/static/affinities/fire.svg",
+          "_id": "8pd9i30YrQ982pG1",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "fire",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Ice)": {
-      "name": "Alter Damage Type (Ice)"
+      "name": "Изменение Типа Урона (Лёд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.p34FHmhkyMWI8Xj2",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Лёд)",
+          "img": "systems/projectfu/styles/static/affinities/ice.svg",
+          "_id": "x8jNIpCDg72PSmmr",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "ice",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Light)": {
-      "name": "Alter Damage Type (Light)"
+      "name": "Изменение Типа Урона (Свет)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.VStbJrco5IzfXBwg",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Свет)",
+          "img": "systems/projectfu/styles/static/affinities/light.svg",
+          "_id": "Bq2jfRi7kkYkLgtI",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "light",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Physical)": {
-      "name": "Alter Damage Type (Physical)"
+      "name": "Изменение Типа Урона (Физический)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.t1NMvwGstDfqy2Ir",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Физический)",
+          "img": "systems/projectfu/styles/static/affinities/physical.svg",
+          "_id": "skO0HIoywH6e9bIK",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "physical",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Poison)": {
-      "name": "Alter Damage Type (Poison)"
+      "name": "Изменение Типа Урона (Яд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.exv4k0HLBK9WVA5K",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Яд)",
+          "img": "systems/projectfu/styles/static/affinities/poison.svg",
+          "_id": "xWb1ScygsswzktYg",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "poison",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Damage Type (Untyped)": {
-      "name": "Alter Damage Type (Untyped)"
+      "name": "Изменение Типа Урона (Чистый)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.pQVSoX6ol3vmg1eC",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Типа Урона (Чистый)",
+          "img": "systems/projectfu/styles/static/affinities/melee.svg",
+          "_id": "OeYBD0qXY8yDrZs7",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "untyped",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном этого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Target Defense (DEF)": {
-      "name": "Alter Target Defense (DEF)"
+      "name": "Изменение Защиты Цели (Защ.)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.ClYmatnFgHgO5nhP",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Защиты Цели (Защ.)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "_id": "CYu3xXo2gXLvJ90v",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.defense",
+              "mode": 5,
+              "value": "def",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Alter Target Defense (MDEF)": {
-      "name": "Alter Target Defense (MDEF)"
+      "name": "Изменение Защиты Цели (М.Защ.)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.gOLlYa89olnLeLhK",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Защиты Цели (М.Защ.)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "_id": "gLezlQ0MFhQ25DuQ",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.defense",
+              "mode": 5,
+              "value": "mdef",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Weapon Damage Up": {
-      "name": "Weapon Damage Up"
+      "name": "Бонус к Урону Оружия",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.equipment-effects.Item.Xyj06G4k7oBerngN",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Бонус к Урону Оружия",
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "_id": "BR1Px5kJR8al9qWM",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damage.value",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     }
   }
 }

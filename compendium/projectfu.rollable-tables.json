@@ -3,38 +3,38 @@
   "folders": {},
   "entries": {
     "Alchemy: Effect": {
-      "name": "Alchemy: Effect",
-      "description": "<p><span class=\"fontstyle0\">When you create a mix, roll the amount of twenty-sided dice indicated by that mix, then assign one of those rolls to the </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.rollable-tables.RollTable.vZa3GMOzrEVma2Hv]{target} </span><span class=\"fontstyle0\">table and one to the </span><span class=\"fontstyle2\"><strong>effect</strong> </span><span class=\"fontstyle0\">table (below). Discard all remaining dice, then describe the effects of the mix!</span></p>",
+      "name": "Алхимия: Эффект",
+      "description": "<p><span class=\"fontstyle0\">Когда вы создаёте смесь, бросьте количество двадцатигранных Костей, указанное в этой смеси, затем примените один результат к таблице </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.rollable-tables.RollTable.vZa3GMOzrEVma2Hv]{цели}</span><span class=\"fontstyle0\"> и один — таблице </span><span class=\"fontstyle2\"><strong>эффекта</strong> </span><span class=\"fontstyle0\">. Выбросьте все оставшиеся Кости, затем опишите эффекты смеси!</span></p>",
       "results": {
-        "1-1": "... treats their Dexterity (@EFFECT[dex-up e:eot i:2 t:source]) and Might (@EFFECT[mig-up e:eot i:2 t:source]) dice as if they were one size higher (up to a maximum of d12) until the end of your next turn.",
-        "2-2": "... treats their Insight (@EFFECT[ins-up e:eot i:2 t:source]) and Willpower (@EFFECT[wlp-up e:eot i:2 t:source]) dice as if they were one size higher (up to a maximum of d12) until the end of your next turn.",
-        "3-3": "... suffers @DMG[20 air] damage. This amount increases to @DMG[30 air] damage if you are level 20 or higher, or to @DMG[40 air] damage if you are level 40 or higher.",
-        "4-4": "... suffers @DMG[20 bolt] damage. This amount increases to @DMG[30 bolt] damage if you are level 20 or higher, or to @DMG[40 bolt] damage if you are level 40 or higher.",
-        "5-5": "... suffers @DMG[20 dark] damage. This amount increases to @DMG[30 dark] damage if you are level 20 or higher, or to @DMG[40 dark] damage if you are level 40 or higher.",
-        "6-6": "... suffers @DMG[20 earth] damage. This amount increases to @DMG[30 earth] damage if you are level 20 or higher, or to @DMG[40 earth] damage if you are level 40 or higher.",
-        "7-7": "... suffers @DMG[20 fire] damage. This amount increases to @DMG[30 fire] damage if you are level 20 or higher, or to @DMG[40 fire] damage if you are level 40 or higher.",
-        "8-8": "... suffers @DMG[20 ice] damage. This amount increases to @DMG[30 ice] damage if you are level 20 or higher, or to @DMG[40 ice] damage if you are level 40 or higher.",
-        "9-9": "... gains Resistance to air (@TYPE[affinity air resistance e:eos i:1 t:source]) and fire (@TYPE[affinity fire resistance e:eos i:1 t:source]) damage until the end of the scene.",
-        "10-10": "... gains Resistance to bolt (@TYPE[affinity bolt resistance e:eos i:1 t:source]) and ice (@TYPE[affinity ice resistance e:eos i:1 t:source]) damage until the end of the scene.",
-        "11-11": "... gains Resistance to dark (@TYPE[affinity dark resistance e:eos i:1 t:source]) and earth (@TYPE[affinity earth resistance e:eos i:1 t:source]) damage until the end of the scene.",
-        "12-12": "... suffers @EFFECT[enraged].",
-        "13-13": "... suffers @EFFECT[poisoned].",
-        "14-14": "... suffers @EFFECT[dazed], @EFFECT[shaken], @EFFECT[slow], and @EFFECT[weak].",
-        "15-15": "... recovers from all status effects.",
-        "16-17": "... recovers @GAIN[50 hp] and @GAIN[50 mp].",
-        "18-18": "... recovers @GAIN[100 hp].",
-        "19-19": "... recovers @GAIN[100 mp].",
-        "20-20": "... recovers @GAIN[100 hp] and @GAIN[100 mp]."
+        "1-1": "... считайте свои Кости Ловкости (@EFFECT[dex-up e:eot i:2 t:source]) и Могущества (@EFFECT[mig-up e:eot i:2 t:source]) на один размер больше (максимум до d12) до конца вашего следующего хода.",
+        "2-2": "... Как эффект 1, но с Проницательностью (@EFFECT[ins-up e:eot i:2 t:source]) и Волей (@EFFECT[wlp-up e:eot i:2 t:source]).",
+        "3-3": "... получает 20 урона от воздуха @DMG[20 air]. Это количество увеличивается до 30 урона @DMG[30 air], если вы 20-го уровня или выше, или до 40 урона @DMG[40 air], если вы 40-го уровня или выше.",
+        "4-4": "Как эффект 3, но с уроном от молний. @DMG[20 bolt], @DMG[30 bolt], @DMG[40 bolt].",
+        "5-5": "Как эффект 3, но с уроном от тьмы. @DMG[20 dark], @DMG[30 dark], @DMG[40 dark].",
+        "6-6": "Как эффект 3, но с уроном от земли. @DMG[20 earth], @DMG[30 earth], @DMG[40 earth].",
+        "7-7": "Как эффект 3, но с уроном от огня. @DMG[20 fire], @DMG[30 fire], @DMG[40 fire].",
+        "8-8": "Как эффект 3, но с уроном от льда. @DMG[20 ice], @DMG[30 ice], @DMG[40 ice].",
+        "9-9": "... получает Сопротивление к урону от воздуха (@TYPE[affinity air resistance]) и огня (@TYPE[affinity fire resistance]) до конца сцены.",
+        "10-10": "Как эффект 9, но для молний (@TYPE[affinity bolt resistance]) и льда (@TYPE[affinity ice resistance]).",
+        "11-11": "Как эффект 9, но для тьмы (@TYPE[affinity dark resistance]) и земли (@TYPE[affinity earth resistance]).",
+        "12-12": "... страдает от @EFFECT[enraged].",
+        "13-13": "... страдает от @EFFECT[poisoned].",
+        "14-14": "... страдает от @EFFECT[dazed], @EFFECT[shaken], @EFFECT[slow] и @EFFECT[weak].",
+        "15-15": "... очищается от всех состояний.",
+        "16-17": "... восстанавливает @GAIN[50 hp] Очков Здоровья и @GAIN[50 mp] Очков Разума.",
+        "18-18": "... восстанавливает @GAIN[100 hp] Очков Здоровья.",
+        "19-19": "... восстанавливает @GAIN[100 mp] Очков Разума.",
+        "20-20": "... восстанавливает @GAIN[100 hp] Очков Здоровья и @GAIN[100 mp] Очков Разума."
       }
     },
     "Alchemy: Target": {
-      "name": "Alchemy: Target",
-      "description": "<p><span class=\"fontstyle0\">When you create a mix, roll the amount of twenty-sided dice indicated by that mix, then assign one of those rolls to the </span><span class=\"fontstyle2\"><strong>target</strong> </span><span class=\"fontstyle0\">table (below) and one to the </span><span class=\"fontstyle2\">effect </span><span class=\"fontstyle0\">table @UUID[Compendium.projectfu.rollable-tables.RollTable.TvH7gOE0xQYeimUF]{Alchemy: Effect}. Discard all remaining dice, then describe the effects of the mix!</span> <br style=\"font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:-webkit-auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-size-adjust:auto;-webkit-text-stroke-width:0px\" /></p>",
+      "name": "Алхимия: Цель",
+      "description": "<p><span class=\"fontstyle0\">Когда вы создаёте смесь, бросьте количество двадцатигранных Костей, указанное в этой смеси, затем примените один результат к таблице </span><span class=\"fontstyle2\"><strong>цели</strong></span><span class=\"fontstyle0\"> и один — таблице </span><span class=\"fontstyle2\">эффекта</span><span class=\"fontstyle0\"> @UUID[Compendium.projectfu.rollable-tables.RollTable.TvH7gOE0xQYeimUF]{Алхимия: Эффект}. Выбросьте все оставшиеся Кости, затем опишите эффекты смеси!</span> <br style=\"font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:-webkit-auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-size-adjust:auto;-webkit-text-stroke-width:0px\" /></p>",
       "results": {
-        "1-6": "... you or one ally you can see that is present on the scene.",
-        "7-11": "... one enemy you can see that is present on the scene.",
-        "12-16": "... you and every ally present on the scene.",
-        "17-20": "... every enemy present on the scene."
+        "1-6": "<p>... вас <strong>или</strong> одного союзника, которого вы видите, присутствующего в сцене.</p>",
+        "7-11": "<p>... врага, которого вы видите, присутствующего в сцене.</p>",
+        "12-16": "<p>... вас <strong>и</strong> каждого союзника, присутствующего в сцене.</p>",
+        "17-20": "<p>... каждого врага, присутствующего в сцене.</p>"
       }
     },
     "Delicacy Effect": {
@@ -56,14 +56,14 @@
       }
     },
     "Gamble": {
-      "name": "Gamble",
-      "description": "<p>You summon a vortex of chaotic energy. Roll your current <strong>Willpower </strong>die once for every 10 Mind Points spent while casting this spell, then keep the <strong>single</strong> die you prefer: the number on that die determines the effects of this spell.</p>",
+      "name": "Азарт",
+      "description": "<p>Вы вызываете вихрь хаотической энергии. Бросьте свою текущую кость <strong>Воли</strong> один раз за каждые 10 Очков Разума, потраченных при сотворении этого заклинания, затем оставьте себе <strong>одну</strong> кость, которая вам больше нравится: число на этой Кости определяет эффекты этого заклинания.</p>",
       "results": {
-        "1-1": "You lose half of your current Hit Points (@LOSS[(@actor.resources.hp.value/2){Half Current HP}) and half of your current Mind Points (@LOSS[(@actor.resources.mp.value/2) mp]).",
-        "2-3": "Each creature present on the scene, including yourself, suffers @EFFECT[poisoned].",
-        "4-6": "Each creature present on the scene, including yourself, suffers @EFFECT[slow].",
-        "7-8": "Choose up to three creatures you can see: each of them recovers @GAIN[50 hp] and also recovers from all status effects.",
-        "9-12": "Choose any number of creatures you can see: each of them suffers 30 damage. The damage type is determined randomly by rolling a d6: 1. @DMG[30 air] 2. @DMG[30 bolt] 3. @DMG[30 dark] 4. @DMG[30 earth] 5. @DMG[30 fire] 6. @DMG[30 poison]"
+        "1-1": "<p>Вы теряете половину текущих Очков Здоровья (@LOSS[(@actor.resources.hp.value/2) hp]{Половина текущих ОЗ}) и половину текущих Очков Разума (@LOSS[(@actor.resources.mp.value/2) mp]{Половина текущих ОР})</p>",
+        "2-3": "<p>Каждое существо, присутствующее в сцене, включая вас, страдает от <strong>отравления</strong> @EFFECT[poisoned].</p>",
+        "4-6": "<p>Каждое существо, присутствующее в сцене, включая вас, страдает от <strong>замедления</strong> @EFFECT[slow].</p>",
+        "7-8": "<p>Выберите до трёх существ, которых вы можете видеть: каждое из них восстанавливает @GAIN[50 hp] Очков Здоровья, а также очищает все состояния.</p>",
+        "9-12": "<p>Выберите любое количество существ, которых вы можете видеть: каждое из них получает 30 урона. Тип урона определяется случайным образом путём броска <strong>d6</strong>: 1. @DMG[30 air] 2. @DMG[30 bolt] 3. @DMG[30 dark] 4. @DMG[30 earth] 5. @DMG[30 fire] 6. @DMG[30 poison]</p>"
       }
     },
     "Ingredient Taste": {
