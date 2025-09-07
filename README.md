@@ -7,12 +7,14 @@
 Перевод пока не завершён, но мы активно работаем над этим! А вы можете наблюдать за нашими успехами в соцсетях!
 
 ### [Следите за изменениями](information%2FCHANGELOG.md)
+
 ### [Наблюдайте за целями](information%2FROADMAP.md)
 
 [Foundry]: https://img.shields.io/badge/Foundry-13.348-orange?logo=foundryvirtualtabletop&logosize=auto
+
 [Foundry URL]: https://foundryvtt.com
 
-[Version]: https://img.shields.io/badge/Версия-0.5.5-informational
+[Version]: https://img.shields.io/badge/Версия-0.6-informational
 
 [VK]: https://img.shields.io/badge/VK-blue?&logo=vk&logosize=auto
 [VK URL]: https://vk.com/ultima_team
