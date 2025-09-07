@@ -3,6 +3,7 @@
   "mapping": {
     "name": "name",
     "description0": "system.description",
+    "class": "system.class.value",
     "effects": "effects",
     "description1": "system.data.description",
     "domains": "system.data.domains",
@@ -30,7 +31,8 @@
     "superiorInfusions0": "system.data.superiorInfusions.0.description",
     "superiorInfusions1": "system.data.superiorInfusions.1.description",
     "alchemyConfig0": "system.data.config.alwaysAvailableEffects.0",
-    "alchemyConfig1": "system.data.config.alwaysAvailableEffects.1"
+    "alchemyConfig1": "system.data.config.alwaysAvailableEffects.1",
+    "grave_point": "system.rp.name"
   },
   "folders": {
     "Ace of Cards": "Картёжник",
@@ -73,8 +75,9 @@
   },
   "entries": {
     "Absorb MP": {
-      "name": "Absorb MP",
-      "description0": "<p>After you suffer damage, you may immediately recover <strong>【SL × 2】 </strong>Mind Points.</p><hr /><ul><li><p><strong>You Recover: </strong>@GAIN[2*$sl mp]{SL × 2 MP}</p></li></ul>"
+      "name": "Поглощение ОР",
+      "description0": "<p>После того как вы получите урон, вы можете немедленно восстановить <strong>【УН × 2】</strong>Очков Разума.</p><hr><ul>    <li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[2*$sl mp]{УН × 2 ОР}</p>    </li></ul>",
+      "class": "Энтропист"
     },
     "Adrenaline": {
       "name": "Адреналин",
@@ -128,11 +131,13 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Фурия"
     },
     "Agony": {
       "name": "Агония",
-      "description0": "<p>После того как вы нанесёте урон одному или нескольким существам, если у вас есть <strong>Узы</strong> хотя бы с одним из этих существ, вы можете восстановить <strong>【УН × 2】</strong>Очков Здоровья и <strong>【УН × 2】</strong>Очков Разума.</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[$sl*2 hp]{УН × 2 ОЗ}, и @GAIN[$sl*2 mp]{УН × 2 ОР}</p></li></ul>"
+      "description0": "<p>После того как вы нанесёте урон одному или нескольким существам, если у вас есть <strong>Узы</strong> хотя бы с одним из этих существ, вы можете восстановить <strong>【УН × 2】</strong>Очков Здоровья и <strong>【УН × 2】</strong>Очков Разума.</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[$sl*2 hp]{УН × 2 ОЗ}, и @GAIN[$sl*2 mp]{УН × 2 ОР}</p></li></ul>",
+      "class": "Клинок Тьмы"
     },
     "Akromorphosis": {
       "name": "Akromorphosis",
@@ -148,11 +153,13 @@
     },
     "Arcane Circle": {
       "name": "Круг Арканы",
-      "description0": "<p>После того как вы добровольно отзываете Аркану в свой ход во время конфликта (смотрите <strong>Основная Книга</strong>, стр. <strong>178</strong>), если эта Аркана не была <strong>призвана</strong> в течение этого же хода и у вас есть экипированное <strong>мистическое</strong> оружие, вы можете немедленно выполнить бесплатное действие <strong>Заклинания</strong>. Заклинание, которое вы сотворяете таким образом, должно иметь <strong>общую стоимость Очков Разума 【УН × 5】или ниже</strong> (вы всё равно должны оплатить стоимость ОР заклинания).</p>"
+      "description0": "<p>После того как вы добровольно отзываете Аркану в свой ход во время конфликта (смотрите <strong>Основная Книга</strong>, стр. <strong>178</strong>), если эта Аркана не была <strong>призвана</strong> в течение этого же хода и у вас есть экипированное <strong>мистическое</strong> оружие, вы можете немедленно выполнить бесплатное действие <strong>Заклинания</strong>. Заклинание, которое вы сотворяете таким образом, должно иметь <strong>общую стоимость Очков Разума 【УН × 5】или ниже</strong> (вы всё равно должны оплатить стоимость ОР заклинания).</p>",
+      "class": "Арканист"
     },
     "Arcane Regeneration": {
       "name": "Арканная Регенерация",
-      "description0": "<p>Когда вы призываете Аркану, вы немедленно восстанавливаете <strong>【УН × 5】</strong> Очков Здоровья.</p><hr><ul><li><p><strong>Вы восстанавливаете:</strong> @GAIN[&sl(\"arcane-regeneration\")*5 hp]{УН × 5 ОЗ}</p></li></ul>"
+      "description0": "<p>Когда вы призываете Аркану, вы немедленно восстанавливаете <strong>【УН × 5】</strong> Очков Здоровья.</p><hr><ul><li><p><strong>Вы восстанавливаете:</strong> @GAIN[&sl(\"arcane-regeneration\")*5 hp]{УН × 5 ОЗ}</p></li></ul>",
+      "class": "Арканист"
     },
     "Arcanum of the Forge": {
       "name": "Аркана Кузницы",
@@ -728,7 +735,8 @@
     },
     "Barrage": {
       "name": "Заградительный Огонь",
-      "description0": "<p>Когда вы выполняете атаку <strong>дальнего боя</strong> вы можете потратить 10 Очков Разума, чтобы выбрать один из вариантов: атака получает <strong>мульти (2)</strong>; <strong>или</strong> вы увеличиваете свойство <strong>мульти</strong> на одно, с максимумом в <strong>мульти (3)</strong>.</p>"
+      "description0": "<p>Когда вы выполняете атаку <strong>дальнего боя</strong> вы можете потратить 10 Очков Разума, чтобы выбрать один из вариантов: атака получает <strong>мульти (2)</strong>; <strong>или</strong> вы увеличиваете свойство <strong>мульти</strong> на одно, с максимумом в <strong>мульти (3)</strong>.</p>",
+      "class": "Стрелок"
     },
     "Bat Dance": {
       "name": "Bat Dance",
@@ -739,12 +747,15 @@
       "description0": "<p><span>After you </span><strong>plant a magiseed</strong><span> through the </span><strong>Chloromancy</strong><span> Skill (not when using <strong>Graft</strong>), you may choose one option: you perform a <strong>free attack</strong> with an equipped weapon; <strong>or</strong> perform the <strong>Spell</strong> action for free, casting a spell with a <strong>total Mind Point cost equal to or lower than【5 + (SL × 5)】</strong>(you must still pay its MP cost). Treat the <strong>High Roll (HR)</strong> of your Accuracy Check or Magic Check as being equal to 0 when determining damage dealt by this attack or spell.</span></p>"
     },
     "Beyond The Realms Of Death": {
-      "name": "Beyond The Realms Of Death",
-      "description0": "<p>When another creature you can see loses Hit Points while in Crisis, if they are not undead, you gain <strong>1 Grave Point</strong>. You may never have more than <strong>【SL + 1】 </strong>Grave Points.</p><p>When you are reduced to 0 Hit Points, you <strong>lose all Grave Points</strong>; then, if you lost at least 1 Grave Point this way and this is the <strong>first time</strong> you are reduced to 0 HP during this scene, you do not <strong>Surrender</strong> nor <strong>Sacrifice</strong> yourself: instead, you recover an amount of HP equal to <strong>【SL, multiplied by the amount of Grave Points you lost this way】</strong> .</p><hr /><ul><li><p><strong>You Recover:</strong> @GAIN[(@item.level.value)+(@item.rp.current) hp]{SL × Lost Grave Points HP}</p></li></ul>"
+      "name": "За Пределами Царства Смерти",
+      "description0": "<p>Когда другое существо, которое вы видите, теряет Очки Здоровья находясь в <strong>Кризисе</strong>, если оно не является <strong>нежитью</strong>, вы получаете <strong>1 Очко Могилы</strong>. У вас никогда не может быть больше <strong>【УН + 1】</strong> Очков Могилы.</p><p>Когда ваши Очки Здоровья опустились до 0, вы <strong>теряете все Очки Могилы</strong>; затем, если вы потеряли хотя бы 1 Очко Могилы таким образом, и это <strong>первый раз</strong> за сцену, когда вы опустились до 0 ОЗ, вы не производите <strong>Капитуляцию</strong> или <strong>Самопожертвование</strong>: вместо этого вы восстанавливаете количество Очков Здоровья, равное <strong>【УН × количество Очков Могилы, потерянных таким образом】</strong>.</p><hr><ul><li><p><strong>Вы восстанавливаете:</strong> @GAIN[(@item.level.value)+(@item.rp.current) hp]{УН × потерянное количество Очков Могилы}</p></li></ul>",
+      "grave_point": "Очко Могилы",
+      "class": "Некромант"
     },
     "Bind and Summon": {
       "name": "Связь и Призыв",
-      "description0": "<p>Вы можете <strong>привязать</strong> Арканы к своей душе и <strong>призвать</strong> их позже. Мастер расскажет вам подробности каждого процесса привязки, когда вы впервые столкнётесь с соответствующей Арканой. Вы можете выполнить действие и потратить 40 Очков Разума, чтобы <strong>призвать</strong> связанную с вами Аркану: подробности этого процесса описаны на следующей странице. Если вы овладеете этим Навыком при создании персонажа, вы начнёте игру с одной Арканой по вашему выбору, уже привязанной к вам, выбранной из списка на следующих страницах. В другом случае, вы можете получить новые Арканы только в процессе исследования и развития сюжета.</p><hr><ul><li><p>Разбор <strong>арканы</strong> и список аркан смотрите в: @UUID[Compendium.projectfu.handouts.JournalEntry.sO33zynz6ZsBDpFR]{Правила Арканы}</p></li></ul><p></p>"
+      "description0": "<p>Вы можете <strong>привязать</strong> Арканы к своей душе и <strong>призвать</strong> их позже. Мастер расскажет вам подробности каждого процесса привязки, когда вы впервые столкнётесь с соответствующей Арканой. Вы можете выполнить действие и потратить 40 Очков Разума, чтобы <strong>призвать</strong> связанную с вами Аркану: подробности этого процесса описаны на следующей странице. Если вы овладеете этим Навыком при создании персонажа, вы начнёте игру с одной Арканой по вашему выбору, уже привязанной к вам, выбранной из списка на следующих страницах. В другом случае, вы можете получить новые Арканы только в процессе исследования и развития сюжета.</p><hr><ul><li><p>Разбор <strong>арканы</strong> и список аркан смотрите в: @UUID[Compendium.projectfu.handouts.JournalEntry.sO33zynz6ZsBDpFR]{Правила Арканы}</p></li></ul><p></p>",
+      "class": "Арканист"
     },
     "Biophagy": {
       "name": "Biophagy",
@@ -760,18 +771,21 @@
     },
     "Bladestorm": {
       "name": "Буря Клинков",
-      "description0": "<p>Когда вы выполняете атаку в <strong>ближнем</strong> бою, вы можете потратить 10 Очков Разума, чтобы выбрать один из вариантов: атака получает <strong>мульти (2)</strong>; <strong>или</strong> вы увеличиваете свойство <strong>мульти</strong> на одно, с максимумом в <strong>мульти (3)</strong>.</p>"
+      "description0": "<p>Когда вы выполняете атаку в <strong>ближнем</strong> бою, вы можете потратить 10 Очков Разума, чтобы выбрать один из вариантов: атака получает <strong>мульти (2)</strong>; <strong>или</strong> вы увеличиваете свойство <strong>мульти</strong> на одно, с максимумом в <strong>мульти (3)</strong>.</p>",
+      "class": "Мастер Оружия"
     },
     "Blazing Chrysanthemum": {
       "name": "Blazing Chrysanthemum"
     },
     "Bodyguard": {
       "name": "Телохранитель",
-      "description0": "<p>@UUID[Compendium.projectfu.skills.Item.ZvZT5jWlBZVm1Gmd]{Телохранитель}</p><p>Если вы выполняете действие <strong>Оборона</strong> и решаете заслонить другое существо, это существо получает Сопротивление ко всем типам урона до начала вашего следующего хода.</p><hr><ul><li>        <p><strong>Цель получает:</strong> @EFFECT[cover] + @TYPE[affinity all resistance e:sot i:1 t:source]</p></li></ul>"
+      "description0": "<p>@UUID[Compendium.projectfu.skills.Item.ZvZT5jWlBZVm1Gmd]{Телохранитель}</p><p>Если вы выполняете действие <strong>Оборона</strong> и решаете заслонить другое существо, это существо получает Сопротивление ко всем типам урона до начала вашего следующего хода.</p><hr><ul><li>        <p><strong>Цель получает:</strong> @EFFECT[cover] + @TYPE[affinity all resistance e:sot i:1 t:source]</p></li></ul>",
+      "class": "Страж"
     },
     "Bone Crusher": {
       "name": "Костолом",
-      "description0": "<p>Когда вы поражаете одну или несколько целей атакой <strong>ближнего боя</strong>, которая наносит урон, вы можете не наносить никакого урона. Если вы это сделаете, выберите один из вариантов: сделайте <strong>оглушённой</strong> каждую цель, поражённую атакой; или сделайте <strong>слабой</strong> каждую цель, поражённую атакой; <strong>или</strong> каждая цель, поражённая атакой, теряет <strong>【УН × 10】</strong> Очков Разума. Опишите свой манёвр!</p><hr><ul><li><p><strong>Цель страдает от: </strong>@EFFECT[dazed], @EFFECT[weak], or @LOSS[$sl*10 mp]{УН × 10 ОР}</p></li></ul>"
+      "description0": "<p>Когда вы поражаете одну или несколько целей атакой <strong>ближнего боя</strong>, которая наносит урон, вы можете не наносить никакого урона. Если вы это сделаете, выберите один из вариантов: сделайте <strong>оглушённой</strong> каждую цель, поражённую атакой; или сделайте <strong>слабой</strong> каждую цель, поражённую атакой; <strong>или</strong> каждая цель, поражённая атакой, теряет <strong>【УН × 10】</strong> Очков Разума. Опишите свой манёвр!</p><hr><ul><li><p><strong>Цель страдает от: </strong>@EFFECT[dazed], @EFFECT[weak], or @LOSS[$sl*10 mp]{УН × 10 ОР}</p></li></ul>",
+      "class": "Мастер Оружия"
     },
     "Brainwave Clock": {
       "name": "Brainwave Clock",
@@ -779,15 +793,17 @@
     },
     "Breach": {
       "name": "Брешь",
-      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума, чтобы выполнить <strong>свободную атаку</strong> экипированным оружием <strong>ближнего боя</strong>. Эта атака должна быть нацелена на <strong>одно существо</strong>. Если атака успешна, то она не наносит урона, а вы выбираете один из вариантов: вы уничтожаете один щит, экипированный целью; <strong>или</strong> вы уничтожаете экипированную броню цели; <strong>или</strong> всякий раз, когда цель получает урон от любого источника, она получает дополнительно <strong>【УН × 2】</strong> урона до начала вашего следующего.</p><hr><ul><li><p><strong>Цель страдает от:</strong> @EFFECT[Compendium.projectfu.skills.Cc1391vhlS1yIMrI]</p></li></ul>"
+      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума, чтобы выполнить <strong>свободную атаку</strong> экипированным оружием <strong>ближнего боя</strong>. Эта атака должна быть нацелена на <strong>одно существо</strong>. Если атака успешна, то она не наносит урона, а вы выбираете один из вариантов: вы уничтожаете один щит, экипированный целью; <strong>или</strong> вы уничтожаете экипированную броню цели; <strong>или</strong> всякий раз, когда цель получает урон от любого источника, она получает дополнительно <strong>【УН × 2】</strong> урона до начала вашего следующего.</p><hr><ul><li><p><strong>Цель страдает от:</strong> @EFFECT[Compendium.projectfu.skills.Cc1391vhlS1yIMrI]</p></li></ul>",
+      "class": "Мастер Оружия"
     },
     "Calm Tone": {
       "name": "Calm Tone",
       "description1": "<p>Each target recovers <strong>【</strong>@GAIN[(($wlp*2)+&step(10,20,30)) @DATA[key.resource]]<strong>】</strong></p><p><span>If this tone causes MP recovery, it has <strong>no effect</strong> on the character who sings it.</span></p>"
     },
     "Cataclysm": {
-      "name": "Cataclysm",
-      "description0": "<p>When you cast an <strong>instantaneous</strong> spell, if you have an <strong>arcane</strong> weapon equipped, you may increase the spell's total MP cost by up to <strong>【SL × 10】</strong> Mind Points. If you do so and the spell deals damage to one or more creatures, it will deal 5 extra damage to each creature for every 10 Mind Points by which you increased its total MP cost.</p>"
+      "name": "Катаклизм",
+      "description0": "<p>Когда вы творите <strong>мгновенное</strong> заклинание, если у вас есть экипированное <strong>мистическое</strong> оружие, вы можете <strong>увеличить общую стоимость ОР заклинания</strong> вплоть до <strong>【УН × 10】</strong>Очков Разума. Если вы сделаете это, и заклинание нанесёт урон одному или нескольким существам, оно нанесёт 5 дополнительного урона каждому существу за каждые 10 Очков Разума, на которые вы увеличили его общую стоимость ОР.</p>",
+      "class": "Элементалист"
     },
     "Charging Cavalry": {
       "name": "Charging Cavalry",
@@ -795,11 +811,13 @@
     },
     "Cheap Shot": {
       "name": "Дешёвый Приём",
-      "description0": "<p>Когда вы поражаете существо атакой, если атака была направлена <strong>только</strong> на это существо и оно страдает от <strong>одного или нескольких состояний</strong>, вы можете заставить его нанести дополнительный урон, равный <strong>【УН + количество состояний на существе】</strong>.</p>"
+      "description0": "<p>Когда вы поражаете существо атакой, если атака была направлена <strong>только</strong> на это существо и оно страдает от <strong>одного или нескольких состояний</strong>, вы можете заставить его нанести дополнительный урон, равный <strong>【УН + количество состояний на существе】</strong>.</p>",
+      "class": "Разбойник"
     },
     "Children Of The Grave": {
-      "name": "Children Of The Grave",
-      "description0": "<p>You can always communicate verbally with <strong>undead</strong> creatures. Once per scene, you may ask an <strong>undead</strong> a single question; they are compelled to answer truthfully.</p>"
+      "name": "Могильное Дитя",
+      "description0": "<p>Вы всегда можете общаться с <strong>нежитью</strong> устно. Один раз сцену вы можете задать <strong>нежити</strong> один вопрос; они обязаны отвечать правдиво.</p>",
+      "class": "Некромант"
     },
     "Chloromancy": {
       "name": "Chloromancy",
@@ -822,11 +840,13 @@
     },
     "Condemn": {
       "name": "Обличение",
-      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума, чтобы выполнить Противостояния <strong>【ПРН + ВОЛ】</strong> против существа, которое может слышать и понимать вас — опишите свои обвинения! Если вы преуспеете, цель потеряет <strong>【УН × 10】</strong> Очков Разума и становится <strong>оглушена</strong> или <strong>потрясена</strong> (на ваш выбор).</p><p>Вы получаете бонус, равный <strong>【УН】</strong> к вашим Проверкам <strong>【ПРН + ВОЛ】</strong> для этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[ins wlp ($sl)]</p></li><li>        <p><strong>Цель теряет</strong>: @LOSS[$sl*10 mp]</p></li><li>        <p><strong>Цель страдает от:</strong> @EFFECT[dazed] или @EFFECT[shaken]</p></li></ul>"
+      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума, чтобы выполнить Противостояния <strong>【ПРН + ВОЛ】</strong> против существа, которое может слышать и понимать вас — опишите свои обвинения! Если вы преуспеете, цель потеряет <strong>【УН × 10】</strong> Очков Разума и становится <strong>оглушена</strong> или <strong>потрясена</strong> (на ваш выбор).</p><p>Вы получаете бонус, равный <strong>【УН】</strong> к вашим Проверкам <strong>【ПРН + ВОЛ】</strong> для этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[ins wlp ($sl)]</p></li><li>        <p><strong>Цель теряет</strong>: @LOSS[$sl*10 mp]</p></li><li>        <p><strong>Цель страдает от:</strong> @EFFECT[dazed] или @EFFECT[shaken]</p></li></ul>",
+      "class": "Оратор"
     },
     "Consume": {
       "name": "Поглощение",
-      "description0": "<p>После того как вы нанесёте урон одному или нескольким существам заклинанием, если у вас есть <strong>кинжал</strong>, <strong>цеп</strong> или <strong>мистическое</strong> оружие вы восстанавливаете <strong>【УН × 2】</strong>Очков Разума.</p><hr><ul><li><p><strong>Вы восстанавливаете: </strong>@GAIN[$sl*2 mp]{УН × 2}</p></li></ul>"
+      "description0": "<p>После того как вы нанесёте урон одному или нескольким существам заклинанием, если у вас есть <strong>кинжал</strong>, <strong>цеп</strong> или <strong>мистическое</strong> оружие вы восстанавливаете <strong>【УН × 2】</strong>Очков Разума.</p><hr><ul><li><p><strong>Вы восстанавливаете: </strong>@GAIN[$sl*2 mp]{УН × 2}</p></li></ul>",
+      "class": "Химерист"
     },
     "Cookbook": {
       "name": "Cookbook"
@@ -837,11 +857,13 @@
     },
     "Counterattack": {
       "name": "Контратака",
-      "description0": "<p>После того как враг <strong>поразил вас атакой ближнего боя или промахнулся по вам</strong>, если результатом Проверки Точности было <strong>чётное число</strong>, вы можете выполнить <strong>свободную атаку</strong> против этого врага (после того, как его атака будет полностью разрешена). Эта атака должна быть атакой <strong>ближнего боя</strong>, и её <strong>единственной</strong> целью должен быть этот враг; учитывайте свой <strong>Лучший Бросок (ЛБ)</strong> как 0 при расчёте урона, наносимого этой атакой.</p>"
+      "description0": "<p>После того как враг <strong>поразил вас атакой ближнего боя или промахнулся по вам</strong>, если результатом Проверки Точности было <strong>чётное число</strong>, вы можете выполнить <strong>свободную атаку</strong> против этого врага (после того, как его атака будет полностью разрешена). Эта атака должна быть атакой <strong>ближнего боя</strong>, и её <strong>единственной</strong> целью должен быть этот враг; учитывайте свой <strong>Лучший Бросок (ЛБ)</strong> как 0 при расчёте урона, наносимого этой атакой.</p>",
+      "class": "Мастер Оружия"
     },
     "Crossfire": {
       "name": "Перекрёстный Огонь",
-      "description0": "<p>После того как существо, которое вы видите, выполнит атаку <strong>дальнего боя</strong>, вы можете потратить количество Очков Разума, равное общему результату его Проверки Точности, чтобы атака автоматически завершилась неудачей по всем целям. Вы можете использовать этот Навык только в том случае, если у вас экипировано оружие <strong>дальнего боя</strong>, и он не имеет никакого эффекта, если Проверка Точности <strong>критически успешна</strong>.</p>"
+      "description0": "<p>После того как существо, которое вы видите, выполнит атаку <strong>дальнего боя</strong>, вы можете потратить количество Очков Разума, равное общему результату его Проверки Точности, чтобы атака автоматически завершилась неудачей по всем целям. Вы можете использовать этот Навык только в том случае, если у вас экипировано оружие <strong>дальнего боя</strong>, и он не имеет никакого эффекта, если Проверка Точности <strong>критически успешна</strong>.</p>",
+      "class": "Стрелок"
     },
     "Crushing Chariot": {
       "name": "Crushing Chariot",
@@ -909,7 +931,8 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Клинок Тьмы"
     },
     "Defensive Mastery": {
       "name": "Мастерство Обороны",
@@ -963,7 +986,8 @@
             }
           }
         }
-      ]
+      ],
+      "class": "Страж"
     },
     "Desert Dahlia": {
       "name": "Desert Dahlia"
@@ -1020,7 +1044,8 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Разбойник"
     },
     "Double or Nothing": {
       "name": "Всё или Ничего",
@@ -1029,7 +1054,8 @@
     },
     "Dual Shieldbearer": {
       "name": "Бой Двумя Щитами",
-      "description0": "<p>@UUID[Compendium.projectfu.skills.Item.aPQXTQegswRisA1R]{Бой Двумя Щитами}</p><p>Теперь вы можете экипировать <strong>щит</strong> в <strong>основной ячейке руки</strong>. Пока у вас есть два щита, вы получаете преимущества обоих предметов и можете использовать их как следующее комбинированное <strong>рукопашное</strong> двуручное оружие ближнего боя:</p><table border=\"1\" style=\"width:98.7597%;height:53px\"><colgroup>        <col style=\"width:14.4654%\">        <col style=\"width:20.7547%\">        <col style=\"width:23.2618%\">        <col style=\"width:41.5181%\"></colgroup><tbody>        <tr style=\"height:17px\"> <td style=\"height:17px\"><strong>ОРУЖИЕ</strong></td> <td style=\"height:17px\"><strong>ТОЧНОСТЬ</strong></td> <td style=\"height:17px\"><strong>УРОН</strong></td> <td style=\"height:17px\"><strong>КАЧЕСТВО</strong></td>        </tr>        <tr style=\"height:36px\"> <td style=\"height:36px\"><strong>Два Щита</strong></td> <td style=\"height:36px\"><strong>【МГЩ + МГЩ】</strong></td> <td style=\"height:36px\"><strong>【ЛБ + 5】физ.</strong></td> <td style=\"height:36px\">Наносит дополнительный урон, равный <strong>【УН】</strong> Навыка <strong>мастерство обороны</strong>.</td>        </tr></tbody></table><hr><ul><li>        <p>Для <strong>автоматизации</strong> добавьте следующе @UUID[Compendium.projectfu.skills.Item.2LyT2btVVPDPYY4h]{Два Щита} в свой лист персонажа. Пройдите во вкладку \"<strong>Предметы</strong>\", где находится <strong>Два Щита</strong> и нажмите <strong>Ctrl+ЛКМ</strong> на иконку <strong>\"Экипировать?</strong>\". Предмет будет добавлен в <strong>Фантомную Руку</strong>. Убедитесь, что этот навык добавлен в лист персонажа. Теперь вы можете экипировать щиты как в основной, так и в свободной руке.</p></li></ul>"
+      "description0": "<p>@UUID[Compendium.projectfu.skills.Item.aPQXTQegswRisA1R]{Бой Двумя Щитами}</p><p>Теперь вы можете экипировать <strong>щит</strong> в <strong>основной ячейке руки</strong>. Пока у вас есть два щита, вы получаете преимущества обоих предметов и можете использовать их как следующее комбинированное <strong>рукопашное</strong> двуручное оружие ближнего боя:</p><table border=\"1\" style=\"width:98.7597%;height:53px\"><colgroup>        <col style=\"width:14.4654%\">        <col style=\"width:20.7547%\">        <col style=\"width:23.2618%\">        <col style=\"width:41.5181%\"></colgroup><tbody>        <tr style=\"height:17px\"> <td style=\"height:17px\"><strong>ОРУЖИЕ</strong></td> <td style=\"height:17px\"><strong>ТОЧНОСТЬ</strong></td> <td style=\"height:17px\"><strong>УРОН</strong></td> <td style=\"height:17px\"><strong>КАЧЕСТВО</strong></td>        </tr>        <tr style=\"height:36px\"> <td style=\"height:36px\"><strong>Два Щита</strong></td> <td style=\"height:36px\"><strong>【МГЩ + МГЩ】</strong></td> <td style=\"height:36px\"><strong>【ЛБ + 5】физ.</strong></td> <td style=\"height:36px\">Наносит дополнительный урон, равный <strong>【УН】</strong> Навыка <strong>мастерство обороны</strong>.</td>        </tr></tbody></table><hr><ul><li>        <p>Для <strong>автоматизации</strong> добавьте следующе @UUID[Compendium.projectfu.skills.Item.2LyT2btVVPDPYY4h]{Два Щита} в свой лист персонажа. Пройдите во вкладку \"<strong>Предметы</strong>\", где находится <strong>Два Щита</strong> и нажмите <strong>Ctrl+ЛКМ</strong> на иконку <strong>\"Экипировать?</strong>\". Предмет будет добавлен в <strong>Фантомную Руку</strong>. Убедитесь, что этот навык добавлен в лист персонажа. Теперь вы можете экипировать щиты как в основной, так и в свободной руке.</p></li></ul>",
+      "class": "Страж"
     },
     "Dynamotheria": {
       "name": "Dynamotheria",
@@ -1119,7 +1145,61 @@
       "name": "Effect: Electro Hex"
     },
     "Effect: For Whom The Bell Tolls": {
-      "name": "Effect: For Whom The Bell Tolls"
+      "name": "Эффект: По Ком Звонит Колокол",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/necromancer/for_whom_the_bell_tolls.png",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: По Ком Звонит Колокол",
+          "_id": "RCtie3pzKMTEmDkR",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "source",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.spell",
+              "mode": 2,
+              "value": "~&sl(\"for-whom-the-bell-tolls\")+$tsc",
+              "priority": null
+            }
+          ],
+          "description": "<p>Когда вы <strong>наносите существу урон заклинанием</strong>, если <strong>это заклинание наносит урон только этому существу</strong>, вы можете потратить 1 Очко Могилы. Если вы это сделаете, выберите один из вариантов: если существо страдает от одного или нескольких состояний, заклинание наносит дополнительный урон, равный <strong>【(УН × 2) + количество состояний этого существа】</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Geo Hex": {
       "name": "Effect: Geo Hex"
@@ -1370,8 +1450,9 @@
       "description0": "<p>You may verbally communicate with creatures of the <strong>elemental</strong> Species.</p><p>When you restore a creature's Hit Points with an <strong>invocation</strong> or spell, if an <strong>elemental</strong> is present on the scene, the restored amount is increased by <strong>【SL × 5】</strong>.</p><hr /><ul><li><p><strong>Target Restores:</strong> @GAIN[$sl*5 hp]{SL × 5 HP}</p></li></ul>"
     },
     "Elemental Magic": {
-      "name": "Elemental Magic",
-      "description0": "<p>Each time you acquire this Skill, learn one Elementalist spell (see <strong>Core Rulebook</strong>, page <strong>188</strong>).</p><p>Offensive ( @ICON[offensive] ) Elementalist spells use <strong>【INS + WLP】</strong> for the Magic Check.</p><hr /><ul><li><p>For <strong>spell</strong> breakdown and a list of Elemental Spells, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.hK8r8lsQNaknSqdq]{Elementalist Rules}</p></li></ul>"
+      "name": "Элементальная Магия",
+      "description0": "<p><span class=\"fontstyle0\">Каждый раз, когда вы приобретаете этот Навык, изучите одно заклинание Элементалиста (см. <strong>Основная Книга</strong>, стр.<strong>188</strong>).</span></p><p><span class=\"fontstyle0\">Атакующие </span>( @ICON[offensive] ) <span class=\"fontstyle0\">заклинания Элементалиста используют </span><span class=\"fontstyle3\"><strong>【</strong></span><span class=\"fontstyle4\"><strong>ПРН + ВОЛ</strong></span><span class=\"fontstyle3\"><strong>】</strong></span><span class=\"fontstyle0\"> для Проверки Магии.</span></p><hr><ul>    <li>        <p>Разбор <strong>заклинаний</strong> и Список Заклинаний могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.hK8r8lsQNaknSqdq]{Правила Элементалиста}</p>    </li></ul>",
+      "class": "Элементалист"
     },
     "Emergency Arcanum": {
       "name": "Критическая Аркана",
@@ -1418,7 +1499,8 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Арканист"
     },
     "Emergency Item": {
       "name": "Срочный Предмет",
@@ -1461,19 +1543,22 @@
           "sort": 0,
           "flags": {}
         }
-      ]
+      ],
+      "class": "Изобретатель"
     },
     "Encourage": {
       "name": "Воодушевление",
-      "description0": "<p>Во время конфликта вы можете выполнить действие и потратить 5 Очков Разума, чтобы выбрать другое существо, которое может слышать и понимать вас. Это существо восстанавливает <strong>【УН × 5】</strong>Очков Здоровья и выбирает <strong>Ловкость</strong>, <strong>Проницательность</strong>, <strong>Могущество</strong> или <strong>Волю</strong>: выбранная Характеристика считается на один размер Кости больше (максимум до <strong>d12</strong>) до начала вашего следующего хода.</p><hr><ul><li><p><strong>Цель восстанавливает: </strong>@GAIN[5*$sl hp]{УН × 5 ОЗ}</p></li><li><p><strong>Цель получает:</strong> @EFFECT[dex-up e:sot i:1 t:source], @EFFECT[ins-up e:sot i:1 t:source], @EFFECT[mig-up e:sot i:1 t:source] или @EFFECT[wlp-up e:sot i:1 t:source]</p></li></ul>"
+      "description0": "<p>Во время конфликта вы можете выполнить действие и потратить 5 Очков Разума, чтобы выбрать другое существо, которое может слышать и понимать вас. Это существо восстанавливает <strong>【УН × 5】</strong>Очков Здоровья и выбирает <strong>Ловкость</strong>, <strong>Проницательность</strong>, <strong>Могущество</strong> или <strong>Волю</strong>: выбранная Характеристика считается на один размер Кости больше (максимум до <strong>d12</strong>) до начала вашего следующего хода.</p><hr><ul><li><p><strong>Цель восстанавливает: </strong>@GAIN[5*$sl hp]{УН × 5 ОЗ}</p></li><li><p><strong>Цель получает:</strong> @EFFECT[dex-up e:sot i:1 t:source], @EFFECT[ins-up e:sot i:1 t:source], @EFFECT[mig-up e:sot i:1 t:source] или @EFFECT[wlp-up e:sot i:1 t:source]</p></li></ul>",
+      "class": "Оратор"
     },
     "Energetic Tone": {
       "name": "Energetic Tone",
       "description1": "<p>Until the <strong>start of your next turn</strong>, when a target <strong>succeeds</strong> on a <strong>Check</strong> that includes <strong>【@DATA[key.attributeLocal]】</strong> and that Check allows them to advance or turn back a Clock, they may <strong>fill or erase</strong> an additional section of that Clock.</p>"
     },
     "Entropic Magic": {
-      "name": "Entropic Magic",
-      "description0": "<p>Each time you acquire this Skill, learn one Entropist spell (see <strong>Core Rulebook</strong>, page <strong>192</strong>).</p><p>Offensive ( @ICON[offensive] ) Entropist spells use <strong>【INS + WLP】</strong> for the Magic Check.</p><hr /><ul><li><p>For <strong>spell</strong> breakdown and a list of Entropist Spells, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.jZeTJrK0mFsRyz8S]{Entropist Rules}</p></li></ul>"
+      "name": "Энтропийная Магия",
+      "description0": "<p>Каждый раз, когда вы приобретаете этот Навык, изучайте одно заклинание Энтрописта (см. <strong>Основная Книга</strong>, стр.<strong>192</strong>).</p><p>Атакующие ( @ICON[offensive] ) заклинания Энтрописта используют <strong>【ПРН + ВОЛ】</strong> для Проверки Магии.</p><hr><ul>    <li>        <p>Разбор <strong>заклинаний</strong> и Список Заклинаний могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.jZeTJrK0mFsRyz8S]{Правила Энтрописта}</p>    </li></ul>",
+      "class": "Энтропист"
     },
     "Expiration Date": {
       "name": "Expiration Date",
@@ -1481,11 +1566,13 @@
     },
     "Faithful Companion": {
       "name": "Верный Спутник",
-      "description0": "<p>Вместе с остальными членами вашей группы создайте НИП <strong>зверя, конструкта, элементаля</strong> или <strong>растение 5-го уровня</strong>(см. <strong>Основная Книга</strong>, стр.<strong>302</strong>), которое станет вашим <strong>спутником</strong>: Это существо <strong>не имеет своего показателя инициативы</strong> и <strong>не повышает уровень</strong>, может использовать <strong>до двух базовых атак</strong>, получает бонус, равный <strong>【УК】</strong> к Проверкам Точности и Магии, а его максимальные Очки Здоровья равны <strong>【(УН, умноженное на базовый размер Кости Могущества спутника) + половина вашего уровня】</strong>.</p><p>Ваш компаньон не получает независимого хода во время конфликтов, но в свой ход вы можете выполнить действие, чтобы дать компаньону выполнить собственное действие (только один раз за ход). Если компаньон получает любой <strong>зависимый от хода эффект</strong> (см. <strong>Основная Книга</strong>, стр. <strong>77</strong>), он проявляется в <strong>ваш</strong> ход.</p><p>Ваш спутник входит в сцену и покидает её вместе с вами, как и получает эффекты <strong>отдыха</strong>. Если у вашего спутника остаётся 0 Очков Здоровья, он убегает и присоединяется к вам в начале следующей сцены, в которой вы присутствуете, с ОЗ, равным <strong>Кризисному</strong>.</p><hr><ul><li>        <p>Для <strong>автоматизации</strong> импортируйте следующего актёра в мир: @UUID[Compendium.projectfu.npcs.Actor.7J6fSVwbaWwi3Ojv]{Верный Спутник}</p></li><li>        <p>Затем пройдите во вкладку \"<strong>Настройки</strong>\". Для \"<strong>Игрока</strong>\" выберите владельца компаньона, а для \"<strong>Навыка</strong>\" — Навык \"<strong>Верный Спутник</strong>\".</p></li></ul>"
+      "description0": "<p>Вместе с остальными членами вашей группы создайте НИП <strong>зверя, конструкта, элементаля</strong> или <strong>растение 5-го уровня</strong>(см. <strong>Основная Книга</strong>, стр.<strong>302</strong>), которое станет вашим <strong>спутником</strong>: Это существо <strong>не имеет своего показателя инициативы</strong> и <strong>не повышает уровень</strong>, может использовать <strong>до двух базовых атак</strong>, получает бонус, равный <strong>【УК】</strong> к Проверкам Точности и Магии, а его максимальные Очки Здоровья равны <strong>【(УН, умноженное на базовый размер Кости Могущества спутника) + половина вашего уровня】</strong>.</p><p>Ваш компаньон не получает независимого хода во время конфликтов, но в свой ход вы можете выполнить действие, чтобы дать компаньону выполнить собственное действие (только один раз за ход). Если компаньон получает любой <strong>зависимый от хода эффект</strong> (см. <strong>Основная Книга</strong>, стр. <strong>77</strong>), он проявляется в <strong>ваш</strong> ход.</p><p>Ваш спутник входит в сцену и покидает её вместе с вами, как и получает эффекты <strong>отдыха</strong>. Если у вашего спутника остаётся 0 Очков Здоровья, он убегает и присоединяется к вам в начале следующей сцены, в которой вы присутствуете, с ОЗ, равным <strong>Кризисному</strong>.</p><hr><ul><li>        <p>Для <strong>автоматизации</strong> импортируйте следующего актёра в мир: @UUID[Compendium.projectfu.npcs.Actor.7J6fSVwbaWwi3Ojv]{Верный Спутник}</p></li><li>        <p>Затем пройдите во вкладку \"<strong>Настройки</strong>\". Для \"<strong>Игрока</strong>\" выберите владельца компаньона, а для \"<strong>Навыка</strong>\" — Навык \"<strong>Верный Спутник</strong>\".</p></li></ul>",
+      "class": "Странник"
     },
     "Fear Is The Key": {
-      "name": "Fear Is The Key",
-      "description0": "<p>After you cause one or more enemies to lose Hit Points, if you have acquired the <strong>Beyond the Realms of Death</strong> Skill and at least one of them is suffering from <strong>shaken</strong> and/or <strong>weak</strong>, you gain 1 Grave Point and recover <strong>【SL × 2】 </strong>Hit Points and Mind Points.</p><hr /><ul><li><p><strong>Resource:</strong> @PROGRESS[beyond-the-realms-of-death update 1]{Gain 1 Grave Point}</p></li><li><p><strong>You Recover: </strong>@GAIN[2*$sl hp]{SL × 2 HP}, and<strong> </strong>@GAIN[2*$sl mp]{SL × 2 MP}</p></li></ul>"
+      "name": "Страх — это Ключ",
+      "description": "<p>После того, как вы заставите одного или нескольких врагов потерять Очки Здоровья, если вы приобрели Навык <strong>За Пределами Царства Смерти</strong> и по крайней мере один из них страдает от <strong>потрясения</strong> и/или <strong>слабости</strong>, вы получаете 1 Очко Могилы и восстанавливаете <strong>【УН × 2】</strong> Очков Здоровья и Очков Разума.</p><hr><ul><li><p><strong>Ресурс:</strong> @PROGRESS[beyond-the-realms-of-death update 1]{Получите 1 Очко Могилы}</p></li><li><p><strong>Вы восстанавливаете: </strong>@GAIN[2*$sl hp]{УН × 2 ОЗ} и<strong> </strong>@GAIN[2*$sl mp]{УН × 2 ОР}</p></li></ul>",
+      "class": "Некромант"
     },
     "Feral Speech": {
       "name": "Звериная Речь",
@@ -1532,11 +1619,13 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Химерист"
     },
     "Flash of Insight": {
       "name": "Озарение",
-      "description0": "<p>Когда вы набираете<strong>13 или выше</strong> за Проверку, выполненную для исследования существа, предмета или локации — это включает в себя выполнение действия <strong>Изучение</strong> во время конфликта — вы можете задать Мастеру до <strong>【УН】</strong> вопросов, касающихся предмета вашего исследования. Вы можете задать эти вопросы немедленно или сохранить их на потом; всякий раз, когда вы зададите один из этих вопросов, Мастер ответит правдиво, и вы опишете дедуктивный процесс вашего персонажа.</p><p>Этот Навык можно использовать только один раз для одного и того же существа, предмета или локации.</p>"
+      "description0": "<p>Когда вы набираете<strong>13 или выше</strong> за Проверку, выполненную для исследования существа, предмета или локации — это включает в себя выполнение действия <strong>Изучение</strong> во время конфликта — вы можете задать Мастеру до <strong>【УН】</strong> вопросов, касающихся предмета вашего исследования. Вы можете задать эти вопросы немедленно или сохранить их на потом; всякий раз, когда вы зададите один из этих вопросов, Мастер ответит правдиво, и вы опишете дедуктивный процесс вашего персонажа.</p><p>Этот Навык можно использовать только один раз для одного и того же существа, предмета или локации.</p>",
+      "class": "Хранитель Знаний"
     },
     "Flexible Configuration": {
       "name": "Flexible Configuration",
@@ -1594,15 +1683,17 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Хранитель Знаний"
     },
     "Follow My Lead": {
       "name": "Follow My Lead",
       "description0": "<p>When you perform a <strong>dance</strong> with a <strong>duration</strong> of “Until the start of your next turn”, you may spend <strong>10 MP</strong>. If you do, choose one ally you can see towards whom you have a Bond of <strong>affection</strong>: apply the benefits of the <strong>dance</strong> to that ally as well as yourself (the benefits still last until the start of <strong>your</strong> next turn).</p>"
     },
     "For Whom The Bell Tolls": {
-      "name": "For Whom The Bell Tolls",
-      "description0": "<p>When you <strong>deal damage to a creature with a spell</strong>, if that spell <strong>only deals damage to that creature</strong>, you may spend 1 Grave Point. If you do, choose one option: if that creature is suffering from one or more status effects, the spell deals extra damage equal to <strong>【(SL × 2) + the number of status effects on that creature】</strong>; or if that creature is suffering from no status effects, they suffer <strong>shaken</strong>.</p><hr /><ul><li><p><strong>Resource:</strong> @PROGRESS[beyond-the-realms-of-death update -1]{Spend 1 Grave Point}</p></li><li><p><strong>Target Suffers:</strong> @EFFECT[Compendium.projectfu.skills.Item.Jc1KEmU0iN7Ul8dZ]{Effect: For Whom The Bell Tolls}, or @EFFECT[shaken]</p></li></ul>"
+      "name": "По Ком Звонит Колокол",
+      "description0": "<p>Когда вы <strong>наносите существу урон заклинанием</strong>, если <strong>это заклинание наносит урон только этому существу</strong>, вы можете потратить 1 Очко Могилы. Если вы это сделаете, выберите один из вариантов: если существо страдает от одного или нескольких состояний, заклинание наносит дополнительный урон, равный <strong>【(УН × 2) + количество состояний этого существа】</strong>; <strong>или</strong> если это существо не страдает от состояний, оно становится <strong>потрясённым</strong>.</p><hr><ul><li><p><strong>Ресурс:</strong> @PROGRESS[beyond-the-realms-of-death update -1]{Потратьте 1 Очко Могилы}</p></li><li><p><strong>Цель страдает от:</strong> @EFFECT[Compendium.projectfu.skills.Item.Jc1KEmU0iN7Ul8dZ]{Эффект: По Ком Звонит Колокол} или @EFFECT[shaken]</p></li></ul>",
+      "class": "Некромант"
     },
     "Fortress": {
       "name": "Крепость",
@@ -1654,7 +1745,8 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Страж"
     },
     "Frantic Tone": {
       "name": "Frantic Tone",
@@ -1734,7 +1826,8 @@
           "sort": 0,
           "flags": {}
         }
-      ]
+      ],
+      "class": "Фурия"
     },
     "Gadget - Alchemy": {
       "name": "Гаджет - Алхимия",
@@ -1776,7 +1869,8 @@
     },
     "Gadgets": {
       "name": "Гаджеты",
-      "description0": "<p>Когда вы впервые приобретаете этот Навык, выберите тип изобретения: <strong>алхимия, отвары</strong> или <strong>магитех</strong> (см. <strong>Основная Книга</strong>, стр. <strong>212</strong>). Вы получаете его <strong>базовые преимущества</strong>.</p><p>Всякий раз, когда вы снова овладеете этим Навыком, выбирайте один из вариантов: вы получаете <strong>базовые преимущества</strong> нового типа гаджетов; <strong>или</strong> вы получаете <strong>продвинутые преимущества</strong> гаджета, <strong>базовые преимущества</strong> которого вы уже получили; <strong>или</strong> вы получаете <strong>превосходные преимущества</strong> типа гаджета, <strong>продвинутые преимущества</strong> которого вы уже получили.</p><hr><ul><li>        <p><span>Разбор</span> <strong>гаджетов</strong> и список <strong>Гаджетов</strong> могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk]{Правила Гаджетов}</p></li><li>        <p>Для <strong>автоматизации</strong>, Инструкции VTT могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk.JournalEntryPage.7D5mpbaYddiztH1W]{Инструкции VTT к Гаджетам}</p></li></ul>"
+      "description0": "<p>Когда вы впервые приобретаете этот Навык, выберите тип изобретения: <strong>алхимия, отвары</strong> или <strong>магитех</strong> (см. <strong>Основная Книга</strong>, стр. <strong>212</strong>). Вы получаете его <strong>базовые преимущества</strong>.</p><p>Всякий раз, когда вы снова овладеете этим Навыком, выбирайте один из вариантов: вы получаете <strong>базовые преимущества</strong> нового типа гаджетов; <strong>или</strong> вы получаете <strong>продвинутые преимущества</strong> гаджета, <strong>базовые преимущества</strong> которого вы уже получили; <strong>или</strong> вы получаете <strong>превосходные преимущества</strong> типа гаджета, <strong>продвинутые преимущества</strong> которого вы уже получили.</p><hr><ul><li>        <p><span>Разбор</span> <strong>гаджетов</strong> и список <strong>Гаджетов</strong> могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk]{Правила Гаджетов}</p></li><li>        <p>Для <strong>автоматизации</strong>, Инструкции VTT могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.TV4Cj3UI0LWNZaOk.JournalEntryPage.7D5mpbaYddiztH1W]{Инструкции VTT к Гаджетам}</p></li></ul>",
+      "class": "Изобретатель"
     },
     "Garden": {
       "name": "Garden"
@@ -1813,11 +1907,13 @@
     },
     "Hawkeye": {
       "name": "Соколиный Глаз",
-      "description0": "<p>При выполнении действия <strong>Оборона</strong>, если вы решите <strong>не</strong> заслонять другое существо, вы можете выбрать один из вариантов: следующая атака <strong>дальнего боя</strong>, которую вы проведёте до конца текущей сцены, нанесёт дополнительный урон <strong>【УН × 2】</strong>; <strong>или</strong> вы можете немедленно выполнить <strong>свободную атаку</strong> из экипированного <strong>лука</strong> или <strong>огнестрельного</strong> оружия; считайте свой <strong>Лучший Бросок (ЛБ)</strong> равным 0 при расчёте урона, наносимого этой атакой.</p><hr><ul><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.skills.Item.enboiNabyACt4OUB]{Эффект: Соколиный Глаз}</p></li></ul>"
+      "description0": "<p>При выполнении действия <strong>Оборона</strong>, если вы решите <strong>не</strong> заслонять другое существо, вы можете выбрать один из вариантов: следующая атака <strong>дальнего боя</strong>, которую вы проведёте до конца текущей сцены, нанесёт дополнительный урон <strong>【УН × 2】</strong>; <strong>или</strong> вы можете немедленно выполнить <strong>свободную атаку</strong> из экипированного <strong>лука</strong> или <strong>огнестрельного</strong> оружия; считайте свой <strong>Лучший Бросок (ЛБ)</strong> равным 0 при расчёте урона, наносимого этой атакой.</p><hr><ul><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.skills.Item.enboiNabyACt4OUB]{Эффект: Соколиный Глаз}</p></li></ul>",
+      "class": "Стрелок"
     },
     "Healing Power": {
-      "name": "Healing Power",
-      "description0": "<p>When you cast a spell that targets one or more allies, if you have an <strong>arcane </strong>weapon equipped, you may have each of those allies recover an amount of Hit Points equal to <strong>【SL, multiplied by the number of Bonds you have】</strong>.</p><p>This healing is separate from any healing caused by the effects of the spell.</p><hr /><ul><li><p><strong>Targets Recovers:</strong> @GAIN[$sl*$bc hp]{SL × Total Bonds HP}</p></li></ul>"
+      "name": "Целительная Сила",
+      "description0": "<p>Когда вы творите заклинание, нацеленное на одного или нескольких союзников, если у вас экипировано <strong>мистическое</strong> оружие, вы можете заставить каждого из этих союзников восстановить количество Очков Здоровья, равное <strong>【УН, умноженное на количество имеющихся у вас Уз】</strong>.</p><p>Это исцеление отделено от любого исцеления, вызванного действием заклинания.</p><hr><ul>    <li>        <p><strong>Цель восстанавливает:</strong> @GAIN[$sl*$bc hp]{УН × кол-во УЗ ОЗ}</p>    </li></ul>",
+      "class": "Спиритист"
     },
     "Heart in the Engine": {
       "name": "Heart in the Engine",
@@ -1868,14 +1964,16 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Клинок Тьмы"
     },
     "Hermit Iris": {
       "name": "Hermit Iris"
     },
     "High Speed": {
       "name": "Стремительность",
-      "description0": "<p>В начале конфликта вы можете потратить 10 Очков Разума. Если вы это сделаете, выберите один из вариантов и примените его перед началом первого раунда: выполните <strong>свободную атаку</strong> имеющимся у вас оружием; <strong>или</strong> выполните действие <strong>Помехи</strong> или <strong>Задачи</strong>. Вы также получаете бонус равный <strong>【УН】</strong> за все Проверки, которые вы выполняете в рамках выбранной опции.</p>"
+      "description0": "<p>В начале конфликта вы можете потратить 10 Очков Разума. Если вы это сделаете, выберите один из вариантов и примените его перед началом первого раунда: выполните <strong>свободную атаку</strong> имеющимся у вас оружием; <strong>или</strong> выполните действие <strong>Помехи</strong> или <strong>Задачи</strong>. Вы также получаете бонус равный <strong>【УН】</strong> за все Проверки, которые вы выполняете в рамках выбранной опции.</p>",
+      "class": "Разбойник"
     },
     "High or Low": {
       "name": "Двойка или Туз",
@@ -1902,7 +2000,8 @@
     },
     "Indomitable Spirit": {
       "name": "Неукротимый Дух",
-      "description0": "<p>Когда вы тратите одно или несколько Очков Фабулы, вы получаете дополнительное преимущество — выберите один из вариантов: вы восстанавливаете <strong>【УН × 5】</strong>】Очков Здоровья; <strong>или</strong> вы восстанавливаете <strong>【УН × 5】</strong>Очков Разума; <strong>или</strong> вы очиститесь от состояния по вашему выбору.</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[5*$sl hp]{УО × 5 ОЗ} или @GAIN[5*$sl mp]{УО × 5 ОР}</p></li></ul>"
+      "description0": "<p>Когда вы тратите одно или несколько Очков Фабулы, вы получаете дополнительное преимущество — выберите один из вариантов: вы восстанавливаете <strong>【УН × 5】</strong>】Очков Здоровья; <strong>или</strong> вы восстанавливаете <strong>【УН × 5】</strong>Очков Разума; <strong>или</strong> вы очиститесь от состояния по вашему выбору.</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[5*$sl hp]{УО × 5 ОЗ} или @GAIN[5*$sl mp]{УО × 5 ОР}</p></li></ul>",
+      "class": "Фурия"
     },
     "Invocation": {
       "name": "Invocation",
@@ -1946,7 +2045,8 @@
     },
     "Knowledge Is Power": {
       "name": "Знание — Сила",
-      "description0": "<p>Когда вы выполняете Проверку Точности, вы можете заменить <strong>одну</strong> из Костей Характеристик на <strong>Проницательность</strong> (например, <strong>【ПРН + ПРН】</strong> для <strong>пистолета</strong> или <strong>【ПРН + МГЩ】</strong> для <strong>боевого топора</strong>).</p>"
+      "description0": "<p>Когда вы выполняете Проверку Точности, вы можете заменить <strong>одну</strong> из Костей Характеристик на <strong>Проницательность</strong> (например, <strong>【ПРН + ПРН】</strong> для <strong>пистолета</strong> или <strong>【ПРН + МГЩ】</strong> для <strong>боевого топора</strong>).</p>",
+      "class": "Хранитель Силы"
     },
     "Kraken Dance": {
       "name": "Kraken Dance",
@@ -1969,8 +2069,9 @@
       "description1": "<p>Each target gains<strong>【</strong>@EFFECT[@DATA[key.attribute]-up e:sot i:1 t:source]<strong>】</strong>until the <strong>start of your next turn.</strong></p>"
     },
     "Lucky Seven": {
-      "name": "Lucky Seven",
-      "description0": "<p>You have a <strong>lucky number</strong>; at the beginning of each session, that number is <strong>7</strong>. Once per scene after you perform a Check, you may replace the value shown on one of the dice you rolled with your lucky number (even if this would give an impossible Result, such as a value of 7 on a d6). If you do, the replaced value becomes your <strong>new</strong> lucky number.</p>"
+      "name": "Счастливая Семёрка",
+      "description0": "<p>У вас есть <strong>счастливое число</strong>; в начале каждой сессии это число равно <strong>7</strong>. Один раз за сцену, после выполнения Проверки, вы можете заменить значение, указанное на одной из брошенных вами костей, своим счастливым числом (даже если это дало бы невозможный Результат, например значение 7 на d6). Если вы это сделаете, заменённое значение станет вашим <strong>новым</strong> счастливым числом.</p>",
+      "class": "Энтропист"
     },
     "Lunar Magnolia": {
       "name": "Lunar Magnolia"
@@ -1984,11 +2085,11 @@
       "description1": "<p>Choose another creature that is able to see you. That creature loses an amount of Mind Points equal to your current <strong>Dexterity</strong> die size.</p><hr><ul><li><p><strong>You Spend:</strong> @LOSS[10 mp]</p></li><li><p><strong>Target Loses: </strong>@LOSS[$dex mp]{Dexterity die size MP}</p></li></ul>"
     },
     "Magic Artillery": {
-      "name": "Magic Artillery",
-      "description0": "<p>When you cast an offensive ( @ICON[offensive] ) spell, if you have an <strong>arcane</strong> weapon equipped, you gain a bonus to your Magic Check equal to <strong>【SL × 2】</strong>.</p>",
+      "name": "Магическая Артиллерия",
+      "description0": "<p>Когда вы творите атакующее заклинание ( @ICON[offensive] ), если у вас экипировано <strong>мистическое</strong> оружие, вы получаете бонус к своей Проверке Магии, равный <strong>【УН × 2】</strong>.</p>",
       "effects": [
         {
-          "name": "Magic Artillery",
+          "name": "Магическая Артиллерия",
           "img": "systems/projectfu/styles/static/compendium/classes/elementalist/elementalist_magical_artillery.png",
           "system": {
             "duration": {
@@ -2027,15 +2128,15 @@
               "priority": null
             }
           ],
-          "description": "<p>When you cast an offensive (@ICON[offensive]) spell, if you have an <strong>arcane</strong> weapon equipped, you gain a bonus to your Magic Check equal to <strong>【SL × 2】</strong>.</p>",
+          "description": "<p>Когда вы творите атакующее заклинание ( @ICON[offensive] ), если у вас экипировано <strong>мистическое</strong> оружие, вы получаете бонус к своей Проверке Магии, равный <strong>【УН × 2】</strong>.</p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
-          "sort": 0,
-          "flags": {}
+          "sort": 0
         }
-      ]
+      ],
+      "class": "Элементалист"
     },
     "Magic Cards": {
       "name": "Волшебные Карты",
@@ -2052,7 +2153,8 @@
     },
     "Magitech Override": {
       "name": "Перехват Магитеха",
-      "description0": "<p><strong>Требование:</strong> Базовые Преимущество в @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Гаджет - Магитех}</p><p>Вы можете выполнить действие и потратить 10 Очков Разума на выполнение Проверки Противостояния с <strong>конструктом 【ПРН + ПРН】</strong> ранга <strong>солдата</strong>, которого вы видите (Мастер должен сказать вам, кто является допустимой целью). Если вам это удастся, вы получите контроль над существом до конца сцены (Мастер предоставит вам его профиль). Вы можете контролировать только одного <strong>конструкта</strong> в любой момент времени, но можете освободить его, когда захотите; <strong>конструкт</strong> также освобождается, как только вы или один из ваших союзников причиняете ему вред. Оказавшись на свободе, <strong>конструкт</strong> снова контролирует свои действия и может обернуться против вас.</p>"
+      "description0": "<p><strong>Требование:</strong> Базовые Преимущество в @UUID[Compendium.projectfu.skills.Item.EmwWSYlFjlUSGPLL]{Гаджет - Магитех}</p><p>Вы можете выполнить действие и потратить 10 Очков Разума на выполнение Проверки Противостояния с <strong>конструктом 【ПРН + ПРН】</strong> ранга <strong>солдата</strong>, которого вы видите (Мастер должен сказать вам, кто является допустимой целью). Если вам это удастся, вы получите контроль над существом до конца сцены (Мастер предоставит вам его профиль). Вы можете контролировать только одного <strong>конструкта</strong> в любой момент времени, но можете освободить его, когда захотите; <strong>конструкт</strong> также освобождается, как только вы или один из ваших союзников причиняете ему вред. Оказавшись на свободе, <strong>конструкт</strong> снова контролирует свои действия и может обернуться против вас.</p>",
+      "class": "Изобретатель"
     },
     "Melee Weapon Mastery": {
       "name": "Мастер Ближнего Боя",
@@ -2115,7 +2217,8 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Мастер Оружия"
     },
     "Menacing Tone": {
       "name": "Menacing Tone",
@@ -2132,7 +2235,8 @@
     },
     "My Trust In You": {
       "name": "Моя Вера В Тебя",
-      "description0": "<p>После того как другой Персонаж Игрока, способный вас слышать, выполнит Проверку, вы можете потратить 1 Очко Фабулы и задействовать одну из его <strong>Черт</strong> или <strong>Уз</strong>, чтобы позволить ему повторно бросить кости или улучшить Результат Проверки (следуя обычным правилам). Затем, если у вас есть <strong>Узы</strong> с этим персонажем, он восстанавливает <strong>【УН × 10】</strong>Очков Разума.</p><hr><ul><li>        <p><strong>Цель восстанавливает: </strong>@GAIN[10*$sl mp]{УО × 10 ОР}</p></li></ul>"
+      "description0": "<p>После того как другой Персонаж Игрока, способный вас слышать, выполнит Проверку, вы можете потратить 1 Очко Фабулы и задействовать одну из его <strong>Черт</strong> или <strong>Уз</strong>, чтобы позволить ему повторно бросить кости или улучшить Результат Проверки (следуя обычным правилам). Затем, если у вас есть <strong>Узы</strong> с этим персонажем, он восстанавливает <strong>【УН × 10】</strong>Очков Разума.</p><hr><ul><li>        <p><strong>Цель восстанавливает: </strong>@GAIN[10*$sl mp]{УО × 10 ОР}</p></li></ul>",
+      "class": "Оратор"
     },
     "Myrmidon Dance": {
       "name": "Myrmidon Dance",
@@ -2159,11 +2263,13 @@
     },
     "Painful Lesson": {
       "name": "Болезненный Урок",
-      "description0": "<p>После того как другое существо заставило вас потерять Очки Здоровья (атакой, заклинанием или любым другим способом), вы можете немедленно выполнить действие <strong>Изучения</strong> этого существа (см. <strong>Основная Книга</strong>, стр.<strong>74</strong>). Если вы это сделаете, получите бонус, равный <strong>【УН】</strong> к вашему броску.</p><p>Помните, что вы можете изучить один и тот же аспект существа только один раз.</p>"
+      "description0": "<p>После того как другое существо заставило вас потерять Очки Здоровья (атакой, заклинанием или любым другим способом), вы можете немедленно выполнить действие <strong>Изучения</strong> этого существа (см. <strong>Основная Книга</strong>, стр.<strong>74</strong>). Если вы это сделаете, получите бонус, равный <strong>【УН】</strong> к вашему броску.</p><p>Помните, что вы можете изучить один и тот же аспект существа только один раз.</p>",
+      "class": "Клинок Тьмы"
     },
     "Pathogenesis": {
       "name": "Патогенез",
-      "description0": "<p>При нанесении урона одному или нескольким существам заклинанием Химериста, каждое существо того же <strong>Вида</strong> что и то, у которого вы первоначально изучили это заклинание, страдает от <strong>отравления</strong>.</p><hr><ul><li>        <p><strong>Цель страдает от: </strong>@EFFECT[poisoned]</p></li></ul>"
+      "description0": "<p>При нанесении урона одному или нескольким существам заклинанием Химериста, каждое существо того же <strong>Вида</strong> что и то, у которого вы первоначально изучили это заклинание, страдает от <strong>отравления</strong>.</p><hr><ul><li>        <p><strong>Цель страдает от: </strong>@EFFECT[poisoned]</p></li></ul>",
+      "class": "Химерист"
     },
     "Peacock Dance": {
       "name": "Peacock Dance",
@@ -2179,7 +2285,8 @@
     },
     "Persuasive": {
       "name": "Убедительный",
-      "description0": "<p>Когда вы успешно выполняете Проверку, чтобы заполнить или стереть секции Счётчика, если ваш подход основывался на <strong>обаянии</strong>, <strong>дипломатии</strong>, <strong>обмане</strong> или <strong>запугивании</strong>, вы можете потратить до <strong>【УН × 20】</strong>Очков Разума. Если вы это сделаете, заполните или сотрите дополнительную секцию этого Счётчика за каждые 20 Очков Разума, которые вы потратите таким образом.</p>"
+      "description0": "<p>Когда вы успешно выполняете Проверку, чтобы заполнить или стереть секции Счётчика, если ваш подход основывался на <strong>обаянии</strong>, <strong>дипломатии</strong>, <strong>обмане</strong> или <strong>запугивании</strong>, вы можете потратить до <strong>【УН × 20】</strong>Очков Разума. Если вы это сделаете, заполните или сотрите дополнительную секцию этого Счётчика за каждые 20 Очков Разума, которые вы потратите таким образом.</p>",
+      "class": "Оратор"
     },
     "Phoenix Dance": {
       "name": "Phoenix Dance",
@@ -2206,7 +2313,8 @@
     },
     "Potion Rain": {
       "name": "Дождь из Зелий",
-      "description0": "<p>Когда вы создаёте <strong>зелье</strong>, восстанавливающее ОЗ и/или ОР <strong>одного</strong> существа, вы можете распространить его эффект на <strong>【УН】</strong> дополнительных существ. Если вы это сделаете, зелье восстановит только половину обычного количества ОЗ и ОР каждому существу.</p><hr><ul><li>        <p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]{Лекарство}: @GAIN[25 hp]</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]{Эликсир}: @GAIN[25 mp]</p></li></ul>"
+      "description0": "<p>Когда вы создаёте <strong>зелье</strong>, восстанавливающее ОЗ и/или ОР <strong>одного</strong> существа, вы можете распространить его эффект на <strong>【УН】</strong> дополнительных существ. Если вы это сделаете, зелье восстановит только половину обычного количества ОЗ и ОР каждому существу.</p><hr><ul><li>        <p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]{Лекарство}: @GAIN[25 hp]</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]{Эликсир}: @GAIN[25 mp]</p></li></ul>",
+      "class": "Изобретатель"
     },
     "Prancing Dandelion": {
       "name": "Prancing Dandelion"
@@ -2217,11 +2325,13 @@
     },
     "Protect": {
       "name": "Прикрытие",
-      "description0": "<p>Когда другому существу угрожает <strong>атака</strong>, <strong>заклинание</strong> или другая <strong>опасность</strong>, вы можете занять его место (любые Проверки, которые являются частью опасности, будут выполнены против вас; вы можете объявить об использовании этого Навыка <strong>до или после</strong> того, как Проверки были сделаны). Если опасность уже затронула вас, она затрагивает вас <strong>дважды</strong> (разрешите оба случая отдельно); также, вы не можете прикрыть несколько существ от одной и той же опасности. Если вы используете этот Навык во время конфликта, вы не сможете использовать его снова до начала вашего следующего хода.</p>"
+      "description0": "<p>Когда другому существу угрожает <strong>атака</strong>, <strong>заклинание</strong> или другая <strong>опасность</strong>, вы можете занять его место (любые Проверки, которые являются частью опасности, будут выполнены против вас; вы можете объявить об использовании этого Навыка <strong>до или после</strong> того, как Проверки были сделаны). Если опасность уже затронула вас, она затрагивает вас <strong>дважды</strong> (разрешите оба случая отдельно); также, вы не можете прикрыть несколько существ от одной и той же опасности. Если вы используете этот Навык во время конфликта, вы не сможете использовать его снова до начала вашего следующего хода.</p>",
+      "class": "Страж"
     },
     "Provoke": {
       "name": "Провокация",
-      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума на выполнение Проверки Противостояния <strong>【МГЩ + ВОЛ】</strong> с существом, которые вы видите — опишите, как вы провоцируете его! При успехе цель становится <strong>яростной</strong> и сосредотачивает на вас внимание — её атаки и атакующие заклинания обязательно включают вас в список целей, если это возможно. Это принуждение заканчивается, если вы теряете сознание или покидаете сцену, если существо больше не <strong>яростно</strong> или если его успешно <strong>спровоцировал</strong> кто-то другой.</p><p>Вы получаете бонус, равный<strong>【УН】</strong>к вашим Проверкам<strong>【МГЩ + ВОЛ】</strong>для этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[mig wlp ($sl)]</p></li><li>        <p><strong>Цель страдает от: </strong>@EFFECT[enraged] @EFFECT[Compendium.projectfu.skills.SBaaNDpwZQDafu3J]{Эффект: Провокация}</p></li></ul>"
+      "description0": "<p>Вы можете выполнить действие и потратить 5 Очков Разума на выполнение Проверки Противостояния <strong>【МГЩ + ВОЛ】</strong> с существом, которые вы видите — опишите, как вы провоцируете его! При успехе цель становится <strong>яростной</strong> и сосредотачивает на вас внимание — её атаки и атакующие заклинания обязательно включают вас в список целей, если это возможно. Это принуждение заканчивается, если вы теряете сознание или покидаете сцену, если существо больше не <strong>яростно</strong> или если его успешно <strong>спровоцировал</strong> кто-то другой.</p><p>Вы получаете бонус, равный<strong>【УН】</strong>к вашим Проверкам<strong>【МГЩ + ВОЛ】</strong>для этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[mig wlp ($sl)]</p></li><li>        <p><strong>Цель страдает от: </strong>@EFFECT[enraged] @EFFECT[Compendium.projectfu.skills.SBaaNDpwZQDafu3J]{Эффект: Провокация}</p></li></ul>",
+      "class": "Фурия"
     },
     "Psychic Backlash": {
       "name": "Psychic Backlash",
@@ -2253,7 +2363,8 @@
     },
     "Quick Assessment": {
       "name": "Быстрая Оценка",
-      "description0": "<p>В начале конфликта вы можете потратить до <strong>【УН × 5】</strong> Очков Разума. За каждые 5 Очков Разума, которые вы потратите таким образом, выберите один из вариантов: выберите существо, которое вы можете видеть, и Мастер покажет одну из его <strong>Черт</strong>; <strong>или</strong> назовите тип урона и выберите существо, которое вы можете видеть, и Мастер раскроет какую <strong>Подверженностью Урону</strong> данного типа имеет это существо.</p>"
+      "description0": "<p>В начале конфликта вы можете потратить до <strong>【УН × 5】</strong> Очков Разума. За каждые 5 Очков Разума, которые вы потратите таким образом, выберите один из вариантов: выберите существо, которое вы можете видеть, и Мастер покажет одну из его <strong>Черт</strong>; <strong>или</strong> назовите тип урона и выберите существо, которое вы можете видеть, и Мастер раскроет какую <strong>Подверженностью Урону</strong> данного типа имеет это существо.</p>",
+      "class": "Хранитель Знаний"
     },
     "Quick-Change": {
       "name": "Quick-Change",
@@ -2326,7 +2437,8 @@
           "origin": null,
           "sort": 0
         }
-      ]
+      ],
+      "class": "Стрелок"
     },
     "Real Treasure": {
       "name": "Real Treasure",
@@ -2348,7 +2460,8 @@
     },
     "Resourceful": {
       "name": "Находчивый",
-      "description0": "<p>Вы восстанавливаете <strong>【УН】</strong> Очков Инвентаря после каждого броска <strong>путешествия</strong> (см. <strong>Основная Книга</strong>, <span class=\"fontstyle0\">стр. <strong>106</strong></span>).</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[$sl ip]{УН ОИ}</p></li></ul>"
+      "description0": "<p>Вы восстанавливаете <strong>【УН】</strong> Очков Инвентаря после каждого броска <strong>путешествия</strong> (см. <strong>Основная Книга</strong>, <span class=\"fontstyle0\">стр. <strong>106</strong></span>).</p><hr><ul><li>        <p><strong>Вы восстанавливаете: </strong>@GAIN[$sl ip]{УН ОИ}</p></li></ul>",
+      "class": "Странник"
     },
     "Ripples": {
       "name": "Ripples",
@@ -2356,27 +2469,33 @@
     },
     "Ritual Arcanism": {
       "name": "Ритуальный Арканизм",
-      "description0": "<p>Вы можете выполнять Ритуалы дисциплины <strong>Арканизма</strong>, при условии, что их эффекты входят в <strong>домены</strong> ваших привязанных Аркан (смотрите следующие страницы). Ритуалы Арканизма используют (см. <strong>Основная Книга</strong>, стр.<strong>178</strong>).</p><p>Ритуалы Арканизма используют <strong>【ВОЛ + ВОЛ】</strong> для Проверки Магии.</p>"
+      "description0": "<p>Вы можете выполнять Ритуалы дисциплины <strong>Арканизма</strong>, при условии, что их эффекты входят в <strong>домены</strong> ваших привязанных Аркан (смотрите следующие страницы). Ритуалы Арканизма используют (см. <strong>Основная Книга</strong>, стр.<strong>178</strong>).</p><p>Ритуалы Арканизма используют <strong>【ВОЛ + ВОЛ】</strong> для Проверки Магии.</p>",
+      "class": "Арканист"
     },
     "Ritual Chimerism": {
       "name": "Ритуальный Химеризм",
-      "description0": "<p>Вы можете выполнять Ритуалы, эффекты которых подпадают под дисциплину <strong>Химеризма</strong>.</p><p>Когда вы приобретёте этот Навык, выберите <strong>【ПРН + ВОЛ】 или 【МГЩ + ВОЛ】</strong>. С этого момента в ваших Ритуалах Химеризма будут использоваться выбранные Характеристики для Проверки Магии.</p>"
+      "description0": "<p>Вы можете выполнять Ритуалы, эффекты которых подпадают под дисциплину <strong>Химеризма</strong>.</p><p>Когда вы приобретёте этот Навык, выберите <strong>【ПРН + ВОЛ】 или 【МГЩ + ВОЛ】</strong>. С этого момента в ваших Ритуалах Химеризма будут использоваться выбранные Характеристики для Проверки Магии.</p>",
+      "class": "Химерист"
     },
     "Ritual Elementalism": {
-      "name": "Ritual Elementalism",
-      "description0": "<p>You may perform Rituals whose effects fall within the <strong>Elementalism</strong> discipline.</p><p>Elementalism Rituals use <strong>【INS + WLP】</strong> for the Magic Check.</p>"
+      "name": "Ритуальный Элементализм",
+      "description0": "<p>Вы можете выполнять Ритуалы, эффекты которых подпадают под дисциплину <strong>Элементализма</strong>.</p><p>Ритуалы Элементализма используют <strong>【ПРН + ВОЛ】</strong> для Проверки Магии.</p>",
+      "class": "Элементалист"
     },
     "Ritual Entropism": {
-      "name": "Ritual Entropism",
-      "description0": "<p>You may perform Rituals whose effects fall within the <strong>Entropism </strong>discipline.</p><p><strong>Entropism</strong> Rituals use <strong>【INS + WLP】</strong> for the Magic Check.</p>"
+      "name": "Ритуальный Энтропизм",
+      "description0": "<p>Вы можете выполнять Ритуалы, эффекты которых подпадают под дисциплину <strong>Энтропизма</strong>.</p><p>Ритуалы Энтропизма используют <strong>【ПРН + ВОЛ】</strong> для Проверки Магии.</p>",
+      "class": "Энтропист"
     },
     "Ritual Spiritism": {
-      "name": "Ritual Spiritism",
-      "description0": "<p>You may perform Rituals whose effects fall within the <strong>Spiritism</strong> discipline.</p><p>Spiritism Rituals use <strong>【INS + WLP】</strong> for the Magic Check.</p>"
+      "name": "Ритуальный Спиритизм",
+      "description0": "<p>Вы можете выполнять Ритуалы, действие которых подпадает под дисциплину <strong>Спиритизма</strong>.</p><p>В Ритуалах Спиритизма для Проверки Магии используется <strong>【ПРН + ВОЛ】</strong>.</p>",
+      "class": "Спиритист"
     },
     "Rondo Of Nightmare": {
-      "name": "Rondo Of Nightmare",
-      "description0": "<p>When you cast an offensive spell ( @ICON[offensive] ) with a <strong>target</strong> of “One creature”, you may spend 2 Grave Points to have it target <strong>all</strong> creatures you can see that are present on the scene (perform a single Magic Check and confront it with the Magic Defense of each target). If you do, all damage dealt by the spell becomes <strong>dark</strong> and its type cannot change.</p><hr><ul><li><p><strong>Resource:</strong> @PROGRESS[beyond-the-realms-of-death update -2]{Spend 2 Grave Points}</p></li></ul>"
+      "name": "Рондо Из Кошмаров",
+      "description0": "<p>Когда вы применяете атакующее заклинание ( @ICON[offensive] ) с <strong>целью</strong> \"Одно существо\", вы можете потратить 2 Очка Могилы, чтобы оно было нацелено на <strong>всех</strong> существ, которых вы можете видеть (выполните одну Проверку Магии и сопоставьте её с Магической Защитой каждой цели). Если вы это сделаете, весь урон, наносимый заклинанием, станет уроном <strong>тьмой</strong>, и его тип не может быть изменён.</p><hr><ul><li><p><strong>Ресурс:</strong> @PROGRESS[beyond-the-realms-of-death update -2]{Потратьте 2 Очка Могилы}</p></li></ul>",
+      "class": "Некромант"
     },
     "Salt and Pepper": {
       "name": "Salt and Pepper",
@@ -2392,18 +2511,21 @@
     },
     "Secret Formula": {
       "name": "Секретная Формула",
-      "description0": "<p>Когда вы создаёте <strong>зелье</strong> или <strong>магисферу</strong>, эффекты которых восстанавливают ОЗ и/или ОР, каждое восстановленное количество увеличивается на <strong>【УН × 5】</strong>.</p><p>Когда вы создаёте <strong>элементальный осколок</strong>, <strong>зелье</strong> или <strong>магисферу</strong>, наносящие урон, этот предмет наносит <strong>【УН】</strong> дополнительного урон.</p><hr><ul><li>        <p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]{Лекарство}: @GAIN[50+($sl*5) hp]{50 + (УН × 5) ОЗ}</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]{Эликсир}: @GAIN[50+($sl*5) mp]{50 + (УН × 5) ОР}</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.Item.00h8sKH3ktIFF5ei]{Элементальный Осколок}: @DMG[10+($sl) air]{10 + УН вохдух}, @DMG[10+($sl) bolt]{10 + УН молния}, @DMG[10+($sl) earth]{10 + УН земля}, @DMG[10+($sl) fire]{10 + УН огонь} , or @DMG[10+($sl) ice]{10 + УН лёд}</p>        <p></p></li></ul>"
+      "description0": "<p>Когда вы создаёте <strong>зелье</strong> или <strong>магисферу</strong>, эффекты которых восстанавливают ОЗ и/или ОР, каждое восстановленное количество увеличивается на <strong>【УН × 5】</strong>.</p><p>Когда вы создаёте <strong>элементальный осколок</strong>, <strong>зелье</strong> или <strong>магисферу</strong>, наносящие урон, этот предмет наносит <strong>【УН】</strong> дополнительного урон.</p><hr><ul><li>        <p>@UUID[Compendium.projectfu.consumables.iLidslBpjoLfrsT9]{Лекарство}: @GAIN[50+($sl*5) hp]{50 + (УН × 5) ОЗ}</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.mn3F6qOfdVYM405v]{Эликсир}: @GAIN[50+($sl*5) mp]{50 + (УН × 5) ОР}</p></li><li>        <p>@UUID[Compendium.projectfu.consumables.Item.00h8sKH3ktIFF5ei]{Элементальный Осколок}: @DMG[10+($sl) air]{10 + УН воздух}, @DMG[10+($sl) bolt]{10 + УН молния}, @DMG[10+($sl) earth]{10 + УН земля}, @DMG[10+($sl) fire]{10 + УН огонь} , or @DMG[10+($sl) ice]{10 + УН лёд}</p><p></p></li></ul>",
+      "class": "Изобретатель"
     },
     "See You Later": {
       "name": "Ещё Увидимся",
-      "description0": "<p>Вы можете выполнить действие и потратить 1 Очко Фабулы, чтобы исчезнуть из текущей сцены, появляясь снова, когда захотите, во время <strong>другой</strong> сцены, в которой присутствует другой Персонаж Игрока. Опишите, как вы спаслись и чудесным образом добрались сюда!</p>"
+      "description0": "<p>Вы можете выполнить действие и потратить 1 Очко Фабулы, чтобы исчезнуть из текущей сцены, появляясь снова, когда захотите, во время <strong>другой</strong> сцены, в которой присутствует другой Персонаж Игрока. Опишите, как вы спаслись и чудесным образом добрались сюда!</p>",
+      "class": "Разбойник"
     },
     "Serrated Rose": {
       "name": "Serrated Rose"
     },
     "Shadow Strike": {
       "name": "Теневой Удар",
-      "description0": "<p>Вы научились направлять свою жизненную силу в свои атаки. Вы можете действием выполнить действие для совершения <strong>Теневого Удара</strong>: Бросьте свою кость <strong>Могущества</strong> и потеряйте ОЗ равное <strong>【число, выпавшее на кости Могущества】</strong>. Если ваши Очки Здоровья ещё больше 0, вы можете совершить <strong>свободную атаку</strong> экипированным оружием: если эта атака поражает одну или несколько целей, она наносит дополнительный урон, равный <strong>【УН + число, выпавшее на кости Могущества】</strong>. Однако весь урон, наносимый этой атакой становится уроном <strong>тьмой</strong>, и его тип нельзя изменить.</p>"
+      "description0": "<p>Вы научились направлять свою жизненную силу в свои атаки. Вы можете действием выполнить действие для совершения <strong>Теневого Удара</strong>: Бросьте свою кость <strong>Могущества</strong> и потеряйте ОЗ равное <strong>【число, выпавшее на кости Могущества】</strong>. Если ваши Очки Здоровья ещё больше 0, вы можете совершить <strong>свободную атаку</strong> экипированным оружием: если эта атака поражает одну или несколько целей, она наносит дополнительный урон, равный <strong>【УН + число, выпавшее на кости Могущества】</strong>. Однако весь урон, наносимый этой атакой становится уроном <strong>тьмой</strong>, и его тип нельзя изменить.</p>",
+      "class": "Клинок Тьмы"
     },
     "Silver Strelitzia": {
       "name": "Silver Strelitzia"
@@ -2418,7 +2540,8 @@
     },
     "Soul Steal": {
       "name": "Кража Души",
-      "description0": "<p>Вы можете выполнить действие и совершить Проверку <strong>【ЛВК + ВОЛ】</strong> против Магической Защиты существа, которое вы видите. Если вы преуспеваете и цель <strong>солдат</strong>, вы восстанавливаете <strong>【УН】</strong> Очков Инвентаря; если это <strong>элита</strong> или <strong>чемпион</strong>, Мастер даёт вам <strong>сокровище души</strong> цели — предмет, стоимостью в зенитах, <strong>равной или ниже 【уровня цели, умноженного на 30 или на 50, если они злодеи】</strong>. Это <strong>сокровище души</strong> появится в вашем <strong>рюкзаке</strong>; существо можно успешно обокрасть с помощью этого Навыка только один раз. Вы получаете бонус, равный <strong>【УН】</strong> к вашим Проверкам <strong>【ЛВК + ВОЛ】</strong> этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[dex wlp ($sl)]</p></li><li>        <p><strong>Вы получаете: </strong>@GAIN[$sl ip]{Солдат: УО ОИ}</p></li></ul>"
+      "description0": "<p>Вы можете выполнить действие и совершить Проверку <strong>【ЛВК + ВОЛ】</strong> против Магической Защиты существа, которое вы видите. Если вы преуспеваете и цель <strong>солдат</strong>, вы восстанавливаете <strong>【УН】</strong> Очков Инвентаря; если это <strong>элита</strong> или <strong>чемпион</strong>, Мастер даёт вам <strong>сокровище души</strong> цели — предмет, стоимостью в зенитах, <strong>равной или ниже 【уровня цели, умноженного на 30 или на 50, если они злодеи】</strong>. Это <strong>сокровище души</strong> появится в вашем <strong>рюкзаке</strong>; существо можно успешно обокрасть с помощью этого Навыка только один раз. Вы получаете бонус, равный <strong>【УН】</strong> к вашим Проверкам <strong>【ЛВК + ВОЛ】</strong> этого Навыка.</p><hr><ul><li>        <p><strong>Вы совершаете: </strong>@CHECK[dex wlp ($sl)]</p></li><li>        <p><strong>Вы получаете: </strong>@GAIN[$sl ip]{Солдат: УО ОИ}</p></li></ul>",
+      "class": "Разбойник"
     },
     "Sound Barrier": {
       "name": "Sound Barrier",
@@ -2430,11 +2553,12 @@
     },
     "Spell Mimic": {
       "name": "Имитация Заклинаний",
-      "description0": "<p>Когда вы видите, что существо, принадлежащее к Виду <strong>зверь, монстр</strong> или <strong>растение</strong> сотворяет заклинание, вы можете немедленно выучить это заклинание как своё собственное заклинание Химериста: если вы это сделаете, запишите <strong>Вид</strong> существа, у которого вы его выучили.</p><p>Когда вы впервые приобретёте этот Навык, выберите <strong>【ПРН + ВОЛ】 или 【МГЩ + ВОЛ】</strong>. Отныне ваши атакующие<br>( @ICON[offensive] ) заклинания Химериста будут использовать выбранные Характеристики для Проверки Магии, независимо от Характеристик, используемых существом, у которого вы выучили заклинание.</p><p>Таким образом вы можете запомнить <strong>до 【УН + 2】различных заклинаний Химериста</strong>. Если вы хотите запомнить новое заклинание Химериста, но уже на пределе своих возможностей, вы должны забыть одно из своих старых заклинаний и заменить его новым заклинанием.</p>"
+      "description0": "<p>Когда вы видите, что существо, принадлежащее к Виду <strong>зверь, монстр</strong> или <strong>растение</strong> сотворяет заклинание, вы можете немедленно выучить это заклинание как своё собственное заклинание Химериста: если вы это сделаете, запишите <strong>Вид</strong> существа, у которого вы его выучили.</p><p>Когда вы впервые приобретёте этот Навык, выберите <strong>【ПРН + ВОЛ】 или 【МГЩ + ВОЛ】</strong>. Отныне ваши атакующие<br>( @ICON[offensive] ) заклинания Химериста будут использовать выбранные Характеристики для Проверки Магии, независимо от Характеристик, используемых существом, у которого вы выучили заклинание.</p><p>Таким образом вы можете запомнить <strong>до 【УН + 2】различных заклинаний Химериста</strong>. Если вы хотите запомнить новое заклинание Химериста, но уже на пределе своих возможностей, вы должны забыть одно из своих старых заклинаний и заменить его новым заклинанием.</p>",
+      "class": "Химерист"
     },
     "Spellblade": {
-      "name": "Spellblade",
-      "description0": "<p>When you cast an offensive ( @ICON[offensive] ) spell targeting <strong>a single creature</strong>, if the spell has a <strong>total Mind Point cost of 【SL × 10】 or lower</strong> and you have one or more <strong>bow, brawling, dagger, flail, spear, or sword weapons</strong> equipped, you may choose one of those weapons. If you do, your Magic Check for the spell will use the chosen weapon's Accuracy Check formula; for instance, the Magic Check for an Elementalist spell cast through a <strong>bronze sword</strong> (<strong>Core Rulebook</strong>, page <strong>131</strong>) will be <strong>【DEX + MIG】 + 1</strong> instead of <strong>【INS + WLP】</strong>.</p>",
+      "name": "Магический Клинок",
+      "description0": "<p>Когда вы творите атакующее ( @ICON[offensive] ) заклинание, нацеленное <strong>на одно существо</strong>, если a <strong>общая стоимость заклинания 【УН × 10】 или ниже</strong> и у вас экипирован один или несколько типов оружия <strong>рукопашное</strong>, <strong>лук</strong>, <strong>кинжал</strong>, <strong>цеп</strong>, <strong>копьё</strong> или <strong>меч</strong>, вы можете выбрать одно из них. Если вы это сделаете, ваша Проверка Магии для заклинания будет использовать формулу Проверки Точности выбранного оружия; например, Проверка Магии для заклинания элементалиста, произнесённого с помощью <strong>бронзового меча</strong> (см. <strong>Основная Книга</strong>, стр.<strong>131</strong>) будет равна <strong>【ЛВК + МГЩ】 +1</strong> вместо <strong>【ПРН + ВОЛ】</strong>.</p>",
       "effects": [
         {
           "img": "systems/projectfu/styles/static/compendium/classes/elementalist/elementalist_spellblade.png",
@@ -2448,7 +2572,7 @@
             "startTurn": null
           },
           "disabled": false,
-          "name": "Spellblade",
+          "name": "Магический Клинок",
           "_id": "DhBhEANF8jRMaBo4",
           "type": "base",
           "system": {
@@ -2462,7 +2586,16 @@
               "tracking": "self",
               "remaining": 1
             },
-            "rules": {}
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
           },
           "changes": [
             {
@@ -2472,26 +2605,28 @@
               "priority": null
             }
           ],
-          "description": "<p>Your <strong>Magic Check</strong> for spells will use the <em>chosen weapon'</em>s <strong>Accuracy Check</strong> formula.</p>",
+          "description": "<p>Ваша Проверка Магии для заклинания будет использовать формулу Проверки Точности выбранного оружия.</p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
-          "sort": 0,
-          "flags": {}
+          "sort": 0
         }
-      ]
+      ],
+      "class": "Элементалист"
     },
     "Spiritual Magic": {
-      "name": "Spiritual Magic",
-      "description0": "<p>Each time you acquire this Skill, learn one Spiritist spell (see <strong>Core Rulebook</strong>, page <strong>208</strong>).</p><p>Offensive ( @ICON[offensive] ) Spiritist spells use <strong>【INS + WLP】 </strong>for the Magic Check.</p><hr /><ul><li><p>For <strong>spell</strong> breakdown and a list of Spiritist Spells, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.L65ajg6cmHEk3zAP]{Spiritist Rules}</p></li></ul>"
+      "name": "Спиритическая Магия",
+      "description0": "<p>Каждый раз, когда вы приобретаете этот Навык, изучайте одно заклинание Спиритизма (см. <strong>Основная Книга</strong>, стр.<strong>208</strong>).</p><p>Атакующие (@ICON[offensive]) заклинания Спиритизма используют <strong>【ПРН + ВОЛ】</strong> для Проверки Магии.</p><hr><ul>    <li>        <p>Разбор <strong>заклинаний</strong> и Список Заклинаний могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.L65ajg6cmHEk3zAP]{Правила Спиритиста}</p>    </li></ul>",
+      "class": "Спиритист"
     },
     "Star Peony": {
       "name": "Star Peony"
     },
     "Stolen Time": {
-      "name": "Stolen Time",
-      "description0": "<p>During a conflict, you may use an action to interfere with the flow of time by spending up to <strong>【SL × 5】</strong> Mind Points. For every 5 Mind Points you spend this way, choose one option: one creature you can see suffers <strong>slow</strong>; or one creature you can see recovers from <strong>slow</strong>; or one creature you can see may immediately perform the <strong>Equipment action</strong> for free; <strong>or</strong> choose one ally you can see who has yet to take a turn during this round: that ally may take their turn immediately after yours during this round.</p><p>Each option can only be chosen once per use of this Skill.</p><hr /><ul><li><p><strong>Target Suffers:</strong> @EFFECT[slow]</p></li></ul>"
+      "name": "Украденное Время",
+      "description0": "<p>Во время конфликта вы можете выполнить действие, чтобы повлиять на течение времени, потратив до <strong>【УН × 5】</strong>Очков Разума. За каждые потраченные таким образом 5 Очков Разума, выберите один вариант: одно видимое вами существо, становится <strong>медленным</strong>; <strong>или</strong> одно видимое вами существо перестаёт быть <strong>медленным</strong>; <strong>или</strong> одно видимое вами существо может немедленно выполнить бесплатное <strong>Действие Экипировки</strong>; <strong>или</strong> выберите одного видимого вами союзника, которому ещё предстоит сделать ход во время этого раунда: этот союзник может сделать свой ход сразу после вашего в течение этого раунда.</p><p>Каждый вариант может быть выбран только один раз за использование этого Навыка.</p><hr><ul><li><p><strong>Цель страдает от:</strong> @EFFECT[slow]</p></li></ul>",
+      "class": "Энтропист"
     },
     "Striped Orchid": {
       "name": "Striped Orchid"
@@ -2501,8 +2636,9 @@
       "description0": "<p>When you perform an Accuracy Check with a <strong>weapon module</strong>, you may replace <strong>one</strong> of the Attributes with Might (such as <strong>【MIG + WLP】 </strong>for an Arcane module).</p>"
     },
     "Support Magic": {
-      "name": "Support Magic",
-      "description0": "<p>When you cast a spell that targets one or more allies, if you have an <strong>arcane</strong> weapon equipped, you may choose one of those allies you have a <strong>Bond</strong> towards. If you do, that ally gains a bonus to the next Check they perform during the current scene; this bonus is equal to the <strong>strength</strong> of your Bond towards them.</p>"
+      "name": "Поддерживающая Магия",
+      "description0": "<p>Когда вы сотворяете заклинание, нацеленное на одного или нескольких союзников, если у вас экипировано <strong>мистическое</strong> оружие, вы можете выбрать одного из тех союзников, с которыми у вас есть <strong>Узы</strong>. Если вы это сделаете, этот союзник получит бонус к следующей Проверке, которую он выполнит во время текущей сцены; этот бонус равен <strong>силе</strong> ваших Уз с ним.</p>",
+      "class": "Спиритист"
     },
     "Sweet": {
       "name": "Sweet",
@@ -2619,7 +2755,8 @@
     },
     "Trained Memory": {
       "name": "Тренированная Память",
-      "description0": "<p>Вы можете прекрасно вспомнить детали любого места, которое посетили за прошедшую неделю. Вы можете мысленно \"вернуться назад во времени\", чтобы ещё раз изучить такие сцены — ваш Навык <strong>Озарение</strong> применим и к этим воспоминаниям.</p>"
+      "description0": "<p>Вы можете прекрасно вспомнить детали любого места, которое посетили за прошедшую неделю. Вы можете мысленно \"вернуться назад во времени\", чтобы ещё раз изучить такие сцены — ваш Навык <strong>Озарение</strong> применим и к этим воспоминаниям.</p>",
+      "class": "Хранитель Знаний"
     },
     "Trap Card": {
       "name": "Карта-ловушка",
@@ -2632,7 +2769,8 @@
     },
     "Treasure Hunter": {
       "name": "Охотник за Сокровищами",
-      "description0": "<p>Когда ваша группа путешествует по карте мира, вы получаете <strong>находку</strong> при <strong>【УН + 1】или ниже</strong> на броске <strong>путешествия</strong> (вместо только <strong>1</strong>).</p>"
+      "description0": "<p>Когда ваша группа путешествует по карте мира, вы получаете <strong>находку</strong> при <strong>【УН + 1】или ниже</strong> на броске <strong>путешествия</strong> (вместо только <strong>1</strong>).</p>",
+      "class": "Странник"
     },
     "Tree of Life": {
       "name": "Tree of Life",
@@ -2711,7 +2849,8 @@
     },
     "Unexpected Ally": {
       "name": "Неожиданный Союзник",
-      "description0": "<p>Вы можете выполнить действие и потратить 1 Очко Фабулы, чтобы выбрать <strong>не враждебное</strong> существо, способное слышать и понимать вас. Если вы это сделаете, это существо станет дружелюбным к вам, пока вы добры и уважительны к нему, а ваши просьбы разумны.</p>"
+      "description0": "<p>Вы можете выполнить действие и потратить 1 Очко Фабулы, чтобы выбрать <strong>не враждебное</strong> существо, способное слышать и понимать вас. Если вы это сделаете, это существо станет дружелюбным к вам, пока вы добры и уважительны к нему, а ваши просьбы разумны.</p>",
+      "class": "Оратор"
     },
     "Unicorn Dance": {
       "name": "Unicorn Dance",
@@ -2730,11 +2869,13 @@
     },
     "Visionary": {
       "name": "Визионер",
-      "description0": "<p>Когда вы работаете над <strong>Проектом</strong>, вплоть до <strong>【УН x 100】</strong> зенит материальных затрат оплачиваются автоматически; кроме того, вы генерируете дополнительный <strong>【УН】 прогресс</strong> каждый день. Если несколько персонажей с этим Навыком работают над одним и тем же Проектом, эффекты будут складываться.</p>"
+      "description0": "<p>Когда вы работаете над <strong>Проектом</strong>, вплоть до <strong>【УН x 100】</strong> зенит материальных затрат оплачиваются автоматически; кроме того, вы генерируете дополнительный <strong>【УН】 прогресс</strong> каждый день. Если несколько персонажей с этим Навыком работают над одним и тем же Проектом, эффекты будут складываться.</p>",
+      "class": "Изобретатель"
     },
     "Vismagus": {
-      "name": "Vismagus",
-      "description0": "<p>When you cast a spell, if you don't have enough Mind Points to pay for its total cost, you may choose to spend <strong>twice as many</strong> Hit Points instead. You cannot use this Skill if doing so would reduce you to 0 Hit Points. If a spell cast this way would cause you to recover Hit Points, you instead recover no Hit Points (the spell functions normally on any other target).</p>"
+      "name": "Висмагус",
+      "description0": "<p>Когда вы сотворяете заклинание, если у вас недостаточно Очков Разума, чтобы оплатить его общую стоимость, вы можете вместо этого потратить <strong>вдвое больше</strong> Очков Здоровья. Вы не можете использовать этот Навык, если это уменьшит ваши Очки Здоровья до 0. Если заклинание, произнесённое таким образом, приведёт к восстановлению ваших Очков Здоровья, вы вместо этого не восстановите никаких Очков Здоровья (заклинание действует, как обычно, на любую другую цель).</p>",
+      "class": "Спиритист"
     },
     "Wardancer": {
       "name": "Wardancer",
@@ -2745,11 +2886,13 @@
     },
     "Warning Shot": {
       "name": "Предупредительный Выстрел",
-      "description0": "<p>When you hit one or more targets with a <strong>ranged</strong> attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict <strong>shaken</strong> on each target hit by the attack; <strong>or</strong> inflicts <strong>slow</strong> on each target hit by the attack; or each target hit by the attack loses <strong>【SL × 10】</strong> Mind Points. Describe your maneuver!</p><hr><ul><li><p><strong>Targets Suffers: </strong>@EFFECT[shaken], @EFFECT[slow], or @LOSS[10*$sl mp]{SL × 10 MP}</p></li></ul>"
+      "description0": "<p>When you hit one or more targets with a <strong>ranged</strong> attack that would deal damage, you may have the attack deal no damage. If you do, choose one option: inflict <strong>shaken</strong> on each target hit by the attack; <strong>or</strong> inflicts <strong>slow</strong> on each target hit by the attack; or each target hit by the attack loses <strong>【SL × 10】</strong> Mind Points. Describe your maneuver!</p><hr><ul><li><p><strong>Targets Suffers: </strong>@EFFECT[shaken], @EFFECT[slow], or @LOSS[10*$sl mp]{SL × 10 MP}</p></li></ul>",
+      "class": "Стрелок"
     },
     "Well-Traveled": {
       "name": "Опытный Путешественник",
-      "description0": "<p>Когда вы поражаете одну или несколько целей атакой <strong>дальнего боя</strong>, которая наносит урон, вы можете не наносить никакого урона. Если вы это сделаете, выберите один из вариантов: цели страдает от <strong>потрясения</strong>, поражённой атакой; <strong>или</strong> атакой цели становятся <strong>медленными</strong>; <strong>или</strong> поражённые атакой цели становятся <strong>【УН × 10】</strong>Очков Разума. Опишите свой манёвр!</p><hr><ul><li><p><strong>Цель страдает от: </strong>@EFFECT[shaken], @EFFECT[slow] или @LOSS[10*$sl mp]{УН × 10 ОР}</p></li></ul>"
+      "description0": "<p>Когда вы поражаете одну или несколько целей атакой <strong>дальнего боя</strong>, которая наносит урон, вы можете не наносить никакого урона. Если вы это сделаете, выберите один из вариантов: цели страдает от <strong>потрясения</strong>, поражённой атакой; <strong>или</strong> атакой цели становятся <strong>медленными</strong>; <strong>или</strong> поражённые атакой цели становятся <strong>【УН × 10】</strong>Очков Разума. Опишите свой манёвр!</p><hr><ul><li><p><strong>Цель страдает от: </strong>@EFFECT[shaken], @EFFECT[slow] или @LOSS[10*$sl mp]{УН × 10 ОР}</p></li></ul>",
+      "class": "Странник"
     },
     "Wellspring Expansion": {
       "name": "Wellspring Expansion",
@@ -2776,12 +2919,11 @@
     },
     "[Handout:  Deck]": {
       "name": "[Раздатка: Колода]",
-      "description0": "<p>Если вы используете классическую покерную колоду, рекомендуем следующее распределение мастей: <strong>воздух</strong> ( @ICON[diamond]<strong></strong>), <strong>земля </strong>( @ICON[club] ), <strong>огонь</strong> ( @ICON[heart] ), and <strong>лёд</strong> ( @ICON[spade] ).</p><hr><p><em><strong>Примечание</strong>: эффекты <strong>Блестящего Стрита</strong>, <strong>Двойной Беда</strong> и <strong>Волшебного Флеша</strong> наносят на 10 урона больше, если вы <strong>20 уровня или выше</strong>, или на 20 урона больше, если вы <strong>40 уровня или выше.</strong></em></p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Джекпот</strong></td><td style=\"height:17px;border-width:1px\"><strong>4 карты одного достоинства, без джокеров</strong></td></tr></tbody></table><p>Вы и каждый союзник в сцене восстанавливаете 777 Очков Здоровья и 777 Очков Разума; Персонажи Игроков, которые <strong>Капитулировали</strong>, но всё ещё присутствуют в сцене, тут же приходят в себя (но всё ещё остаются <strong>Капитулировавшими</strong>).</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Волшебный Флеш</strong></td><td style=\"height:17px;border-width:1px\"><strong>4 карты по возрастанию достоинства, одной масти</strong></td></tr></tbody></table><p>Вы наносите урон, равный<strong>【25 + сумма достоинств разыгранных карт】 </strong>каждому противнику в сцене; тип урона соответствует масти разыгранных карт.</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Блестящий Стрит</strong></td><td style=\"height:17px;border-width:1px\"><strong>4 карты по возрастанию достоинства</strong></td></tr></tbody></table><p>Вы наносите урон, равный<strong>【15 + сумма достоинств разыгранных карт】</strong> каждому противнику в сцене; урон наносится <strong>светом</strong>, если старшая из этих карт имеет <strong>чётное</strong> достоинство, и <strong>тьмой</strong>, если <strong>нечётное</strong>.</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Рука Недугов</strong></td><td style=\"height:17px;border-width:1px\"><strong>3 карты одного достоинства + 2 карты одного достоинства</strong></td></tr></tbody></table><p>Выберите <strong>два</strong> состояния из <strong>оглушения, потрясения, замедления </strong>и<strong> слабости</strong>: если <strong>【высшее достоинство среди разыгранных карт】</strong><strong>чётное</strong>, вы и все союзники в сцене очищаетесь от этих состояний; если <strong>нечётное</strong>, каждый противник в сцене подвергается им.</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Тройная Подмога</strong></td><td style=\"height:17px;border-width:1px\"><strong>3 карты одного достоинства</strong></td></tr></tbody></table><p>Вы и каждый союзник в сцене восстанавливает Очки Здоровья и Очки Разума в размере <strong>【суммы достоинств разыгранных карт, умноженной на 3】</strong></p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Двойная Беда</strong></td><td style=\"height:17px;border-width:1px\"><strong>2 карты одного достоинства + 2 карты одного достоинства</strong></td></tr></tbody></table><p>Вы наносите<strong>【10 + наивысшее достоинство среди разыгранных карт】 </strong>одному или двум видимым противникам в сцене; тип урона соответствует одной из мастей разыгранных карт на ваш выбор.</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Волшебная Пара</strong></td><td style=\"height:17px;border-width:1px\"><strong>2 карты одного достоинства</strong></td></tr></tbody></table><p>Вы совершаете <strong>свободную атаку</strong> экипированным оружием. Если эта атака наносит урон, выберите <strong>масть</strong> одной из разыгранных карт; урон атаки становится соответствующим типу урона этой <strong>масти</strong>.</p>",
-      "class": "Картёжник"
+      "description0": "<p>Если вы используете классическую покерную колоду, рекомендуем следующее распределение мастей: <strong>воздух</strong> ( @ICON[diamond]<strong></strong>), <strong>земля </strong>( @ICON[club] ), <strong>огонь</strong> ( @ICON[heart] ), and <strong>лёд</strong> ( @ICON[spade] ).</p><hr><p><em><strong>Примечание</strong>: эффекты <strong>Блестящего Стрита</strong>, <strong>Двойной Беда</strong> и <strong>Волшебного Флеша</strong> наносят на 10 урона больше, если вы <strong>20 уровня или выше</strong>, или на 20 урона больше, если вы <strong>40 уровня или выше.</strong></em></p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Джекпот</strong></td><td style=\"height:17px;border-width:1px\"><strong>4 карты одного достоинства, без джокеров</strong></td></tr></tbody></table><p>Вы и каждый союзник в сцене восстанавливаете 777 Очков Здоровья и 777 Очков Разума; Персонажи Игроков, которые <strong>Капитулировали</strong>, но всё ещё присутствуют в сцене, тут же приходят в себя (но всё ещё остаются <strong>Капитулировавшими</strong>).</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Волшебный Флеш</strong></td><td style=\"height:17px;border-width:1px\"><strong>4 карты по возрастанию достоинства, одной масти</strong></td></tr></tbody></table><p>Вы наносите урон, равный<strong>【25 + сумма достоинств разыгранных карт】 </strong>каждому противнику в сцене; тип урона соответствует масти разыгранных карт.</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Блестящий Стрит</strong></td><td style=\"height:17px;border-width:1px\"><strong>4 карты по возрастанию достоинства</strong></td></tr></tbody></table><p>Вы наносите урон, равный<strong>【15 + сумма достоинств разыгранных карт】</strong> каждому противнику в сцене; урон наносится <strong>светом</strong>, если старшая из этих карт имеет <strong>чётное</strong> достоинство, и <strong>тьмой</strong>, если <strong>нечётное</strong>.</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Рука Недугов</strong></td><td style=\"height:17px;border-width:1px\"><strong>3 карты одного достоинства + 2 карты одного достоинства</strong></td></tr></tbody></table><p>Выберите <strong>два</strong> состояния из <strong>оглушения, потрясения, замедления </strong>и<strong> слабости</strong>: если <strong>【высшее достоинство среди разыгранных карт】</strong><strong>чётное</strong>, вы и все союзники в сцене очищаетесь от этих состояний; если <strong>нечётное</strong>, каждый противник в сцене подвергается им.</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Тройная Подмога</strong></td><td style=\"height:17px;border-width:1px\"><strong>3 карты одного достоинства</strong></td></tr></tbody></table><p>Вы и каждый союзник в сцене восстанавливает Очки Здоровья и Очки Разума в размере <strong>【суммы достоинств разыгранных карт, умноженной на 3】</strong></p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Двойная Беда</strong></td><td style=\"height:17px;border-width:1px\"><strong>2 карты одного достоинства + 2 карты одного достоинства</strong></td></tr></tbody></table><p>Вы наносите<strong>【10 + наивысшее достоинство среди разыгранных карт】 </strong>одному или двум видимым противникам в сцене; тип урона соответствует одной из мастей разыгранных карт на ваш выбор.</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9452%\"><col style=\"width:72.0548%\"></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Эффект</strong></td><td style=\"height:17px;border-width:1px\"><strong>Требования к сету</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Волшебная Пара</strong></td><td style=\"height:17px;border-width:1px\"><strong>2 карты одного достоинства</strong></td></tr></tbody></table><p>Вы совершаете <strong>свободную атаку</strong> экипированным оружием. Если эта атака наносит урон, выберите <strong>масть</strong> одной из разыгранных карт; урон атаки становится соответствующим типу урона этой <strong>масти</strong>.</p>"
     },
     "[Handout: Arcana Rules]": {
       "name": "[Раздатка: Правила Арканы]",
-      "description0": "<h2>ЕДИНЕНИЕ С АРКАНОЙ</h2><p>Когда вы призываете Аркану, вы получаете преимущества её <strong>единения</strong>; эти преимущества действуют до тех пор, пока Аркана не будет отозвана (смотрите ниже).</p><p>Вы не можете призывать Аркану, если уже слились с другой; сначала вы должны отозвать текущую Аркану.</p><h2>ОТЗЫВ АРКАНЫ</h2><p>Аркана может быть отозвана несколькими способами</p><ul><li>       <p>По окончанию сцены все Арканы автоматически отзываются.</p></li><li>       <p>Если вы погибнете или потеряете сознание, то Аркана будет отозвана.</p></li><li>       <p>Если вы покидаете сцену, то Аркана будет отозвана.</p></li><li>       <p>Вы можете <strong>добровольно</strong> отозвать свою Аркану: это не требует действия, но во время конфликта это можно сделать только в свой ход, <strong>до или после</strong> действия.</p></li></ul><h2>ЭФФЕКТ ОТЗЫВА</h2><p>Большинство Аркан обладают мощным эффектом <strong>отзыва</strong>, который может быть активирован только в том случае, если вы <strong>добровольно</strong> отзываете Аркану, как описано выше — если Аркана <strong>отозвана</strong> по какой-либо другой причине, эффект <strong>отзыва</strong> не может быть активирован.</p><p>Если эффект отзыва Арканы наносит урон, он нанесёт 10 дополнительного урона, если вы <strong>20-го уровня или выше</strong>, или 20 дополнительного урона, если вы <strong>40-го уровня или выше</strong>.</p><p>Вы также можете игнорировать эффект <strong>отзыва</strong>, если не хотите его использовать.</p><h2>ДОМЕНЫ</h2><p>Каждая Аркана связана с несколькими ключевыми концепциями или <strong>доменами</strong>. Мастер должен использовать их для определения испытаний, необходимых для привязки Арканы, и для вынесения решения о Ритуалах, выполняемых с помощью Навыка <strong>Ритуального Арканизма</strong>. </p><p>Если вы создаёте новые Арканы для своего мира, обязательно свяжите их с доменами, которые позволяют проводить интересные Ритуалы.</p><p>Работайте со своей группой и создавайте собственные Арканы для своего мира!</p><h2>ВСЕ АРКАНЫ</h2><p>@UUID[Compendium.projectfu.skills.Item.8ySmNzjYisVduHWP]{[Раздатка: Список Аркан]}</p>"
+      "description0": "<h2>ЕДИНЕНИЕ С АРКАНОЙ</h2><p>Когда вы призываете Аркану, вы получаете преимущества её <strong>единения</strong>; эти преимущества действуют до тех пор, пока Аркана не будет отозвана (смотрите ниже).</p><p>Вы не можете призывать Аркану, если уже слились с другой; сначала вы должны отозвать текущую Аркану.</p><h2>ОТЗЫВ АРКАНЫ</h2><p>Аркана может быть отозвана несколькими способами</p><ul><li><p>По окончанию сцены все Арканы автоматически отзываются.</p></li><li><p>Если вы погибнете или потеряете сознание, то Аркана будет отозвана.</p></li><li><p>Если вы покидаете сцену, то Аркана будет отозвана.</p></li><li><p>Вы можете <strong>добровольно</strong> отозвать свою Аркану: это не требует действия, но во время конфликта это можно сделать только в свой ход, <strong>до или после</strong> действия.</p></li></ul><h2>ЭФФЕКТ ОТЗЫВА</h2><p>Большинство Аркан обладают мощным эффектом <strong>отзыва</strong>, который может быть активирован только в том случае, если вы <strong>добровольно</strong> отзываете Аркану, как описано выше — если Аркана <strong>отозвана</strong> по какой-либо другой причине, эффект <strong>отзыва</strong> не может быть активирован.</p><p>Если эффект отзыва Арканы наносит урон, он нанесёт 10 дополнительного урона, если вы <strong>20-го уровня или выше</strong>, или 20 дополнительного урона, если вы <strong>40-го уровня или выше</strong>.</p><p>Вы также можете игнорировать эффект <strong>отзыва</strong>, если не хотите его использовать.</p><h2>ДОМЕНЫ</h2><p>Каждая Аркана связана с несколькими ключевыми концепциями или <strong>доменами</strong>. Мастер должен использовать их для определения испытаний, необходимых для привязки Арканы, и для вынесения решения о Ритуалах, выполняемых с помощью Навыка <strong>Ритуального Арканизма</strong>. </p><p>Если вы создаёте новые Арканы для своего мира, обязательно свяжите их с доменами, которые позволяют проводить интересные Ритуалы.</p><p>Работайте со своей группой и создавайте собственные Арканы для своего мира!</p><h2>ВСЕ АРКАНЫ</h2><p>@UUID[Compendium.projectfu.skills.Item.8ySmNzjYisVduHWP]{[Раздатка: Список Аркан]}</p>"
     },
     "[Handout: Arcanum List]": {
       "name": "[Раздатка: Список Аркан]",
@@ -2817,8 +2959,7 @@
     },
     "[Handout: Managing The Deck]": {
       "name": "[Раздатка: Управление Колодой]",
-      "description0": "<h1>УПРАВЛЕНИЕ КОЛОДОЙ</h1><p>Ваша <strong>колода</strong> – это настоящая колода карт, которую вы можете составить по своему вкусу, при условии, что рубашки карт идентичны и вы соблюдаете приведённые ниже ограничения:</p><ul><li><p>Колода содержит <strong>30 карт</strong>: <strong>2 джокера</strong> и <strong>28</strong> карт, разделённых на <strong>4 масти</strong>; например, в стандартной покерной колоде <strong>мастями</strong> являются <strong>Трефы</strong> @ICON[spade] ), <strong>Бубны</strong> ( @ICON[diamond] ), <strong>Червы</strong> ( @ICON[heart] ), и <strong>Пики</strong> ( @ICON[club]<strong></strong>). При создании <strong>колоды</strong> вашего персонажа, свяжите масти со следующими типами урона – <strong>воздух</strong>, <strong>земля</strong>, <strong>огонь</strong> и <strong>лёд</strong>.</p></li><li><p>В колоде есть <strong>7 карт</strong> каждой <strong>масти</strong>, с <strong>достоинством от 1 до 7</strong>.</p></li></ul><p>Проще всего будет использовать покерную колоду (убрать <strong>карты</strong> с <strong>достоинством от 8 до 10 и старшие карты</strong>), но также вы можете использовать младшие арканы Таро, колоды коллекционных карточных игр, и другие; главное, чтобы карты и их комбинации легко читались во время игры.</p><ul><li><p>В начале <strong>конфликта</strong>, замешайте все 30 карт в <strong>колоду</strong> и положите её <strong>лицом вниз</strong>, затем вытяните <strong>5 карт в руку</strong>.</p></li><li><p>Если вам нужно вытянуть карты, когда в <strong>колоде</strong> их меньше нужного количества, вытяните оставшиеся карты, <strong>затем замешайте стопку сброса в колоду</strong>, положите её лицом вниз и продолжайте вытягивать карты.</p></li><li><p>Вытягивая карты, вы кладёте их себе в <strong>руку</strong>. Обычно, только вы можете видеть свою <strong>руку</strong>, но при желании, вы можете показать её остальным Игрокам.</p></li><li><p>Сбрасывая и разыгрывая карты из <strong>руки</strong>, вы кладёте их <strong>лицом вверх</strong> в <strong>стопку сброса</strong> (в произвольном порядке, если вы сбросили несколько карт). Менять порядок карт, лежащих в <strong>стопке сброса</strong> нельзя.</p></li></ul><p>Ваши <strong>колода</strong>, <strong>рука</strong> и <strong>стопка сброса</strong> (как и любые Навыки, связанные с ними) доступны только во время конфликтов; как только конфликт заканчивается, замешайте все 30 карт в <strong>колоду</strong> и отложите её в сторону.</p><h3>РАЗЫГРЫВАНИЕ СЕТА</h3><p>Чтобы возыметь действие, <strong>сет</strong> должен <strong>полностью</strong> соответствовать требованиям (например, разыгрывание <strong>сета из 5 карт одного достоинства</strong> не соответствует требованиям <strong>Джекпота</strong>, поскольку он должен состоять <strong>именно из 4 карт</strong>).</p><ul><li><p>Разыгрывая <strong>сет</strong>, в котором участвуют <strong>джокеры</strong>, выберите для каждого из них <strong>любую масть и достоинство от 1 до 7</strong>.</p></li></ul><p>Если сет соответствует требованиям нескольких эффектов, выберите и примените <strong>лишь один</strong> из этих эффектов.</p><h3><strong>ЭФФЕКТЫ</strong></h3><p>@UUID[Compendium.projectfu.skills.Item.FVmAbnxp6kZyoqkN]{[Раздатка: Колода]}</p>",
-      "class": "Картёжник"
+      "description0": "<h1>УПРАВЛЕНИЕ КОЛОДОЙ</h1><p>Ваша <strong>колода</strong> – это настоящая колода карт, которую вы можете составить по своему вкусу, при условии, что рубашки карт идентичны и вы соблюдаете приведённые ниже ограничения:</p><ul><li><p>Колода содержит <strong>30 карт</strong>: <strong>2 джокера</strong> и <strong>28</strong> карт, разделённых на <strong>4 масти</strong>; например, в стандартной покерной колоде <strong>мастями</strong> являются <strong>Трефы</strong> @ICON[spade] ), <strong>Бубны</strong> ( @ICON[diamond] ), <strong>Червы</strong> ( @ICON[heart] ), и <strong>Пики</strong> ( @ICON[club]<strong></strong>). При создании <strong>колоды</strong> вашего персонажа, свяжите масти со следующими типами урона – <strong>воздух</strong>, <strong>земля</strong>, <strong>огонь</strong> и <strong>лёд</strong>.</p></li><li><p>В колоде есть <strong>7 карт</strong> каждой <strong>масти</strong>, с <strong>достоинством от 1 до 7</strong>.</p></li></ul><p>Проще всего будет использовать покерную колоду (убрать <strong>карты</strong> с <strong>достоинством от 8 до 10 и старшие карты</strong>), но также вы можете использовать младшие арканы Таро, колоды коллекционных карточных игр, и другие; главное, чтобы карты и их комбинации легко читались во время игры.</p><ul><li><p>В начале <strong>конфликта</strong>, замешайте все 30 карт в <strong>колоду</strong> и положите её <strong>лицом вниз</strong>, затем вытяните <strong>5 карт в руку</strong>.</p></li><li><p>Если вам нужно вытянуть карты, когда в <strong>колоде</strong> их меньше нужного количества, вытяните оставшиеся карты, <strong>затем замешайте стопку сброса в колоду</strong>, положите её лицом вниз и продолжайте вытягивать карты.</p></li><li><p>Вытягивая карты, вы кладёте их себе в <strong>руку</strong>. Обычно, только вы можете видеть свою <strong>руку</strong>, но при желании, вы можете показать её остальным Игрокам.</p></li><li><p>Сбрасывая и разыгрывая карты из <strong>руки</strong>, вы кладёте их <strong>лицом вверх</strong> в <strong>стопку сброса</strong> (в произвольном порядке, если вы сбросили несколько карт). Менять порядок карт, лежащих в <strong>стопке сброса</strong> нельзя.</p></li></ul><p>Ваши <strong>колода</strong>, <strong>рука</strong> и <strong>стопка сброса</strong> (как и любые Навыки, связанные с ними) доступны только во время конфликтов; как только конфликт заканчивается, замешайте все 30 карт в <strong>колоду</strong> и отложите её в сторону.</p><h3>РАЗЫГРЫВАНИЕ СЕТА</h3><p>Чтобы возыметь действие, <strong>сет</strong> должен <strong>полностью</strong> соответствовать требованиям (например, разыгрывание <strong>сета из 5 карт одного достоинства</strong> не соответствует требованиям <strong>Джекпота</strong>, поскольку он должен состоять <strong>именно из 4 карт</strong>).</p><ul><li><p>Разыгрывая <strong>сет</strong>, в котором участвуют <strong>джокеры</strong>, выберите для каждого из них <strong>любую масть и достоинство от 1 до 7</strong>.</p></li></ul><p>Если сет соответствует требованиям нескольких эффектов, выберите и примените <strong>лишь один</strong> из этих эффектов.</p><h3><strong>ЭФФЕКТЫ</strong></h3><p>@UUID[Compendium.projectfu.skills.Item.FVmAbnxp6kZyoqkN]{[Раздатка: Колода]}</p>"
     },
     "[Handout: Other Rules]": {
       "name": "[Handout: Other Rules]",
