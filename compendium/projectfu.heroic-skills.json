@@ -135,14 +135,17 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered two or more Classes among <strong>Elementalist</strong>, <strong>Entropist</strong>, and <strong>Spiritist</strong>, and your character must be <strong>level 30 or higher</strong>.</p></blockquote><p>Once per turn during a conflict, if you have an <strong>arcane </strong>weapon equipped, you may use an action and spend <strong>20 to 50 Mind Points</strong> to perform the <strong>Spell </strong>action for free <strong>twice</strong>, casting two spells without needing to pay their MP costs. If you do, the two spells must have a <strong>combined total MP cost equal to or lower than【20 + the amount of MP you spent to use this Skill】</strong>, and the second spell must have a <strong>total MP cost that is equal to or lower than half the total MP cost</strong> of the first spell. </p>"
     },
     "Birth of the Cruel": {
-      "name": "Birth of the Cruel",
-      "summary": "Turn dead NPC into a Minion",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Necromancer</strong> Class.</p></blockquote><p>When a non-<strong>Villain</strong> NPC you can see that belongs to the <strong>beast</strong>, <strong>humanoid</strong>, <strong>monster</strong>, or <strong>plant</strong> Species dies, you may spend 2 Grave Points and <strong>reduce your maximum Hit Points and Mind Points</strong> by an amount equal to that NPC's <strong>level</strong>. If you do, their corpse becomes a <strong>Minion</strong> who obeys your telepathic commands:</p><ul><li>Its Species becomes <strong>undead</strong> and it receives all <strong>Undead rules</strong> (see <strong>Core Rulebook</strong>, page <strong>305</strong>). The new Affinities to <strong>dark</strong>, <strong>light</strong>, and <strong>poison</strong> damage overwrite any preexisting Affinity, but the original Species' rules are otherwise <strong>maintained</strong>.</li><li>Its <strong>Rank</strong> becomes <strong>soldier</strong>; if the original creature was an <strong>élite</strong> or <strong>champion</strong>, the GM must reduce the Minion's HP and MP accordingly (Skills are <strong>maintained</strong>).</li><li>The newly created Minion is a completely new creature and has full HP, full MP, and no status effects. It retains the original creature's <strong>equipment</strong>.</li><li>Your Minion takes its own turn during conflicts, and the Game Master must count it as an <strong>additional Player Character</strong> when designing a conflict.</li><li>When you <strong>rest</strong>, your Minion also gains the full benefits of resting.</li><li>If your Minion is reduced to 0 Hit Points, if you are <strong>more than 1 travel day</strong> away from it, or if you die or fall unconscious, your Minion is immediately <strong>destroyed</strong>.</li><li>You may also destroy your Minion <strong>at any time</strong>; if you want to create a new Minion, you must first destroy the current one.</li><li>If your Minion is destroyed, your maximum HP and MP scores <strong>return to normal</strong>.</li></ul>"
+      "name": "Рождение Жестокого",
+      "summary": "Превращайте мёртвых НИПов в Миньонов.",
+      "description": "<blockquote><p><strong>Требования:</strong> вы должны освоить Класс <strong>Некромант</strong>.</p></blockquote><p>Когда НИП, которого вы видите, который не является <strong>Злодеем</strong> и принадлежит к Виду <strong>зверя</strong>, <strong>гуманоида</strong>, <strong>монстра</strong> или <strong>растения</strong>, умирает, вы можете потратить 2 Очка Могилы, <strong>уменьшить свои максимальные Очки Здоровья и Очки Разума</strong> на величину, равную <strong>уровню</strong> этого НИП. Если вы это сделаете, его труп станет <strong>Миньоном</strong>, который будет подчиняться вашим телепатическим командам:</p><ul>    <li>        <p>Его <strong>Вид</strong> меняется на <strong>нежить</strong>, он подчиняется всем <strong>правилам нежити</strong> (см. <strong>Основную Книгу</strong>, стр. <strong>305</strong>). Подверженности урону <strong>тьмой</strong>, <strong>светом</strong> и <strong>ядом</strong> заменяют все ранее существовавшие Подверженности урону, но остальные правила первоначального Вида <strong>сохраняются</strong>.</p>    </li>    <li>        <p>Его <strong>Ранг</strong> становится <strong>солдатом</strong>; если первоначальное существо было <strong>элитой</strong> или <strong>чемпионом</strong>, Мастер должен соответственно уменьшить ОЗ и ОР Миньона (Навыки <strong>сохраняются</strong>).</p>    </li>    <li>        <p>Недавно созданный Миньон является совершенно новым существом и обладает полными ОЗ, полными ОР и не имеет состояний. Он сохраняет <strong>Экипировку</strong> первоначального существа.</p>    </li>    <li>        <p>Ваш Миньон делает собственный ход во время конфликтов, и Мастер должен учитывать его как <strong>дополнительного персонажа игрока</strong> при разработке конфликта.</p>    </li>    <li>        <p>Когда вы <strong>отдыхаете</strong>, ваш Миньон также получает все преимущества отдыха.</p>    </li>    <li>        <p>Если количество Очков Здоровья вашего Миньона уменьшается до 0, а вы находитесь на расстоянии <strong>более 1 дня пути</strong> от него, или если вы умираете или теряете сознание, ваш Миньон немедленно <strong>уничтожается</strong>.</p>    </li>    <li>        <p>Вы также можете уничтожить своего Миньона <strong>в любое время</strong>; если вы хотите создать нового Миньона, вы должны сначала уничтожить текущего.</p>    </li>    <li>        <p>Если ваш Миньон уничтожен, ваши максимальные показатели ОЗ и ОР <strong>возвращаются к норме</strong>.</p>    </li></ul>",
+      "class": "Некромант"
     },
     "Black & White": {
-      "name": "Black & White",
-      "summary": "Modify your Double Trouble Set; Jokers become stronger.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Ace of Cards</strong>, <strong>Darkblade</strong>, <strong>Entropist</strong>, and <strong>Spiritist</strong>, and you must have acquired the <strong>Magic Cards</strong> Skill. <br /></p></blockquote><p>When you resolve the <strong>Double Trouble</strong> effect, you may have all of its damage become <strong>light</strong> or <strong>dark</strong> (instead of being of a type matching the <strong>suits</strong> of the resolved cards).</p><p>Additionally, as long as there is a <strong>joker</strong> in your <strong>discard pile</strong>, all damage dealt by your <strong>Blinding Flush</strong>, <strong>Double Trouble</strong>, and <strong>Magic Flush</strong> effects ignores Immunities and Resistances.</p>"
+      "name": "Чёрное и Белое",
+      "summary": "Измените свой сет Двойной Беды; джокеры становятся сильнее.",
+      "description": "<blockquote><p><strong>Требования:</strong> вы должны освоить один или несколько Классов из следующих: <strong>Картёжник, Тёмный Клинок, Энтропист и Спиритист</strong>, и приобрести Навык <strong>Волшебные Карты</strong>.<br></p></blockquote><p>Когда вы разыгрываете эффект <strong>Двойной Беды</strong>, весь наносимый им урон может стать уроном <strong>светом</strong> или <strong>тьмой</strong> (вместо того, чтобы соответствовать <strong>мастям</strong> разрешённых карт).</p><p>Кроме того, пока в вашей <strong>стопке сброса</strong> есть <strong>джокер</strong>, весь урон, наносимый разыгрыванием <strong>Блестящего Стрита</strong>, <strong>Двойной Беды</strong> и <strong>Волшебного Флеша</strong> игнорирует Подверженность урону.</p>",
+      "class": "Картёжник, Тёмный Клинок, Энтропист или Спиритист",
+      "requirement": "Навык Волшебные Карты"
     },
     "Blade Adept": {
       "name": "Blade Adept",
@@ -180,9 +183,11 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Entropist</strong> and <strong>Rogue</strong>, and must have acquired one or more Skills among <strong>Dodge</strong> and <strong>Stolen Time</strong>.</p></blockquote><p>You gain a bonus to your Initiative modiﬁer equal to <strong>【your Skill Level in Dodge + your Skill Level in Stolen Time】</strong>.</p><p>As long as you have no <strong>shield</strong> and no <strong>martial armor</strong> equipped, all damage you suffer is reduced by an amount equal to <strong>【your SL in Dodge】 </strong>(applied <strong>before</strong> damage Afﬁnities) and you deal extra damage equal to <strong>【your SL in Stolen Time】</strong>.</p>"
     },
     "Card Vanguard": {
-      "name": "Card Vanguard",
-      "summary": "Place cards as Vanguard Cards.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Ace of Cards</strong> Class, and must have acquired the <strong>Magic Cards</strong> Skill. <br /></p></blockquote><p>During a conflict, if you have <strong>two or fewer vanguard cards</strong> in play, you can use an action to choose <strong>1 card</strong> from your <strong>hand </strong>and place it face down as a <strong>vanguard card</strong>; if you do, draw 1 card from your <strong>deck</strong>.</p><p>When you suffer damage, if you have one or more <strong>vanguard cards</strong> in play, you may reveal one of them and place it on top of your <strong>discard pile</strong>: if you do and that card is a <strong>joker</strong> or its <strong>suit</strong> matches the type of the damage you suffered, you instead suffer no damage and regain an equal amount of Mind Points. At the end of each conflict, if you have one or more <strong>vanguard cards</strong> in play, shuffle them back into your <strong>deck</strong>.</p>"
+      "name": "Карточный Авангард",
+      "summary": "Поместите карты в качестве карт Авангарда.",
+      "description": "<blockquote>    <p><strong>Требования:</strong> вы должны освоить Класс <strong>Картёжник</strong> и вы должны приобрести Навык <strong>Волшебные карты</strong>.</p></blockquote><p>Во время конфликта, <strong>если у вас в игре две или меньше карт авангарда</strong>, вы можете выполнить действие, чтобы выбрать <strong>1 карту</strong> из своей <strong>руки</strong> и положить её лицевой стороной вниз в качестве <strong>карты авангарда</strong>; если вы это сделаете, возьмите 1 карту из своей <strong>колоды</strong>.</p><p>Когда вы получаете урон, если у вас в игре есть одна или несколько <strong>карт авангарда</strong>, вы можете раскрыть одну из них и положить её поверх своей <strong>стопки сброса</strong>: если вы это сделаете, и эта карта <strong>джокер</strong> или её <strong>масть</strong> соответствует типу полученного вами урона, вы вместо этого не получите никакого урона и восстановите количество Очков Разума, равное проигнорированному урону.</p><p>В конце каждого конфликта, если у вас в игре есть одна или несколько <strong>карт авангарда</strong>, замешайте их обратно в свою <strong>колоду</strong>.</p>",
+      "class": "Картёжник",
+      "requirement": "Навык Волшебные карты"
     },
     "Ceaseless Battlefield": {
       "name": "Ceaseless Battlefield",
@@ -296,9 +301,11 @@
       "description": "<blockquote><p><strong>Requirements: </strong>you must have mastered one or more Classes among <strong>Darkblade</strong> and <strong>Esper</strong>.</p></blockquote><p>When you hit one or more creatures with an attack from your @UUID[Compendium.projectfu.skills.Item.W5hE9L8x7AsJI7a1]{Shadow Strike} Skill using a weapon that belongs to the <strong>sword</strong> Category, each of those creatures loses an amount of Mind Points equal to <strong>【the number you rolled on your Might die for Shadow Strike】</strong>. Then, if <strong>【the number you rolled on your Might die for Shadow Strike】 was 8 or higher</strong>, you may choose one creature hit by the attack: if that creature is your <strong>focus</strong> or you have a <strong>Bond</strong> towards them, that creature will perform one fewer action during their next turn (to a minimum of zero actions).</p><hr><ul><li><p><strong>Target Loses:</strong> @LOSS[(^backlash(mig,hp)+$sl) mp]</p></li></ul>"
     },
     "Duel Master": {
-      "name": "Duel Master",
-      "summary": "Your Magic Pairs enhance your attacks.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Ace of Cards</strong>, <strong>Fury</strong>, <strong>Rogue</strong>, <strong>Sharpshooter</strong>, and <strong>Weaponmaster</strong>, and you must have acquired the <strong>Magic Cards</strong> Skill.</p></blockquote><p>When you resolve the <strong>Magic Pair</strong> effect, if you attack with a weapon belonging to the <strong>arcane</strong> or <strong>thrown</strong> Category, you deal extra damage equal to the common value of the resolved cards and regain an amount of Mind Points equal to twice the common value of the resolved cards (for instance, resolving a pair of <strong>5s</strong> will allow you to deal 5 extra damage and regain 10 Mind Points).</p>"
+      "name": "Мастер-Дуэлянт",
+      "summary": "Ваши Волшебные Пары усиливают ваши атаки.",
+      "description": "<blockquote>    <p><strong>Требования:</strong> вы должны освоить один или несколько Классов из следующих: <strong>Картёжник, Фурия, Разбойник</strong> и <strong>Мастер Оружия</strong>, и вы должны приобрести Навык <strong>Волшебные Карты</strong>.</p></blockquote><p>Когда вы разыгрываете эффект <strong>Волшебной Пары</strong>, если вы атакуете оружием, относящимся к Категории <strong>арканное</strong> или <strong>метательное</strong>, вы наносите дополнительный урон, равный <strong>【значению разыгранных карт】</strong>, и восстанавливаете количество Очков Разума, равное <strong>【удвоенному значению разыгранных карт】</strong> (например, разыгрывание пары <strong>Пятёрок</strong> позволит вам нанести 5 дополнительных единиц урона и восстановить 10 Очков Разума).</p>",
+      "class": "Картёжник, Фурия, Разбойник или Мастер Оружия",
+      "requirement": "Навык Волшебные Карты"
     },
     "Dynamic Synchronization": {
       "name": "Dynamic Synchronization",
@@ -876,9 +883,11 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Merchant</strong> Class, and must have acquired the <strong>Real Treasure</strong> and <strong>Winds of Trade</strong> Skills</p></blockquote><p>When you need to spend one or more Fabula Points, if you are <strong>not</strong> spending them to <strong>alter the story</strong> (see <strong>Core Rulebook</strong>, page <strong>98</strong>), you may spend that many <strong>Trade Points</strong> instead. Describe which memories of your trades and journeys give you strength!</p><p>Additionally, when you gain <strong>two or more</strong> Trade Points through the @UUID[Compendium.projectfu.skills.Item.lFYCdvybWS7x8e6L]{Real Treasure} or @UUID[Compendium.projectfu.skills.Item.zXB7pBEv1JED1xkh]{Winds of Trade} Skills, you may choose to gain <strong>exactly 1 Trade Point</strong> instead. If you do, choose a settlement within <strong>1 travel day</strong> of your position and increase its <strong>prosperity</strong> by an amount equal to <strong>【your Skill Level in Winds of Trade + your Skill Level in Real Treasure】</strong>; a settlement's <strong>prosperity</strong> starts at 0 and has no upper limit.</p><p>The chart below indicates the effects of your donations on the settlement and on anything within <strong>1 travel day</strong> of it.</p><table border><tbody><tr><th><p>Prosperity</p></th><th><p>Effects within 1 travel day of the settlement</p></th></tr><tr><td><p>10 or more</p></td><td><p>When you or an ally need to pay a cost in zenit, whatever the reason, that cost is <strong>halved</strong>.</p></td></tr><tr><td><p>15 or more</p></td><td><p>People gladly accommodate you and your allies: while in this area, you can always <strong>rest</strong> freely, without spending zenit. Furthermore, any <strong>travel rolls</strong> made in this area never use a die greater than <strong>d8</strong>.</p></td></tr><tr><td><p>20 or more</p></td><td><p>When a Villain in this area spends Ultima Points, they must spend <strong>twice</strong> as many Ultima Points.</p></td></tr></tbody></table>"
     },
     "Forbidden Rite": {
-      "name": "Forbidden Rite",
-      "summary": "Gain access to the Forbidden Monarch set. Your discards grant you strength.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Ace of Cards</strong> and <strong>Arcanist</strong>, and you must have acquired <strong>3 Skill Levels</strong> in the <strong>Magic Cards</strong> Skill.</p></blockquote><p>As long as there are one or more cards in your discard pile, you have Resistance to the damage type matching the suit of the card on top of your discard pile (if that card is a joker, you have Resistance to all four damage types: air, earth, fire, and ice).</p><p>You also add the following effect to your list of sets:</p><table style=\"height:34px;width:100%;border-width:1px;margin-left:auto;margin-right:auto\" border=\"1\"><colgroup><col style=\"width:27.9621%\"></col><col style=\"width:72.0379%\"></col></colgroup><tbody><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Effect</strong></td><td style=\"height:17px;border-width:1px\"><strong>Set Requirements</strong></td></tr><tr style=\"height:17px\"><td style=\"height:17px;border-width:1px\"><strong>Forbidden Monarch</strong></td><td style=\"height:17px;border-width:1px\"><p><strong>4 cards</strong> of the <strong>same value</strong>, <strong>none</strong> of which is a <strong>joker</strong> + <strong>1 joker</strong></p></td></tr></tbody></table><p>You deal 777 damage to each enemy present on the scene; the type of this damage is light if the common value of the 4 cards is even, or dark if that total is odd.</p><p>If there is a joker in your discard pile, the damage dealt by this effect ignores Immunities and Resistances.</p>"
+      "name": "Запретный Обряд",
+      "summary": "Получите доступ к сету Запретный Монарх. Ваши сбросы дают вам силу.",
+      "description": "<blockquote>    <p><strong>Требования:</strong> вы должны освоить один или несколько Классов из следующих: <strong>Картёжник</strong> или <strong>Арканист </strong>и вы должны приобрести <strong>3 уровня</strong> в Навыке <strong>Волшебные Карты</strong>.</p></blockquote><p>Пока в вашей <strong>стопке сброса</strong> есть <strong>одна или несколько карт</strong>, у вас есть Сопротивление к типу урона, соответствующему <strong>масти</strong> карты, лежащей <strong>поверх</strong> вашей <strong>стопки сброса</strong> (если эта карта <strong>джокер</strong>, у вас есть Сопротивление ко всем четырём типа урона: <strong>воздух</strong>, <strong>земля</strong>, <strong>огонь</strong> и <strong>лёд</strong>).</p><p>Вы также добавляете следующий <strong>эффект</strong> в свой список <strong>сетов</strong>:</p><div>    <table>        <colgroup>            <col>        </colgroup>        <tbody>            <tr>                <td>                    <p><strong>Эффект</strong></p>                </td>                <td>                    <p><strong>Требования к сету</strong></p>                </td>            </tr>            <tr>                <td>                    <p><strong>Запретный Монарх</strong></p>                </td>                <td>                    <p><strong>4 карты одинакового достоинства, ни одна</strong> из которых не является <strong>джокером + 1 джокер</strong></p>                </td>            </tr>        </tbody>    </table></div><p>Вы наносите урон в размере 777 единиц каждому врагу, присутствующему в сцене; тип этого урона — <strong>светом</strong>, если <strong>【значения 4 карт】 чётные</strong>, или <strong>тьмой</strong>, если эти значения <strong>нечётные</strong>.</p><p>Если в вашей <strong>стопке сброса</strong> есть <strong>джокер</strong>, урон, наносимый этим эффектом, игнорирует Иммунитеты и Сопротивления.</p>",
+      "class": "Картёжник или Арканист",
+      "requirement": "3 уровня в Навыке Волшебные Карты"
     },
     "Grand Summoning": {
       "name": "Grand Summoning",
@@ -916,9 +925,11 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Floralist</strong> Class</p></blockquote><p>When <strong>you fill 1 or more sections of your Growth Clock</strong>, you may choose one option: you fill <strong>1 additional section</strong> of your Growth Clock; <strong>or</strong> you fill <strong>1 fewer section</strong> of your Growth Clock (to a minimum of 0 sections filled). If you do, you cannot use this effect again until after your <strong>Growth Clock</strong> has become completely empty.</p><p>Additionally, damage dealt by your <strong>magiseeds</strong> ignores Resistances.</p>"
     },
     "Harvester of Sorrow": {
-      "name": "Harvester of Sorrow",
-      "summary": "Increase the potency of Drain spells.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Entropist </strong>and <strong>Necromancer</strong>, and must have learned both the <strong>Drain Spirit</strong> and <strong>Drain Vigor</strong> spells.</p></blockquote><p>When you cast the @UUID[Compendium.projectfu.spells.Item.300SqWOqTrc7Qb3L]{Drain Spirit} or @UUID[Compendium.projectfu.spells.Item.HCknXFHu7q0bJ2Cg]{Drain Vigor} spells, the amount of Mind Points or Hit Points you recover is <strong>equal </strong>to the MP or HP loss suffered by the target, respectively (instead of being halved).</p><p>Additionally, your <strong>Drain Spirit</strong> causes the target to lose<strong>【HR + 20】</strong> Mind Points if you are <strong>level 20 or higher</strong>, or <strong>【HR + 25】</strong> Mind Points if you are <strong>level 40 or higher</strong>, instead of the normal<strong>【HR + 15】</strong>.</p>"
+      "name": "Жнец Скорби",
+      "summary": "Увеличивает силу заклинаний Истощения.",
+      "description": "<blockquote>    <p><strong>Требования:</strong> вы должны освоить один или несколько Классов из следующих: <strong>Энтропист </strong>или <strong>Некромант</strong>, и вы должны изучить оба заклинания <strong>Истощение Духа</strong> и <strong>Истощение Энергии.</strong></p></blockquote><p>Когда вы произносите заклинания @UUID[Compendium.projectfu.spells.Item.300SqWOqTrc7Qb3L]{Истощение Духа} или @UUID[Compendium.projectfu.spells.Item.HCknXFHu7q0bJ2Cg]{Истощение Энергии}, количество Очков Разума или Очков Здоровья, которые вы восстанавливаете, <strong>равно</strong> потерям ОР или ОЗ, цели (вместо того, чтобы уменьшаться вдвое).</p><p>Кроме того, из-за вашего <strong>Истощение Духа</strong> цель теряет <strong>【ЛБ + 20】</strong> Очков Разума, если вы <strong>20-го уровня или выше</strong>, или <strong>【ЛБ + 25】</strong> Очков Разума, если вы <strong>40-го уровня или выше</strong>, вместо обычных <strong>【ЛБ + 15】</strong>.</p>",
+      "class": "Энтропист или Некромант",
+      "requirement": "Заклинания Истощение Духа и Истощение Энергии"
     },
     "Heartbreaker": {
       "name": "Укол в Сердце",
@@ -1252,9 +1263,86 @@
       "description": "<blockquote><p><strong>Requirements: </strong>you must have mastered the <strong>Esper</strong> Class.</p></blockquote><p>Your gifts with event \"When you <strong>deal damage</strong>\" can also be used \"When an ally who is able to hear you <strong>deals damage</strong>\".</p><p>Your @UUID[Compendium.projectfu.skills.Item.aqgXqI567dkudwMN]<strong> gift</strong>, if you have acquired it, has its <strong>effect</strong> changed to \"You and every ally who is able to hear you may treat your Defense and Magic Defense scores as being equal to <strong>【your current Willpower die size + (the number of filled sections in your Brainwave Clock, multiplied by 2)】 </strong>against that Check (you may still use your normal scores if better).\"</p>"
     },
     "Pulse of the Maggots": {
-      "name": "Pulse of the Maggots",
-      "summary": "Grave Points modify your Affinities.",
-      "description": "<blockquote><p><strong>Requirements</strong>: you must have mastered the Necromancer Class.</p></blockquote><p>As long as you have <strong>at least 1 Grave Point</strong>, you gain Immunity to <strong>dark </strong>and <strong>poison </strong>damage, Resistance to <strong>physical </strong>damage, and Vulnerability to <strong>light </strong>damage. These Affinities <strong>overwrite </strong>any other Affinity for those damage types, and cannot be altered <strong>in any way</strong> as long as you have at least 1 Grave Point.</p>"
+      "name": "Пульс Личинок",
+      "summary": "Очки Могилы изменяют ваши Подверженности.",
+      "description": "<blockquote><p><strong>Требования:</strong> вы должны освоить Класс <strong>Некромант</strong>.</p></blockquote><p>Пока у вас есть <strong>хотя бы 1 Очко Могилы</strong>, вы получаете иммунитет к урону <strong>тьмой</strong> и <strong>ядом</strong>, устойчивость к <strong>физическому</strong> урону и уязвимость к урону <strong>светом</strong>. Эти Подверженности урону <strong>заменяют</strong> любые другие для этих типов урона и не могут быть изменены <strong>ни при каких обстоятельствах</strong>, пока у вас есть хотя бы 1 Очко Могилы.</p>",
+      "class": "Некромант",
+      "requirement": " ",
+      "effects": [
+        {
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Пульс Личинок",
+          "_id": "X7DKHY2l8J5pswlG",
+          "changes": [
+            {
+              "key": "system.affinities.dark.bonus",
+              "mode": 5,
+              "value": "2",
+              "priority": null
+            },
+            {
+              "key": "system.affinities.poison.bonus",
+              "mode": 5,
+              "value": "2",
+              "priority": null
+            },
+            {
+              "key": "system.affinities.physical.bonus",
+              "mode": 5,
+              "value": "1",
+              "priority": null
+            },
+            {
+              "key": "system.affinities.light.bonus",
+              "mode": 5,
+              "value": "-1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Пока у вас есть <strong>хотя бы 1 Очко Могилы</strong>, вы получаете иммунитет к урону <strong>тьмой</strong> и <strong>ядом</strong>, устойчивость к <strong>физическому</strong> урону и уязвимость к урону <strong>светом</strong>. Эти Подверженности урону <strong>заменяют</strong> любые другие для этих типов урона и не могут быть изменены <strong>ни при каких обстоятельствах</strong>, пока у вас есть хотя бы 1 Очко Могилы.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {}
+          },
+          "tint": "#ffffff",
+          "img": "icons/magic/death/skull-horned-white-purple.webp",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Pulverizing Strike": {
       "name": "Pulverizing Strike",
