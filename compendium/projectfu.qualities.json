@@ -6,81 +6,1157 @@
     }
   },
   "folders": {
-    "Absorbing": "Absorbing",
-    "Check": "Check",
-    "Damage Change": "Damage Change",
-    "Defensive": "Defensive",
-    "Effects": "Effects",
-    "Immunity": "Immunity",
-    "Offensive": "Offensive",
-    "Resistance": "Resistance",
-    "Resource": "Resource",
-    "Skill": "Skill",
-    "Status": "Status"
+    "Absorbing": "Поглощение",
+    "Check": "Проверка",
+    "Damage Change": "Изменение Урона",
+    "Defensive": "Защитные",
+    "Effects": "Эффекты",
+    "Immunity": "Иммунитет",
+    "Offensive": "Атакующие",
+    "Resistance": "Сопротивление",
+    "Resource": "Ресурс",
+    "Skill": "Навык",
+    "Status": "Состояние"
   },
   "entries": {
     "Absorbing (Air)": {
-      "name": "Absorbing (Air)"
+      "name": "Поглощение (Воздух)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Поглощение (Воздух)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.air.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>воздухом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "28pgOjo0kq41rzIu",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null,
+          "_stats": {
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "lastModifiedBy": null
+          }
+        }
+      ]
     },
     "Absorbing (Bolt)": {
-      "name": "Absorbing (Bolt)"
+      "name": "Поглощение (Молния)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Поглощение (Молния)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.bolt.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>молнией</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "w8X7WswthIVB8ePw",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Absorbing (Dark)": {
-      "name": "Absorbing (Dark)"
+      "name": "Поглощение (Тьма)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Поглощение (Тьма)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.dark.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>тьмой</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "uiQW0GChsEFQMnxO",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Absorbing (Earth)": {
-      "name": "Absorbing (Earth)"
+      "name": "Поглощение (Земля)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Поглощение (Земля)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.earth.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>землёй</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "PPaDF684yW5kdnhU",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Absorbing (Fire)": {
-      "name": "Absorbing (Fire)"
+      "name": "Поглощение (Огонь)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Поглощение (Огонь)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.fire.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>огнём</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "VmCaLNG9fY95mPnw",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Absorbing (Ice)": {
-      "name": "Absorbing (Ice)"
+      "name": "Поглощение (Лёд)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Поглощение (Лёд)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.ice.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>льдом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "lADS1g0J63frv16Q",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Absorbing (Light)": {
-      "name": "Absorbing (Light)"
+      "name": "Поглощение (Свет)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Поглощение (Свет)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.light.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>светом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "96nO8pAgZrjI1goc",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Absorbing (Poison)": {
-      "name": "Absorbing (Poison)"
+      "name": "Поглощение (Яд)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Поглощение (Яд)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.poison.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>ядом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "4B18bWzXnmlyrCbh",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Accuracy Up": {
-      "name": "Accuracy Up"
+      "name": "Сверх Точность",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сверх Точность",
+          "img": "systems/projectfu/styles/static/statuses/AccuracyUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyCheck",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус +1 к вашим Проверкам Точности.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Проверка",
+              "source": "FUCR280"
+            }
+          },
+          "_id": "iMcVIUH2FMEEyvO8",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Alchemist": {
-      "name": "Alchemist"
+      "name": "Алхимик",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Алхимик",
+          "img": "systems/projectfu/styles/static/statuses/Regen.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Зелья, созданные с помощью Очков Инвентаря, наносят 5 дополнительного урона и восстанавливают @GAIN[5 hp] Очков Здоровья.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Ресурс",
+              "source": "FUCR274"
+            }
+          },
+          "_id": "4RvqveYHiGXyMkEa",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Amulet": {
-      "name": "Amulet"
+      "name": "Амулет",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Амулет",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.derived.mdef.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус +1 к Магической Защите.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "2c2H9gk7Rt6DaDit",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Antistatus (Dazed)": {
-      "name": "Antistatus (Dazed)"
+      "name": "Антистатус (Оглушение)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Антистатус (Оглушение)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.immunities.dazed.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имунны к <strong>оглушению</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "Kyp5s0BQB6tXPSp2",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Antistatus (Enraged)": {
-      "name": "Antistatus (Enraged)"
+      "name": "Антистатус (Ярость)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Антистатус (Ярость)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.immunities.enraged.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имунны к <strong>ярости</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "XMFoMp9PpV2BnB4T",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Antistatus (Poisoned)": {
-      "name": "Antistatus (Poisoned)"
+      "name": "Антистатус (Отравление)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Антистатус (Отравление)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.immunities.poisoned.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имунны к <strong>отравлению</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "YAbDZ8x7XPXDS9PO",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Antistatus (Shaken)": {
-      "name": "Antistatus (Shaken)"
+      "name": "Антистатус (Потрясение)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Антистатус (Потрясение)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.immunities.shaken.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имунны к <strong>потрясению</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "BRYsLLFJthyrE0H9",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Antistatus (Slow)": {
-      "name": "Antistatus (Slow)"
+      "name": "Антистатус (Замедление)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Антистатус (Замедление)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.immunities.slow.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имунны к <strong>замедлению</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "J38ozRyZwkbZj0wm",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Antistatus (Weak)": {
-      "name": "Antistatus (Weak)"
+      "name": "Антистатус (Слабость)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Антистатус (Слабость)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.immunities.weak.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имунны к <strong>слабости</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "H8vAzDJMbhAEkp9G",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Assassin": {
-      "name": "Assassin"
+      "name": "Убийца",
+      "effects": [
+        {
+          "disabled": true,
+          "name": "Убийца",
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.damage.value",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Наносит 5 дополнительного урона целям, которые находятся в <strong>Кризисе</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующее",
+              "source": "FUCR273"
+            }
+          },
+          "_id": "NyOZKDlKkHqWDqos",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Bond Boost": {
-      "name": "Bond Boost"
+      "name": "Усиление Уз",
+      "effects": [
+        {
+          "disabled": true,
+          "name": "Усиление Уз",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.derived.mdef.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            },
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Если у вас есть как минимум две <strong>Узы (выберите тип узы)</strong>, вы получаете бонус +1 к Защите и Магической Защите.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR287"
+            }
+          },
+          "_id": "WxoqethmaNXNaQVu",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Bulwark": {
-      "name": "Bulwark"
+      "name": "Оплот",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Оплот",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус +1 к Защите.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "04P6LNz7nyzzhJNX",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Challenger": {
-      "name": "Challenger"
+      "name": "Вызов",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Вызов",
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.damage.value",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Наносит 1 дополнительный урон за каждое состояние, которое вы имеете.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Offensive",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "I83TqNuQKSct8Hrj",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Crisis Shock (Dazed)": {
       "name": "Crisis Shock (Dazed)"
@@ -95,58 +1171,1312 @@
       "name": "Crisis Shock (Weak)"
     },
     "Damage Change": {
-      "name": "Damage Change"
+      "name": "Изменение Урона",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Изменение Урона",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном определённого типа.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующее",
+              "source": "FUCR284"
+            }
+          },
+          "_id": "JyRId1vqKpsXs6hc",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Damage Change (Air)": {
-      "name": "Damage Change (Air)"
+      "name": "Изменение Урона (Воздух)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.NHP8FASwfMCFYhXb",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Воздух)",
+          "img": "systems/projectfu/styles/static/affinities/air.svg",
+          "_id": "4tay6tc1XdWR8IGm",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "air",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном <strong>воздухом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Bolt)": {
-      "name": "Damage Change (Bolt)"
+      "name": "Изменение Урона (Молния)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.sA4Ow3sFpVUnfcII",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Молния)",
+          "img": "systems/projectfu/styles/static/affinities/bolt.svg",
+          "_id": "oZe4OoULtGYRO6od",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "bolt",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном <strong>молнией</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Dark)": {
-      "name": "Damage Change (Dark)"
+      "name": "Изменение Урона (Тьма)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.oCoDJyldCweASnBk",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Тьма)",
+          "img": "systems/projectfu/styles/static/affinities/dark.svg",
+          "_id": "XL0xoMW8mFxCsNws",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "dark",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном <strong>тьмой</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Earth)": {
-      "name": "Damage Change (Earth)"
+      "name": "Изменение Урона (Земля)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.7z4sulLR3j2HIDLd",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Земля)",
+          "img": "systems/projectfu/styles/static/affinities/earth.svg",
+          "_id": "sI51dmD9J3OQLbsb",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "earth",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном <strong>землёй</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Fire)": {
-      "name": "Damage Change (Fire)"
+      "name": "Изменение Урона (Огонь)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.L8aFfpKBj5qcoqEx",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Огонь)",
+          "img": "systems/projectfu/styles/static/affinities/fire.svg",
+          "_id": "8pd9i30YrQ982pG1",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "fire",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном <strong>огнём</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Ice)": {
-      "name": "Damage Change (Ice)"
+      "name": "Изменение Урона (Лёд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.p34FHmhkyMWI8Xj2",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Лёд)",
+          "img": "systems/projectfu/styles/static/affinities/ice.svg",
+          "_id": "x8jNIpCDg72PSmmr",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "ice",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном <strong>льдом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Light)": {
-      "name": "Damage Change (Light)"
+      "name": "Изменение Урона (Свет)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.VStbJrco5IzfXBwg",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Свет)",
+          "img": "systems/projectfu/styles/static/affinities/light.svg",
+          "_id": "Bq2jfRi7kkYkLgtI",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "light",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном <strong>светом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Physical)": {
-      "name": "Damage Change (Physical)"
+      "name": "Изменение Урона (Физический)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.t1NMvwGstDfqy2Ir",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Физический)",
+          "img": "systems/projectfu/styles/static/affinities/physical.svg",
+          "_id": "skO0HIoywH6e9bIK",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "physical",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится <strong>физическим</strong> уроном.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Poison)": {
-      "name": "Damage Change (Poison)"
+      "name": "Изменение Урона (Яд)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.exv4k0HLBK9WVA5K",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Яд)",
+          "img": "systems/projectfu/styles/static/affinities/poison.svg",
+          "_id": "xWb1ScygsswzktYg",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "poison",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится уроном <strong>ядом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Damage Change (Untyped)": {
-      "name": "Damage Change (Untyped)"
+      "name": "Изменение Урона (Чистый)",
+      "effects": [
+        {
+          "origin": "Compendium.projectfu.qualities.Item.pQVSoX6ol3vmg1eC",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Изменение Урона (Чистый)",
+          "img": "systems/projectfu/styles/static/affinities/melee.svg",
+          "_id": "OeYBD0qXY8yDrZs7",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.damageType.value",
+              "mode": 5,
+              "value": "untyped",
+              "priority": null
+            }
+          ],
+          "description": "<p>Весь урон, наносимый вашим оружием, заклинаниями и Навыками, становится <strong>чистым</strong> уроном.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUCR284"
+            }
+          }
+        }
+      ]
     },
     "Deaththrow": {
-      "name": "Deaththrow"
+      "name": "Эффект аналогичен Свойству Убийца"
     },
     "Desperado": {
-      "name": "Desperado"
+      "name": "Отчаянный",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Отчаянный",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Когда вы используете Навык <strong>Заградительный Огонь </strong> (см. <strong>Основная Книга</strong>, стр. <strong>205</strong>), цена ОР ополовинивается.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Skill",
+              "source": "FUCR281"
+            }
+          },
+          "_id": "4ciiEAEEMQPkqwrK",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Disenchanting": {
-      "name": "Disenchanting"
+      "name": "Расколдовывающий",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Расколдовывающий",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Когда вы поражаете существо этим оружием, если у атаки <strong>одна</strong> цель, вы можете выбрать одно заклинание с <strong>длительностью</strong> в Сцену, наложенное на цель, и закончить его эффект на существе.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Effects",
+              "source": "FUCR273"
+            }
+          },
+          "_id": "IDmDGiZXWrtk5ysf",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null,
+          "_stats": {
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "lastModifiedBy": null
+          }
+        }
+      ]
     },
     "Dual Hunter": {
-      "name": "Dual Hunter"
+      "name": "Двойной Охотник",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Двойной Охотник (Гуманоид)",
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.damage.humanoid",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам одного или двух <strong>Видов</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Offensive",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "rLLaCWGQ98VUd8lU",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "style": "basic"
+              }
+            },
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Двойной Охотник (Монстр)",
+          "_id": "GfOPa3Zgjhlc411v",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.monster",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам одного или двух <strong>Видов</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Двойной Охотник (Зверь)",
+          "_id": "X1lTAYt4OugTZxEp",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.beast",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам одного или двух <strong>Видов</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Двойной Охотник (Конструкт)",
+          "_id": "XULCoEGkD1AmKgaj",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.construct",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам одного или двух <strong>Видов</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Двойной Охотник (Демон)",
+          "_id": "aJGTp3kFkLjvsJXp",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.demon",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам одного или двух <strong>Видов</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Двойной Охотник (Элементаль)",
+          "_id": "SZToILUirvKHXjX5",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.elemental",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам одного или двух <strong>Видов</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Двойной Охотник (Растение)",
+          "_id": "fNUp9BI3DDCtxhWZ",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.plant",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам одного или двух <strong>Видов</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        },
+        {
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Двойной Охотник (Нежить)",
+          "_id": "w3IXKkESdwwmFQQe",
+          "type": "base",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.undead",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам одного или двух <strong>Видов</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {}
+        }
+      ]
     },
     "Dual Immunity": {
-      "name": "Dual Immunity"
+      "name": "Двойной Иммунитет",
+      "effects": [
+        {
+          "disabled": true,
+          "name": "Двойной Иммунитет",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.physical.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            },
+            {
+              "key": "system.affinities.air.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к двум типам урона (кроме <strong>физического</strong>).</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR275"
+            }
+          },
+          "_id": "o9dnpFEiQjkmSyQo",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Dual Resistance": {
-      "name": "Dual Resistance"
+      "name": "Двойное Сопротивление",
+      "effects": [
+        {
+          "disabled": true,
+          "name": "Двойное Сопротивление",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.physical",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            },
+            {
+              "key": "system.affinities.air",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к двум типам урона (кроме <strong>физического</strong>).</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "lv1oMZ21HyqNHNd0",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Elemental Bath": {
-      "name": "Elemental Bath"
+      "name": "Элементальная Баня",
+      "effects": [
+        {
+          "disabled": true,
+          "name": "Элементальная Баня",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.physical.current",
+              "mode": 4,
+              "value": "3",
+              "priority": null
+            },
+            {
+              "key": "system.affinities.physical",
+              "mode": 0,
+              "value": "downgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы Поглощаете урон <strong>(выберите один тип урона, не физический)</strong>, но имеете Уязвимость к урону <strong>(выберите один тип урона, не физический)</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR287"
+            }
+          },
+          "_id": "LfWkwhodwRNjg7oo",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null,
+          "_stats": {
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "lastModifiedBy": null
+          }
+        }
+      ]
     },
     "Encouraging": {
       "name": "Encouraging"
@@ -176,7 +2506,51 @@
       "name": "Grounding"
     },
     "Healing Up": {
-      "name": "Healing Up"
+      "name": "Сверх Лечение",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сверх Лечение",
+          "img": "systems/projectfu/styles/static/statuses/Regen.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Произнесённые вами заклинания, эффекты которых восстанавливают Очки Здоровья, восстановят @GAIN[5 hp] дополнительных Очков Здоровья.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Resource",
+              "source": "FUCR280"
+            }
+          },
+          "_id": "LKYZjRrSktGWKO8J",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Health Absorbtion": {
       "name": "Health Absorbtion"
@@ -188,37 +2562,598 @@
       "name": "Hounding"
     },
     "Hunter": {
-      "name": "Hunter"
+      "name": "Охотник",
+      "effects": [
+        {
+          "disabled": true,
+          "name": "Охотник",
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.damage.value",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Оружие наносит 5 дополнительного урона существам определённого <strong>Вида</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующий",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "PTYGYYyotlmof2qM",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Immunity (Air)": {
-      "name": "Immunity (Air)"
+      "name": "Иммунитет (Воздух)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Иммунитет (Воздух)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.air.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к урону <strong>воздухом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "0m7bZqx8UiBn8Oin",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Immunity (Bolt)": {
-      "name": "Immunity (Bolt)"
+      "name": "Иммунитет (Молния)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Иммунитет (Молния)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.bolt.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к урону <strong>молнией</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "pIHPbJhXYskKryp9",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Immunity (Dark)": {
-      "name": "Immunity (Dark)"
+      "name": "Иммунитет (Тьма)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Иммунитет (Тьма)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.dark.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к урону <strong>тьмой</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "gpfvRlDgSBNRhwDr",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Immunity (Earth)": {
-      "name": "Immunity (Earth)"
+      "name": "Иммунитет (Земля)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Иммунитет (Земля)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.earth.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к урону <strong>землёй</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "gpfvRlDgSBNRhwDr",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Immunity (Fire)": {
-      "name": "Immunity (Fire)"
+      "name": "Иммунитет (Огонь)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Иммунитет (Огонь)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.fire.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к урону <strong>огнём</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "v5Bw1AUP5LpGZTSY",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Immunity (Ice)": {
-      "name": "Immunity (Ice)"
+      "name": "Иммунитет (Лёд)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Иммунитет (Лёд)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.ice.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к урону <strong>льдом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "WUbbEwHEZihzwOLD",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Immunity (Light)": {
-      "name": "Immunity (Light)"
+      "name": "Иммунитет (Свет)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Immunity (Light)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.light.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к урону <strong>светом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "6RiAlR75A1tmni08",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Immunity (Poison)": {
-      "name": "Immunity (Poison)"
+      "name": "Иммунитет (Яд)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Иммунитет (Яд)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.poison.current",
+              "mode": 4,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Иммунитет к урону <strong>ядом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "e2d7g7cDzvfTVlyw",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Initiative Up": {
-      "name": "Initiative Up"
+      "name": "Сверх Инициатива",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сверх Инициатива",
+          "img": "systems/projectfu/styles/static/statuses/Accelerated.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.derived.init.value",
+              "mode": 2,
+              "value": "4",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус +4 к вашему модификатору инициативы.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Resource",
+              "source": "FUCR280"
+            }
+          },
+          "_id": "em0AHUzCr3MeyUDA",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Killer": {
-      "name": "Killer"
+      "name": "Убийство",
+      "effects": [
+        {
+          "disabled": true,
+          "name": "Убийство",
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.damage.value",
+              "mode": 2,
+              "value": "10",
+              "priority": null
+            }
+          ],
+          "description": "<p>Если вы получили <strong>критический успех</strong> на Проверке Точности этим оружием, вы можете потратить вашу <strong>возможность</strong> на нанесение 10 дополнительного урона.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующий",
+              "source": "FUCR277"
+            }
+          },
+          "_id": "sZF1MstTQBU4Z39M",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Lesser Accuracy Up (Arcane)": {
       "name": "Lesser Accuracy Up (Arcane)"
@@ -302,7 +3237,58 @@
       "name": "M. Status Plus (Poisoned)"
     },
     "Magic Up": {
-      "name": "Magic Up"
+      "name": "Сверх Магия",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сверх Магия",
+          "img": "systems/projectfu/styles/static/statuses/MagicUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.magicCheck",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус +1 к вашим Проверкам Магии.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Check",
+              "source": "FUCR280"
+            }
+          },
+          "_id": "4DoEtLDlT5YfK63Z",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Magical": {
       "name": "Magical"
@@ -314,7 +3300,58 @@
       "name": "Meditative"
     },
     "Melee Weapon Up": {
-      "name": "Melee Weapon Up"
+      "name": "Сверх Оружие (Ближнее)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сверх Оружие (Ближнее)",
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.damage.melee",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Ваши атаки оружием ближнего боя наносят 5 дополнительного урона.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Offensive",
+              "source": "FUCR280"
+            }
+          },
+          "_id": "y2pHmVOgjTnN8Jtj",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Mind Drain": {
       "name": "Mind Drain"
@@ -323,16 +3360,212 @@
       "name": "Minstrel"
     },
     "Multi": {
-      "name": "Multi"
+      "name": "Мульти",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Мульти",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Атаки с использованием оружия имеют свойство <strong>мульти (2)</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующий",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "Gv2Pu2QMAe6z1oLj",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Multi Accuracy": {
-      "name": "Multi Accuracy"
+      "name": "Мульти Точность",
+      "effects": [
+        {
+          "disabled": true,
+          "name": "Мульти Точность",
+          "img": "systems/projectfu/styles/static/statuses/AccuracyUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyCheck",
+              "mode": 2,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "description": "<p>Когда вы выполняете атаку с <strong>мульти</strong>, вы получаете +2 бонус к Проверке Точности.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Check",
+              "source": "FUCR287"
+            }
+          },
+          "_id": "DbzF7yVOKvp2pfN6",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Multi Plus": {
-      "name": "Multi Plus"
+      "name": "Мульти Плюс",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Мульти Плюс",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Атаки с использованием оружия имеют свойство <strong>мульти (3)</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующий",
+              "source": "FUCR273"
+            }
+          },
+          "_id": "y6OBbFi8BVmuaRRa",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Omnishield": {
-      "name": "Omnishield"
+      "name": "Омнищит",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Омнищит",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.derived.mdef.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            },
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус +1 к Защите <strong>и</strong> Магической Защите.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "awgeDFgLVLezKbWR",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Onion": {
       "name": "Onion"
@@ -341,16 +3574,230 @@
       "name": "Opposing"
     },
     "Perfect Health": {
-      "name": "Perfect Health"
+      "name": "Идеальное Здоровье",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Идеальное Здоровье",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.immunities.slow.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            },
+            {
+              "key": "system.immunities.dazed.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            },
+            {
+              "key": "system.immunities.weak.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            },
+            {
+              "key": "system.immunities.shaken.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            },
+            {
+              "key": "system.immunities.enraged.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            },
+            {
+              "key": "system.immunities.poisoned.base",
+              "mode": 5,
+              "value": "true",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имунны ко всем состояниям.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "i31smpxggoZycQah",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Piercing": {
-      "name": "Piercing"
+      "name": "Проникающее",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Проникающее",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Урон этого оружия игнорирует Сопротивления.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующий",
+              "cost": "400",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "Bcstwj9R41jdjEfh",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Piercing Plus": {
-      "name": "Piercing Plus"
+      "name": "Проникающее Плюс",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Piercing Plus",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Урон этого оружия игнорирует Иммунитеты.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующий",
+              "source": "FUCR272"
+            }
+          },
+          "_id": "mpJXOT7ASTcSL8L5",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Piercing Spell": {
-      "name": "Piercing Spell"
+      "name": "Проникающее Заклинания",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Piercing Spell",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Урон заклинаний, которые вы сотворяете с общей стоимостью ОЗ <strong>равной или меньшей 20</strong>, игнорирует Иммунитеты и Сопротивления.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующий",
+              "source": "FUHF79"
+            }
+          },
+          "_id": "0CqiTEm1YW4gbZNj",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Protection from Species": {
       "name": "Protection from Species"
@@ -371,34 +3818,499 @@
       "name": "Punishing (Weak)"
     },
     "Ranged Weapon Up": {
-      "name": "Ranged Weapon Up"
+      "name": "Сверх Оружие (Дальнее)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сверх Оружие (Дальнее)",
+          "img": "systems/projectfu/styles/static/statuses/DamageUp.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.damage.ranged",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Ваши атаки оружием дальнего боя наносят 5 дополнительного урона.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Offensive",
+              "source": "FUCR280"
+            }
+          },
+          "_id": "f6hiupcYNzfxld1M",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Reaching": {
       "name": "Reaching"
     },
     "Resistance (Air)": {
-      "name": "Resistance (Air)"
+      "name": "Сопротивление (Воздух)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сопротивление (Воздух)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.air",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к урону <strong>воздухом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "GsYjap8gM9AOjqBK",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Resistance (Bolt)": {
-      "name": "Resistance (Bolt)"
+      "name": "Сопротивление (Молния)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сопротивление (Молния)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.bolt",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к урону <strong>молнией</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "cdu5K1kwUL47Jgwj",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Resistance (Dark)": {
-      "name": "Resistance (Dark)"
+      "name": "Сопротивление (Тьма)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сопротивление (Тьма)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.dark",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к урону <strong>тьмой</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "6H2WjWx191AJE7ia",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Resistance (Earth)": {
-      "name": "Resistance (Earth)"
+      "name": "Сопротивление (Земля)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сопротивление (Земля)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.earth",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к урону <strong>землёй</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "qStovzWEA8c55emm",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Resistance (Fire)": {
-      "name": "Resistance (Fire)"
+      "name": "Сопротивление (Огонь)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сопротивление (Огонь)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.fire",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к урону <strong>огнём</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "GUsSBBiRtrM63vXa",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Resistance (Ice)": {
-      "name": "Resistance (Ice)"
+      "name": "Сопротивление (Лёд)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сопротивление (Лёд)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.ice",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к урону <strong>льдом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "GUsSBBiRtrM63vXa",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null,
+          "_stats": {
+            "coreVersion": "13.348",
+            "systemId": "projectfu",
+            "systemVersion": "4.1.1",
+            "lastModifiedBy": null
+          }
+        }
+      ]
     },
     "Resistance (Light)": {
-      "name": "Resistance (Light)"
+      "name": "Сопротивление (Свет)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сопротивление (Свет",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.light",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к урону <strong>светом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "ftp3toon3Zl8bqG0",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Resistance (Poison)": {
-      "name": "Resistance (Poison)"
+      "name": "Сопротивление (Яд)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сопротивление (Яд)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.poison",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к урону <strong>ядом</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "UXizJgtpn2YCLqJN",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Rookie": {
       "name": "Rookie"
@@ -416,7 +4328,58 @@
       "name": "Spell Boost"
     },
     "Spell Up": {
-      "name": "Spell Up"
+      "name": "Сверх Заклинания",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сверх Заклинания",
+          "img": "systems/projectfu/styles/static/statuses/SpellPlus.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.bonuses.damage.spell",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Произнесённые вами заклинания наносят 5 дополнительного урона.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Атакующий",
+              "source": "FUCR280"
+            }
+          },
+          "_id": "varn5Sfum1PrBqRi",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Stat Up (DEX)": {
       "name": "Stat Up (DEX)"
@@ -431,16 +4394,192 @@
       "name": "Stat Up (WLP)"
     },
     "Status (Dazed)": {
-      "name": "Status (Dazed)"
+      "name": "Статус (Оглушение)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Статус (Оглушение)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Каждая цель, поражённая оружием, страдает от @EFFECT[dazed].</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "PNrnQ9UtT6Xp0omS",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Status (Shaken)": {
-      "name": "Status (Shaken)"
+      "name": "Статус (Потрясение)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Статус (Потрясение)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Каждая цель, поражённая оружием, страдает от @EFFECT[shaken].</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "85IZ3SOH5PzeDJEF",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Status (Slow)": {
-      "name": "Status (Slow)"
+      "name": "Статус (Замедление)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Статус (Замедление)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Каждая цель, поражённая оружием, страдает от @EFFECT[slow].</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "1xbOw7aicICuIJqi",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Status (Weak)": {
-      "name": "Status (Weak)"
+      "name": "Статус (Слабость)",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Статус (Слабость)",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Каждая цель, поражённая оружием, страдает от @EFFECT[weak].</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Состояние",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "jLQM5f52zzK8Xfny",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Status Pierce (Dazed)": {
       "name": "Status Pierce (Dazed)"
@@ -467,7 +4606,58 @@
       "name": "Status Plus (Poisoned)"
     },
     "Swordbreaker": {
-      "name": "Swordbreaker"
+      "name": "Разрушитель Клинков",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Разрушитель Клинков",
+          "img": "systems/projectfu/styles/static/statuses/Blank.webp",
+          "type": "base",
+          "changes": [
+            {
+              "key": "system.affinities.physical",
+              "mode": 0,
+              "value": "upgrade",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы имеете Сопротивление к двум типам урона (кроме <strong>физического</strong>).</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Защитный",
+              "source": "FUCR269"
+            }
+          },
+          "_id": "oMsInPnn03YmNqcI",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Unburdened": {
       "name": "Unburdened"
@@ -506,7 +4696,51 @@
       "name": "Vengeful (Poison)"
     },
     "Vitality Up": {
-      "name": "Vitality Up"
+      "name": "Сверх Энергия",
+      "effects": [
+        {
+          "disabled": false,
+          "name": "Сверх Энергия",
+          "img": "systems/projectfu/styles/static/statuses/Regen.webp",
+          "type": "base",
+          "changes": [],
+          "description": "<p>Когда вы восстанавливаете Очки Здоровья, вы восстанавливаете @GAIN[5 hp] дополнительных Очков Здоровья.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "subtype": "Ресурс",
+              "source": "FUCR285"
+            }
+          },
+          "_id": "JbwXmuK3zpoPenXp",
+          "system": {
+            "type": "quality",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {}
+          },
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null
+        }
+      ]
     },
     "Wanderer": {
       "name": "Wanderer"
