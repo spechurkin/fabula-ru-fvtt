@@ -11,7 +11,6 @@
 ### [Наблюдайте за целями](information%2FROADMAP.md)
 
 [Foundry]: https://img.shields.io/badge/Foundry-13.348-orange?logo=foundryvirtualtabletop&logosize=auto
-
 [Foundry URL]: https://foundryvtt.com
 
 [Version]: https://img.shields.io/badge/Версия-0.6-informational
