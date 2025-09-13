@@ -1,4 +1,4 @@
-# Translation: Russian [Fabula Ultima]
+# Translation: Russian [ProjectFU | Fabula Ultima]
 [![VK]][VK URL] [![tg]][tg URL]\
 [![Foundry]][Foundry URL] ![Version]
 
@@ -13,7 +13,7 @@
 [Foundry]: https://img.shields.io/badge/Foundry-13.348-orange?logo=foundryvirtualtabletop&logosize=auto
 [Foundry URL]: https://foundryvtt.com
 
-[Version]: https://img.shields.io/badge/Версия-0.7-informational
+[Version]: https://img.shields.io/badge/Версия-0.7.1-informational
 
 [VK]: https://img.shields.io/badge/VK-blue?&logo=vk&logosize=auto
 [VK URL]: https://vk.com/ultima_team
