@@ -3,6 +3,7 @@
   "mapping": {
     "name": "name",
     "description0": "system.description",
+    "summary": "system.summary.value",
     "class": "system.class.value",
     "effects": "effects",
     "description1": "system.data.description",
@@ -32,7 +33,8 @@
     "superiorInfusions1": "system.data.superiorInfusions.1.description",
     "alchemyConfig0": "system.data.config.alwaysAvailableEffects.0",
     "alchemyConfig1": "system.data.config.alwaysAvailableEffects.1",
-    "grave_point": "system.rp.name"
+    "grave_point": "system.rp.name",
+    "trigger": "system.data.trigger"
   },
   "folders": {
     "Ace of Cards": "Картёжник",
@@ -140,12 +142,14 @@
       "class": "Клинок Тьмы"
     },
     "Akromorphosis": {
-      "name": "Akromorphosis",
-      "description0": "<p>Your <strong>unarmed strikes</strong> deal <strong>【6 + (SL × 2)】</strong> extra damage, and you gain a bonus equal to <strong>【SL】</strong> to your Accuracy Checks with them.</p><p>At the start of your turn during a conflict, you may choose a weapon Category other than <strong>brawling</strong>. If you do, your <strong>unarmed strikes</strong> now belong to the chosen Category; if you choose <strong>bow</strong>, <strong>firearm</strong> or <strong>thrown</strong>, they become <strong>ranged</strong> weapons instead of <strong>melee</strong>; if you choose <strong>dagger</strong> or <strong>sword</strong>, they cannot be used with <strong>Triple Slash</strong> (see <strong>High Fantasy Atlas</strong>, page <strong>161</strong>). These changes last until the start of your next turn.</p><hr /><ul><li><p>To <strong>automate, </strong>add @UUID[Compendium.projectfu.skills.XlN2TtdK4Sn4ssQS]{Unarmed Strike: Mutant} to your character sheet to automate the bonuses.</p></li></ul>"
+      "name": "Акроморфоз",
+      "description0": "<p>Ваш <strong>безоружный удар</strong> наносит <strong>【6 + (УН × 2)】</strong> дополнительного урона и имеет бонус к Проверке Точности, равный <strong>【УН】</strong>.</p><p>В начале вашего хода, во время конфликта, вы можете выбрать категорию оружия, отличную от <strong>Рукопашного</strong>. Если вы так сделаете, ваш <strong>безоружный удар</strong> теперь относится к этой Категории. Если вы выберете <strong>лук</strong>, <strong>огнестрельное</strong> или <strong>метательное</strong>, то ваши атаки станут атаками <strong>дальнего боя</strong> вместо, вместо <strong>ближнего боя</strong>. Если вы выберете <strong>кинжал</strong> или <strong>меч</strong>, то они не совместимы с Героическим Навыком <strong>Тройной Разрез</strong> (см. <strong>Атлас: Высокое Фэнтези</strong>, стр. <strong>161</strong>). Это изменение заканчивается в начале вашего следующего хода.</p><hr><ul><li><p>Для <strong>автоматизации</strong> добавьте @UUID[Compendium.projectfu.skills.XlN2TtdK4Sn4ssQS]{Безоружный удар: Мутант} в свой лист персонажа, чтобы автоматизировать бонусы.</p></li></ul>",
+      "class": "Мутант"
     },
     "Amphibia": {
-      "name": "Amphibia",
-      "description1": "<p>You may breathe underwater and your eyes can see perfectly in dim light.</p><p>When you recover Hit Points, you recover an 5 additional Hit Points and you may immediately recover from a single status effect of your choice.</p><hr><ul><li><p><strong>You Recover:</strong> @GAIN[5 hp]</p></li></ul>"
+      "name": "Амфибия",
+      "summary": "Лягушка, саламандра, регенерирующие существа, водные монстры.",
+      "description1": "<p>Вы можете дышать под водой и прекрасно видите в темноте.</p><p>Когда вы восстанавливаете Очки Здоровья, вы восстанавливаете дополнительные 5 Очков Здоровья и можете снять с себя одно состояние по вашему выбору.</p><hr><ul><li><p><strong>Вы восстанавливаете:</strong> @GAIN[5 hp]</p></li></ul>"
     },
     "Angel Dance": {
       "name": "Танец Ангела",
@@ -722,12 +726,26 @@
       "name": "Arctic Narcissus"
     },
     "Arpaktida": {
-      "name": "Arpaktida",
-      "description1": "<p><span>You treat your <strong>Insight</strong> as if it were one die size higher (to a maximum of <strong>d12</strong>).</span></p><p>When you deal damage to one or more creatures for the first time during your turn, if at least one of them is in <strong>Crisis</strong>, you deal 5 extra damage to each of those creatures.</p><hr><ul><li><p><span><strong>You Receive:</strong> @EFFECT[ins-up]</span></p></li></ul>"
+      "name": "Арпактида",
+      "summary": "Волки, падальщики, хищники с острыми чувствами.",
+      "description1": "<p>Считайте свою кость <strong>Проницательности</strong> увеличенной на один размер (максимум <strong>d12</strong>).</p><p>Когда вы наносите урон одному или нескольким существам в первый свой ход, если хотя бы один противник находится в <strong>Кризисе</strong>, вы наносите 5 дополнительного урона каждому из них.</p><hr><ul><li><p><span><strong>Вы получаете:</strong> @EFFECT[ins-up]</span></p></li></ul>"
     },
     "Atmokinesis": {
+      <<<<<<<
+      HEAD
+      "name": "Атмокинез",
+      "trigger": "Когда вы наносите урон",
+      "description1": "<p>Этот урон становится уроном <strong>ветром</strong> или <strong>молнией</strong>, а его источник наносит дополнительный урон, равный <strong>【2 + количество заполненных секций вашего Счётчика Нейроволн】</strong>.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.skills.4oUORbf2Bzwl6sjD] или @EFFECT[Compendium.projectfu.skills.Item.XoviVmGtz9kyst0s]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
+      =======
       "name": "Atmokinesis",
       "description1": "<p>That damage becomes <strong>air</strong> or <strong>bolt</strong>, and its source deals extra damage equal to <strong>【2 + the number of filled sections in your Brainwave Clock】</strong>.</p><hr><ul><li><p><strong>You Spend: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>You Receive:</strong> @EFFECT[Compendium.projectfu.skills.4oUORbf2Bzwl6sjD]{Effect: Atmokinesis (Bolt)}, or @EFFECT[Compendium.projectfu.skills.Item.XoviVmGtz9kyst0s]{Effect: Atmokinesis (Air)}</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      >>>>>>>
+      3a3e9d3
+      (Релиз
+      0.7!
+      (я
+      забыл
+      замерджиться))
     },
     "Banshee Dance": {
       "name": "Танец Баньши",
@@ -758,8 +776,60 @@
       "class": "Арканист"
     },
     "Biophagy": {
-      "name": "Biophagy",
-      "description0": "<p>After one of your attacks or offensive spells ( @ICON[offensive] ) causes one or more enemies to lose Hit Points, if you are in <strong>Crisis</strong>, you may recover <strong>【SL × 5】</strong> Hit Points.</p><hr /><ul><li><p><strong>You Recover: </strong>@GAIN[$sl*5 hp]{SL × 5 HP}</p></li></ul>"
+      "name": "Биофагия",
+      "description0": "<p>После того, как ваша атака или атакующее заклинание ( @ICON[offensive] ) заставляет одного или нескольких противников потерять Очки Здоровья, и вы находитесь в <strong>Кризисе</strong>, восстановите себе <strong>【УН × 5】</strong> Очков Здоровья.</p><hr><ul><li><p><strong>Вы восстанавливаете: </strong>@GAIN[$sl*5 hp]{УН × 5 ОЗ}</p></li></ul>",
+      "class": "Мутант",
+      "effects": [
+        {
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Биофагия",
+          "_id": "RF4MLdS4Z8HonPLy",
+          "changes": [],
+          "description": "<p>После того, как ваша атака или атакующее заклинание ( @ICON[offensive] ) заставляет одного или нескольких противников потерять Очки Здоровья, и вы находитесь в <strong>Кризисе</strong>, восстановите себе <strong>【УН × 5】</strong> Очков Здоровья.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {}
+          },
+          "tint": "#ffffff",
+          "img": "icons/magic/control/debuff-energy-hold-yellow.webp",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "active"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Bishop's Edict": {
       "name": "Указ Епископа",
@@ -789,8 +859,8 @@
       "class": "Мастер Оружия"
     },
     "Brainwave Clock": {
-      "name": "Brainwave Clock",
-      "description0": "<ul><li><p>For <strong>gift</strong> breakdown and a list of Psychic Gifts, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc]{Psychic Gift Rules}</p></li></ul>"
+      "name": "Счётчик Нейроволн",
+      "description0": "<ul><li><p>Разбор <strong>даров </strong>и их список могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc]</p></li></ul>"
     },
     "Breach": {
       "name": "Брешь",
@@ -826,19 +896,83 @@
       "description0": "<p><span>Each time you acquire this Skill, you discover </span><strong>a new type of magiseed</strong> (see <strong>Natural Fantasy Atlas</strong>, page <strong>139</strong>).</p><p><span>During a conflict, if there are <strong>no magiseeds</strong> in your </span><strong>garden</strong><span>, you may use an action and spend 20 Mind Points to <strong>plant a magiseed</strong> of a type you have discovered.</span></p><hr /><ul><li><p>For <strong>magiseed</strong> breakdown and a list of Magiseeds, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.16lV3Tse5aK9qipX]{Magiseed Rules}</p></li></ul><ul><li><p>To <strong>automate</strong>, VTT Instructions can be found here: @UUID[Compendium.projectfu.handouts.JournalEntry.16lV3Tse5aK9qipX.JournalEntryPage.8e8kglGnqyKy1Nju]{Magiseed VTT Instructions}</p></li></ul>"
     },
     "Clairvoyance": {
-      "name": "Clairvoyance",
-      "description1": "<p>You ask the Game Master a single question about that NPC, and the Game Master must answer truthfully. Then, describe what sensation revealed this information to you. You may use this gift <strong>only once</strong> on each NPC.</p><hr><ul><li><p><strong>You Spend: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      "name": "Ясновидение",
+      "trigger": "Когда НИП становится вашим фокусом или когда вы создаёте Узы с НИП",
+      "description1": "<p>Вы задаёте Мастеру один вопрос об этом НИП, и Мастер отвечает честно. Затем вы описываете, какие ощущения открыли вам эту информацию. Вы можете использовать этот дар <strong>единожды</strong> на одном и том же НИП.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
     },
     "Cognitive Focus": {
-      "name": "Cognitive Focus",
-      "description0": "<p>At the start of your turn during a conflict, you may choose one ally who is able to hear you <strong>or</strong> one enemy you can see that is suffering from <strong>dazed</strong>, <strong>enraged</strong>, and/or <strong>shaken</strong>. Until the start of your next turn, the chosen creature becomes your <strong>focus</strong>.</p><p>You gain a bonus equal to <strong>【SL】</strong> to Checks you perform to examine your <strong>focus</strong>, as well as to your Accuracy Checks and Magic Checks for attacks and offensive spells ( <span>@ICON[offensive] </span>) that include your <strong>focus</strong> among the targets. When you cause your <strong>focus</strong> to recover Hit Points and/or Mind Points, they recover <strong>【SL × 2】</strong> additional HP and/or MP, respectively.</p><hr><ul><li><p><strong>You Receive: </strong>@EFFECT[Compendium.projectfu.skills.TnDgm6eYgHSKNkDT]{Cognitive Focus (Check Bonus)}</p></li><li><p><strong>Focus Recovers: </strong>@GAIN[2*$sl hp]{SL × 2 HP}, and/or @GAIN[2*$sl mp]{SL × 2 MP}</p></li><li><p><strong>Target Receives: </strong>@EFFECT[Compendium.projectfu.skills.GqxqSdf1UMKkJH1U]{Effect: Cognitive Focus}</p></li></ul>"
+      "name": "Когнитивный Фокус",
+      "description0": "<p>В начале своего хода во время конфликта, вы можете выбрать одного союзника, способного вас слышать, <strong>или</strong> одного врага, которого вы можете видеть, имеющего статусный эффект <strong>оглушённый</strong>, <strong>яростный</strong> и/или <strong>потрясённый</strong>. До начала вашего следующего хода выбранное существо будет вашим <strong>фокусом</strong>.</p><p>Вы получаете бонус равный <strong>【УН】</strong> на Проверки, которые вы выполняете ради вашего <strong>фокуса</strong>, а также за Проверки Точности и Магии для атак и атакующих заклинаний ( @ICON[offensive] ), которые включают ваш <strong>фокус</strong> в число целей. Когда вы заставляете свой <strong>фокус</strong> восстанавливать Очки Здоровья и/или Очки Разума, он восстанавливает <strong>【УН × 2】</strong> дополнительных ОЗ и/или ОР соответственно.</p><hr><ul><li><p><strong>Вы получаете: </strong>@EFFECT[Compendium.projectfu.skills.TnDgm6eYgHSKNkDT]</p></li><li><p><strong>Восстановление фокуса: </strong>@GAIN[2*$sl hp]{УН × 2 ОЗ} и/или @GAIN[2*$sl mp]{УН × 2 ОР}</p></li><li><p><strong>Цель получает: </strong>@EFFECT[Compendium.projectfu.skills.GqxqSdf1UMKkJH1U]</p></li></ul>",
+      "class": "Эспер"
     },
     "Cognitive Focus (Check Bonus)": {
-      "name": "Cognitive Focus (Check Bonus)"
+      "name": "Когнитивный Фокус (Бонус Проверки)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/esper/esper_cognitive_focus.png",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Когнитивный Фокус (Бонус Проверки)",
+          "_id": "XMLHPxzVBIgKJTiT",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.accuracy.accuracyCheck",
+              "mode": 2,
+              "value": "&sl('cognitive-focus')",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.accuracy.magicCheck",
+              "mode": 2,
+              "value": "&sl('cognitive-focus')",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы получаете бонус равный <strong>【УН】</strong> на Проверки, которые вы выполняете ради вашего <strong>фокуса</strong>, а также за Проверки Точности и Магии для атак и атакующих заклинаний ( @ICON[offensive] ), которые включают ваш <strong>фокус</strong> в число целей. </p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Compression Tech": {
-      "name": "Compression Tech",
-      "description0": "<p><span>As long as there is no one aboard your <strong>personal vehicle</strong>, you may have it safely disappear from the game world at any time. What magic or technology allows it?</span></p><p><span>If your <strong>personal vehicle</strong> is not present in the game world and you are in a space big enough to contain it, you may perform the <strong>Inventory</strong> action and spend 2 Inventory Points to have the vehicle appear near you and <strong>enter</strong> it for free.</span></p>"
+      "name": "Технология Компрессии",
+      "description0": "<p>Если на борту вашего <strong>личного транспорта</strong> никого нет, вы можете в любой момент заставить его безопасно исчезнуть из игрового мира. Какая магия или технология позволяет это?</p><p>Если вашего <strong>личного транспорта</strong> нет в игровом мире, а вы находитесь в достаточно большом пространстве, чтобы разместить его, вы можете совершить действие <strong>Инвентарь</strong> и потратить 2 Очка Инвентаря, чтобы транспортное средство появилось рядом с вами, и бесплатно <strong>зайти</strong> в него.</p>",
+      "class": "Пилот"
     },
     "Condemn": {
       "name": "Обличение",
@@ -1062,24 +1196,214 @@
       "class": "Страж"
     },
     "Dynamotheria": {
-      "name": "Dynamotheria",
-      "description1": "<p>You treat your <strong>Might</strong> as if it were one die size higher (to a maximum of <strong>d12</strong>).</p><p>When you succeed on a Check to advance or turn back a Clock, if that Check includes <strong>Might</strong>, you may fill or erase 1 additional section of that Clock.</p><hr><ul><li><p><strong>You Receive:</strong> @EFFECT[mig-up]</p></li></ul>"
+      "name": "Динамотерия",
+      "summary": "Медведи, динозавры, массивные существа.",
+      "description1": "<p>Считайте свою кость <strong>Могущества</strong> увеличенной на один размер (максимум <strong>d12</strong>).</p><p>Когда вы преуспеваете в Проверке, чтобы продвинуть или откатить Счётчик, если эта Проверка включает <strong>Могущество</strong>, вы можете заполнить или стереть 1 дополнительную секцию этого Счётчика.</p><hr><ul><li><p><strong>Вы получаете:</strong> @EFFECT[mig-up]</p></li></ul>"
     },
     "Ecdysis": {
-      "name": "Ecdysis",
-      "description0": "<p>After you lose Hit Points due to damage, if that damage had a type <strong>other than physical</strong>, you may spend 10 HP to gain Resistance to that damage type until you use this Skill again. You cannot use this Skill if doing so would reduce you to 0 HP.</p><hr /><ul><li><p><strong>You Receive:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance], @TYPE[affinity ice resistance], @TYPE[affinity light resistance], @TYPE[affinity poison resistance]</p></li></ul>"
+      "name": "Экдиз",
+      "description0": "<p>После того, как вы потеряли Очки Здоровья от <strong>не физического</strong> типа урона, вы можете потратить 10 Очков Здоровья, чтобы получить Сопротивление к нему до следующего применения этого Навыка. Вы не можете применить этот Навык, если он снизит ваши ОЗ до 0.</p><hr><ul><li><p><strong>Вы получаете:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity dark resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance], @TYPE[affinity ice resistance], @TYPE[affinity light resistance], @TYPE[affinity poison resistance]</p></li></ul>",
+      "class": "Мутант"
     },
     "Effect: Aero Hex": {
       "name": "Effect: Aero Hex"
     },
     "Effect: Akromorphosis": {
-      "name": "Effect: Akromorphosis"
+      "name": "Эффект: Акроморфоз",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/mutant/mutant_akromorphosis.png",
+          "origin": "Compendium.projectfu.skills.Item.WV3lBnVzMFBB2irj",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Акроморфоз",
+          "_id": "LxZDU3Qgsf5a6Vfh",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.damage.value",
+              "mode": 2,
+              "value": "6+(&sl(\"akromorphosis\")l*2)",
+              "priority": null
+            },
+            {
+              "key": "system.accuracy.value",
+              "mode": 2,
+              "value": "&sl(\"akromorphosis\")",
+              "priority": null
+            }
+          ],
+          "description": "<p>Ваш <strong>безоружный удар</strong> наносит <strong>【6 + (УН × 2)】</strong> дополнительного урона и имеет бонус к Проверке Точности, равный <strong>【УН】</strong>.</p>",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": ""
+            }
+          }
+        }
+      ]
     },
     "Effect: Atmokinesis (Air)": {
-      "name": "Effect: Atmokinesis (Air)"
+      "name": "Эффект: Атмокинез (Воздух)",
+      "effects": [
+        {
+          "img": "icons/magic/lightning/bolt-strike-hand-gray.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Атмокинез (Воздух)",
+          "_id": "dROM6eTY0mgTnrdo",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.overrides.damageType.all.priority",
+              "mode": 5,
+              "value": "air",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "2+&cs('brainwave-clock')",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Atmokinesis (Bolt)": {
-      "name": "Effect: Atmokinesis (Bolt)"
+      "name": "Эффект: Атмокинез (Молния)",
+      "effects": [
+        {
+          "img": "icons/magic/lightning/bolt-strike-hand-gray.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Атмокинез (Молния)",
+          "_id": "dROM6eTY0mgTnrdo",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.overrides.damageType.all.priority",
+              "mode": 5,
+              "value": "bolt",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "2+&cs('brainwave-clock')",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Bishop's Edict (Extra Damage)": {
       "name": "Эффект: Указ Епископа (Доп. Урон)",
@@ -1198,7 +1522,55 @@
       ]
     },
     "Effect: Cognitive Focus": {
-      "name": "Effect: Cognitive Focus"
+      "name": "Эффект: Когнитивный Фокус",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/esper/esper_cognitive_focus.png",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Когнитивный Фокус",
+          "_id": "oV7VJZXAqDj5CyZC",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 1,
+              "tracking": "source",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [],
+          "description": "<p>Когда источник эффекта заставляет вас <strong>восстановить Очки Здоровья </strong>и/или <strong>Очки Разума</strong>, вы восстанавливаете дополнительные ОЗ и/или ОР:</p><ul><li><p><strong>Вы восстанавливаете: </strong>@GAIN[2*(~&amp;sl('cognitive-focus')) hp] <strong>и/или</strong> @GAIN[2*~&amp;sl('cognitive-focus')) mp]</p></li></ul>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Electro Hex": {
       "name": "Effect: Electro Hex"
@@ -1264,10 +1636,132 @@
       "name": "Effect: Geo Hex"
     },
     "Effect: Gravitokinesis (Earth)": {
-      "name": "Effect: Gravitokinesis (Earth)"
+      "name": "Эффект: Гравитокинез (Земля)",
+      "effects": [
+        {
+          "img": "icons/magic/earth/projectile-stone-landslide.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Гравитокинез (Земля)",
+          "_id": "eDtBQ3oXUw4wGmcF",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.overrides.damageType.all.priority",
+              "mode": 5,
+              "value": "earth",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "2+&cs('brainwave-clock')",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Gravitokinesis (Physical)": {
-      "name": "Effect: Gravitokinesis (Physical)"
+      "name": "Эффект: Гравитокинез (Физический)",
+      "effects": [
+        {
+          "img": "icons/magic/earth/projectile-stone-landslide.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Гравитокинез (Физический)",
+          "_id": "eDtBQ3oXUw4wGmcF",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.overrides.damageType.all.priority",
+              "mode": 5,
+              "value": "physical",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "2+&cs('brainwave-clock')",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Hawkeye (Range Weapon Up)": {
       "name": "Эффект: Соколиный Глаз",
@@ -1328,10 +1822,120 @@
       ]
     },
     "Effect: Heart in the Engine (Defensive)": {
-      "name": "Effect: Heart in the Engine (Defensive)"
+      "name": "Эффект: Сердце в Двигателе (Защитный)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/pilot/pilot_heart_in_the_engine.png",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Сердце в Двигателе (Защитный)",
+          "_id": "ofTfzPUoJ68tPn9j",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.incomingDamage.all",
+              "mode": 2,
+              "value": "&sl('heart-in-the-engine')*-2",
+              "priority": null
+            }
+          ],
+          "description": "<p>В следующий раз, когда вы получаете урон до начала вашего следующего хода, этот урон уменьшается на <strong>【УН × 2】</strong> (применяется <strong>до</strong> Подверженности урону).</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Heart in the Engine (Offensive)": {
-      "name": "Effect: Heart in the Engine (Offensive)"
+      "name": "Эффект: Сердце в Двигателе (Атакующий)",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/compendium/classes/pilot/pilot_heart_in_the_engine.png",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Сердце в Двигателе (Атакующий)",
+          "_id": "tErtYBdp5RqwrIz9",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "&sl('heart-in-the-engine')*2",
+              "priority": null
+            }
+          ],
+          "description": "<p>В следующий раз, когда вы наносите урон во время этого хода, нанесите <strong>【УН × 2】</strong> дополнительного урона.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Hookleaf Nightshade": {
       "name": "Effect: Hookleaf Nightshade"
@@ -1500,10 +2104,132 @@
       ]
     },
     "Effect: Photokinesis (Dark)": {
-      "name": "Effect: Photokinesis (Dark)"
+      "name": "Эффект: Фотокинез (Тьма)",
+      "effects": [
+        {
+          "img": "icons/magic/light/hand-sparks-smoke-green.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Фотокинез (Тьма)",
+          "_id": "eDtBQ3oXUw4wGmcF",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.overrides.damageType.all.priority",
+              "mode": 5,
+              "value": "dark",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "2+&cs('brainwave-clock')",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Photokinesis (Light)": {
-      "name": "Effect: Photokinesis (Light)"
+      "name": "Эффект: Фотокинез (Свет)",
+      "effects": [
+        {
+          "img": "icons/magic/light/hand-sparks-smoke-green.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Фотокинез (Свет)",
+          "_id": "eDtBQ3oXUw4wGmcF",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.overrides.damageType.all.priority",
+              "mode": 5,
+              "value": "light",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "2+&cs('brainwave-clock')",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Provoke": {
       "name": "Эффект: Провокация",
@@ -1574,7 +2300,68 @@
       ]
     },
     "Effect: Psychic Shield": {
-      "name": "Effect: Psychic Shield"
+      "name": "Эффект: Психический Щит",
+      "effects": [
+        {
+          "img": "icons/equipment/shield/heater-steel-gray.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Психический Щит",
+          "_id": "Xrd3uuRrv6x4lRnR",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "style": "basic"
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.derived.mdef.value",
+              "mode": 4,
+              "value": "~&ats('wlp')+(~&cs('brainwave-clock)*2)",
+              "priority": null
+            },
+            {
+              "key": "system.derived.def.value",
+              "mode": 4,
+              "value": "~&ats('wlp')+(~&cs('brainwave-clock)*2)",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Pyro Hex": {
       "name": "Effect: Pyro Hex"
@@ -2699,17 +3486,140 @@
       ]
     },
     "Effect: Thermokinesis (Fire)": {
-      "name": "Effect: Thermokinesis (Fire)"
+      "name": "Эффект: Термокинез (Огонь)",
+      "effects": [
+        {
+          "img": "icons/magic/fire/orb-fireball-puzzle.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Термокинез (Огонь)",
+          "_id": "eDtBQ3oXUw4wGmcF",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.overrides.damageType.all.priority",
+              "mode": 5,
+              "value": "fire",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "2+&cs('brainwave-clock')",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Thermokinesis (Ice)": {
-      "name": "Effect: Thermokinesis (Ice)"
+      "name": "Эффект: Термокинез (Лёд)",
+      "effects": [
+        {
+          "img": "icons/magic/fire/orb-fireball-puzzle.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Термокинез (Лёд)",
+          "_id": "eDtBQ3oXUw4wGmcF",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.overrides.damageType.all.priority",
+              "mode": 5,
+              "value": "ice",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.all",
+              "mode": 2,
+              "value": "2+&cs('brainwave-clock')",
+              "priority": null
+            }
+          ],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Wrathful Carnation": {
       "name": "Effect: Wrathful Carnation"
     },
     "Electrophora": {
-      "name": "Electrophora",
-      "description1": "<p>When you deal damage with an attack or spell, you may have all that damage become <strong>bolt</strong>. While your <strong>unarmed strikes</strong> deal <strong>bolt</strong> damage, any enemy who <strong>loses 20 or more Hit Points</strong> due to one of your <strong>unarmed strikes</strong> also suffers <strong>slow</strong>.</p><hr><ul><li><p><strong>You Receive: </strong>@TYPE[damage all bolt]</p></li><li><p><strong>Targets Suffers:</strong> @EFFECT[slow]</p></li></ul>"
+      "name": "Электрофора",
+      "summary": "Электрические существа, элементали молний, роботы.",
+      "description1": "<p>Когда вы наносите урон атакой или заклинанием, вы можете превратить весь этот урон в урон <strong>молнией</strong>. Пока ваши <strong>безоружные удары</strong> наносят урон <strong>молнией</strong>, любой противник, <strong>потерявший 20 или более Очков Здоровья</strong> из-за одного из ваших <strong>безоружных ударов</strong>, также получает эффект <strong>замедления</strong>.</p><hr><ul><li><p><strong>Вы получаете: </strong>@TYPE[damage all bolt]</p></li><li><p><strong>Цель страдает от:</strong> @EFFECT[slow]</p></li></ul>"
     },
     "Elemental Harmony": {
       "name": "Elemental Harmony",
@@ -2894,8 +3804,9 @@
       "class": "Хранитель Знаний"
     },
     "Flexible Configuration": {
-      "name": "Flexible Configuration",
-      "description0": "<p>When you perform the <strong>Equipment</strong> or <strong>Guard</strong> action while driving your personal vehicle, you may choose up to <strong>【SL】</strong> of its enabled modules and <strong>disable</strong> them. If you do, choose up to an equal amount of its disabled modules and <strong>enable</strong> them.</p>"
+      "name": "Гибкая Конфигурация",
+      "description0": "<p>Когда вы совершаете действие <strong>Экипировка</strong> или <strong>Оборона</strong>, находясь за рулём своего <strong>личного транспорта</strong>, вы можете выбрать до <strong>【УН】</strong> его включённых модулей и <strong>отключить</strong> их. Если вы это сделаете, выберите равное количество отключённых модулей и <strong>включите</strong> их.</p>",
+      "class": "Пилот"
     },
     "Focused": {
       "name": "Концентрация",
@@ -3204,8 +4115,9 @@
       "name": "Garden"
     },
     "Genoclepsis": {
-      "name": "Genoclepsis",
-      "description0": "<p>When you deal damage to one or more NPCs, you learn their <strong>Species</strong> and the GM chooses <strong>【SL】 therioforms</strong> appropriate to those NPCs (see <strong>Techno Fantasy Atlas</strong>, page <strong>156</strong>): if you have acquired the @UUID[Compendium.projectfu.skills.Item.pmwdU2AGU0JtrWw8]{Theriomorphosis} Skill, you may immediately pay its HP cost and use it to manifest those <strong>therioforms</strong> (even if they are not among those you have learned).</p><hr><ul><li><p><span style=\"font-family: 'PT Sans Narrow', sans-serif\">For </span><strong>therioform</strong> breakdown and a list of <strong>Therioforms</strong>, refer to:<strong> </strong>@UUID[Compendium.projectfu.handouts.JournalEntry.aXZh9r7OxySQ484p]{Therioforms Rules}</p></li></ul>"
+      "name": "Геноклепсис",
+      "description0": "<p>Когда вы наносите урон одному или нескольким НИП, вы узнаёте их <strong>Виды, и Мастер выбирает 【УН】 териоформ</strong>, подходящих для этих НИП (см. следующую страницу): если вы получили Навык @UUID[Compendium.projectfu.skills.Item.pmwdU2AGU0JtrWw8], вы можете немедленно оплатить его стоимость в ОЗ и использовать его для проявления этих <strong>териоформ</strong> (даже если их нет среди изученных вами).</p><hr><ul><li><p><span>Разбор</span> <strong>териоформ</strong> и их список могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.aXZh9r7OxySQ484p]</p></li></ul>",
+      "class": "Мутант"
     },
     "Golden Ginkgo": {
       "name": "Golden Ginkgo"
@@ -3222,8 +4134,9 @@
       "name": "Grave Asphodel"
     },
     "Gravitokinesis": {
-      "name": "Gravitokinesis",
-      "description1": "<p>That damage becomes <strong>earth</strong> or <strong>physical</strong>, and its source deals extra damage equal to <strong>【2 + the number of filled sections in your Brainwave Clock】</strong>. If the source deals damage to one or more <strong>flying</strong> creatures, they are forced to land immediately.</p><hr><ul><li><p><strong>You Spend: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>You Receive:</strong> @EFFECT[Compendium.projectfu.skills.ERaYpwNiAzMVQvTA]{Effect: Gravitokinesis (Earth)}, or @EFFECT[Compendium.projectfu.skills.04uK8eZaGc9mtIZO]{Effect: Gravitokinesis (Physical)}</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      "name": "Гравитокинез",
+      "trigger": "Когда вы наносите урон",
+      "description1": "<p>Этот урон становится уроном <strong>землёй</strong> или <strong>физическим</strong>, а его источник наносит дополнительный урон, равный <strong>【2 + количество заполненных секций вашего Счётчика Нейроволн】</strong>. Если источник наносит урон одному или нескольким <strong>летающим</strong> существам, они вынуждены немедленно приземлиться.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.skills.ERaYpwNiAzMVQvTA] или @EFFECT[Compendium.projectfu.skills.04uK8eZaGc9mtIZO]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
     },
     "Griffin Dance": {
       "name": "Танец Грифона",
@@ -3244,8 +4157,9 @@
       "class": "Спиритист"
     },
     "Heart in the Engine": {
-      "name": "Heart in the Engine",
-      "description0": "<p><span>At the start of your turn during a conflict, if you are driving your <strong>personal vehicle</strong>, you may spend 10 Mind Points<strong>. </strong>If you do, choose one option: the next time you deal damage during this turn, deal <strong>【SL × 2】</strong> extra damage; <strong>or</strong>, the next time you suffer damage before the start of your next turn, that damage is reduced by <strong>【SL × 2】</strong> (applied before damage Affinities); <strong>or</strong>, you recover from a status effect of your choice among <strong>slow</strong> and <strong>weak</strong>.</span></p><hr><ul><li><p><strong>You Receive:</strong> @UUID[Compendium.projectfu.skills.Item.XoMumkEXtYQOF7Et]{Effect: Heart in the Engine (Offensive)}, or @UUID[Compendium.projectfu.skills.Item.VM5F00GYKYInRjgM]{Effect: Heart in the Engine (Defensive)}</p></li></ul>"
+      "name": "Сердце в Двигателе",
+      "description0": "<p>В начале вашего хода во время конфликта, если вы находитесь за рулём своего <strong>личного транспорта</strong>, вы можете потратить 10 Очков Разума. Если вы это сделаете, выберите один вариант: в следующий раз, когда вы наносите урон во время этого хода, нанесите <strong>【УН × 2】</strong> дополнительного урона; <strong>или</strong> в следующий раз, когда вы получаете урон до начала вашего следующего хода, этот урон уменьшается на <strong>【УН × 2】</strong> (применяется <strong>до</strong> Подверженности урону); <strong>или</strong> вы восстанавливаетесь от эффекта <strong>замедления</strong> или <strong>слабости</strong> (на ваш выбор).</p><hr><ul><li><p><strong>Вы получаете:</strong> @UUID[Compendium.projectfu.skills.Item.XoMumkEXtYQOF7Et] или @UUID[Compendium.projectfu.skills.Item.VM5F00GYKYInRjgM]</p></li></ul>",
+      "class": "Пилот"
     },
     "Heart of Darkness": {
       "name": "Сердце Тьмы",
@@ -3319,8 +4233,9 @@
       "description1": "<p>После того как Вы получили урон, выберите один из вариантов: Вы восстанавливаете 5 Очков Здоровья; <strong>или</strong> восстанавливаете 5 Очков Разума.</p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[10 mp]</p></li><li><p><strong>Вы восстанавливаете:</strong> @GAIN[5 hp] или @GAIN[5 mp]</p></li><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.skills.Item.v7HpgVautZEWUbS7]{Эффект: Танец Гидры}</p></li></ul>"
     },
     "Hypercognition": {
-      "name": "Hypercognition",
-      "description0": "<p>The total MP cost of your <strong>spells</strong> and <strong>verses</strong> (High Fantasy, page <strong>138</strong>) that include your <strong>focus</strong> among their targets is reduced by <strong>【SL】</strong>, or by <strong>【SL × 2】</strong> if your <strong>focus</strong> is the <strong>only</strong> target (up to a minimum cost of 0 Mind Points).</p>"
+      "name": "Гиперсознание",
+      "description0": "<p>Общая стоимость ОР ваших <strong>заклинаний</strong> и <strong>куплетов</strong> (см. <strong>Атлас: Высокое Фэнтези</strong>, стр. <strong>138</strong>), которые включают ваш <strong>фокус</strong> в число целей, уменьшается на <strong>【УН】</strong> или на <strong>【УН × 2】</strong>, если ваш <strong>фокус</strong> является <strong>единственной</strong> целью (вплоть до 0 Очков Разума).</p>",
+      "class": "Эспер"
     },
     "I've Heard of It!": {
       "name": "I've Heard of It!",
@@ -3382,8 +4297,9 @@
       "description1": "<p>Выберите другое существо, способное видеть вас. Если это существо уже <strong>оглушено</strong>, оно немедленно будет <strong>замедлено</strong>.</p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[10 mp]</p></li><li><p><strong>Цель страдает от: </strong>@EFFECT[slow]</p></li></ul>"
     },
     "Life Transference": {
-      "name": "Life Transference",
-      "description1": "<p>Choose yourself or an ally who is your <strong>focus</strong>: if the chosen creature is in <strong>Crisis</strong>, they recover an amount of Hit Points equal to <strong>【5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)】.</strong></p><hr><ul><li><p><strong>You Spend: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>Target Recovers: </strong>@GAIN[5+(&cs('brainwave-clock')*5) hp]{Life Transference}</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      "name": "Передача Жизни",
+      "trigger": "Когда вы заставляете одно или несколько существ терять ОЗ",
+      "description1": "<p>Выберите себя <strong>или</strong> союзника, который является вашим <strong>фокусом</strong>: если выбранное существо находится в <strong>Кризисе</strong>, оно восстанавливает количество Очков Здоровья, равное <strong>【5 + (количество заполненных секций вашего Счётчика Нейроволн, умноженное на 5)】</strong>.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Цель восстанавливает: </strong>@GAIN[5+(&cs('brainwave-clock')*5) hp]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
     },
     "Linked Invocation": {
       "name": "Linked Invocation",
@@ -3575,12 +4491,14 @@
       "description1": "<p>Выберите один из вариантов: Вы получаете Сопротивление урону <strong>землёй</strong>; <strong>или</strong> весь урон, наносимый вашими атаками и заклинаниями, становится уроном <strong>землёй</strong>.</p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[10 mp]</p></li><li><p><strong>Вы получаете:</strong> @TYPE[affinity earth resistance e:sot i:1 t:source]{Танец Мирмидона: Сопротивление} или @TYPE[damage all earth e:sot i:1 t:source]{Танец Мирмидона: Урон}</p></li></ul>"
     },
     "Navigator": {
-      "name": "Navigator",
-      "description0": "<p>You can communicate telepathically with any conscious ally <strong>within 1 travel day</strong> of you; you are <strong>able to hear each other </strong>for the sake of Skills and effects.</p><p>You gain the ability to perform Rituals of the <strong>Ritualism</strong> discipline. Additionally, you may use <strong>Ritualism</strong> to <strong>transport creatures</strong> in and out of the soul network, and to <strong>gain information </strong>and track entities while inside the soul network.</p>"
+      "name": "Навигатор",
+      "description0": "<p>Вы и любой находящийся в сознании союзник <strong>в пределах 1 дня пути</strong> от вас можете общаться телепатически; вы <strong>можете слышать друг друга</strong> для целей Навыков и эффектов.</p><p>Вы можете выполнять Ритуалы, действие которых подпадает под дисциплину <strong>Ритуализм</strong>; <strong>кроме того</strong>, вы можете использовать <strong>Ритуализм</strong> для <strong>перемещения существ</strong> в сеть душ и обратно, а также для <strong>получения информации</strong> и отслеживания сущностей, находящихся внутри сети душ.</p>",
+      "class": "Эспер"
     },
     "Neurophagoida": {
-      "name": "Neurophagoida",
-      "description1": "<p>When you use the @UUID[Compendium.projectfu.skills.Item.kpg23Fs85uniba2A]{Biophagy} Skill, you also recover an amount of Mind Points equal to <strong>【4 + (your Skill Level in Theriomorphosis)】</strong>.</p><hr><ul><li><p><strong>You Recover:</strong> @GAIN[4+&sl('theriomorphosis') mp]{4 + (SL in Theriomorphosis) MP}</p></li></ul>"
+      "name": "Нейрофагоида",
+      "summary": "Паразиты, нежить, питающиеся душами существа.",
+      "description1": "<p>При использовании Навыка @UUID[Compendium.projectfu.skills.Item.kpg23Fs85uniba2A] вы также получаете Очки Разума в количестве <strong>【4 + (УН Териоморфоза)】</strong>.</p><hr><ul><li><p><strong>Вы восстанавливаете:</strong> @GAIN[4+&sl('theriomorphosis') mp]{4 + (УН Териоморфоза) ОР}</p></li></ul>"
     },
     "Nightmare Dance": {
       "name": "Танец Кошмара",
@@ -3613,8 +4531,9 @@
       "class": "Символист"
     },
     "Personal Vehicle": {
-      "name": "Personal Vehicle",
-      "description0": "<p>When you acquire this Skill, you gain a <strong>personal vehicle</strong> with a <strong>frame</strong> of your choice and <strong>three different modules</strong> of your choice (see <strong>Techno Fantasy Atlas</strong>, page <strong>160</strong>).</p><p>Whenever you acquire this Skill again, you acquire <strong>two additional modules</strong> of your choice.</p><hr /><ul><li><p>For <strong>vehicle</strong> breakdown and a list of Vehicle Modules, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.JtN1YEB5uhn9JMUG]{Vehicle Rules}</p></li><li><p>To <strong>automate</strong>, VTT Instructions can be found here: @UUID[Compendium.projectfu.handouts.JournalEntry.JtN1YEB5uhn9JMUG.JournalEntryPage.7R1h5R48OHr4m7hq]{Pilot VTT Instructions}</p></li></ul>"
+      "name": "Личный Транспорт",
+      "description0": "<p>Приобретая этот Навык, вы получаете <strong>личный транспорт</strong> с <strong>рамой</strong> и <strong>тремя разными модулями</strong>, <strong>всё</strong> на ваш выбор (см. ниже).</p><p>При повторном приобретении этого навыка вы получаете ещё два модуля на выбор.</p><hr><ul><li><p>Разбор <strong>транспорта </strong>и Список Модулей могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.JtN1YEB5uhn9JMUG]</p></li><li><p>Для <strong>автоматизации</strong>, Инструкции VTT могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.JtN1YEB5uhn9JMUG.JournalEntryPage.7R1h5R48OHr4m7hq]</p></li></ul>",
+      "class": "Пилот"
     },
     "Persuasive": {
       "name": "Убедительный",
@@ -3626,23 +4545,85 @@
       "description1": "<p>Выберите один из вариантов: Вы получаете Сопротивление урону <strong>огнём</strong>; <strong>или</strong> весь урон, наносимый вашими атаками и заклинаниями, становится уроном <strong>огнём</strong>.</p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[10 mp]</p></li><li><p><strong>Вы получаете:</strong> @TYPE[affinity fire resistance e:sot i:1 t:source]{Танец Феникса: Сопротивление} или @TYPE[damage all fire e:sot i:1 t:source]{Танец Феникса: Урон}</p></li></ul>"
     },
     "Photokinesis": {
-      "name": "Photokinesis",
-      "description1": "<p>That damage becomes <strong>dark</strong> or <strong>light</strong>, and its source deals extra damage equal to <strong>【2 + the number of filled sections in your Brainwave Clock】.</strong></p><hr><ul><li><p><strong>You Spend: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>You Receive:</strong> @EFFECT[Compendium.projectfu.skills.kwBgOJxf69hODsfJ]{Effect: Photokinesis (Dark)}, or @EFFECT[Compendium.projectfu.skills.jZoViUGfjiiJYHpD]{Effect: Photokinesis (Light)}</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      "name": "Фотокинез",
+      "trigger": "Когда вы наносите урон",
+      "description1": "<p>Этот урон становится уроном <strong>тьмой</strong> или <strong>светом</strong>, а его источник наносит дополнительный урон, равный <strong>【2 + количество заполненных секций вашего Счётчика Нейроволн】</strong>.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.skills.kwBgOJxf69hODsfJ] или @EFFECT[Compendium.projectfu.skills.jZoViUGfjiiJYHpD]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
     },
     "Pilgrim Gazalia": {
       "name": "Pilgrim Gazalia"
     },
     "Placophora": {
-      "name": "Placophora",
-      "description1": "<p>You may treat your Defense score as being equal to <strong>【13 + (half your Skill Level in Theriomorphosis)】</strong>(you may still use your normal scores if better).</p>"
+      "name": "Плакофора",
+      "summary": "Ракообразные, черепахи, панцирные существа и техника.",
+      "description1": "<p>Вы можете считать свою Защиту равной <strong>【13 + (половина УН Териоморфоза)】</strong> (вы можете использовать обычные показатели, если они лучше).</p>",
+      "effects": [
+        {
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Плакофора",
+          "_id": "ZDcnVoPzAVT9GcRO",
+          "changes": [
+            {
+              "key": "system.derived.def.value",
+              "mode": 4,
+              "value": "floor(13+&sl('theriomorphosis')/2)",
+              "priority": null
+            }
+          ],
+          "description": "<p>Вы можете считать свою Защиту равной <strong>【13 + (половина УН Териоморфоза)】</strong> (вы можете использовать обычные показатели, если они лучше).</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {}
+          },
+          "tint": "#ffffff",
+          "img": "icons/creatures/reptiles/turtle-shell-glowing-green.webp",
+          "type": "base",
+          "system": {
+            "rules": {
+              "progress": {
+                "id": "",
+                "name": "",
+                "current": 0,
+                "step": 1,
+                "max": 6,
+                "enabled": false,
+                "style": "basic"
+              }
+            },
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Pneumophora": {
-      "name": "Pneumophora",
-      "description1": "<p><span class=\"fontstyle0\">When you deal damage with an attack or spell, you may have all that damage become <strong>air</strong>. While your <strong>unarmed strikes</strong> deal air damage, any enemy who <strong>loses 20 or more Hit Points</strong> due to one of your <strong>unarmed strikes</strong> also suffers <strong>weak</strong>.</span></p><hr><ul><li><p><strong>You Receive: </strong>@TYPE[damage all air]</p></li><li><p><strong>Targets Suffers:</strong> @EFFECT[weak]</p></li></ul>"
+      "name": "Пневмофора",
+      "summary": "Моллюски с реактивным движением, большие крылатые звери, ракеты.",
+      "description1": "<p>Когда вы наносите урон атакой или заклинанием, вы можете превратить весь этот урон в урон <strong>воздухом</strong>. Пока ваши <strong>безоружные удары</strong> наносят урон <strong>воздухом</strong>, любой противник, <strong>потерявший 20 или более Очков Здоровья</strong> из-за одного из ваших <strong>безоружных ударов</strong>, также получает эффект <strong>слабости</strong>.</p><hr><ul><li><p><strong>Вы получаете: </strong>@TYPE[damage all air]</p></li><li><p><strong>Цель страдает от:</strong> @EFFECT[weak]</p></li></ul>"
     },
     "Polypoda": {
-      "name": "Polypoda",
-      "description1": "<p>Your attacks with <strong>unarmed strikes</strong> gain <strong>multi (3).</strong></p>"
+      "name": "Полипода",
+      "summary": "Осьминоги, кальмары, существа с лианами или щупальцами.",
+      "description1": "<p>Ваши <strong>безоружные атаки</strong> получают <strong>мульти (3)</strong>.</p>"
     },
     "Potion Rain": {
       "name": "Дождь из Зелий",
@@ -3667,28 +4648,84 @@
       "class": "Фурия"
     },
     "Psychic Backlash": {
-      "name": "Psychic Backlash",
-      "description1": "<p>That enemy loses an amount of Mind Points equal to <strong>【5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)】</strong>. Then, choose one option: that enemy suffers <strong>dazed</strong>; or that enemy suffers <strong>shaken</strong>.</p><hr><ul><li><p><strong>You Spend: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>Target Suffers:</strong> @LOSS[10+(&cs('brainwave-clock')*5) mp]{Psychic Backlash} + @EFFECT[dazed], or @EFFECT[shaken]</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      "name": "Психическая Отдача",
+      "trigger": "После того, как противник успешно выполнит Проверку Противостояния против вас или заставит вас потерять Очки Здоровья",
+      "description1": "<p>Этот враг теряет количество Очков Разума, равное <strong>【5 + (количество заполненных секций вашего Счётчика Нейроволн, умноженное на 5)】</strong>. Затем выберите один из вариантов: этот враг будет <strong>оглушён</strong>; <strong>или</strong> этот враг будет <strong>потрясён</strong>.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Цель страдает от:</strong> @LOSS[10+(&cs('brainwave-clock')*5) mp] + @EFFECT[dazed] или @EFFECT[shaken]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
     },
     "Psychic Gifts": {
-      "name": "Psychic Gifts",
-      "description0": "<p>Each time you take this Skill, you gain a <strong>gift</strong> (see <strong>Techno Fantasy Atlas</strong>, page <strong>152</strong>).</p><p>The rules for gifts and for the <strong>Brainwave </strong>clock can be found in the next page.</p><hr /><ul><li><p>For <strong>gift</strong> breakdown and a list of Psychic Gifts, refer to: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc]{Psychic Gift Rules}</p></li></ul><ul><li><p>To <strong>automate</strong>, VTT Instructions can be found here: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc.JournalEntryPage.uafn9l51ROzc9q0w]{Psychic Gift VTT Instructions}</p></li></ul>"
+      "name": "Псионические Дары",
+      "description0": "<p>Каждый раз, когда вы приобретёте этот Навык, вы получаете <strong>дар</strong>. Правила получения даров и Счётчика <strong>Нейроволн</strong> приведены на следующей странице.</p><hr><ul><li><p>Разбор <strong>даров </strong>и их список могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc]</p></li><li><p>Для <strong>автоматизации</strong>, Инструкции VTT могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.mcjpTrTkosKxoyCc.JournalEntryPage.uafn9l51ROzc9q0w]</p></li></ul>",
+      "class": "Эспер"
     },
     "Psychic Shield": {
-      "name": "Psychic Shield",
-      "description1": "<p>You may treat your Defense and Magic Defense scores as being equal to <strong>【your current Willpower die size + (the number of filled sections in your Brainwave Clock, multiplied by 2)】</strong> against that Check (you may still use your normal scores if better).</p><hr><ul><li><p><strong>You Spend: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>You Receive</strong>: @EFFECT[Compendium.projectfu.skills.hNeylrus4Ii8hIKa]{Effect: Psychic Shield}</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      "name": "Психический Щит",
+      "trigger": "После того, как враг, которого вы видите, выполнит Проверку Точности или Проверку Магии",
+      "description1": "<p>Для этой Проверки вы можете считать ваши показатели Защиты и Магической Защиты как равные <strong>【текущему размеру кости Воли + (количество заполненных секций вашего Счётчика Нейроволн, умноженное на 2)】</strong>. Вы всё равно можете использовать свои обычные показатели, если они выше.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Вы получаете</strong>: @EFFECT[Compendium.projectfu.skills.hNeylrus4Ii8hIKa]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
     },
     "Psychokinesis": {
-      "name": "Psychokinesis",
-      "description0": "<p>When you perform an Accuracy Check, you may replace <strong>one</strong> of the Attribute dice with <strong>Willpower</strong> (such as <strong>【DEX + WLP】</strong> for a <strong>shortbow</strong>). Additionally, your <strong>melee attacks</strong> with weapons belonging to the <strong>arcane</strong> or <strong>sword</strong> Categories may target <strong>ﬂying</strong> creatures.</p>"
+      "name": "Психокинез",
+      "description0": "<p>Когда вы совершаете Проверку Точности, вы можете заменить <strong>одну</strong> из костей Характеристик на <strong>Волю</strong> (например, <strong>【ЛВК + ВОЛ】</strong> для <strong>короткого лука</strong>). Кроме того, ваши атаки оружием в ближнем бою, относящимся к Категории <strong>магическое</strong> или <strong>меч</strong>, могут быть нацелены на <strong>летающих</strong> существ.</p>",
+      "class": "Эспер"
     },
     "Pterotheria": {
-      "name": "Pterotheria",
-      "description1": "<p>You are able to fly. In addition to the obvious advantages in mobility, your <strong>melee</strong> attacks can target <strong>flying</strong> creatures and you cannot be targeted by <strong>melee</strong> attacks unless the attacker is flying or is somehow able to reach flying targets.</p><p>These benefits do not apply while you are unable to fly freely (such as when inside a vehicle designed for human-sized creatures, or inside a narrow corridor). Additionally, when you suffer <strong>air</strong>, <strong>bolt</strong> or <strong>ice</strong> damage during a conflict scene, you lose these benefits until the start of your next turn.</p>"
+      "name": "Птеротерия",
+      "summary": "Летучие мыши, птицы, насекомые, летающие существа",
+      "description1": "<p>Вы способны летать. Помимо очевидных преимуществ в мобильности, ваши атаки <strong>ближнего боя</strong> могут быть направлены на <strong>летающих</strong> существ, а вы не можете быть атакованы атаками <strong>ближнего боя</strong>, если атакующий не летает или каким-то образом не может достичь летающих целей.</p><p>Эти преимущества не действуют, если вы не можете свободно летать (например, внутри транспортного средства, рассчитанного на существ человеческого размера, или в узком коридоре). Кроме того, если вы получаете урон <strong>воздухом</strong>, <strong>молнией</strong> или <strong>льдом</strong> во время конфликта, вы теряете эти преимущества до начала вашего первого хода.</p>",
+      "effects": [
+        {
+          "img": "systems/projectfu/styles/static/statuses/Flying.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Полёт",
+          "_id": "QzF7RZb3rqHnybmZ",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [],
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [
+            "flying"
+          ],
+          "sort": 0
+        }
+      ]
     },
     "Pyrophora": {
-      "name": "Pyrophora",
-      "description1": "<p>When you deal damage with an attack or spell, you may have all that damage become <strong>fire</strong>. While your <strong>unarmed strikes</strong> deal <strong>fire</strong> damage, any enemy who loses 20 or more Hit Points due to one of your <strong>unarmed strikes</strong> also suffers <strong>dazed</strong>.</p><hr><ul><li><p><strong>You Receive:</strong> @TYPE[damage all fire]</p></li><li><p><strong>Targets Suffers:</strong> @EFFECT[dazed]</p></li></ul>"
+      "name": "Пирофора",
+      "summary": "Жуки-бомбардиры, раки-щелкуны, огненные элементали.",
+      "description1": "<p>Когда вы наносите урон атакой или заклинанием, вы можете превратить весь этот урон в урон <strong>огнём</strong>. Пока ваши <strong>безоружные удары</strong> наносят урон <strong>огнём</strong>, любой противник, <strong>потерявший 20 или более Очков Здоровья</strong> из-за одного из ваших <strong>безоружных ударов</strong>, также получает эффект <strong>оглушения</strong>.</p><hr><ul><li><p><strong>Вы получаете:</strong> @TYPE[damage all fire]</p></li><li><p><strong>Цель страдает от:</strong> @EFFECT[dazed]</p></li></ul>"
     },
     "Queen's Gambit": {
       "name": "Гамбит Королевы",
@@ -3780,8 +4817,9 @@
       "description0": "<p>Once per session, when you help an NPC or community <strong>defeat greed and corruption</strong>, <strong>improve their quality of life</strong>, or <strong>coexist with other creatures</strong>, if you have acquired the <strong>Winds of Trade</strong> Skill, you gain <strong>【SL + 1】</strong>Trade Points.</p><hr /><ul><li><p><strong>Resource</strong>: @PROGRESS[winds-of-trade update 1+$sl]{Gain SL + 1 Trade Points}</p></li></ul>"
     },
     "Reassuring Presence": {
-      "name": "Reassuring Presence",
-      "description1": "<p>That ally recovers an amount of Mind Points equal to <strong>【10 + (the number of filled sections in your Brainwave Clock, multiplied by 5)】</strong>. If that ally is your <strong>focus</strong>, they heal from a single status effect of their choice out of <strong>dazed</strong>, <strong>enraged</strong>, and <strong>shaken</strong>.</p><hr><ul><li><p><strong>Cost: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>Ally Recovers:</strong> @GAIN[10+(&cs('brainwave-clock')*5) mp]{Reassuring Presence}</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      "name": "Успокаивающее Присутствие",
+      "trigger": "После того, как вы прикроете союзника действием Оборона",
+      "description1": "<p>Этот союзник восстанавливает количество Очков Разума, равное <strong>【10 + (количество заполненных секций вашего Счётчика Нейроволн, умноженное на 5)】</strong>; если он является вашим <strong>фокусом</strong>, он также восстанавливается от одного состояния по своему выбору: <strong>оглушённый</strong>, <strong>яростный</strong> и <strong>потрясённый</strong>.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Союзник восстанавливает:</strong> @GAIN[10+(&cs('brainwave-clock')*5) mp]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
     },
     "Regal Protea": {
       "name": "Regal Protea"
@@ -3970,8 +5008,9 @@
       "name": "Striped Orchid"
     },
     "Strong Grip": {
-      "name": "Strong Grip",
-      "description0": "<p>When you perform an Accuracy Check with a <strong>weapon module</strong>, you may replace <strong>one</strong> of the Attributes with Might (such as <strong>【MIG + WLP】 </strong>for an Arcane module).</p>"
+      "name": "Сильная Хватка",
+      "description0": "<p>Когда вы совершаете Проверку Точности с помощью модуля оружия, вы можете заменить одну из Характеристик на Могущество (например, <strong>【МГЩ + ВОЛ】</strong> для <strong>мистического модуля</strong>).</p>",
+      "class": "Пилот"
     },
     "Support Magic": {
       "name": "Поддерживающая Магия",
@@ -4440,24 +5479,28 @@
       "class": "Символист"
     },
     "Tachytheria": {
-      "name": "Tachytheria",
-      "description1": "<p>You treat your <strong>Dexterity</strong> as if it were one die size higher (to a maximum of <strong>d12</strong>).</p><p>When you succeed on a Check to advance or turn back a Clock, if that Check includes <strong>Dexterity</strong>, you may fill or erase 1 additional section of that Clock.</p><hr><ul><li><p><strong>You Receive: </strong>@EFFECT[dex-up]</p></li></ul>"
+      "name": "Тахитерия",
+      "summary": "Кошки, газели, зайцы, быстрые и ловкие существа.",
+      "description1": "<p>Считайте свою кость <strong>Ловкости</strong> увеличенной на один размер (максимум <strong>d12</strong>).</p><p>Когда вы преуспеваете в Проверке, чтобы продвинуть или откатить Счётчик, если эта Проверка включает <strong>Ловкость</strong>, вы можете заполнить или стереть 1 дополнительную секцию этого Счётчика.</p><hr><ul><li><p><strong>Вы получаете: </strong>@EFFECT[dex-up]</p></li></ul>"
     },
     "Tavern Talk": {
       "name": "Трактирные Сплетни",
       "description0": "<p>Когда Вы <strong>отдыхаете</strong> в гостинице или таверне, Вы можете задать Мастеру до <strong>【УН】</strong> вопросов о вашем окружении и людях, которые здесь живут; Мастеру ответит правдиво, а Вы опишете, как Вы собрали информацию.</p>"
     },
     "Theriomorphosis": {
-      "name": "Theriomorphosis",
-      "description0": "<p>Each time you acquire this Skill, you learn a <strong>therioform </strong>(see <strong>Techno Fantasy Atlas</strong>, page <strong>156</strong>).</p><p>You may use an action and spend <strong>one third of your current Hit Points</strong> (rounded down) to manifest the effects of <strong>up to two therioforms</strong> you have learned. The details of this transformation are explained on the next page.</p><hr /><ul><li><p><span style=\"font-family:'PT Sans Narrow', sans-serif\">For </span><strong>therioform</strong> breakdown and a list of <strong>Therioforms</strong>, refer to:<strong> </strong>@UUID[Compendium.projectfu.handouts.JournalEntry.aXZh9r7OxySQ484p]{Therioforms Rules}</p></li><li><p><strong>Cost:</strong> @LOSS[(@target.resources.hp.value/3) hp]{1/3rd Current HP}</p></li></ul>"
+      "name": "Териоморфоз",
+      "description0": "<p>Каждый раз, когда вы приобретаете этот Навык, вы изучаете <strong>териоформу</strong> (см. ниже).</p><p>Вы можете совершить действие и потратить <strong>треть ваших текущих Очков Здоровья</strong> (округляя вниз), чтобы проявить эффекты <strong>до двух териоформ</strong> из тех, что вы изучили.</p><hr><ul><li><p><span>Разбор</span> <strong>териоформ</strong> и их список могут быть найдены тут: @UUID[Compendium.projectfu.handouts.JournalEntry.aXZh9r7OxySQ484p]</p></li><li><p><strong>Цена:</strong> @LOSS[(@target.resources.hp.value/3) hp]{1/3 Текущих ОЗ}</p></li></ul>",
+      "class": "Мутант"
     },
     "Thermokinesis": {
-      "name": "Thermokinesis",
-      "description1": "<p>That damage becomes <strong>fire</strong> or <strong>ice</strong>, and its source deals extra damage equal to <strong>【2 + the number of filled sections in your Brainwave Clock】</strong>.</p><hr><ul><li><p><strong>You Spend: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]{Psychic Gift}</p></li><li><p><strong>You Receive:</strong> @EFFECT[Compendium.projectfu.skills.UhniAQTvRDymARwH]{Effect: Thermokinesis (Fire)}, or @EFFECT[Compendium.projectfu.skills.ECmYpql8h2JfWAff]{Effect: Thermokinesis (Ice)}</p></li><li><p><strong>Progress: </strong>@CLOCK[brainwave-clock update 1]{Advance Brainwave Clock}</p></li></ul>"
+      "name": "Термокинез",
+      "trigger": "Когда вы наносите урон",
+      "description": "<p>Этот урон становится уроном <strong>огнём</strong> или <strong>льдом</strong>, а его источник наносит дополнительный урон, равный <strong>【2 + количество заполненных секций вашего Счётчика Нейроволн】</strong>.</p><hr><ul><li><p><strong>Вы тратите: </strong>@LOSS[max(5, (&cs('brainwave-clock')*5)) mp]</p></li><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.skills.UhniAQTvRDymARwH] или @EFFECT[Compendium.projectfu.skills.ECmYpql8h2JfWAff]</p></li><li><p><strong>Прогресс: </strong>@CLOCK[brainwave-clock update 1]{Добавить к Счётчику Нейроволн}</p></li></ul>"
     },
     "Toxicophora": {
-      "name": "Toxicophora",
-      "description1": "<p>When you deal damage with an attack or spell, you may have all that damage become <strong>poison</strong>. While your <strong>unarmed strikes</strong> deal poison damage, any enemy who <strong>loses 20 or more Hit Points</strong> due to one of your <strong>unarmed strikes</strong> also suffers <strong>poisoned</strong>.</p><hr><ul><li><p><strong>You Receive:</strong> @TYPE[damage all poison]</p></li><li><p><strong>Targets Suffers:</strong> @EFFECT[poisoned]</p></li></ul>"
+      "name": "Токсикофора",
+      "summary": "Пауки, змеи, токсичная слизь и другие ядовитые существа.",
+      "description1": "<p>Когда вы наносите урон атакой или заклинанием, вы можете превратить весь этот урон в урон <strong>ядом</strong>. Пока ваши <strong>безоружные удары</strong> наносят урон <strong>ядом</strong>, любой противник, <strong>потерявший 20 или более Очков Здоровья</strong> из-за одного из ваших <strong>безоружных ударов</strong>, также получает эффект <strong>отравления</strong>.</p><hr><ul><li><p><strong>Вы получаете:</strong> @TYPE[damage all poison]</p></li><li><p><strong>Цель страдает от:</strong> @EFFECT[poisoned]</p></li></ul>"
     },
     "Trained Memory": {
       "name": "Тренированная Память",
@@ -4550,8 +5593,74 @@
       "description1": ""
     },
     "Unarmed Strike: Mutant": {
-      "name": "Unarmed Strike: Mutant",
-      "description0": ""
+      "name": "Безоружный удар: Мутант",
+      "description0": "",
+      "effects": [
+        {
+          "name": "Эффект: Акроморфоз",
+          "img": "systems/projectfu/styles/static/compendium/classes/mutant/mutant_akromorphosis.png",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.damage.value",
+              "mode": 2,
+              "value": "6+(&sl(\"akromorphosis\")*2)",
+              "priority": null
+            },
+            {
+              "key": "system.accuracy.value",
+              "mode": 2,
+              "value": "&sl(\"akromorphosis\")",
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "description": "<p>Ваш <strong>безоружный удар</strong> наносит <strong>【6 + (УН × 2)】</strong> дополнительного урона и имеет бонус к Проверке Точности, равный <strong>【УН】</strong>.</p>",
+          "origin": "Compendium.projectfu.skills.Item.WV3lBnVzMFBB2irj",
+          "tint": "#ffffff",
+          "transfer": false,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUTF155"
+            }
+          },
+          "_id": "v81MYXQ0Fkt9JjVa"
+        }
+      ]
     },
     "Unexpected Ally": {
       "name": "Неожиданный Союзник",
@@ -4722,8 +5831,8 @@
       "description0": "<table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.BhLHFeKBx3zZRZD5]{Аркана Кузницы}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>огонь, жар, метал</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.TKOESZqheitutkKB]{Аркана Мороза}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>холод, лёд, молчание</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.UVmSApdqYNDILSFo]{Аркана Врат}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>космос, путешествия, пустота</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.QbjAsEWA7R2HfFNg]{Аркана Гримуара}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>знания, откровения, понимание</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.Y3OzDHLCogR32RlH]{Аркана Дуба}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>земля, растения, яд</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.zabsA5F47r9B5h4f]{Аркана Небес}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>туман, дождь, шторм</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.n1djlSF3C4c6Hlf4]{Аркана Меча}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>завоевание, героизм, лидерство</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.stLDj4YpAoyQFFid]{Аркана Башни}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>правосудие, защита, самопожертвование</p></td></tr></tbody></table><hr><table style=\"width:96.5571%\"><tbody><tr><td data-colwidth=\"108\" style=\"width:14.4231%\"><p><strong>Название</strong></p></td><td><p>@UUID[Compendium.projectfu.skills.Item.Dwq6JSEYmSlhpL3b]{Аркана Колеса}</p></td></tr><tr><td data-colwidth=\"108\"><p><strong>Домен</strong></p></td><td><p>судьба, скорость, время</p></td></tr></tbody></table>"
     },
     "[Handout: Armor Modules]": {
-      "name": "[Handout: Armor Modules]",
-      "description0": "<p>While driving a <strong>personal vehicle</strong> with an <strong>armor module</strong> enabled, a Pilot does not have access to the normal contents of their <strong>armor slot</strong>. Instead, that slot is considered occupied by the <strong>personal vehicle’s armor module</strong>. If the <strong>personal vehicle</strong> has no armor module enabled, the Pilot can keep using their equipped armor as normal.</p><ul><li><p>As soon as the Pilot stops driving a <strong>personal vehicle</strong> with an enabled <strong>armor module</strong>, they immediately regain access to their normal equipped armor.</p></li><li><p>Armor modules marked with <strong>@ICON[martial]</strong> are considered to be <strong>martial</strong> armor for the sake of Skills and other effects, and they set the Pilot’s Defense and Magic Defense to <strong>fixed scores</strong> (bonuses from shields and other effects still apply). Note that a Pilot can still equip these modules <strong>even if they normally lack the ability</strong> to equip martial armor.</p></li></ul><blockquote><p><em>For instance, a Pilot with the <strong>Guardian</strong> Class can gain the benefits of <strong>Defensive Mastery</strong> while driving a vehicle with a <strong>Heavy Plating module</strong> enabled, but they do not benefit from the <strong>Dodge</strong> Skill granted by the <strong>Rogue</strong> Class.</em></p></blockquote>"
+      "name": "[Раздатка: Модули Брони]",
+      "description0": "<p>При управлении <strong>личным транспортом</strong> с включённым <strong>модулем брони</strong>, пилот не имеет доступа к свойствам своей обычной <strong>ячейки брони</strong>. Вместо этого эта ячейка считается занятой <strong>модулем брони</strong> вашего <strong>транспорта</strong>. Если в <strong>транспорте</strong> не включён модуль брони, пилот может продолжать использовать свою экипированную броню как обычно.</p><ul><li><p>Как только Пилот перестаёт управлять <strong>транспортом</strong> с включённым <strong>модулем брони</strong>, он немедленно получает доступ к экипированной броне.</p></li><li><p>Модули брони, помеченные @ICON[martial], считаются <strong>воинской</strong> броней для целей Навыков и других эффектов, и они устанавливают для Защиты Пилота и Магической Защиты <strong>фиксированные значения</strong> (бонусы от щитов и других эффектов по-прежнему применяются). Обратите внимание, что Пилот всё ещё может экипировать эти модули, <strong>даже если у него обычно нет возможности</strong> экипировать воинскую броню.</p></li></ul><blockquote><p><em>Например, Пилот с Классом <strong>Страж</strong> получает преимущество от Навыка <strong>Мастерство Обороны</strong>, когда управляет транспортом с включённым <strong>модулем Усиленной Брони</strong>, но он не получает преимущества от Навыка <strong>Уворот</strong>, предоставляемого Классом <strong>Разбойник</strong>.</em></p></blockquote>"
     },
     "[Handout: Dance List]": {
       "name": "[Раздатка: Список Танцев]",
@@ -4754,20 +5863,32 @@
       "description0": "<h1>УПРАВЛЕНИЕ КОЛОДОЙ</h1><p>Ваша <strong>колода</strong> – это настоящая колода карт, которую Вы можете составить по своему вкусу, при условии, что рубашки карт идентичны и Вы соблюдаете приведённые ниже ограничения:</p><ul><li><p>Колода содержит <strong>30 карт</strong>: <strong>2 джокера</strong> и <strong>28</strong> карт, разделённых на <strong>4 масти</strong>; например, в стандартной покерной колоде <strong>мастями</strong> являются <strong>Трефы</strong> @ICON[spade] ), <strong>Бубны</strong> ( @ICON[diamond] ), <strong>Червы</strong> ( @ICON[heart] ), и <strong>Пики</strong> ( @ICON[club]<strong></strong>). При создании <strong>колоды</strong> вашего персонажа, свяжите масти со следующими типами урона – <strong>воздух</strong>, <strong>земля</strong>, <strong>огонь</strong> и <strong>лёд</strong>.</p></li><li><p>В колоде есть <strong>7 карт</strong> каждой <strong>масти</strong>, с <strong>достоинством от 1 до 7</strong>.</p></li></ul><p>Проще всего будет использовать покерную колоду (убрать <strong>карты</strong> с <strong>достоинством от 8 до 10 и старшие карты</strong>), но также Вы можете использовать младшие арканы Таро, колоды коллекционных карточных игр, и другие; главное, чтобы карты и их комбинации легко читались во время игры.</p><ul><li><p>В начале <strong>конфликта</strong>, замешайте все 30 карт в <strong>колоду</strong> и положите её <strong>лицом вниз</strong>, затем вытяните <strong>5 карт в руку</strong>.</p></li><li><p>Если вам нужно вытянуть карты, когда в <strong>колоде</strong> их меньше нужного количества, вытяните оставшиеся карты, <strong>затем замешайте стопку сброса в колоду</strong>, положите её лицом вниз и продолжайте вытягивать карты.</p></li><li><p>Вытягивая карты, Вы кладёте их себе в <strong>руку</strong>. Обычно, только Вы можете видеть свою <strong>руку</strong>, но при желании, Вы можете показать её остальным Игрокам.</p></li><li><p>Сбрасывая и разыгрывая карты из <strong>руки</strong>, Вы кладёте их <strong>лицом вверх</strong> в <strong>стопку сброса</strong> (в произвольном порядке, если Вы сбросили несколько карт). Менять порядок карт, лежащих в <strong>стопке сброса</strong> нельзя.</p></li></ul><p>Ваши <strong>колода</strong>, <strong>рука</strong> и <strong>стопка сброса</strong> (как и любые Навыки, связанные с ними) доступны только во время конфликтов; как только конфликт заканчивается, замешайте все 30 карт в <strong>колоду</strong> и отложите её в сторону.</p><h3>РАЗЫГРЫВАНИЕ СЕТА</h3><p>Чтобы возыметь действие, <strong>сет</strong> должен <strong>полностью</strong> соответствовать требованиям (например, разыгрывание <strong>сета из 5 карт одного достоинства</strong> не соответствует требованиям <strong>Джекпота</strong>, поскольку он должен состоять <strong>именно из 4 карт</strong>).</p><ul><li><p>Разыгрывая <strong>сет</strong>, в котором участвуют <strong>джокеры</strong>, выберите для каждого из них <strong>любую масть и достоинство от 1 до 7</strong>.</p></li></ul><p>Если сет соответствует требованиям нескольких эффектов, выберите и примените <strong>лишь один</strong> из этих эффектов.</p><h3><strong>ЭФФЕКТЫ</strong></h3><p>@UUID[Compendium.projectfu.skills.Item.FVmAbnxp6kZyoqkN]{[Раздатка: Колода]}</p>"
     },
     "[Handout: Other Rules]": {
+      <<<<<<<
+      HEAD
+      "name": "[Раздатка: Прочие Правила]",
+      "description0": "<h3>УРОН И ПОЧИНКА</h3><p><strong>Личный транспорт</strong> Пилота не имеет собственных характеристик и рассматривается как дополнение к самому Пилоту. Он может быть повреждён или временно выведен из строя в результате <strong>Капитуляции</strong> Пилота, но не может быть уничтожен без согласия Игрока.</p><p>Для ремонта <strong>личного транспорта</strong>, повреждённого в результате аварии, требуется количество зенитов, равное <strong>【УН Личный Транспорт, умноженному на 100】</strong>. С другой стороны, восстановление разрушенного <strong>транспорта</strong> должно быть частью сюжетной арки Пилота (именно поэтому его следует уничтожать только в том случае, если Игрок не против).</p><h3>РЕДКИЕ МОДУЛИ КАК НАГРАДА</h3><p>Мастеру стоит рассмотреть новые модули (или обновлённые версии существующих модулей) для Пилота в качестве наград в кампании.</p><ul><li><p>Каждый <strong>модуль оружия и брони</strong>, представленный на следующих страницах, имеет базовую стоимость в 500 зенитов, а их редкие версии можно создать, используя правила для <strong>редких предметов</strong>, приведённые в <strong>Основной Книге</strong>, начиная со страницы <strong>266</strong>. Однако есть два исключения: урон оружейного модуля можно увеличить только на 4 пункта, повысив его стоимость на 200 зенитов (он <strong>никогда</strong> не сможет стать двуручным), и <strong>оружейный модуль никогда не сможет стать воинским</strong> (даже если его формула урона станет <strong>【ЛБ + 10】</strong> или выше).</p></li><li><p>Стоимость каждого вспомогательного модуля, представленного на следующих страницах, должна составлять примерно 1000 зенитов. Если вы сами создаёте вспомогательные модули, сравните их с существующими, чтобы определить их стоимость в зенитах. Это <strong>редкие</strong> предметы.</p></li><li><p>Специальные правила, используемые для некоторых оружейных модулей (например, для <strong>модуля Клеймор</strong>, который запрещает включение других оружейных модулей, или для всего эффекта <strong>модуля Щит</strong>), <strong>не являются Свойствами</strong> и, следовательно, не могут быть потеряны или заменены. Если данный модуль обладает Свойством, то это Свойство указывается <strong>перед</strong> любым из его специальных правил.</p></li><li><p>Пилот может приобрести редкие модули в специализированных магазинах, исследуя фабрики или лаборатории, а также в качестве награды за победу над роботизированными или искусственными противниками. Вы можете ознакомиться с некоторыми образцами редких оружейных модулей на странице <strong>86</strong>.</p></li></ul><p>И, наконец, как общее правило, Пилот <strong>никогда</strong> не должен иметь доступа к двум или более вспомогательным модулям с разными названиями, эффекты которых схожи и/или накопительны.</p><h3>ВЗАИМОДЕЙСТВИЕ С КЛАССОМ ИЗОБРЕТАТЕЛЯ</h3><p>Персонаж Класса <strong>Изобретатель</strong> может использовать Героический Навык @UUID[Compendium.projectfu.heroic-skills.Item.xbTcxx4ysOWOamZP] и правила для <strong>Проектов</strong> (см. <strong>Основная Книга</strong>, стр. <strong>241</strong> и <strong>134</strong>), чтобы улучшить модули или кастомизировать <strong>личный транспорт</strong> Пилота. Например, он может установить реактор, позволяющий совершать космические полёты, или антенну, излучающую антимагические волны.</p><p>Когда речь заходит о специальных модулях, созданных в рамках Проектов, вся группа должна убедиться, что они <strong>не влияют</strong> на сильные стороны и роли других персонажей. Может быть хорошей идеей предоставить таким модулям ограниченное количество применений или интересные недостатки, которые могут привести к трудному выбору и запоминающимся сценам.</p>"
+      =======
       "name": "[Handout: Other Rules]",
       "description0": "<h3>DAMAGE AND REPAIRS</h3><p>A Pilot’s <strong>personal vehicle</strong> doesn’t have its own separate stats and is treated as an extension of the Pilot themselves. It can be damaged or rendered temporarily unusable as a narrative consequence of the Pilot’s <strong>Surrender</strong>, but cannot be destroyed unless the Player agrees to it.</p><p>Repairing a narratively damaged <strong>personal vehicle</strong> requires an amount of zenit equal to <strong>【its Pilot’s SL in Personal Vehicle, multiplied by 100】</strong>. On the other hand, rebuilding a destroyed <strong>personal vehicle</strong> should be achieved as part of the Pilot’s narrative arc (which is why it should only be destroyed if the Player is okay with it).</p><h3>RARE MODULES AS REWARDS</h3><p>The Game Master should include new modules (or upgraded versions of existing modules) for the Pilot among the campaign’s rewards.</p><ul><li><p>Each <strong>weapon and armor module</strong> presented in the following pages has a base cost of 500 zenit, and their rare versions can be created using the rules for <strong>rare items</strong> found in the <strong>Core Rulebook</strong>, starting on page <strong>266.</strong> There are, however, two exceptions: a weapon module’s damage can only be increased by 4 points by raising its cost by 200 zenit (it can <strong>never</strong> become two-handed), and <strong>a weapon module can never become martial</strong> (not even if its damage formula becomes <strong>【HR + 10】</strong> or higher).</p></li><li><p>Each <strong>support module</strong> presented in the following pages should have a cost of roughly 1000 zenit. If you create custom support modules, compare them with the existing ones in order to establish their cost in zenit. They are <strong>rare</strong> items.</p></li><li><p>The special rules used for some weapon modules (such as the <strong>Claymore module</strong>, which prevents you from having other weapon modules enabled, or the <strong>Shield module</strong>’s entire effect) <strong>are not Qualities</strong>, and thus cannot be lost or replaced. If a given module has a Quality, that Quality is listed <strong>before</strong> any of its special rules.</p></li><li><p>A Pilot might acquire rare modules by purchasing them from dedicated shops, by exploring factories or laboratories, or as a reward after defeating robotic or artificial adversaries. You can find some sample rare weapon modules on page <strong>86</strong>.</p></li></ul><p>And finally, as a general rule, a Pilot should <strong>never</strong> have access to two or more support modules with different names whose effects are similar and/or cumulative.</p><h3>INTERACTIONS WITH THE TINKERER CLASS</h3><p>A character with the Tinkerer Class might wish to use the @UUID[Compendium.projectfu.heroic-skills.Item.xbTcxx4ysOWOamZP]{Upgrade} Heroic Skill and the rules for <strong>Projects</strong> (see <strong>Core Rulebook</strong>, pages <strong>241</strong> and <strong>134</strong>) to improve modules or invent new customizations for a Pilot’s <strong>personal vehicle</strong>. For instance, they might install a reactor to enable space flight, or an antenna that emits anti-magic waves.</p><p>When it comes to special modules created through Projects, the group as a whole should make sure these <strong>do not impede</strong> on other characters’ strengths and roles. It can be a good idea to give such modules a limited number of uses, or interesting flaws that can lead to difficult choices and memorable scenes.</p>"
+      >>>>>>>
+      3a3e9d3
+      (Релиз
+      0.7!
+      (я
+      забыл
+      замерджиться))
     },
     "[Handout: Psychic Gift List]": {
-      "name": "[Handout: Psychic Gift List]",
-      "description0": "<table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.PN6y0O0YDvtzFDAy]{Atmokinesis}</p></td><td><p style=\"text-align:center\">When you <strong>deal damage</strong></p></td></tr></tbody></table><p>That damage becomes <strong>air</strong> or <strong>bolt</strong>, and its source deals extra damage equal to <strong>【2 + the number of filled sections in your Brainwave Clock】</strong>.</p><table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.SbBJH4ofSkOHZ7Mo]{Clairvoyance}</p></td><td><p style=\"text-align:center\">When an NPC becomes your <strong>focus</strong> or</p><p style=\"text-align:center\">when you create a <strong>Bond</strong> towards an NPC</p></td></tr></tbody></table><p>You ask the Game Master a single question about that NPC, and the Game Master must answers truthfully. Then, describe what sensation revealed this information to you. You may use this gift <strong>only once</strong> on each NPC.</p><table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.sDiqo6su9LgYDQVh]{Gravitokinesis}</p></td><td><p style=\"text-align:center\">When you <strong>deal damage</strong></p></td></tr></tbody></table><p>That damage becomes <strong>earth</strong> or <strong>physical</strong>, and its source deals extra damage equal to <strong>【2 + the number of filled sections in your Brainwave Clock】</strong>. If the source deals damage to one or more <strong>flying</strong> creatures, they are forced to land immediately.</p><table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.PN8CkQbxXS6v01gk]{Life Transference}</p></td><td><p style=\"text-align:center\">When you <strong>cause one or more creatures to lose HP</strong></p></td></tr></tbody></table><p>Choose yourself <strong>or</strong> an ally who is your <strong>focus</strong>: if the chosen creature is in <strong>Crisis</strong>, they recover an amount of Hit Points equal to <strong>【5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)】.</strong></p><table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.Gl94a8Sykg9WZhPs]{Photokinesis}</p></td><td><p style=\"text-align:center\">When you <strong>deal damage</strong></p></td></tr></tbody></table><p>That damage becomes <strong>dark</strong> or <strong>light</strong>, and its source deals extra damage equal to <strong>【2 + the number of filled sections in your Brainwave Clock】.</strong></p><table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.RikYwc1dD7YIEn3k]{Psychic Backlash}</p></td><td><p style=\"text-align:center\">After an enemy <strong>succeeds on an Opposed Check</strong></p><p style=\"text-align:center\">against you or <strong>causes you to lose Hit Points</strong></p></td></tr></tbody></table><p>That enemy loses an amount of Mind Points equal to <strong>【5 + (the number of filled sections in your Brainwave Clock, multiplied by 5)】</strong>. Then, choose one option: that enemy suffers <strong>dazed</strong>; or that enemy suffers <strong>shaken</strong>.</p><table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.aqgXqI567dkudwMN]{Psychic Shield}</p></td><td><p style=\"text-align:center\">After an enemy you can see <strong>performs an</strong></p><p style=\"text-align:center\"><strong>Accuracy Check or a Magic Check</strong></p></td></tr></tbody></table><p>For the purposes of that Check, you may treat your Defense and Magic Defense scores as being equal to <strong>【your current Willpower die size + (the number of filled sections in your Brainwave Clock, multiplied by 2)】</strong>. You may still use your normal scores if better.</p><table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.ohueXD1PGP1TTRlq]{Reassuring Presence}</p></td><td><p style=\"text-align:center\">After you <strong>cover</strong> an ally with the <strong>Guard</strong> action</p></td></tr></tbody></table><p>That ally recovers an amount of Mind Points equal to <strong>【10 + (the number of filled sections in your Brainwave Clock, multiplied by 5)】</strong>. If that ally is your <strong>focus</strong>, they heal from a single status effect of their choice out of <strong>dazed</strong>, <strong>enraged</strong>, and <strong>shaken</strong>.</p><table style=\"width:100%;height:34px\" border=\"1\"><tbody><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p><strong>GIFT</strong></p></td><td><p style=\"text-align:center\"><strong>EVENT</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.rM8RIy8usVdVO0ro]{Thermokinesis}</p></td><td><p style=\"text-align:center\">When you <strong>deal damage</strong></p></td></tr></tbody></table><p>That damage becomes <strong>fire</strong> or <strong>ice</strong>, and its source deals extra damage equal to <strong>【2 + the number of filled sections in your Brainwave Clock】</strong>.</p>"
+      "name": "[Раздатка: Список Псионических Даров]",
+      "description0": "<table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.PN6y0O0YDvtzFDAy]</p></td><td><p>Когда вы <strong>наносите урон</strong></p></td></tr></tbody></table><p>Этот урон становится уроном <strong>ветром</strong> или <strong>молнией</strong>, а его источник наносит дополнительный урон, равный <strong>【2 + количество заполненных секций вашего Счётчика Нейроволн】</strong>.</p><table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.SbBJH4ofSkOHZ7Mo]</p></td><td><p>Когда НИП становится вашим <strong>фокусом</strong> или когда вы создаёте <strong>Узы</strong> с НИП</p></td></tr></tbody></table><p>Вы задаёте Мастеру один вопрос об этом НИП, и Мастер отвечает честно. Затем вы описываете, какие ощущения открыли вам эту информацию. Вы можете использовать этот дар <strong>единожды</strong> на одном и том же НИП.</p><table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.sDiqo6su9LgYDQVh]</p></td><td><p>Когда вы <strong>наносите урон</strong></p></td></tr></tbody></table><p>Этот урон становится уроном <strong>землёй</strong> или <strong>физическим</strong>, а его источник наносит дополнительный урон, равный  <strong>【2 + количество заполненных секций вашего Счётчика Нейроволн】</strong>. Если источник наносит урон одному или нескольким <strong>летающим</strong> существам, они вынуждены немедленно приземлиться.</p><table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.PN8CkQbxXS6v01gk]</p></td><td><p>Когда вы заставляете <strong>одно или несколько существ терять ОЗ</strong></p></td></tr></tbody></table><p>Выберите себя <strong>или</strong> союзника, который является вашим <strong>фокусом</strong>: если выбранное существо находится в <strong>Кризисе</strong>, оно восстанавливает количество Очков Здоровья, равное <strong>【5 + (количество заполненных секций вашего Счётчика Нейроволн, умноженное на 5)】</strong>.</p><table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.Gl94a8Sykg9WZhPs]</p></td><td><p>Когда вы <strong>наносите урон</strong></p></td></tr></tbody></table><p>Этот урон становится уроном <strong>тьмой</strong> или <strong>светом</strong>, а его источник наносит дополнительный урон, равный <strong>【2 + количество заполненных секций вашего Счётчика Нейроволн】</strong>.</p><table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.RikYwc1dD7YIEn3k]</p></td><td><p>После того, как противник <strong>успешно выполнит Проверку Противостояния</strong> против вас или <strong>заставит вас потерять Очки Здоровья</strong></p></td></tr></tbody></table><p>Этот враг теряет количество Очков Разума, равное <strong>【5 + (количество заполненных секций вашего Счётчика Нейроволн, умноженное на 5)】</strong>. Затем выберите один из вариантов: этот враг будет <strong>оглушён</strong>; <strong>или</strong> этот враг будет <strong>потрясён</strong>.</p><table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.aqgXqI567dkudwMN]</p></td><td><p>После того, как враг, которого вы видите, <strong>выполнит Проверку Точности или Проверку Магии</strong></p></td></tr></tbody></table><p>Для этой Проверки вы можете считать ваши показатели Защиты и Магической Защиты как равные <strong>【текущему размеру кости Воли + (количество заполненных секций вашего Счётчика Нейроволн, умноженное на 2)】</strong>. Вы всё равно можете использовать свои обычные показатели, если они выше.</p><table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.ohueXD1PGP1TTRlq]</p></td><td><p>После того, как вы <strong>прикроете</strong> союзника действием <strong>Оборона</strong></p></td></tr></tbody></table><p>Этот союзник восстанавливает количество Очков Разума, равное <strong>【10 + (количество заполненных секций вашего Счётчика Нейроволн, умноженное на 5)】</strong>; если он является вашим <strong>фокусом</strong>, он также восстанавливается от одного состояния по своему выбору: <strong>оглушённый</strong>, <strong>яростный</strong> и <strong>потрясённый</strong>.</p><table><tbody><tr><td style=\"width:25%\"><p><strong>ДАР</strong></p></td><td style=\"width:75%\"><p><strong>СОБЫТИЕ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.rM8RIy8usVdVO0ro]</p></td><td><p>Когда вы <strong>наносите урон</strong></p></td></tr></tbody></table><p>Этот урон становится уроном <strong>огнём</strong> или <strong>льдом</strong>, а его источник наносит дополнительный урон, равный <strong>【2 + количество заполненных секций вашего Счётчика Нейроволн】</strong>.</p>"
     },
     "[Handout: Psychic Gifts Rules]": {
-      "name": "[Handout: Psychic Gifts Rules]",
-      "description0": "<h3></h3><h3>USING A GIFT</h3><p><strong>Gifts</strong> can only be used when speciﬁc <strong>events</strong> take place. When this happens, you may spend an amount of Mind Points equal to <strong>【the number of ﬁlled sections in your Brainwave Clock, multiplied by 5】</strong> minimum 5 Mind Points) in order to apply the effects of that gift to the event.</p><ul><li><p>You may only use a <strong>single gift</strong> per event.</p></li><li><p>If a gift causes <strong>HP or MP recovery</strong>, or if it causes <strong>MP loss</strong>, the amounts increase by 10 if you are <strong>level 20 or higher</strong>, or by 20 if you are <strong>level 40 or higher</strong>.</p></li></ul><h3>THE BRAINWAVE CLOCK</h3><p>When you first acquire the @UUID[Compendium.projectfu.skills.Item.uiXJvj0qK0pVfnwY]{Psychic Gifts} Skill, <span class=\"fontstyle0\">start </span>a <strong>Brainwave Clock</strong>.</p><ul><li><p>Your Brainwave Clock has <strong>4 sections</strong>, and it begins each scene <strong>empty</strong>.</p></li><li><p>After you resolve one of your <strong>gifts</strong>, <strong>fill 1 section</strong> of your Brainwave Clock (you do so <strong>after</strong> the effects of the <strong>gift</strong> have been calculated and applied).</p></li><li><p>Your Brainwave Clock determines your <strong>gifts' cost in Mind Points</strong>, as well as their <strong>effectiveness</strong> (see above). You can still use your <strong>gifts</strong> when the Clock is full.</p></li><li><p>Sections of your Brainwave Clock <strong>may not be filled</strong> in any way other than described above, and they <strong>may only be erased</strong> <span class=\"fontstyle0\">through the </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.heroic-skills.Item.iZIhU35ZCZ1zrbfL]{Brainwave Discharge} </span><span class=\"fontstyle0\">Heroic Skill (see page </span><span class=\"fontstyle2\"><strong>171</strong></span><span class=\"fontstyle0\">) or through effects that </span><span class=\"fontstyle2\"><strong>expressly</strong> </span><span class=\"fontstyle0\">influence Brainwave Clocks.</span></p></li></ul><h3>Gifts</h3><p>@UUID[Compendium.projectfu.skills.Item.mMeTN3919AnQFJrC]{[Handout: Psychic Gift List]}</p>"
+      "name": "[Раздатка: Правила Псионических Даров]",
+      "description0": "<h3>ИСПОЛЬЗОВАНИЕ ДАРОВ</h3><p>Каждый <strong>дар</strong> можно использовать только при наступлении определённых <strong>событий</strong>. Когда это произойдёт, вы можете потратить количество Очков Разума, равное <strong>【количеству заполненных секций вашего Счётчика Нейроволн, умноженному на 5】</strong> (минимум 5 Очков Разума), чтобы применить эффекты этого дара к данному событию.</p><ul><li><p>Вы можете использовать только <strong>один дар</strong> за событие.</p></li><li><p>Если дар приводит к <strong>восстановлению ОЗ или ОР</strong>, или если он приводит к <strong>потере ОР</strong>, сумма увеличивается на 10, если вы <strong>20-го уровня или выше</strong>, или на 20, если вы <strong>40-го уровня или выше</strong>.</p></li></ul><h3>СЧЁТЧИК НЕЙРОВОЛН</h3><p>Когда вы впервые приобретаете Навык @UUID[Compendium.projectfu.skills.Item.uiXJvj0qK0pVfnwY], вы получаете <strong>Счётчик Нейроволн</strong>.</p><ul><li><p>Ваш Счётчик Нейроволн состоит из 4 секций, которые <strong>пусты</strong> в начале каждой сцены.</p></li><li><p>После того, как вы разыграете один из ваших даров, <strong>заполните 1 секцию</strong> вашего Счётчика Нейроволн (вы делаете это <strong>после</strong> того, как эффект от <strong>дара</strong> будет посчитан и применён).</p></li><li><p>Ваш Счётчик Нейроволн определяет <strong>стоимость</strong> ваших <strong>даров в Очках Разума</strong>, а также их <strong>эффективность</strong> (см. выше). Вы по-прежнему можете использовать свои <strong>дары</strong>, когда Счётчик будет заполнен.</p></li><li><p>Секции вашего Счётчика Нейроволн <strong>не могут быть заполнены</strong> каким-либо иным способом, кроме описанного выше, <strong>и стереть их можно</strong> только с помощью Героического Навыка <span class=\"fontstyle2\">@UUID[Compendium.projectfu.heroic-skills.Item.iZIhU35ZCZ1zrbfL]</span> или с помощью эффектов, <strong>явно</strong> влияющих на <strong>Счётчики Нейроволн</strong>.</p></li></ul><h3>ДАРЫ</h3><p>@UUID[Compendium.projectfu.skills.Item.mMeTN3919AnQFJrC]</p>"
     },
     "[Handout: Support Modules]": {
-      "name": "[Handout: Support Modules]",
-      "description0": "<p>Support modules provide a variety of miscellaneous benefits; these benefits often apply to the vehicle's passengers in addition to the Pilot themselves.</p><ul><li><p>A personal vehicle cannot have <strong>more than one enabled support modules of the same name</strong>.</p></li><li><p>Some support modules are particularly complex or cumbersome and count as <strong>two modules</strong> towards the limit on total active modules.</p></li></ul>"
+      "name": "[Раздатка: Вспомогательные Модули]",
+      "description0": "<p>Вспомогательные модули предоставляют множество различных преимуществ; эти преимущества часто распространяются не только на самого Пилота, но и на пассажиров транспорта.</p><ul><li><p>В <strong>личном транспорте</strong> не может быть включено <strong>более одного модуля поддержки с одинаковым названием</strong>.</p></li><li><p>Некоторые модули поддержки особенно сложны или громоздки и считаются <strong>двумя модулями</strong> для расчёта общего количество включённых модулей.</p></li></ul>"
     },
     "[Handout: Symbol List]": {
       "name": "[Раздатка: Список Символов]",
@@ -4778,28 +5899,28 @@
       "description0": "<p><span><strong>Символы</strong> подчиняются особым правилам.</span></p><ul><li><p><span>Существо может носить только <strong>один символ одновременно</strong> — если оно получает новый <strong>символ</strong>, независимо от источника, любой предыдущий <strong>символ</strong> уничтожается.</span></p></li><li><p><span><strong>Символы</strong> и их эффекты действуют неограниченное время до уничтожения.</span></p></li><li><p><span>Если Символист умирает, каждый созданный им <strong>символ</strong> немедленно и автоматически уничтожается.</span></p></li><li><p><span>Если существо с <strong>символом</strong> умирает, этот <strong>символ</strong> также уничтожается.</span></p><p><span>Однако, если существо является НИП, которое просто меняет свою форму и статистику при падении с 0 Очков Здоровья, это не удаляет <strong>символ</strong>: иными словами, символ “повествовательно” привязан к конкретному персонажу, а не к его текущему проявлению и параметрам.</span></p></li><li><p><span>Злодей может во время сцены Мастера потратить 1 Очко Ультимы, чтобы уничтожить любое количество <strong>символов</strong>, которые есть у него самого и у любого из его союзников, присутствующих во время этой сцены.</span></p><p><span>Это единственный возможный способ удалить <strong>символ</strong> против воли создавшего его Символиста, за исключением использования <strong>возможности</strong>, соответствующей сцене, или Навыка НИП, специально созданного Мастером (но это следует делать не более двух или трёх раз за кампанию).</span></p></li><li><p><span>Символист может уничтожить любое количество своих <strong>символов</strong> в любое время, никаких действий не требуется.</span></p></li><li><p><span>Если символ требует, чтобы Вы сделали выбор при его создании, этот выбор применяется ко всем копиям <strong>символа</strong>, созданным с помощью этого действия (но не влияет ни на какие копии этого символа, созданные с помощью предыдущих действий).</span></p></li></ul><blockquote><p><span><em><strong>Пример:</strong> Если Символист применяет два <strong>символа слабости (огонь)</strong> с помощью Навыка <strong>Символизм</strong>, комбинируя его с атакой со свойством <strong>мульти (2)</strong>, существа, получившие эти <strong>символы</strong>, получат дополнительный урон от <strong>огня</strong>. Если вскоре после этого Символист применит <strong>символ слабости (молния)</strong> к третьему существу, два предыдущих существа всё равно получат дополнительный урон от <strong>огня</strong>, а не от <strong>молнии</strong>.</em></span></p></blockquote><p><span>Помните, что максимальное количество <strong>символов</strong>, которые могут быть активны одновременно, зависит от вашего Уровня Навык<em>а </em>@UUID[Compendium.projectfu.skills.Item.Twj3wpoMzSpUE3Go].</span></p><h3>ВСЕ СИМВОЛЫ</h3><p>@UUID[Compendium.projectfu.skills.Item.v1HYJJsqOzPWrYv8]{[Раздатка: Список Символов]}</p>"
     },
     "[Handout: Therioform List]": {
-      "name": "[Handout: Therioform List]",
-      "description0": "<table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.R2Opf7lWAOrOiiC6]{Amphibia}</p></td><td><p>Frogs, salamanders, regenerating creatures, aquatic monsters.</p></td></tr></tbody></table><p>You may breathe underwater and your eyes can see perfectly in dim light.</p><p>When you recover Hit Points, you recover <strong>5 additional Hit Points</strong> and you may immediately recover from a single status effect of your choice.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"245\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"245\"><p>@UUID[Compendium.projectfu.skills.Item.hm5LaJoCgBZo398G]{Arpaktida}</p></td><td style=\"text-align:center\"><p>Wolves, birds of prey, creatures with sharp hunting senses.</p></td></tr></tbody></table><p>You treat your <strong>Insight</strong> as if it were one die size higher (to a maximum of <strong>d12</strong>).</p><p>When you deal damage to one or more creatures for the first time during your turn, if at least one of them is in <strong>Crisis</strong>, you deal <strong>5 extra damage</strong> to each of those creatures.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.g7G1eUEz0VaS5bNg]{Dynamotheria}</p></td><td><p>Bears, dinosaurs, creatures of massive size and strength.</p></td></tr></tbody></table><p>You treat your <strong>Might</strong> as if it were one die size higher (to a maximum of <strong>d12</strong>).</p><p>When you succeed on a Check to advance or turn back a Clock, if that Check includes <strong>Might</strong>, you may fill or erase <strong>1 additional section</strong> of that Clock.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.vNgf1mOEsQSpbOiv]{Electrophora}</p></td><td><p>Electric creatures, lightning elementals, robots.</p></td></tr></tbody></table><p>When you deal damage with an attack or spell, you may have all that damage become <strong>bolt</strong>. While your <strong>unarmed strikes</strong> deal <strong>bolt</strong> damage, any enemy who loses <strong>20 or more Hit Points</strong> due to one of your <strong>unarmed strikes</strong> also suffers <strong>slow</strong>.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.f9NciszRYctYrAnb]{Neurophagoida}</p></td><td><p>Parasites, undead, creatures who feed on souls.</p></td></tr></tbody></table><p>When you use the <strong>Biophagy</strong> Skill, you also recover an amount of Mind Points equal to <strong>【4 + (your Skill Level in Theriomorphosis)】</strong>.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.aAmIBca4b150uuAH]{Placophora}</p></td><td><p>Crustaceans, turtles, armored creatures and vehicles.</p></td></tr></tbody></table><p>You may treat your Defense score as being equal to <strong>【13 + (half your Skill Level in Theriomorphosis)】</strong> (you may still use your normal scores if better).</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\" data-colwidth=\"317\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.1QqNBwC1WQKDxk3s]{Pneumophora}</p></td><td style=\"height:17px\" data-colwidth=\"317\"><p>Jet-propulsion mollusks, great winged beasts, rockets.</p></td></tr></tbody></table><p>When you deal damage with an attack or spell, you may have all that damage become <strong>air</strong>. While your <strong>unarmed strikes</strong> deal <strong>air</strong> damage, any enemy who loses <strong>20 or more Hit Points</strong> due to one of your <strong>unarmed strikes</strong> also suffers <strong>weak</strong>.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.fHHT9SZwPRXiEA0U]{Polypoda}</p></td><td><p>Squids, octopi, creatures with tendrils or vines.</p></td></tr></tbody></table><p>Your attacks with <strong>unarmed strikes</strong> gain <strong>multi (3)</strong>.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.NjToAQTqqe3xyn6Y]{Pterotheria}</p></td><td><p>Bats, birds, winged insects, flying creatures.</p></td></tr></tbody></table><p>You are able to fly. In addition to the obvious advantages in mobility, your <strong>melee</strong> attacks can target <strong>flying</strong> creatures and you cannot be targeted by <strong>melee</strong> attacks unless the attacker is flying or is somehow able to reach flying targets.</p><p>These benefits do not apply while you are unable to fly freely (such as when inside a vehicle designed for human-sized creatures, or inside a narrow corridor). Additionally, when you suffer <strong>air</strong>, <strong>bolt</strong> or <strong>ice</strong> damage during a conflict scene, you lose these benefits until the start of your next turn.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.guVvGJaNqpi2A4WR]{Pyrophora}</p></td><td><p>Pyrophora Bombardier beetles, pistol shrimps, fire elementals.</p></td></tr></tbody></table><p>When you deal damage with an attack or spell, you may have all that damage become <strong>fire</strong>. While your <strong>unarmed strikes</strong> deal <strong>fire</strong> damage, any enemy who loses <strong>20 or more Hit Points</strong> due to one of your <strong>unarmed strikes</strong> also suffers <strong>dazed</strong>.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.WdA0rzemkQfGAMLk]{Tachytheria}</p></td><td><p>Cats, gazelles, hares, creatures that are agile and quick.</p></td></tr></tbody></table><p>You treat your <strong>Dexterity</strong> as if it were one die size higher (to a maximum of <strong>d12</strong>).</p><p>When you succeed on a Check to advance or turn back a Clock, if that Check includes <strong>Dexterity</strong>, you may fill or erase <strong>1 additional section</strong> of that Clock.</p><table style=\"width:100%;height:34px;border:1px solid black\"><tbody><tr style=\"height:17px\"><td style=\"height:17px;width:50%\" data-colwidth=\"323\"><p><strong>THERIOFORM</strong></p></td><td style=\"width:50%\"><p style=\"text-align:center\"><strong>GENOCLEPSIS ADVICE</strong></p></td></tr><tr style=\"height:17px\"><td style=\"height:17px\" data-colwidth=\"323\"><p>@UUID[Compendium.projectfu.skills.Item.dBGoRsrayjBXuM31]{Toxicophora}</p></td><td><p>Spiders, snakes, toxic slimes and other venomous creatures.</p></td></tr></tbody></table><p>When you deal damage with an attack or spell, you may have all that damage become <strong>poison</strong>. While your <strong>unarmed strikes</strong> deal <strong>poison</strong> damage, any enemy who loses <strong>20 or more Hit Points</strong> due to one of your <strong>unarmed strikes</strong> also suffers <strong>poisoned</strong>.</p>"
+      "name": "[Раздатка: Список Териоформ]",
+      "description0": "<table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.R2Opf7lWAOrOiiC6]</p></td><td><p>Лягушка, саламандра, регенерирующие существа, водные монстры.</p></td></tr></tbody></table><p>Вы можете дышать под водой и прекрасно видите в темноте.</p><p>Когда вы восстанавливаете Очки Здоровья, вы восстанавливаете дополнительные 5 Очков Здоровья и можете снять с себя одно состояние по вашему выбору.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.hm5LaJoCgBZo398G]</p></td><td><p>Волки, падальщики, хищники с острыми чувствами.</p></td></tr></tbody></table><p>Считайте свою кость <strong>Проницательности</strong> увеличенной на один размер (максимум <strong>d12</strong>).</p><p>Когда вы наносите урон одному или нескольким существам в первый свой ход, если хотя бы один противник находится в <strong>Кризисе</strong>, вы наносите 5 дополнительного урона каждому из них.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.g7G1eUEz0VaS5bNg]</p></td><td><p>Медведи, динозавры, массивные существа.</p></td></tr></tbody></table><p>Считайте свою кость <strong>Могущества</strong> увеличенной на один размер (максимум <strong>d12</strong>).</p><p>Когда вы преуспеваете в Проверке, чтобы продвинуть или откатить Счётчик, если эта Проверка включает <strong>Могущество</strong>, вы можете заполнить или стереть 1 дополнительную секцию этого Счётчика.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.vNgf1mOEsQSpbOiv]</p></td><td><p>Электрические существа, элементали молний, роботы.</p></td></tr></tbody></table><p>Когда вы наносите урон атакой или заклинанием, вы можете превратить весь этот урон в урон <strong>молнией</strong>. Пока ваши <strong>безоружные удары</strong> наносят урон <strong>молнией</strong>, любой противник, <strong>потерявший 20 или более Очков Здоровья</strong> из-за одного из ваших <strong>безоружных ударов</strong>, также получает эффект <strong>замедления</strong>.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.f9NciszRYctYrAnb]</p></td><td><p>Паразиты, нежить, питающиеся душами существа.</p></td></tr></tbody></table><p>При использовании Навыка <strong>Биофагия</strong> вы также получаете Очки Разума в количестве <strong>【4 + (УН Териоморфоза)】</strong>.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.aAmIBca4b150uuAH]</p></td><td><p>Ракообразные, черепахи, панцирные существа и техника.</p></td></tr></tbody></table><p>Вы можете считать свою Защиту равной <strong>【13 + (половина УН Териоморфоза)】</strong> (вы можете использовать обычные показатели, если они лучше).</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.1QqNBwC1WQKDxk3s]</p></td><td><p>Моллюски с реактивным движением, большие крылатые звери, ракеты.</p></td></tr></tbody></table><p>Когда вы наносите урон атакой или заклинанием, вы можете превратить весь этот урон в урон <strong>воздухом</strong>. Пока ваши <strong>безоружные удары</strong> наносят урон <strong>воздухом</strong>, любой противник, <strong>потерявший 20 или более Очков Здоровья</strong> из-за одного из ваших <strong>безоружных ударов</strong>, также получает эффект <strong>слабости</strong>.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.fHHT9SZwPRXiEA0U]</p></td><td><p>Осьминоги, кальмары, существа с лианами или щупальцами.</p></td></tr></tbody></table><p>Ваши <strong>безоружные атаки</strong> получают <strong>мульти (3)</strong>.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.NjToAQTqqe3xyn6Y]</p></td><td><p>Летучие мыши, птицы, насекомые, летающие существа.</p></td></tr></tbody></table><p>Вы способны летать. Помимо очевидных преимуществ в мобильности, ваши атаки <strong>ближнего боя</strong> могут быть направлены на <strong>летающих</strong> существ, а вы не можете быть атакованы атаками <strong>ближнего боя</strong>, если атакующий не летает или каким-то образом не может достичь летающих целей.</p><p>Эти преимущества не действуют, если вы не можете свободно летать (например, внутри транспортного средства, рассчитанного на существ человеческого размера, или в узком коридоре). Кроме того, если вы получаете урон <strong>воздухом</strong>, <strong>молнией</strong> или <strong>льдом</strong> во время конфликта, вы теряете эти преимущества до начала вашего первого хода.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.guVvGJaNqpi2A4WR]</p></td><td><p>Жуки-бомбардиры, раки-щелкуны, огненные элементали.</p></td></tr></tbody></table><p>Когда вы наносите урон атакой или заклинанием, вы можете превратить весь этот урон в урон <strong>огнём</strong>. Пока ваши <strong>безоружные удары</strong> наносят урон <strong>огнём</strong>, любой противник, <strong>потерявший 20 или более Очков Здоровья</strong> из-за одного из ваших <strong>безоружных ударов</strong>, также получает эффект <strong>оглушения</strong>.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.WdA0rzemkQfGAMLk]</p></td><td><p>Кошки, газели, зайцы, быстрые и ловкие существа.</p></td></tr></tbody></table><p>Считайте свою кость <strong>Ловкости</strong> увеличенной на один размер (максимум <strong>d12</strong>).</p><p>Когда вы преуспеваете в Проверке, чтобы продвинуть или откатить Счётчик, если эта Проверка включает <strong>Ловкость</strong>, вы можете заполнить или стереть 1 дополнительную секцию этого Счётчика.</p><table><tbody><tr><td><p><strong>ТЕРИОФОРМА</strong></p></td><td><p><strong>ВОЗМОЖНОСТИ ГЕНОКЛЕПСА</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.dBGoRsrayjBXuM31]</p></td><td><p>Пауки, змеи, токсичная слизь и другие ядовитые существа.</p></td></tr></tbody></table><p>Когда вы наносите урон атакой или заклинанием, вы можете превратить весь этот урон в урон <strong>ядом</strong>. Пока ваши <strong>безоружные удары</strong> наносят урон <strong>ядом</strong>, любой противник, <strong>потерявший 20 или более Очков Здоровья</strong> из-за одного из ваших <strong>безоружных ударов</strong>, также получает эффект <strong>отравления</strong>.</p>"
     },
     "[Handout: Therioform Rules]": {
-      "name": "[Handout: Therioform Rules]",
-      "description0": "<p>Therioforms are mutations that grant powerful abilities; the way they manifest on your character is completely up to you - <strong>Pterotheria</strong>, for instance, might turn you into a person-sized bat or simply give you feathered wings.</p><ul><li><p>Once you use the @UUID[Compendium.projectfu.skills.Item.pmwdU2AGU0JtrWw8]{Theriomorphosis} Skill, the chosen <strong>therioforms</strong> last until the end of the scene. They also end if you die or fall unconscious, perform the Guard action, or use the <strong>Theriomorphosis</strong> Skill again (this includes using it through @UUID[Compendium.projectfu.skills.Item.mWqx8pto9gbbwMoG]{Genoclepsis}).</p></li><li><p>You may end the effects of your <strong>Theriomorphosis</strong> at any time, but during a conflict you can only do so on your turn, <strong>before or after</strong> an action.</p></li><li><p>When a scene ends, if you are under the effects of <strong>Theriomorphosis</strong>, you may spend @LOSS[10 mp] to extend your <strong>current therioforms</strong> to the next scene you will be in.</p></li></ul>"
+      "name": "[Раздатка: Правила Териоформ]",
+      "description0": "<p>Териоформы — это мутации, дающие мощные способности. Вы сами решаете, как они проявляются. К примеру, <strong>Птеротерия</strong> может как превратить вас в огромную летучую мышь, так и просто отрастить вам большие оперённые крылья.</p><ul><li><p>После использования Навыка @UUID[Compendium.projectfu.skills.Item.pmwdU2AGU0JtrWw8], выбранные <strong>териоформы</strong> действуют до конца сцены. Они также перестают действовать, если вы умираете или падаете без сознания, выполняете действие <strong>Оборона</strong> или используете Навык <strong>Териоморфоз</strong> ещё раз (это включает в себя использование его через @UUID[Compendium.projectfu.skills.Item.mWqx8pto9gbbwMoG]).</p></li><li><p>Вы можете прекратить действие <strong>Териоморфоза</strong> в любой момент, но во время конфликта вы можете сделать это только в свой ход, <strong>до или после</strong> действия.</p></li><li><p>Когда сцена завершается, если вы находитесь под действием <strong>Териоморфоза</strong>, вы можете потратить @LOSS[10 mp] Очков Разума, чтобы продлить свою <strong>текущую териоформу</strong> до следующей сцены, в которой вы будете участвовать.</p></li></ul>"
     },
     "[Handout: Tone List]": {
       "name": "[Раздатка: Список Тонов]",
       "description0": "<table><tbody><tr><td><p><strong>Спокойный</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.XCtijox9eBrBNSno]{Спокойный Тон}</p></td></tr></tbody></table><p>Каждая цель получает <strong>【ключ восстановления】</strong>, равный <strong>【10 + удвоенный текущий размер кости Воли】</strong>. Это количество увеличивается на 10, если Вы <strong>20-го уровня или выше</strong>, или на 20, если Вы <strong>40-го уровня или выше</strong>.</p><p>Если этот тон вызывает восстановление ОР, это никак <strong>не влияет</strong> на персонажа, который его поёт.</p><table><tbody><tr><td><p><strong>Энергичный</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.XvkMOHPXUg0ikDkf]{Энергичный Тон}</p></td></tr></tbody></table><p>До начала вашего следующего хода, когда цель успешно выполняет Проверку, включающую <strong>【Атрибут ключа】</strong>, и эта Проверка позволяет ей продвинуть или стереть секцию Счётчика, они могут заполнить или стереть дополнительную секцию этого Счётчика.</p><table><tbody><tr><td><p><strong>Неистовый</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.mtKts9zjHlweSVk4]{Неистовый Тон}</p></td></tr></tbody></table><p>Каждая цель получает урон от <strong>【типа ключа】</strong>, равный <strong>удвоенному</strong> размеру вашей текущей кости <strong>Воли</strong>. Этот сигнал наносит 10 дополнительных единиц урона, если Вы <strong>20-го уровня или выше</strong>, или 20 дополнительных единиц урона, если Вы <strong>40-го уровня или выше</strong>.</p><table><tbody><tr><td><p><strong>Мучительный</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.CynydNkxJS1HZVlJ]{Мучительный Тон}</p></td></tr></tbody></table><p>Каждая цель страдает от <strong>【состояние ключа】</strong>. Каждая цель также теряет Сопротивление урону <strong>【типа ключа】</strong> (если оно у неё есть) до начала вашего следующего хода.</p><table><tbody><tr><td><p><strong>Оживлённый</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.zLxqETSi6zbRkWKu]{Оживлённый Тон}</p></td></tr></tbody></table><p>Каждая цель считает свой <strong>【Атрибут ключа】</strong> как увеличенный на один размер кости (максимум до <strong>d12</strong>) до начала вашего следующего хода.</p><table><tbody><tr><td><p><strong>Угрожающий</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.8QMh3jUtgmIMy9Jb]{Угрожающий Тон}</p></td></tr></tbody></table><p>В первый раз, когда каждая цель получает урон до начала вашего следующего хода, этот урон соответствует <strong>【типу ключа】</strong>. Это может сработать один раз для каждой цели в куплете, отдельно.</p><table><tbody><tr><td><p><strong>Торжественный</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.yidpNKJQMA7dSBsc]{Торжественный Тон}</p></td></tr></tbody></table><p>Каждая цель очищается от действия <strong>【состояния ключа】</strong>. Каждая цель также получает Сопротивление урону <strong>【типа ключа】</strong> до начала вашего следующего хода.</p>"
     },
     "[Handout: Vehicle Rules]": {
-      "name": "[Handout: Vehicle Rules]",
-      "description0": "<p>A Pilot's <strong>personal vehicle</strong> follows a set of special rules.</p><ul><li><p><span class=\"fontstyle2\">Entering </span><span class=\"fontstyle3\">the </span><span class=\"fontstyle2\"><strong>personal vehicle</strong> </span><span class=\"fontstyle3\">during a conflict requires the </span><span class=\"fontstyle2\"><strong>Objective</strong> </span><span class=\"fontstyle3\">action.<br />Normally there is no Check required, but the Game Master may introduce a </span><span class=\"fontstyle2\"><strong>Clock</strong> </span><span class=\"fontstyle3\">if there are serious dangers or obstacles. If the </span><span class=\"fontstyle2\"><strong>personal vehicle</strong> </span><span class=\"fontstyle3\">is accessible when the conflict begins, characters may </span><span class=\"fontstyle2\"><strong>enter it immediately</strong> </span><span class=\"fontstyle3\">before the Initiative Check (see </span><span class=\"fontstyle2\"><strong>Core Rulebook</strong></span><span class=\"fontstyle3\">, page </span><span class=\"fontstyle2\"><strong>59</strong></span><span class=\"fontstyle3\">).</span></p></li><li><p><span class=\"fontstyle2\"><strong>Leaving</strong> </span><span class=\"fontstyle3\">the </span><span class=\"fontstyle2\"><strong>personal vehicle</strong> </span><span class=\"fontstyle3\">doesn’t require an action, but during a conflict it can only be done on your turn, </span><span class=\"fontstyle2\"><strong>before or after</strong> </span><span class=\"fontstyle3\">an action.</span></p></li><li><p><span class=\"fontstyle3\">The </span><span class=\"fontstyle2\"><strong>personal vehicle</strong> </span><span class=\"fontstyle3\">can contain a variable number of human-sized creatures depending on its </span><span class=\"fontstyle2\"><strong>frame</strong> </span><span class=\"fontstyle3\">and </span><span class=\"fontstyle2\"><strong>modules</strong></span><span class=\"fontstyle3\">, but </span><span class=\"fontstyle2\"><strong>only its Pilot may drive it</strong></span><span class=\"fontstyle3\">. Additionally, the other passengers </span><span class=\"fontstyle2\"><strong>cannot cover creatures</strong> </span><span class=\"fontstyle3\">when they perform the </span><span class=\"fontstyle2\"><strong>Guard</strong> </span><span class=\"fontstyle3\">action.</span></p></li><li><p><span class=\"fontstyle3\">The </span><span class=\"fontstyle2\"><strong>maximum number of modules enabled at the same time</strong> </span><span class=\"fontstyle3\">on a </span><span class=\"fontstyle2\"><strong>personal vehicle </strong></span><span class=\"fontstyle3\">is equal to </span><span class=\"fontstyle4\"><strong>【</strong></span><span class=\"fontstyle2\"><strong>3 + its Pilot’s SL in Personal Vehicle</strong></span><span class=\"fontstyle4\"><strong>】</strong> </span><span class=\"fontstyle3\">. The Pilot may freely reassign their personal vehicle’s enabled and disabled modules outside conflicts.</span></p></li></ul><p><span class=\"fontstyle0\">A </span><span class=\"fontstyle2\">personal vehicle </span><span class=\"fontstyle0\">is made of the following elements:</span></p><ul><li><p><span class=\"fontstyle0\">A </span><span class=\"fontstyle2\">frame </span><span class=\"fontstyle0\">that informs its general shape: </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.vehicle-modules.Item.f3h3SoN0g7i31Kj9]{Steed} </span><span class=\"fontstyle0\">for riding animals, bikes, small fighters, skateboards and the likes; </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.vehicle-modules.Item.WG1xG12wMYh2ROoP]{Exoskeleton} </span><span class=\"fontstyle0\">for power armor and mechanical limbs; </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.vehicle-modules.Item.2AYyeXm0V4Fu1x6G]{Mecha} </span><span class=\"fontstyle0\">for large combat robots piloted from within. Each Pilot must pick the </span><span class=\"fontstyle2\"><strong>frame</strong> </span><span class=\"fontstyle0\">for their </span><span class=\"fontstyle2\"><strong>personal vehicle</strong> </span><span class=\"fontstyle0\">when they obtain the Skill. This remains unchanged for the rest of the game, so make sure to choose carefully based on your character’s style and personality, and consider the role they will have in the campaign. For instance, choosing a fighter plane doesn’t make much sense if your story takes place in the slums of a cyberpunk megalopolis (how about an anti-gravity bike instead?).</span></p></li><li><p><span class=\"fontstyle0\">A variable number of </span><span class=\"fontstyle2\"><strong>weapon modules</strong></span><span class=\"fontstyle0\"><strong>, </strong></span><span class=\"fontstyle2\"><strong>armor modules</strong></span><span class=\"fontstyle0\"><strong>, </strong>and </span><span class=\"fontstyle2\"><strong>support modules</strong> </span><span class=\"fontstyle0\">that can be connected to the </span><span class=\"fontstyle2\"><strong>personal vehicle</strong></span><span class=\"fontstyle0\">’s control systems (enabled) or kept inactive but still attached to the frame (disabled). Some options, such as the </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.skills.Item.BuqR9EZDFMn5lDGG]{Flexible Configuration} </span><span class=\"fontstyle0\">Skill and the </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.vehicle-modules.Item.7qyCrf1eK0X6bYTH]{Secondary Offensive}</span><span class=\"fontstyle0\">, may allow you to quickly enable and disable modules, or to briefly activate a disabled module.</span></p></li></ul><p><span class=\"fontstyle0\">The upcoming pages contain a detailed explanation of the various module types and the rules governing them, followed by lists of standard </span><span class=\"fontstyle2\"><strong>frames</strong> </span><span class=\"fontstyle0\">and </span><span class=\"fontstyle2\"><strong>modules</strong></span><span class=\"fontstyle0\">.</span></p>"
+      "name": "[Раздатка: Правила Транспорта]",
+      "description0": "<p>Пилотирование <strong>транспорта</strong> подчиняется ряду особых правил:</p><ul><li><p><span class=\"fontstyle2\"><strong>Вход</strong> в <strong>личный транспорт</strong> во время конфликта требует действия <strong>Задача</strong>. Обычно Проверка не требуется, но Мастер может установить <strong>Счётчик</strong>, если существуют серьёзные опасности или препятствия. Если <strong>личный транспорт</strong> доступен на момент начала конфликта, персонажи <strong>могут войти в него прямо</strong> перед проверкой инициативы (см. <strong>Основная Книга</strong>, стр. <strong>59</strong>).</span></p></li><li><p><span class=\"fontstyle2\"><strong>Покинуть личный транспорт</strong> не требует действия, но во время конфликта это можно сделать только в свой ход, <strong>до или после</strong> действия.</span></p></li><li><p><span class=\"fontstyle2\"><strong>Личный транспорт</strong> может вмещать различное количество существ человеческого роста в зависимости от его <strong>рамы</strong> и <strong>модулей</strong>, но <strong>управлять им может только Пилот</strong>. Кроме того, остальные пассажиры <strong>не могут прикрывать существ</strong>, когда выполняют действие <strong>Оборона</strong>.</span></p></li><li><p><span class=\"fontstyle2\"><strong>Максимальное количество одновременно включённых модулей на личном транспорте</strong> равно <strong>【3 + УН Личный Транспорт】</strong>. Пилот может свободно переназначать включённые и выключенные модули своего личного транспорта вне конфликтов.</span></p></li></ul><p><span class=\"fontstyle0\"><strong>Личный транспорт</strong> состоит из следующих элементов:</span></p><ul><li><p>Рама определяет его общую форму: <span class=\"fontstyle2\">@UUID[Compendium.projectfu.vehicle-modules.Item.f3h3SoN0g7i31Kj9]</span> для верховых животных, мотоциклов, небольших истребителей, скейтбордов и тому подобного; <span class=\"fontstyle2\">@UUID[Compendium.projectfu.vehicle-modules.Item.WG1xG12wMYh2ROoP]</span> для силовой брони и механических конечностей; <span class=\"fontstyle2\">@UUID[Compendium.projectfu.vehicle-modules.Item.2AYyeXm0V4Fu1x6G]</span> для больших боевых роботов, управляемых изнутри. Каждый пилот должен выбрать <strong>раму</strong> для своего <strong>транспорта</strong>, когда получит Навык. Она остаётся неизменной на протяжении всей игры, поэтому тщательно выбирайте, исходя из стиля и личности вашего персонажа, и учитывайте роль, которую он будет играть в кампании. Например, выбирать истребитель не имеет особого смысла, если действие вашей истории происходит в трущобах киберпанковского мегаполиса (как насчёт антигравитационного велосипеда?).</p></li><li><p>Различное количество <strong>оружейных модулей</strong>, <strong>модулей брони</strong> и <strong>вспомогательных модулей</strong> могут быть подключены к системам управления <strong>транспорта</strong> (включены) или оставаться неактивными, но всё ещё прикреплёнными к раме (отключены). Некоторые опции, такие как Навык <span class=\"fontstyle2\">@UUID[Compendium.projectfu.skills.Item.BuqR9EZDFMn5lDGG]</span> и <strong>модуль</strong> <span class=\"fontstyle2\">@UUID[Compendium.projectfu.vehicle-modules.Item.7qyCrf1eK0X6bYTH]</span>, могут позволить вам быстро включать и отключать модули или на короткое время активировать отключённый модуль.</p></li></ul><p><span class=\"fontstyle0\">Следующие страницы содержат подробное описание различных типов модулей и правил, регулирующих их, а также списки стандартных <strong>рам</strong> и <strong>модулей</strong>.</span></p>"
     },
     "[Handout: Verses Rules]": {
       "name": "[Раздатка: Правила Куплетов]",
       "description0": "<h3>ПРОПЕВАЯ КУПЛЕТ</h3><p>Когда Вы поёте <strong>куплет</strong>, Вы комбинируете <strong>громкость</strong>, <strong>ключ</strong> и <strong>тон</strong>, которые Вы выучили. Эти три аспекта определяют стоимость <strong>куплета</strong> в ОР, цели и эффект.</p><ul><li><p><strong>Громкость</strong> определяет интенсивность звучания вашего <strong>куплета</strong> (и существ, до которых Вы достаёте с его помощью).</p></li><li><p>Каждый <strong>тон</strong> определяет общие эффекты вашего <strong>куплета</strong>.</p></li><li><p>Каждому <strong>ключу</strong> соответствует <strong>тип урона</strong>, <strong>состояние</strong>, <strong>Атрибут</strong> и <strong>восстановление</strong>. Они изменяют эффекты, определяемые <strong>тоном</strong> вашего <strong>куплета</strong>.</p></li></ul><blockquote><p><em><strong>Пример:</strong> Вы можете сочетать <strong>низкую громкость</strong> с <strong>ключом Пламени</strong> и <strong>мучительным тоном</strong>, чтобы наложить <strong>потрясение</strong> на одно существо за 10 Очков Разума, или Вы можете сочетать <strong>среднюю громкость</strong> с <strong>ключом Железа</strong> и <strong>энергичным тоном</strong>, чтобы позволить вашим союзникам добиться дополнительного прогресса в Счётчиках при использовании <strong>Воли</strong>.</em></p></blockquote><table><colgroup><col><col><col></colgroup><tbody><tr><td><strong>Громкость</strong></td><td><strong>ОР</strong></td><td> <strong>Цель</strong></td></tr><tr><td><strong>Низкая</strong></td><td><strong>10</strong></td><td>Себя <strong>или</strong> другое видимое существо, способное вас слышать.</td></tr><tr><td><strong>Средняя</strong></td><td><strong>20</strong></td><td>Каждый союзник, который может вас услышать.</td></tr><tr><td><strong>Высокая</strong></td><td><strong>30</strong></td><td>Каждый враг, который может вас услышать.</td></tr></tbody></table><table><colgroup><col><col><col><col><col></colgroup><tbody><tr><td><p><strong>Ключ</strong></p></td><td><p><strong>Тип</strong></p></td><td><p><strong>Состояние</strong></p></td><td><p><strong>Атрибут</strong></p></td><td><p><strong>Восстановление</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.cmo71xT0QgJCOOMp]{Пламя}</p></td><td><p><strong>Огонь @ICON[fire]</strong></p></td><td><p><strong>Потрясён </strong></p></td><td><p><strong>Могущество</strong></p></td><td><p><strong>ОЗ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.QZOttsghYTCeqnCx]{Мороз}</p></td><td><p><strong>Лёд @ICON[ice]</strong></p></td><td><p><strong>Ослаблен</strong></p></td><td><p><strong>Воля</strong></p></td><td><p><strong>ОР</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.qpRWVxEuy6iHiUCP]{Железо}</p></td><td><p><strong>Физический @ICON[physical]</strong></p></td><td><p><strong>Замедлен</strong></p></td><td><p><strong>Воля</strong></p></td><td><p><strong>ОР</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.ymWN6HhIvwji1Y39]{Излучение}</p></td><td><p><strong>Свет @ICON[light]</strong></p></td><td><p><strong>Оглушён</strong></p></td><td><p><strong>Проницательность</strong></p></td><td><p><strong>ОЗ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.zzyNprcgb1RF2niW]{Тень}</p></td><td><p><strong>Тьма @ICON[dark]</strong></p></td><td><p><strong>Ослаблен</strong></p></td><td><p><strong>Ловкость</strong></p></td><td><p><strong>ОР</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.dyyFIR6iB0brrh1I]{Камень}</p></td><td><p><strong>Земля @ICON[earth]</strong></p></td><td><p><strong>Оглушён</strong></p></td><td><p><strong>Могущество</strong></p></td><td><p><strong>ОЗ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.GBEltqKPxdTA0ppJ]{Гром}</p></td><td><p><strong>Молния @ICON[bolt]</strong></p></td><td><p><strong>Потрясён </strong></p></td><td><p><strong>Ловкость</strong></p></td><td><p><strong>ОЗ</strong></p></td></tr><tr><td><p>@UUID[Compendium.projectfu.skills.Item.zqNF92stxmhiX85K]{Ветер}</p></td><td><p><strong>Воздух @ICON[air]</strong></p></td><td><p><strong>Замедлен</strong></p></td><td><p><strong>Проницательность</strong></p></td><td><p><strong>ОР</strong></p></td></tr></tbody></table>"
     },
     "[Handout: Weapon Modules]": {
-      "name": "[Handout: Weapon Modules]",
-      "description0": "<p>While driving a <strong>personal vehicle</strong> with one or more <strong>weapon modules</strong> enabled, a Pilot does not have access to the normal contents of their <strong>hand slots</strong>. Instead, those slots are considered occupied by the <strong>personal vehicle’s weapon modules</strong>. If the <strong>personal vehicle</strong> has no weapon modules enabled, the Pilot can keep using their equipped weapons and shields as normal.</p><ul><li><p>As soon as the Pilot stops driving a <strong>personal vehicle</strong> with <strong>weapon modules</strong> enabled, they immediately regain access to all normal equipped weapons and shields.</p></li><li><p>Each weapon module counts as a <strong>one-handed, non-martial weapon</strong> for the sake of character Skills and effects (with the exception of the <strong>Shield module</strong>, which is treated as a shield). When you set up your <strong>personal vehicle</strong>’s weapon modules, declare which module will occupy your <strong>main hand slot</strong> and which will occupy your <strong>off-hand slot</strong>.</p></li><li><p>Some weapon modules are cumbersome and prevent you from having other weapon modules (including <strong>Shield modules</strong>!) enabled on the same <strong>personal vehicle</strong>.</p></li></ul><blockquote><p><em>For instance, an <strong>Axe module</strong> can be used with the <strong>Counterattack</strong> Skill, and a <strong>Rifle module</strong> can be used with the <strong>Crossfire</strong> Skill (see <strong>Core Rulebook</strong>, pages <strong>219</strong> and <strong>205</strong>).</em></p></blockquote><p>Because each weapon module is treated as a one-handed weapon, a Pilot driving a <strong>personal vehicle</strong> with two enabled weapon modules that share the same Category benefits from the rules for <strong>two-weapon fighting</strong> – and if they have the <strong>Ambidexterous</strong> Heroic Skill (see <strong>Core Rulebook</strong>, page <strong>234</strong>), this can be done with any two enabled weapon modules!</p>"
+      "name": "[Раздатка: Оружейные Модули]",
+      "description0": "<p>При управлении <strong>транспортом</strong> с включёнными одним или несколькими <strong>оружейными модулями</strong> Пилот не имеет доступа к обычным <strong>ячейкам рук</strong>. Вместо этого эти ячейки считаются занятыми <strong>оружейными модулями транспорта</strong>. Если в <strong>транспорте</strong> не включены <strong>оружейные модули</strong>, Пилот может продолжать использовать свои экипированные оружие и щиты в как обычно.</p><ul><li><p>Как только Пилот перестаёт управлять <strong>транспортом</strong> с включёнными <strong>оружейными модулями</strong>, он немедленно получает доступ ко всему обычному оружию и щитам.</p></li><li><p>Каждый оружейный модуль считается <strong>одноручным, не воинским оружием</strong> для целей Навыков и эффектов персонажа (за исключением <strong>модуля Щита</strong>, который рассматривается как щит). Когда вы настраиваете оружейные модули вашего <strong>транспорта</strong>, укажите, какой модуль будет занимать вашу <strong>основную ячейку руки</strong>, а какой — <strong>другую ячейку</strong>.</p></li><li><p>Некоторые оружейные модули громоздки и не позволяют использовать другие оружейные модули (включая <strong>модуль Щита</strong>!) установленными на одном <strong>транспорте</strong>.</p></li></ul><blockquote><p><em>Например, <strong>модуль Топора</strong> можно использовать с Навыком <strong>Контратака</strong>, а <strong>модуль Винтовка</strong> — с Навыком <strong>Перекрёстный Огонь</strong> (см. <strong>Основная Книга</strong>, стр. <strong>219</strong> и <strong>205</strong>).</em></p></blockquote><p>Поскольку каждый оружейный модуль считается одноручным оружием, Пилот, управляющий транспортом с двумя включёнными оружейными модулями, относящимися к одной Категории, пользуется преимуществами правил <strong>боя двумя оружиями</strong> — и если у него есть Героический Навык <strong>Амбидекстр</strong> (см. <strong>Основная Книга</strong>, стр. <strong>234</strong>), это можно сделать с помощью любых двух включённых оружейных модулей!</p>"
     }
   }
 }
