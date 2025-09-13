@@ -5,7 +5,8 @@
     "description": "system.description",
     "effects": "effects",
     "class": "system.class.value",
-    "requirement": "system.requirement.value"
+    "requirement": "system.requirement.value",
+    "custom_point": "system.rp.name"
   },
   "folders": {
     "Effects": "Эффекты",
@@ -20,7 +21,7 @@
     "Adversity": {
       "name": "Невзгода",
       "summary": "Состояния делают вас сильнее.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Клинок Тьмы</strong>.</p></blockquote><p>Пока вы страдаете от одного или нескольких состояний, вы получаете бонус +1 ко всем Проверкам за каждое состояние, от которого вы страдаете, и наносите 2 дополнительных урона за каждое состояние, от которого вы страдаете (будь то атаки, заклинания, Арканы, предметы или любой другой метод).</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Клинок Тьмы</strong>.</p></blockquote><p>Пока Вы страдаете от одного или нескольких состояний, Вы получаете бонус +1 ко всем Проверкам за каждое состояние, от которого Вы страдаете, и наносите 2 дополнительных урона за каждое состояние, от которого Вы страдаете (будь то атаки, заклинания, Арканы, предметы или любой другой метод).</p>",
       "class": "Клинок Тьмы",
       "effects": [
         {
@@ -74,7 +75,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Пока вы страдаете от одного или нескольких состояний, вы получаете бонус +1 ко всем Проверкам за каждое состояние, от которого вы страдаете, и наносите 2 дополнительных урона за каждое состояние, от которого вы страдаете (будь то атаки, заклинания, Арканы, предметы или любой другой метод).</p>",
+          "description": "<p>Пока Вы страдаете от одного или нескольких состояний, Вы получаете бонус +1 ко всем Проверкам за каждое состояние, от которого Вы страдаете, и наносите 2 дополнительных урона за каждое состояние, от которого Вы страдаете (будь то атаки, заклинания, Арканы, предметы или любой другой метод).</p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,
@@ -101,13 +102,59 @@
     "Arcane Echoes": {
       "name": "Эхо Арканы",
       "summary": "Арканы помогают вам влиять на Счётчики.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Арканист</strong>.</p></blockquote><p>Когда вы успешно выполняете Проверку, чтобы заполнить или стереть одну, или несколько секций Счётчика, если <strong>домены</strong> одной или нескольких связанных вами Аркан применимы к соответствующей Проверке, вы можете заполнить или стереть дополнительную секцию этого Счётчика. </p><p>Мастер имеет последнее слово в отношении того, применим данный домен или нет.</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Арканист</strong>.</p></blockquote><p>Когда Вы успешно выполняете Проверку, чтобы заполнить или стереть одну, или несколько секций Счётчика, если <strong>домены</strong> одной или нескольких связанных вами Аркан применимы к соответствующей Проверке, Вы можете заполнить или стереть дополнительную секцию этого Счётчика. </p><p>Мастер имеет последнее слово в отношении того, применим данный домен или нет.</p>",
       "class": "Арканист"
     },
     "Arcane Mark": {
-      "name": "Arcane Mark",
-      "summary": "Improve spells’ critical chance with arcane weapons.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Sharpshooter</strong>, <strong>Symbolist</strong>, and <strong>Weaponmaster</strong>.</p></blockquote><p>When you hit one or more creatures with an attack using a weapon that belongs to the <strong>arcane </strong>Category, the attack deals 5 extra damage and you may choose one of those creatures. If the next offensive spell ( @ICON[offensive] ) you cast during this scene <strong>only </strong>targets the chosen creature, its Magic Check will trigger a <strong>critical success</strong> if both dice show the same number (and the Check is not a <strong>fumble</strong>) </p>"
+      "name": "Магический Знак",
+      "summary": "Повышайте шанс критических заклинаний с мистическим оружием.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить одни или несколько Классов из следующих: <strong>Стрелок</strong>, <strong>Символист</strong> или <strong>Мастер Оружия</strong>.</p></blockquote><p>Когда Вы поражаете одно или несколько существ атакой с использованием оружия, относящегося к Категории <strong>мистическое</strong>, атака наносит 5 дополнительного урона, и Вы можете выбрать одно из этих существ. Если следующее атакующее заклинание ( @ICON[offensive] ), которое Вы накладываете во время этой сцены, нацелено <strong>только</strong> на выбранное существо, его Проверка Магии приведёт к <strong>критическому успеху</strong>, если обе кости покажут одинаковое число (и Проверка не является <strong>заминкой</strong>).</p>",
+      "class": "Стрелок, Символист или Мастер Оружия",
+      "effects": [
+        {
+          "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Магический Знак",
+          "_id": "6pGjQG1mO1FILmQ4",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {}
+          },
+          "changes": [
+            {
+              "key": "system.bonuses.damage.arcane",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            }
+          ],
+          "description": "<p>Когда Вы поражаете одно или несколько существ атакой с использованием оружия, относящегося к Категории <strong>мистическое</strong>, атака наносит 5 дополнительного урона, и Вы можете выбрать одно из этих существ. Если следующее атакующее заклинание ( @ICON[offensive] ), которое Вы накладываете во время этой сцены, нацелено <strong>только</strong> на выбранное существо, его Проверка Магии приведёт к <strong>критическому успеху</strong>, если обе кости покажут одинаковое число (и Проверка не является <strong>заминкой</strong>).</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Arcane Sacrifice": {
       "name": "Arcane Sacrifice",
@@ -130,27 +177,95 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Elementalist</strong>, <strong>Entropist</strong>, <strong>Invoker</strong>, and <strong>Symbolist</strong> (see <strong>High Fantasy</strong>, page <strong>146</strong>), and must have acquired the <strong>Invocation</strong> Skill</p></blockquote><p>After an enemy you can see hits or misses you with an offensive spell<strong> ( </strong>@ICON[offensive] <strong>)</strong>, if the Result of their Magic Check was an <strong>even number</strong>, you may immediately use the <strong>Invocation</strong> Skill for free (after the spell has been fully resolved) to perform an <strong>invocation</strong> you have access to against that enemy, without spending Mind Points. This invocation must not be a \"<strong>hex</strong>\", and it may target <strong>only</strong> that enemy (you cannot use the <strong>Linked Invocation</strong> Skill with it).</p>"
     },
     "Bimagus": {
-      "name": "Bimagus",
-      "summary": "Cast one spell right after another, saving MP.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered two or more Classes among <strong>Elementalist</strong>, <strong>Entropist</strong>, and <strong>Spiritist</strong>, and your character must be <strong>level 30 or higher</strong>.</p></blockquote><p>Once per turn during a conflict, if you have an <strong>arcane </strong>weapon equipped, you may use an action and spend <strong>20 to 50 Mind Points</strong> to perform the <strong>Spell </strong>action for free <strong>twice</strong>, casting two spells without needing to pay their MP costs. If you do, the two spells must have a <strong>combined total MP cost equal to or lower than【20 + the amount of MP you spent to use this Skill】</strong>, and the second spell must have a <strong>total MP cost that is equal to or lower than half the total MP cost</strong> of the first spell. </p>"
+      "name": "Бимагус",
+      "summary": "Накладывайте одно заклинание сразу за другим, экономя ОР.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить два или более Класса из следующих: <strong>Элементалист</strong>, <strong>Энтропист</strong> или <strong>Спиритист</strong> и ваш персонаж должен быть <strong>30 уровня или выше</strong>.</p></blockquote><p>Один раз за ход во время конфликта, если у вас есть <strong>мистическое</strong> оружие, Вы можете совершить действие и потратить от <strong>20 до 50 Очков Разума</strong>, чтобы <strong>дважды</strong> выполнить бесплатное действие <strong>Заклинание</strong>, наложив <strong>два</strong> заклинания без необходимости оплачивать их стоимость ОР. Если Вы это сделаете, <strong>общая стоимость ОР двух заклинаний должна быть равна или меньше 【20 + количество ОР, которое Вы потратили на использование этого Навыка】</strong>, а второе заклинание должно <strong>стоить половину или меньше от общей стоимости ОР</strong> первого заклинания.</p>",
+      "class": "Двое из: Спиритист, Элементалист и Энтропист"
     },
     "Birth of the Cruel": {
       "name": "Рождение Жестокого",
       "summary": "Превращайте мёртвых НИПов в Миньонов.",
-      "description": "<blockquote><p><strong>Требования:</strong> вы должны освоить Класс <strong>Некромант</strong>.</p></blockquote><p>Когда НИП, которого вы видите, который не является <strong>Злодеем</strong> и принадлежит к Виду <strong>зверя</strong>, <strong>гуманоида</strong>, <strong>монстра</strong> или <strong>растения</strong>, умирает, вы можете потратить 2 Очка Могилы, <strong>уменьшить свои максимальные Очки Здоровья и Очки Разума</strong> на величину, равную <strong>уровню</strong> этого НИП. Если вы это сделаете, его труп станет <strong>Миньоном</strong>, который будет подчиняться вашим телепатическим командам:</p><ul>    <li>        <p>Его <strong>Вид</strong> меняется на <strong>нежить</strong>, он подчиняется всем <strong>правилам нежити</strong> (см. <strong>Основную Книгу</strong>, стр. <strong>305</strong>). Подверженности урону <strong>тьмой</strong>, <strong>светом</strong> и <strong>ядом</strong> заменяют все ранее существовавшие Подверженности урону, но остальные правила первоначального Вида <strong>сохраняются</strong>.</p>    </li>    <li>        <p>Его <strong>Ранг</strong> становится <strong>солдатом</strong>; если первоначальное существо было <strong>элитой</strong> или <strong>чемпионом</strong>, Мастер должен соответственно уменьшить ОЗ и ОР Миньона (Навыки <strong>сохраняются</strong>).</p>    </li>    <li>        <p>Недавно созданный Миньон является совершенно новым существом и обладает полными ОЗ, полными ОР и не имеет состояний. Он сохраняет <strong>Экипировку</strong> первоначального существа.</p>    </li>    <li>        <p>Ваш Миньон делает собственный ход во время конфликтов, и Мастер должен учитывать его как <strong>дополнительного персонажа игрока</strong> при разработке конфликта.</p>    </li>    <li>        <p>Когда вы <strong>отдыхаете</strong>, ваш Миньон также получает все преимущества отдыха.</p>    </li>    <li>        <p>Если количество Очков Здоровья вашего Миньона уменьшается до 0, а вы находитесь на расстоянии <strong>более 1 дня пути</strong> от него, или если вы умираете или теряете сознание, ваш Миньон немедленно <strong>уничтожается</strong>.</p>    </li>    <li>        <p>Вы также можете уничтожить своего Миньона <strong>в любое время</strong>; если вы хотите создать нового Миньона, вы должны сначала уничтожить текущего.</p>    </li>    <li>        <p>Если ваш Миньон уничтожен, ваши максимальные показатели ОЗ и ОР <strong>возвращаются к норме</strong>.</p>    </li></ul>",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Некромант</strong>.</p></blockquote><p>Когда НИП, которого Вы видите, который не является <strong>Злодеем</strong> и принадлежит к Виду <strong>зверя</strong>, <strong>гуманоида</strong>, <strong>монстра</strong> или <strong>растения</strong>, умирает, Вы можете потратить 2 Очка Могилы, <strong>уменьшить свои максимальные Очки Здоровья и Очки Разума</strong> на величину, равную <strong>уровню</strong> этого НИП. Если Вы это сделаете, его труп станет <strong>Миньоном</strong>, который будет подчиняться вашим телепатическим командам:</p><ul>    <li>        <p>Его <strong>Вид</strong> меняется на <strong>нежить</strong>, он подчиняется всем <strong>правилам нежити</strong> (см. <strong>Основную Книгу</strong>, стр. <strong>305</strong>). Подверженности урону <strong>тьмой</strong>, <strong>светом</strong> и <strong>ядом</strong> заменяют все ранее существовавшие Подверженности урону, но остальные правила первоначального Вида <strong>сохраняются</strong>.</p>    </li>    <li>        <p>Его <strong>Ранг</strong> становится <strong>солдатом</strong>; если первоначальное существо было <strong>элитой</strong> или <strong>чемпионом</strong>, Мастер должен соответственно уменьшить ОЗ и ОР Миньона (Навыки <strong>сохраняются</strong>).</p>    </li>    <li>        <p>Недавно созданный Миньон является совершенно новым существом и обладает полными ОЗ, полными ОР и не имеет состояний. Он сохраняет <strong>Экипировку</strong> первоначального существа.</p>    </li>    <li>        <p>Ваш Миньон делает собственный ход во время конфликтов, и Мастер должен учитывать его как <strong>дополнительного персонажа игрока</strong> при разработке конфликта.</p>    </li>    <li>        <p>Когда Вы <strong>отдыхаете</strong>, ваш Миньон также получает все преимущества отдыха.</p>    </li>    <li>        <p>Если количество Очков Здоровья вашего Миньона уменьшается до 0, а Вы находитесь на расстоянии <strong>более 1 дня пути</strong> от него, или если Вы умираете или теряете сознание, ваш Миньон немедленно <strong>уничтожается</strong>.</p>    </li>    <li>        <p>Вы также можете уничтожить своего Миньона <strong>в любое время</strong>; если Вы хотите создать нового Миньона, Вы должны сначала уничтожить текущего.</p>    </li>    <li>        <p>Если ваш Миньон уничтожен, ваши максимальные показатели ОЗ и ОР <strong>возвращаются к норме</strong>.</p>    </li></ul>",
       "class": "Некромант"
     },
     "Black & White": {
       "name": "Чёрное и Белое",
       "summary": "Измените свой сет Двойной Беды; джокеры становятся сильнее.",
-      "description": "<blockquote><p><strong>Требования:</strong> вы должны освоить один или несколько Классов из следующих: <strong>Картёжник, Тёмный Клинок, Энтропист и Спиритист</strong>, и приобрести Навык <strong>Волшебные Карты</strong>.<br></p></blockquote><p>Когда вы разыгрываете эффект <strong>Двойной Беды</strong>, весь наносимый им урон может стать уроном <strong>светом</strong> или <strong>тьмой</strong> (вместо того, чтобы соответствовать <strong>мастям</strong> разрешённых карт).</p><p>Кроме того, пока в вашей <strong>стопке сброса</strong> есть <strong>джокер</strong>, весь урон, наносимый разыгрыванием <strong>Блестящего Стрита</strong>, <strong>Двойной Беды</strong> и <strong>Волшебного Флеша</strong> игнорирует Подверженность урону.</p>",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один или несколько Классов из следующих: <strong>Картёжник, Тёмный Клинок, Энтропист и Спиритист</strong>, и приобрести Навык <strong>Волшебные Карты</strong>.<br></p></blockquote><p>Когда Вы разыгрываете эффект <strong>Двойной Беды</strong>, весь наносимый им урон может стать уроном <strong>светом</strong> или <strong>тьмой</strong> (вместо того, чтобы соответствовать <strong>мастям</strong> разрешённых карт).</p><p>Кроме того, пока в вашей <strong>стопке сброса</strong> есть <strong>джокер</strong>, весь урон, наносимый разыгрыванием <strong>Блестящего Стрита</strong>, <strong>Двойной Беды</strong> и <strong>Волшебного Флеша</strong> игнорирует Подверженность урону.</p>",
       "class": "Картёжник, Тёмный Клинок, Энтропист или Спиритист",
       "requirement": "Навык Волшебные Карты"
     },
     "Blade Adept": {
-      "name": "Blade Adept",
-      "summary": "Gain bonuses with daggers and treat them as brawling, sword, and thrown weapons.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Rogue </strong>and <strong>Weaponmaster</strong> .</p></blockquote><p>While you have one or more <strong>melee dagger</strong> weapons equipped, you gain a +1 bonus to Defense and Magic Defense, and you treat those weapons as also belonging to the <strong>brawling</strong> , <strong>sword</strong> , and <strong>thrown</strong> Categories for the purpose of Skills and effects.</p><p>Additionally, your attacks with weapons that belong to the <strong>dagger </strong>Category may target creatures that cannot normally be targeted by <strong>melee </strong>attacks.</p>"
+      "name": "Адепт Клинков",
+      "summary": "Получайте бонусы с кинжалов и относитесь к ним как к рукопашному, мечам и метательному оружию.",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить одни или несколько Классов из следующих: <strong>Разбойник</strong> и <strong>Мастер оружия</strong>.</p></blockquote><p>Пока у вас есть один или более <strong>кинжалов ближнего боя</strong>, Вы получаете бонус +1 к Защите и Магической Защите, также оружие считается относящимся к <strong>рукопашной</strong>, <strong>мечам</strong> и <strong>метательной</strong> Категориям для целей Навыков и эффектов.</p><p>Кроме того, ваши атаки оружием, относящимся к Категории <strong>кинжал</strong>, могут быть нацелены на существ, которые обычно не могут быть мишенью для атак <strong>ближнего боя</strong>.</p>",
+      "class": "Разбойник или Мастер Оружия",
+      "effects": [
+        {
+          "img": "icons/skills/ranged/daggers-thrown-salvo-green.webp",
+          "origin": "Compendium.projectfu.heroic-skills.Item.s316rQUTr3lgeTx7",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Адепт Клинков",
+          "_id": "bLqbrguWmvlCLC5J",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            },
+            {
+              "key": "system.derived.mdef.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Пока у вас есть один или более <strong>кинжалов ближнего боя</strong>, Вы получаете бонус +1 к Защите и Магической Защите, также оружие считается относящимся к <strong>рукопашной</strong>, <strong>мечам</strong> и <strong>метательной</strong> Категориям для целей Навыков и эффектов.</p>",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "projectfu": {
+              "source": "FUHF154"
+            }
+          }
+        }
+      ]
     },
     "Brainwave Discharge": {
       "name": "Brainwave Discharge",
@@ -173,9 +288,11 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Commander</strong> and <strong>Guardian</strong>.</p></blockquote><p>After an enemy you can see performs an <strong>Accuracy Check</strong> or a <strong>Magic Check</strong> for an offensive spell ( @ICON[offensive] ) on their turn during a conflict, you may grant them a +3 bonus to the Result of the Check. If you do, choose one option: you and every ally who is able to hear you gain Resistance to all damage types until the end of this turn; <strong>or</strong> you and every ally who is able to hear you deal 5 extra damage until the end of this turn. Once you use this Skill, you cannot use it again until the start of your next turn.</p>"
     },
     "Bullet Break": {
-      "name": "Bullet Break",
-      "summary": "Counterattack with firearms after using Crossfire.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Sharpshooter </strong>Class.</p></blockquote><p>After you negate a <strong>ranged </strong>attack with the @UUID[Compendium.projectfu.skills.Item.sIkQa2NzkqsvczBr]{Crossfire}<strong> </strong>Skill, if the Result of the Accuracy Check was an <strong>even number</strong>, you may perform a <strong>free attack</strong> against the attacker with a <strong>ranged firearm</strong> weapon you have equipped. This attack must have that enemy as its <strong>only </strong>target; treat your <strong>High Roll (HR) </strong>as 0 when calculating damage dealt by it. </p>"
+      "name": "Разрыв Пули",
+      "summary": "Контратака с применением огнестрельного оружия после применения Перекрёстного Огня.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Стрелок</strong>.</p></blockquote><p>После того как Вы отменили <strong>дальнюю</strong> атаку с помощью Навыка @UUID[Compendium.projectfu.skills.Item.sIkQa2NzkqsvczBr]{Перекрёстный Огонь}, если результат Проверки Точности был <strong>чётным</strong>, Вы можете выполнить <strong>свободную атаку</strong> против атакующего с помощью экипированного <strong>огнестрельного оружия дальнего боя</strong>. <strong>Единственной</strong> целью этой атаки должен быть этот враг; учитывайте свой <strong>Лучший Бросок (ЛБ)</strong> как 0 при расчёте нанесённого им урона.</p>",
+      "class": "Стрелок",
+      "requirement": "Навык Перекрёстный Огонь"
     },
     "Bullet Time": {
       "name": "Bullet Time",
@@ -185,14 +302,15 @@
     "Card Vanguard": {
       "name": "Карточный Авангард",
       "summary": "Поместите карты в качестве карт Авангарда.",
-      "description": "<blockquote>    <p><strong>Требования:</strong> вы должны освоить Класс <strong>Картёжник</strong> и вы должны приобрести Навык <strong>Волшебные карты</strong>.</p></blockquote><p>Во время конфликта, <strong>если у вас в игре две или меньше карт авангарда</strong>, вы можете выполнить действие, чтобы выбрать <strong>1 карту</strong> из своей <strong>руки</strong> и положить её лицевой стороной вниз в качестве <strong>карты авангарда</strong>; если вы это сделаете, возьмите 1 карту из своей <strong>колоды</strong>.</p><p>Когда вы получаете урон, если у вас в игре есть одна или несколько <strong>карт авангарда</strong>, вы можете раскрыть одну из них и положить её поверх своей <strong>стопки сброса</strong>: если вы это сделаете, и эта карта <strong>джокер</strong> или её <strong>масть</strong> соответствует типу полученного вами урона, вы вместо этого не получите никакого урона и восстановите количество Очков Разума, равное проигнорированному урону.</p><p>В конце каждого конфликта, если у вас в игре есть одна или несколько <strong>карт авангарда</strong>, замешайте их обратно в свою <strong>колоду</strong>.</p>",
+      "description": "<blockquote>    <p><strong>Требования:</strong> Вы должны освоить Класс <strong>Картёжник</strong> и Вы должны приобрести Навык <strong>Волшебные карты</strong>.</p></blockquote><p>Во время конфликта, <strong>если у вас в игре две или меньше карт авангарда</strong>, Вы можете выполнить действие, чтобы выбрать <strong>1 карту</strong> из своей <strong>руки</strong> и положить её лицевой стороной вниз в качестве <strong>карты авангарда</strong>; если Вы это сделаете, возьмите 1 карту из своей <strong>колоды</strong>.</p><p>Когда Вы получаете урон, если у вас в игре есть одна или несколько <strong>карт авангарда</strong>, Вы можете раскрыть одну из них и положить её поверх своей <strong>стопки сброса</strong>: если Вы это сделаете, и эта карта <strong>джокер</strong> или её <strong>масть</strong> соответствует типу полученного вами урона, Вы вместо этого не получите никакого урона и восстановите количество Очков Разума, равное проигнорированному урону.</p><p>В конце каждого конфликта, если у вас в игре есть одна или несколько <strong>карт авангарда</strong>, замешайте их обратно в свою <strong>колоду</strong>.</p>",
       "class": "Картёжник",
       "requirement": "Навык Волшебные карты"
     },
     "Ceaseless Battlefield": {
-      "name": "Ceaseless Battlefield",
-      "summary": "Halve the MP cost of Commander Skills.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Commander </strong>Class.</p></blockquote><p>The MP costs for your @UUID[Compendium.projectfu.skills.Item.FGihIPfif7yWsBCp]{Bishop's Edict}, @UUID[Compendium.projectfu.skills.Item.VhWG5AXdBZ8hL4xr]{Charging Cavalry}, and @UUID[Compendium.projectfu.skills.Item.79xGJD8jn4zGzYpX]{King's Castle} are halved. </p>"
+      "name": "Непрерывное Поле Битвы",
+      "summary": "Сократите вдвое затраты ОР на Навыки Командира.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Командир</strong>.</p></blockquote><p>Стоимость ОР для @UUID[Compendium.projectfu.skills.Item.FGihIPfif7yWsBCp]{Указа Епископа}, @UUID[Compendium.projectfu.skills.Item.VhWG5AXdBZ8hL4xr]{Натиска Кавалерии} и @UUID[Compendium.projectfu.skills.Item.79xGJD8jn4zGzYpX]{Замка Короля} ополовинена.</p>",
+      "class": "Командир"
     },
     "Cheer Up!": {
       "name": "Cheer Up!",
@@ -202,7 +320,7 @@
     "Chimeric Mastery": {
       "name": "Химерическое Мастерство",
       "summary": "Изучайте заклинания новых Видов и увеличивайте лимит заклинаний.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Химерист</strong>.</p></blockquote><p>Выберите два Вида существ из <strong>конструктов</strong>, <strong>демонов</strong>, <strong>элементалей</strong> и <strong>нежити</strong>. Теперь вы можете использовать <strong>имитацию заклинаний</strong>, чтобы изучать заклинания у существ выбранного Вида.</p><p>Этот Героический Навык <strong>можно приобрести до двух раз</strong>, каждый раз выбирая два Вида из списка выше.</p><p>Всякий раз, когда вы приобретёте этот Навык, вы также увеличиваете свой верхний предел запоминаемых заклинаний Химериста на 2.</p><p></p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Химерист</strong>.</p></blockquote><p>Выберите два Вида существ из <strong>конструктов</strong>, <strong>демонов</strong>, <strong>элементалей</strong> и <strong>нежити</strong>. Теперь Вы можете использовать <strong>имитацию заклинаний</strong>, чтобы изучать заклинания у существ выбранного Вида.</p><p>Этот Героический Навык <strong>можно приобрести до двух раз</strong>, каждый раз выбирая два Вида из списка выше.</p><p>Всякий раз, когда Вы приобретёте этот Навык, Вы также увеличиваете свой верхний предел запоминаемых заклинаний Химериста на 2.</p><p></p>",
       "class": "Химерист"
     },
     "Chimeric Soul": {
@@ -211,9 +329,10 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Chimerist</strong> and <strong>Mutant</strong> (see <strong>Techno Fantasy</strong>, page <strong>154</strong>), and must have acquired the <strong>Spell Mimic</strong> Skill</p></blockquote><p>When you cast one of your Chimerist spells, you gain a benefit based on the <strong>Species</strong> of the creature you originally learned that spell from. Choose one option: you gain Resistance to both damage types associated with that Species; <strong>or</strong> when you deal damage of a type associated with that Species, you deal 5 extra damage. The chosen benefit lasts until the end of the scene, or until you cast a Chimerist spell again.</p><p>The damage types associated to each Species are <strong>air</strong> and <strong>ice</strong> (<strong>beast</strong>), <strong>earth</strong> and <strong>poison</strong> (<strong>construct</strong>), <strong>fire</strong> and <strong>ice</strong> (<strong>demon</strong>), <strong>air</strong> and <strong>bolt</strong> (<strong>elemental</strong>), <strong>bolt</strong> and <strong>fire</strong> (<strong>monster</strong>), <strong>earth</strong> and <strong>light</strong> (<strong>plant</strong>), <strong>dark</strong> and <strong>poison</strong> (<strong>undead</strong>).</p><hr /><ul><li><p><strong>Resistances:</strong> @TYPE[affinity air,ice resistance e:eos i:1 t:source]{Effect: Beast Resistance}, @TYPE[affinity earth,poison resistance e:eos i:1 t:source]{Effect: Construct Resistance}, @TYPE[affinity fire,ice resistance e:eos i:1 t:source]{Effect: Demon Resistance}, @TYPE[affinity air,bolt resistance e:eos i:1 t:source]{Effect: Elemental Resistance}, @TYPE[affinity bolt,fire resistance e:eos i:1 t:source]{Effect: Monster Resistance}, @TYPE[affinity earth,light resistance e:eos i:1 t:source]{Effect: Plant Resistance}, or @TYPE[affinity dark,poison resistance e:eos i:1 t:source]{Effect: Undead Resistance}</p></li><li><p><strong>Extra Damage:</strong> (TBA)</p></li></ul><p></p>"
     },
     "Clean Slate": {
-      "name": "Clean Slate",
-      "summary": "Remove spells and status effects from creatures.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Symbolist </strong>Class.</p></blockquote><p>You may use an action and spend up to 30 Mind Points to choose one creature you can see for every 5 MP spent this way. Each creature chosen this way recovers from all status effects and is no longer affected by any spells with a <strong>duration </strong>of “Scene” that were affecting them. </p><hr /><ul><li><p><strong>You Lose:</strong> @LOSS[5 mp]{1 Creature: 5 MP}, @LOSS[10 mp]{2 Creature: 10 MP}, @LOSS[15 mp]{3 Creature: 15 MP}, @LOSS[20 mp]{4 Creature: 20 MP}, @LOSS[25 mp]{5 Creature: 25 MP}, or @LOSS[30 mp]{6 Creature: 30 MP}</p></li></ul>"
+      "name": "С Чистого Листа",
+      "summary": "Удаляйте заклинания и состояния с существ.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Символист</strong>.</p></blockquote><p>Вы можете выполнить действие и потратить до 30 Очков Разума, и за каждые потраченные 5 Очков Разума, выберите одно существо, которое Вы можете видеть. Каждое существо, выбранное таким образом, очищается от всех состояний и больше не подвергается воздействию каких-либо заклинаний <strong>длительностью</strong> “Сцена”, которые воздействовали на него.</p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[5 mp]{1 Существо: 5 ОР}, @LOSS[10 mp]{2 Существа: 10 ОР}, @LOSS[15 mp]{3 Существа: 15 ОР}, @LOSS[20 mp]{4 Существа: 20 ОР}, @LOSS[25 mp]{5 Существ: 25 ОР} или @LOSS[30 mp]{6 Существ: 30 ОР}</p></li></ul>",
+      "class": "Символист"
     },
     "Cleansing Moonlight": {
       "name": "Cleansing Moonlight",
@@ -223,7 +342,7 @@
     "Comet": {
       "name": "Комета",
       "summary": "Выучите заклинание Комета.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Энтропист</strong>.<br></p></blockquote><p>Вы изучаете ультимативное заклинание <strong>Энтрописта</strong>: @UUID[Compendium.projectfu.spells.Item.Vem0KAbARyK1FtPk]{Комета}.<br></p><table style=\"width:94.2636%\" border=\"1\"><colgroup><col style=\"width:12.973%\"><col style=\"width:13.1532%\"><col style=\"width:27.9279%\"><col style=\"width:45.7658%\"></colgroup><tbody><tr><td style=\"text-align:center\"><strong>Комета</strong></td><td style=\"text-align:center\"><strong>ОР: </strong>50</td><td style=\"text-align:center\"><strong>Цель: </strong>Особая</td><td style=\"text-align:center\"><strong>Длительность: </strong>Мгновенно</td></tr></tbody></table><p>Вы открываете большой портал в Космос, призывая астральный обломок из зияющей пустоты. Выберите вариант: одно видимое существо, получает 60 урона; <strong>или</strong> вы выбираете любое количество видимых существ, и каждое из них получает 40 урона. Эти показатели урона увеличиваются на 5, если вы <strong>20-го уровня или выше</strong>, или на 10, если вы <strong>40-го уровня или выше</strong>.</p><p>Урон, наносимый этим заклинанием, не имеет типа (таким образом, на него не влияет Подверженность Урону).</p><hr><p>Добавьте заклинание @UUID[Compendium.projectfu.spells.Item.Vem0KAbARyK1FtPk]{Комета} в свой лист персонажа из списка заклинаний <strong>Энтрописта</strong>.</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Энтропист</strong>.<br></p></blockquote><p>Вы изучаете ультимативное заклинание <strong>Энтрописта</strong>: @UUID[Compendium.projectfu.spells.Item.Vem0KAbARyK1FtPk]{Комета}.<br></p><table style=\"width:94.2636%\" border=\"1\"><colgroup><col style=\"width:12.973%\"><col style=\"width:13.1532%\"><col style=\"width:27.9279%\"><col style=\"width:45.7658%\"></colgroup><tbody><tr><td style=\"text-align:center\"><strong>Комета</strong></td><td style=\"text-align:center\"><strong>ОР: </strong>50</td><td style=\"text-align:center\"><strong>Цель: </strong>Особая</td><td style=\"text-align:center\"><strong>Длительность: </strong>Мгновенно</td></tr></tbody></table><p>Вы открываете большой портал в Космос, призывая астральный обломок из зияющей пустоты. Выберите вариант: одно видимое существо, получает 60 урона; <strong>или</strong> Вы выбираете любое количество видимых существ, и каждое из них получает 40 урона. Эти показатели урона увеличиваются на 5, если Вы <strong>20-го уровня или выше</strong>, или на 10, если Вы <strong>40-го уровня или выше</strong>.</p><p>Урон, наносимый этим заклинанием, не имеет типа (таким образом, на него не влияет Подверженность Урону).</p><hr><p>Добавьте заклинание @UUID[Compendium.projectfu.spells.Item.Vem0KAbARyK1FtPk]{Комета} в свой лист персонажа из списка заклинаний <strong>Энтрописта</strong>.</p>",
       "class": "Энтропист"
     },
     "Decoy Bait": {
@@ -234,7 +353,7 @@
     "Deep Pockets": {
       "name": "Глубокие Карманы",
       "summary": "Сократите затраты на Очки Инвентаря.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Изобретатель</strong>.</p></blockquote><p>Когда вы тратите Очки Инвентаря, вы тратите на 1 Очко Инвентаря меньше (минимум 1).</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Изобретатель</strong>.</p></blockquote><p>Когда Вы тратите Очки Инвентаря, Вы тратите на 1 Очко Инвентаря меньше (минимум 1).</p>",
       "class": "Изобретатель",
       "effects": [
         {
@@ -275,7 +394,7 @@
             }
           },
           "changes": [],
-          "description": "<p>Когда вы тратите Очки Инвентаря, вы тратите на 1 Очко Инвентаря меньше (минимум 1).</p>",
+          "description": "<p>Когда Вы тратите Очки Инвентаря, Вы тратите на 1 Очко Инвентаря меньше (минимум 1).</p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,
@@ -287,13 +406,14 @@
     "Disarming Rhetoric": {
       "name": "Обезоруживающая Риторика",
       "summary": "Убеждайте врагов отступить.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Оратор</strong>.</p></blockquote><p>Во время сцены конфликта вы можете выполнить действие и выбрать существо ранга <strong>солдата</strong>, которое может слышать и понимать вас (Мастер Игры должен сказать вам, кто является возможной целью). Если это существо <strong>потрясено</strong> или находится в <strong>Кризисе</strong>, вы можете потратить количество Очков Разума, равное <strong>【 20 + половина уровня этого существа 】</strong>, чтобы заставить его мирно выйти из конфликта.</p><p>Опишите, как вы убедили его остановиться.</p><hr><ul><li><p><strong>Вы теряете:</strong> @LOSS[20+(@target.level.value/2) mp]{20 + половина уровня этого существа ОР}</p></li></ul>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Оратор</strong>.</p></blockquote><p>Во время сцены конфликта Вы можете выполнить действие и выбрать существо ранга <strong>солдата</strong>, которое может слышать и понимать вас (Мастер Игры должен сказать вам, кто является возможной целью). Если это существо <strong>потрясено</strong> или находится в <strong>Кризисе</strong>, Вы можете потратить количество Очков Разума, равное <strong>【 20 + половина уровня этого существа 】</strong>, чтобы заставить его мирно выйти из конфликта.</p><p>Опишите, как Вы убедили его остановиться.</p><hr><ul><li><p><strong>Вы теряете:</strong> @LOSS[20+(@target.level.value/2) mp]{20 + половина уровня этого существа ОР}</p></li></ul>",
       "class": "Оратор"
     },
     "Double Arrow": {
-      "name": "Double Arrow",
-      "summary": "Attack twice with bows",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Commander </strong>and <strong>Sharpshooter</strong>.</p></blockquote><p>When you perform the <strong>Attack </strong>action with a <strong>ranged </strong>weapon that belongs to the <strong>bow </strong>Category, if you have <strong>no other weapon equipped</strong>, you may perform two separate attacks instead of one (against the same target or against different targets). If you do, both attacks follow the rules for <strong>two-weapon fighting</strong>: each attack loses the <strong>multi </strong>property and cannot gain it, and you treat the High Roll of each Accuracy Check as being equal to 0 when determining damage.</p><p>Note that this Heroic Skill <strong>does not stack</strong> with a custom weapon’s <strong>quick </strong>customization (using <strong>Double Arrows</strong> with a <strong>quick </strong>bow doesn’t allow more than two attacks, in short).</p>"
+      "name": "Двойная Стрела",
+      "summary": "Атакуйте из луков дважды.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один или несколько Классов из следующих: <strong>Командир</strong> или <strong>Стрелок</strong>.</p></blockquote><p>Когда Вы выполняете действие <strong>Атака</strong> оружием <strong>дальнего боя</strong>, относящимся к Категории <strong>лук</strong>, и у вас <strong>нет другого экипированного оружия</strong>, Вы можете выполнить две отдельные атаки вместо одной (против одной и той же цели или против разных целей). Если Вы это сделаете, обе атаки будут соответствовать правилам <strong>боя двумя оружиями</strong>: каждая атака теряет свойство <strong>мульти</strong> и не может его получить, и Вы рассматриваете Лучший Бросок каждой Проверки Точности как равный 0 при определении урона.</p><p>Обратите внимание, что этот Героический Навык <strong>не сочетается</strong> с <strong>быстрой</strong> настройкой персонального оружия (использование <strong>Двойной Стрелы</strong> с <strong>быстрым</strong> луком не допускает более двух атак).</p>",
+      "class": "Командир или Стрелок"
     },
     "Dreamslice": {
       "name": "Dreamslice",
@@ -303,7 +423,7 @@
     "Duel Master": {
       "name": "Мастер-Дуэлянт",
       "summary": "Ваши Волшебные Пары усиливают ваши атаки.",
-      "description": "<blockquote>    <p><strong>Требования:</strong> вы должны освоить один или несколько Классов из следующих: <strong>Картёжник, Фурия, Разбойник</strong> и <strong>Мастер Оружия</strong>, и вы должны приобрести Навык <strong>Волшебные Карты</strong>.</p></blockquote><p>Когда вы разыгрываете эффект <strong>Волшебной Пары</strong>, если вы атакуете оружием, относящимся к Категории <strong>арканное</strong> или <strong>метательное</strong>, вы наносите дополнительный урон, равный <strong>【значению разыгранных карт】</strong>, и восстанавливаете количество Очков Разума, равное <strong>【удвоенному значению разыгранных карт】</strong> (например, разыгрывание пары <strong>Пятёрок</strong> позволит вам нанести 5 дополнительных единиц урона и восстановить 10 Очков Разума).</p>",
+      "description": "<blockquote>    <p><strong>Требования:</strong> Вы должны освоить один или несколько Классов из следующих: <strong>Картёжник, Фурия, Разбойник</strong> и <strong>Мастер Оружия</strong>, и Вы должны приобрести Навык <strong>Волшебные Карты</strong>.</p></blockquote><p>Когда Вы разыгрываете эффект <strong>Волшебной Пары</strong>, если Вы атакуете оружием, относящимся к Категории <strong>арканное</strong> или <strong>метательное</strong>, Вы наносите дополнительный урон, равный <strong>【значению разыгранных карт】</strong>, и восстанавливаете количество Очков Разума, равное <strong>【удвоенному значению разыгранных карт】</strong> (например, разыгрывание пары <strong>Пятёрок</strong> позволит вам нанести 5 дополнительных единиц урона и восстановить 10 Очков Разума).</p>",
       "class": "Картёжник, Фурия, Разбойник или Мастер Оружия",
       "requirement": "Навык Волшебные Карты"
     },
@@ -397,10 +517,106 @@
       ]
     },
     "Effect: Iron Forest": {
-      "name": "Effect: Iron Forest"
+      "name": "Эффект: Железный Лес",
+      "effects": [
+        {
+          "img": "icons/skills/melee/spear-tips-quintuple-orange.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Железный Лес",
+          "_id": "qy6MFXprvU5wCxro",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 1,
+              "tracking": "source",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [],
+          "description": "<p>После того как Вы поразите одно или несколько существ атакой <strong>ближнего боя</strong> с использованием оружия, относящегося к Категории <strong>копьё</strong>, если у вас <strong>нет другого экипированного оружия</strong>, Вы можете потратить @LOSS[20 mp] Очков Разума и выбрать одно из этих существ. Если Вы сделаете это, атака нанесёт <strong>половину</strong> урона каждой из своих целей, и Вы выберете один тип действия из следующих: <strong>Атака</strong>, <strong>Оборона</strong>, <strong>Задача</strong>, <strong>Заклинание</strong> или <strong>Навык</strong>. Отныне выбранное существо должно тратить 10 Очков Разума всякий раз, когда оно желает выполнить такое действие. Если оно не может, оно должно совершить иное действие. Этот эффект действует до начала вашего следующего хода или до тех пор, пока Вы снова не воспользуетесь этим Навыком.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Power Chord": {
-      "name": "Effect: Power Chord"
+      "name": "Эффект: Мощный Аккорд",
+      "effects": [
+        {
+          "img": "icons/tools/instruments/harp-yellow-teal.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Мощный Аккорд",
+          "_id": "LAq3Ne4TIsc1YkBU",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 1,
+              "tracking": "source",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [],
+          "description": "<p>Когда Вы поёте <strong>куплет</strong> на <strong>средней</strong> или <strong>высокой громкости</strong>, Вы можете удвоить стоимость <strong>куплета</strong> в Очках Разума <strong>или</strong> потратить 1 Очко Фабулы. Если Вы это сделаете, Вы и каждый союзник, способный вас слышать, получит следующее преимущество до начала вашего следующего хода: ваши Проверки Точности приведут к <strong>критическому успеху</strong>, если обе кости покажут одинаковое число (и Проверка не является <strong>заминкой</strong>).</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Power Nap": {
       "name": "Effect: Power Nap"
@@ -587,7 +803,7 @@
               "priority": null
             }
           ],
-          "description": "<p><span>Во время первого раунда каждой сцены конфликта у вас есть Сопротивление ко всем типам урона, и вы не можете пострадать от состояний (однако вы не очиститесь от ранее существовавших состояний). Эти преимущества действуют только до конца первого раунда.</span></p>",
+          "description": "<p><span>Во время первого раунда каждой сцены конфликта у вас есть Сопротивление ко всем типам урона, и Вы не можете пострадать от состояний (однако Вы не очиститесь от ранее существовавших состояний). Эти преимущества действуют только до конца первого раунда.</span></p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,
@@ -597,7 +813,55 @@
       ]
     },
     "Effect: Showstopper": {
-      "name": "Effect: Showstopper"
+      "name": "Эффект: Фурор",
+      "effects": [
+        {
+          "img": "icons/magic/control/control-influence-crown-yellow.webp",
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Эффект: Фурор",
+          "_id": "4kJq3FM7h2oeMYlb",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "endOfTurn",
+              "interval": 2,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [],
+          "description": "<p>В начале своего хода во время конфликта, если у вас нет <strong>воинской брони</strong>, Вы можете потратить 1 Очко Фабулы, чтобы немедленно исполнить <strong>до трёх разных танцев</strong> среди известных вам, в том порядке, который Вы предпочитаете, и без оплаты их стоимости ОР. Если Вы это сделаете, <strong>Вы никаким образом не сможете исполнять танцы</strong> до конца вашего следующего хода.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Effect: Side by Side": {
       "name": "Effect: Side by Side"
@@ -646,7 +910,7 @@
             }
           },
           "changes": [],
-          "description": "<p><span>Когда вы поражаете атакой одно или несколько существ, вы можете потратить 1 Очко Фабулы. Если вы это сделаете, до начала вашего следующего хода каждое из этих существ не сможет выполнить никаких действий, требующих, чтобы они могли видеть вас.</span></p>",
+          "description": "<p><span>Когда Вы поражаете атакой одно или несколько существ, Вы можете потратить 1 Очко Фабулы. Если Вы это сделаете, до начала вашего следующего хода каждое из этих существ не сможет выполнить никаких действий, требующих, чтобы они могли видеть вас.</span></p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,
@@ -855,12 +1119,13 @@
     "Extra Spells": {
       "name": "Дополнительные Заклинания",
       "summary": "Выучите два заклинания любого Класса.",
-      "description": "<p>Когда вы приобретёте этот Навык, изучите любые два заклинания из одного из следующих списков: <strong>Элементалист</strong>, <strong>Энтропист</strong> или <strong>Спиритист</strong>. Оба заклинания, выбранные таким образом, должны быть из одного списка, и они соответствуют стандартным правилам сотворения заклинаний этого Класса.</p>"
+      "description": "<p>Когда Вы приобретёте этот Навык, изучите любые два заклинания из одного из следующих списков: <strong>Элементалист</strong>, <strong>Энтропист</strong> или <strong>Спиритист</strong>. Оба заклинания, выбранные таким образом, должны быть из одного списка, и они соответствуют стандартным правилам сотворения заклинаний этого Класса.</p>"
     },
     "Fast Rituals": {
-      "name": "Fast Rituals",
-      "summary": "Reduce the number of sections for Ritual Clocks in conflicts.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Chimerist</strong>, <strong>Elementalist</strong>, <strong>Entropist</strong>, and <strong>Spiritist</strong>.</p></blockquote><p>When you initiate a Ritual during a conflict scene, its Ritual Clock is created with <strong>two fewer sections </strong>than normal, to a minimum of <strong>four sections</strong>. </p>"
+      "name": "Быстрые Ритуалы",
+      "summary": "Сократите количество сегментов для Ритуальных Счётчиков в конфликтах.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один или несколько классов из следующих: <strong>Химерист</strong>, <strong>Элементалист</strong>, <strong>Энтропист</strong> или <strong>Спиритист</strong>.</p></blockquote><p>Когда Вы инициируете Ритуал во время сцены конфликта, его Счётчик Ритуала на <strong>два сегмента меньше</strong>, чем обычно, минимум с <strong>четырьмя сегментами</strong>.</p>",
+      "class": "Спиритист, Химерист, Элементалист или Энтропист"
     },
     "Fitcast": {
       "name": "Fitcast",
@@ -868,9 +1133,11 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Chimerist</strong>, <strong>Darkblade</strong>, <strong>Esper</strong> (see <strong>Techno Fantasy</strong>, page <strong>150</strong>), <strong>Fury</strong>, and <strong>Wayfarer</strong></p></blockquote><p><span class=\"fontstyle0\">When you perform a Magic Check for a spell or Ritual, you may replace </span><span class=\"fontstyle2\"><strong>one</strong> </span><span class=\"fontstyle0\">of the Attributes with </span><span class=\"fontstyle2\"><strong>Might</strong> </span><span class=\"fontstyle0\">(such as </span><span class=\"fontstyle3\"><strong>【</strong></span><span class=\"fontstyle2\"><strong>MIG + MIG</strong></span><span class=\"fontstyle3\"><strong>】</strong> </span><span class=\"fontstyle0\">for a Chimerism Ritual).<br />As long as the </span><span class=\"fontstyle2\"><strong>Accuracy</strong> </span><span class=\"fontstyle0\">formula of a weapon you have equipped includes </span><span class=\"fontstyle2\"><strong>Might</strong></span><span class=\"fontstyle0\">, you may treat that weapon as also belonging to the </span><span class=\"fontstyle2\"><strong>arcane</strong> </span><span class=\"fontstyle0\">Category for the purpose of Skills and effects that require it.</span></p>"
     },
     "Fleeting Moment": {
-      "name": "Fleeting Moment",
-      "summary": "Add High Roll when you Counterattack with a sword.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Weaponmaster </strong>Class, and must have acquired the <strong>Counterattack </strong>Skill.</p></blockquote><p>When you perform a @UUID[Compendium.projectfu.skills.Item.XhcTVGtGEk7L2Ddq]{Counterattack}<strong> </strong>using a <strong>melee </strong>weapon that belongs to the <strong>sword </strong>Category, you may add your High Roll to the damage dealt by the attack (you do not have to treat it as being 0). </p>"
+      "name": "Миг Возможностей",
+      "summary": "Добавляйте Лучший Бросок, к Контратаке мечом.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Мастер Оружия</strong> и приобрести Навык <strong>Контратака</strong>.</p></blockquote><p>Когда Вы проводите @UUID[Compendium.projectfu.skills.Item.XhcTVGtGEk7L2Ddq]{Контратаку} с использованием оружия <strong>ближнего боя</strong>, относящегося к Категории <strong>меч</strong>, Вы можете добавить свой Лучший Бросок к урону, нанесённому атакой (вам не обязательно считать его равным 0).</p>",
+      "class": "Мастер Оружия",
+      "requirement": "Навык Контратака"
     },
     "Flow Of Yin And Yang": {
       "name": "Flow Of Yin And Yang",
@@ -885,14 +1152,15 @@
     "Forbidden Rite": {
       "name": "Запретный Обряд",
       "summary": "Получите доступ к сету Запретный Монарх. Ваши сбросы дают вам силу.",
-      "description": "<blockquote>    <p><strong>Требования:</strong> вы должны освоить один или несколько Классов из следующих: <strong>Картёжник</strong> или <strong>Арканист </strong>и вы должны приобрести <strong>3 уровня</strong> в Навыке <strong>Волшебные Карты</strong>.</p></blockquote><p>Пока в вашей <strong>стопке сброса</strong> есть <strong>одна или несколько карт</strong>, у вас есть Сопротивление к типу урона, соответствующему <strong>масти</strong> карты, лежащей <strong>поверх</strong> вашей <strong>стопки сброса</strong> (если эта карта <strong>джокер</strong>, у вас есть Сопротивление ко всем четырём типа урона: <strong>воздух</strong>, <strong>земля</strong>, <strong>огонь</strong> и <strong>лёд</strong>).</p><p>Вы также добавляете следующий <strong>эффект</strong> в свой список <strong>сетов</strong>:</p><div>    <table>        <colgroup>            <col>        </colgroup>        <tbody>            <tr>                <td>                    <p><strong>Эффект</strong></p>                </td>                <td>                    <p><strong>Требования к сету</strong></p>                </td>            </tr>            <tr>                <td>                    <p><strong>Запретный Монарх</strong></p>                </td>                <td>                    <p><strong>4 карты одинакового достоинства, ни одна</strong> из которых не является <strong>джокером + 1 джокер</strong></p>                </td>            </tr>        </tbody>    </table></div><p>Вы наносите урон в размере 777 единиц каждому врагу, присутствующему в сцене; тип этого урона — <strong>светом</strong>, если <strong>【значения 4 карт】 чётные</strong>, или <strong>тьмой</strong>, если эти значения <strong>нечётные</strong>.</p><p>Если в вашей <strong>стопке сброса</strong> есть <strong>джокер</strong>, урон, наносимый этим эффектом, игнорирует Иммунитеты и Сопротивления.</p>",
+      "description": "<blockquote>    <p><strong>Требования:</strong> Вы должны освоить один или несколько Классов из следующих: <strong>Картёжник</strong> или <strong>Арканист </strong>и Вы должны приобрести <strong>3 уровня</strong> в Навыке <strong>Волшебные Карты</strong>.</p></blockquote><p>Пока в вашей <strong>стопке сброса</strong> есть <strong>одна или несколько карт</strong>, у вас есть Сопротивление к типу урона, соответствующему <strong>масти</strong> карты, лежащей <strong>поверх</strong> вашей <strong>стопки сброса</strong> (если эта карта <strong>джокер</strong>, у вас есть Сопротивление ко всем четырём типа урона: <strong>воздух</strong>, <strong>земля</strong>, <strong>огонь</strong> и <strong>лёд</strong>).</p><p>Вы также добавляете следующий <strong>эффект</strong> в свой список <strong>сетов</strong>:</p><div>    <table>        <colgroup>            <col>        </colgroup>        <tbody>            <tr>                <td>                    <p><strong>Эффект</strong></p>                </td>                <td>                    <p><strong>Требования к сету</strong></p>                </td>            </tr>            <tr>                <td>                    <p><strong>Запретный Монарх</strong></p>                </td>                <td>                    <p><strong>4 карты одинакового достоинства, ни одна</strong> из которых не является <strong>джокером + 1 джокер</strong></p>                </td>            </tr>        </tbody>    </table></div><p>Вы наносите урон в размере 777 единиц каждому врагу, присутствующему в сцене; тип этого урона — <strong>светом</strong>, если <strong>【значения 4 карт】 чётные</strong>, или <strong>тьмой</strong>, если эти значения <strong>нечётные</strong>.</p><p>Если в вашей <strong>стопке сброса</strong> есть <strong>джокер</strong>, урон, наносимый этим эффектом, игнорирует Иммунитеты и Сопротивления.</p>",
       "class": "Картёжник или Арканист",
       "requirement": "3 уровня в Навыке Волшебные Карты"
     },
     "Grand Summoning": {
-      "name": "Grand Summoning",
-      "summary": "Summon Arcana as creatures.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Arcanist </strong>Class, and your character must be <strong>level 30 or higher</strong> .</p></blockquote><p>When you summon an Arcanum, you may decide to spend 1 Fabula Point and spend half of your current Hit Points (rounded down) to shape your lifeforce into a full manifestation of their power. If you do, the Arcanum manifests as a <strong>soldier</strong> -rank creature of the <strong>demon </strong>Species under your control (they count as an ally and have their own independent turn during conflicts – if you use this Skill during a conflict scene, the Arcanum joins the scene <strong>at the end</strong> of the current round). You also do not gain any of the <strong>merge </strong>benefits you would normally enjoy when summoning that Arcanum. The summoned creature has the following profile:</p><ul><li><p><strong>Level </strong>is equal to your level (thus gaining the bonuses to Checks and damage listed under <strong>steps 8 </strong>on page <strong>303 </strong>of the <strong>Core Rulebook</strong> ).</p></li><li><p>A <strong>d10 </strong>in one Attribute of your choice, and a <strong>d8 </strong>in all other Attributes.</p></li><li><p><strong>Maximum Hit Points</strong> equal to <strong>【</strong> <strong>twice the creature's base Might die size, plus half of your maximum Hit Points</strong> <strong>】</strong> . The creature has <strong>no Mind Points</strong> .</p></li><li><p>Resistance to <strong>two </strong>damage types of your choice.</p></li><li><p>The creature receives all the <strong>merge </strong>benefits the Arcanum would normally grant you when summoned (damage Affinities, immunity to status effects, increased Attribute sizes, etc.). If a <strong>merge </strong>benefit would cause the Arcanum to be dismissed, this will cause the summoned creature to vanish unless you spend 20 Mind Points.</p></li><li><p>A <strong>melee basic attack</strong> whose Accuracy Check relies on <strong>two different Attributes </strong>of your choice and deals <strong>【</strong> <strong>HR + 8</strong> <strong>】 physical damage</strong>. Choose <strong>two different options</strong> : the attack is a <strong>ranged </strong>attack; <strong>or </strong>it deals 4 extra damage; <strong>or </strong>it deals damage of a type other than <strong>physical</strong> ; <strong>or </strong>the Accuracy Check relies on a <strong>single Attribute</strong>.</p></li><li><p>The creature may perform the <strong>Skill </strong>action to produce one of the <strong>dismiss </strong>effects normally granted by that Arcanum, but doing so will cause the summoned creature to vanish unless you spend 20 Mind Points.</p></li></ul><p>The following rules apply when you <strong>Grand Summon</strong> an Arcanum:</p><ul><li><p>The creature is always summoned at full Hit Points, with no status effects.</p></li><li><p>The creature vanishes if it reaches 0 Hit Points, if you die, lose consciousness or leave the scene, or <strong>if you summon or Grand Summon</strong> an Arcanum again. The creature also vanishes when a scene ends, or if you simply command them to do so (this will <strong>not </strong>trigger the corresponding Arcanum's dismiss effect).</p></li><li><p>Take note of all choices made for <strong>Attributes </strong>and <strong>basic attack </strong>during the first time <strong>Summon </strong>a given Arcanum: these choices will remain unchanged whenever you <strong>Grand Summon</strong> that same Arcanum again in the future.</p></li></ul><hr /><ul><li><p><strong>You Spend:</strong> @LOSS[1 fp] and @LOSS[@actor.resources.hp.value/2 hp]{Current HP ÷ 2 HP}</p></li></ul>"
+      "name": "Великий Призыв",
+      "summary": "Призывайте Арканы в виде существ.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Арканист</strong> и ваш персонаж должен быть <strong>уровня 30 или выше</strong>.</p></blockquote><p>Когда Вы призываете Аркану, Вы можете решить потратить 1 Очко Фабулы и половину ваших текущих Очков Здоровья (округлённых в меньшую сторону), чтобы превратить вашу жизненную силу в полное проявление их могущества. Если Вы это сделаете, Аркана проявится как существо ранга <strong>солдата</strong> Вида <strong>демон</strong>, находящееся под вашим контролем (оно считается союзником и имеет свой собственный независимый ход во время конфликтов — если Вы используете этот Навык во время конфликта, Аркана присоединяется к сцене <strong>в конце</strong> текущего раунда). Вы также не получаете никаких преимуществ <strong>единения</strong>, которыми обычно пользовались бы при вызове этой Арканы. Вызванное существо имеет следующий профиль:</p><ul><li><p><strong>Уровень</strong> равен вашему уровню (таким образом, Вы получаете бонусы к Проверкам и урону, из шага <strong>8</strong> на стр. <strong>303</strong> <strong>Основной Книги</strong>).</p></li><li><p><strong>d10</strong> в одном Атрибуте по вашему выбору и <strong>d8</strong> во всех остальных Атрибутах.</p></li><li><p><strong>Максимальное количество Очков Здоровья, </strong>равное <strong>【удвоенному размеру базовой кости Могущества существа, плюс половина ваших максимальных Очков Здоровья】</strong>. У существа <strong>нет Очков Разума</strong>.</p></li><li><p>Сопротивление <strong>двум</strong> типам урона на ваш выбор.</p></li><li><p>Существо получает все преимущества <strong>единения</strong>, которые обычно даёт вам Аркана при вызове (Подверженности урону, иммунитет к состояниям, повышение размера Атрибутов и т.д.). Если преимущества <strong>единения</strong> должно привести к отзыву Арканы, это приведёт к исчезновению вызванного существа, если Вы не потратите 20 Очков Разума.</p></li><li><p><strong>Базовая атака ближнего боя</strong>, Проверка Точности которой зависит от <strong>двух разных Атрибутов</strong> по вашему выбору и наносит <strong>【ЛБ + 8】</strong> физического урона. Выберите <strong>два разных варианта</strong>: атака является <strong>дальнобойной</strong>; <strong>или</strong> она наносит 4 дополнительных урона; <strong>или</strong> она наносит урон иного типа, чем <strong>физический</strong>; <strong>или</strong> Проверка Точности зависит от <strong>одного Атрибута</strong>.</p></li><li><p>Существо может выполнить действие <strong>Навык</strong>, чтобы вызвать один из эффектов <strong>отзыва</strong>, которые имеет эта Аркана, но это приведёт к исчезновению вызванного существа, если Вы не потратите 20 Очков Разума.</p></li></ul><p>При <strong>Великом Призыве</strong> Арканы применяются следующие правила:</p><ul><li><p>Существо всегда вызывается с полным количеством Очков Здоровья, без каких-либо состояний.</p></li><li><p>Существо исчезает, если оно достигает 0 Очков Здоровья, если Вы умираете, теряете сознание или покидаете сцену, или если Вы снова <strong>призовёте или используете Великий Призыв</strong> Арканы. Существо также исчезает, когда сцена заканчивается, или если Вы просто прикажете ему сделать это (это <strong>не</strong> вызовет эффекта <strong>отзыва</strong> соответствующей Арканы).</p></li><li><p>Обратите внимание на все опции, выбранные для <strong>Атрибутов</strong> и <strong>базовой атаки</strong> для данной Арканы в первый раз: они останутся неизменными всякий раз, когда Вы используете <strong>Великий Призыв</strong> этой Арканы в будущем.</p></li></ul><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[1 fp] и @LOSS[@actor.resources.hp.value/2 hp]{Текущие ОЗ ÷ 2 ОЗ}</p></li></ul>",
+      "class": "Арканист"
     },
     "Great Cauldron's Secret": {
       "name": "Great Cauldron's Secret",
@@ -927,20 +1195,20 @@
     "Harvester of Sorrow": {
       "name": "Жнец Скорби",
       "summary": "Увеличивает силу заклинаний Истощения.",
-      "description": "<blockquote>    <p><strong>Требования:</strong> вы должны освоить один или несколько Классов из следующих: <strong>Энтропист </strong>или <strong>Некромант</strong>, и вы должны изучить оба заклинания <strong>Истощение Духа</strong> и <strong>Истощение Энергии.</strong></p></blockquote><p>Когда вы произносите заклинания @UUID[Compendium.projectfu.spells.Item.300SqWOqTrc7Qb3L]{Истощение Духа} или @UUID[Compendium.projectfu.spells.Item.HCknXFHu7q0bJ2Cg]{Истощение Энергии}, количество Очков Разума или Очков Здоровья, которые вы восстанавливаете, <strong>равно</strong> потерям ОР или ОЗ, цели (вместо того, чтобы уменьшаться вдвое).</p><p>Кроме того, из-за вашего <strong>Истощение Духа</strong> цель теряет <strong>【ЛБ + 20】</strong> Очков Разума, если вы <strong>20-го уровня или выше</strong>, или <strong>【ЛБ + 25】</strong> Очков Разума, если вы <strong>40-го уровня или выше</strong>, вместо обычных <strong>【ЛБ + 15】</strong>.</p>",
+      "description": "<blockquote>    <p><strong>Требования:</strong> Вы должны освоить один или несколько Классов из следующих: <strong>Энтропист </strong>или <strong>Некромант</strong>, и Вы должны изучить оба заклинания <strong>Истощение Духа</strong> и <strong>Истощение Энергии.</strong></p></blockquote><p>Когда Вы произносите заклинания @UUID[Compendium.projectfu.spells.Item.300SqWOqTrc7Qb3L]{Истощение Духа} или @UUID[Compendium.projectfu.spells.Item.HCknXFHu7q0bJ2Cg]{Истощение Энергии}, количество Очков Разума или Очков Здоровья, которые Вы восстанавливаете, <strong>равно</strong> потерям ОР или ОЗ, цели (вместо того, чтобы уменьшаться вдвое).</p><p>Кроме того, из-за вашего <strong>Истощение Духа</strong> цель теряет <strong>【ЛБ + 20】</strong> Очков Разума, если Вы <strong>20-го уровня или выше</strong>, или <strong>【ЛБ + 25】</strong> Очков Разума, если Вы <strong>40-го уровня или выше</strong>, вместо обычных <strong>【ЛБ + 15】</strong>.</p>",
       "class": "Энтропист или Некромант",
       "requirement": "Заклинания Истощение Духа и Истощение Энергии"
     },
     "Heartbreaker": {
       "name": "Укол в Сердце",
       "summary": "Жертвуйте ОЗ для увеличения урона.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Клинок Тьмы</strong>.</p></blockquote><p>Когда вы поражаете существо атакой, если эта атака была направлена <strong>только</strong> на это существо и у вас есть <strong>Узы</strong> с ним, вы можете потратить половину ваших текущих Очков Здоровья, округлённых в меньшую сторону. Если вы это сделаете, атака нанесёт дополнительный урон, равный <strong>【 10, умноженный на силу ваших Уз с целью 】</strong>.</p><p>Вы можете использовать этот Навык только в свой ход во время конфликта и только <strong>один раз за ход</strong>.</p><hr><ul><li><p><strong>Вы теряете:</strong> @LOSS[@source.level.value/2 hp]</p></li><li><p><strong>Цель теряет:</strong> @DMG[10 untyped]{1 Уза: 10 Чистый}, @DMG[20 untyped]{2 Цзы: 20 Чистый}, or @DMG[30 untyped]{3 Цзы: 30 Чистый}</p></li></ul>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Клинок Тьмы</strong>.</p></blockquote><p>Когда Вы поражаете существо атакой, если эта атака была направлена <strong>только</strong> на это существо и у вас есть <strong>Узы</strong> с ним, Вы можете потратить половину ваших текущих Очков Здоровья, округлённых в меньшую сторону. Если Вы это сделаете, атака нанесёт дополнительный урон, равный <strong>【 10, умноженный на силу ваших Уз с целью 】</strong>.</p><p>Вы можете использовать этот Навык только в свой ход во время конфликта и только <strong>один раз за ход</strong>.</p><hr><ul><li><p><strong>Вы теряете:</strong> @LOSS[@source.level.value/2 hp]</p></li><li><p><strong>Цель теряет:</strong> @DMG[10 untyped]{1 Уза: 10 Чистый}, @DMG[20 untyped]{2 Цзы: 20 Чистый}, or @DMG[30 untyped]{3 Цзы: 30 Чистый}</p></li></ul>",
       "class": "Клинок Тьмы"
     },
     "Heroic Companion": {
       "name": "Героический Спутник",
       "summary": "Ваш Спутник становится сильнее.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Странник </strong>и приобрести Навык<strong> Верный Спутник</strong>.</p></blockquote><p>Ваша связь с вашим спутником становится крепче. Вы получаете следующие преимущества:</p><ul><li><p>Максимальное количество Очков Здоровья спутника увеличивается на 10.</p></li><li><p>Выберите одну из Характеристик спутника: <strong>Ловкость</strong>, <strong>Проницательность</strong>, <strong>Могущество</strong> или <strong>Волю</strong>. Выбранная Характеристика навсегда увеличивается на один размер кости (до максимального размера <strong>d12</strong>).</p></li><li><p>Спутник получает дополнительный Навык. Когда вы достигаете <strong>40-го уровня</strong> или если вы уже достигли его, спутник получает дополнительный Навык. Обязательно обсудите свой выбор Навыков с Мастером Игры и другими Игроками.</p></li></ul><hr><ul><li><p><strong>Спутник получает:</strong> @UUID[Compendium.projectfu.heroic-skills.Item.qZPjSnXWgwN7Wg0t]{Эффект: Героический Спутник}</p></li><li><p>Затем перейдите во вкладку \"Эффекты\", выберите один атрибут для увеличения, а остальные удалите.</p></li></ul>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Странник </strong>и приобрести Навык<strong> Верный Спутник</strong>.</p></blockquote><p>Ваша связь с вашим спутником становится крепче. Вы получаете следующие преимущества:</p><ul><li><p>Максимальное количество Очков Здоровья спутника увеличивается на 10.</p></li><li><p>Выберите одну из Характеристик спутника: <strong>Ловкость</strong>, <strong>Проницательность</strong>, <strong>Могущество</strong> или <strong>Волю</strong>. Выбранная Характеристика навсегда увеличивается на один размер кости (до максимального размера <strong>d12</strong>).</p></li><li><p>Спутник получает дополнительный Навык. Когда Вы достигаете <strong>40-го уровня</strong> или если Вы уже достигли его, спутник получает дополнительный Навык. Обязательно обсудите свой выбор Навыков с Мастером Игры и другими Игроками.</p></li></ul><hr><ul><li><p><strong>Спутник получает:</strong> @UUID[Compendium.projectfu.heroic-skills.Item.qZPjSnXWgwN7Wg0t]{Эффект: Героический Спутник}</p></li><li><p>Затем перейдите во вкладку \"Эффекты\", выберите один атрибут для увеличения, а остальные удалите.</p></li></ul>",
       "class": "Странник",
       "requirement": "Навык Верный Спутник"
     },
@@ -956,9 +1224,82 @@
       "class": "Спиритист"
     },
     "Hoplite": {
-      "name": "Hoplite",
-      "summary": "Strenghten attacks when you fight with weapon and shield.",
-      "description": "<blockquote><p><strong>Requirements: </strong>you must have mastered one or more Classes among <strong>Commander </strong>and <strong>Guardian</strong>.</p></blockquote><p>As long as you have a <strong>weapon </strong>equipped in your <strong>main hand slot</strong> and a <strong>shield </strong>equipped in your <strong>off-hand slot</strong>, your attacks with that weapon deal 5 extra damage and you gain a +1 bonus to Defense.</p><p>This Skill <strong>cannot </strong>be combined with <strong>custom weapons </strong>with the <strong>defence boost</strong> customization (<strong>High Fantasy</strong>, page <strong>106</strong>), <strong>nor </strong>with the @UUID[Compendium.projectfu.skills.Item.aPQXTQegswRisA1R]{Dual Shieldbearer} Skill (<strong>Core Rulebook</strong>, page <strong>197</strong>).</p>"
+      "name": "Гоплит",
+      "summary": "Усиливайте атаки, когда Вы сражаетесь с оружием и щитом.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один из несколько Классов из следующих: <strong>Командир</strong> или <strong>Страж</strong>.</p></blockquote><p>Пока у вас есть <strong>оружие</strong>, снаряжённое в <strong>основной руке</strong>, и <strong>щит</strong>, снаряжённый в <strong>другой руке</strong>, атаки этим оружием наносят 5 дополнительного урона, и Вы получаете бонус +1 к Защите.</p><p>Этот Навык <strong>нельзя</strong> сочетать с <strong>персональным оружием</strong> с настройкой <strong>усиления защиты</strong> (стр. <strong>107</strong>) <strong>или</strong> Навыком <strong>Бой Двумя Щитами</strong> (см. <strong>Основная Книга</strong>, стр. <strong>197</strong>).</p>",
+      "class": "Командир или Страж",
+      "effects": [
+        {
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Гоплит",
+          "_id": "RSUwGO4cqpoKBEPB",
+          "changes": [
+            {
+              "key": "system.bonuses.damage.melee",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.damage.ranged",
+              "mode": 2,
+              "value": "5",
+              "priority": null
+            },
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "description": "<p>Пока у вас есть <strong>оружие</strong>, снаряжённое в <strong>основной руке</strong>, и <strong>щит</strong>, снаряжённый в <strong>другой руке</strong>, атаки этим оружием наносят 5 дополнительного урона, и Вы получаете бонус +1 к Защите.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {
+              "source": "FUHF157"
+            }
+          },
+          "tint": "#ffffff",
+          "img": "icons/equipment/shield/buckler-boss-iron-wood-brown.webp",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Hunter's Trick": {
       "name": "Hunter's Trick",
@@ -976,9 +1317,10 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Invoker</strong> Class</p></blockquote><p>When you acquire this Heroic Skill and whenever you <strong>rest</strong>, you may choose one <strong>wellspring: air, earth, fire, lightning,</strong> or <strong>water</strong>. If you do, you gain the following benefits until your next <strong>rest</strong>:</p><ul><li>You <strong>always</strong> treat the chosen <strong>wellspring</strong> as being available during each scene, in addition to whatever <strong>wellsprings</strong> are already available.</li><li>You may perform Rituals of the <strong>Elementalism</strong> discipline, but only if those Rituals manipulate the element of the chosen <strong>wellspring</strong>.</li><li>You gain Resistance to the damage type corresponding to the chosen <strong>wellspring</strong>.</li><li>When you deal damage, you may change its type to the one corresponding to the chosen <strong>wellspring</strong>. If you do, that damage ignores Resistances.</li></ul>"
     },
     "Iron Forest": {
-      "name": "Iron Forest",
-      "summary": "Force enemies to spend MP to act after hitting with a spear.",
-      "description": "<blockquote><p><strong>Requirements: </strong>you must have mastered one or more Classes among <strong>Commander </strong>and <strong>Weaponmaster</strong>.</p></blockquote><p>After you hit one or more creatures with a <strong>melee </strong>attack using a weapon that belongs to the <strong>spear </strong>Category, if you have <strong>no other weapon equipped</strong>, you may spend 20 Mind Points and choose one of those creatures. If you do so, the attack deals <strong>half </strong>the normal amount of damage to each of its targets, and you choose one type of action among the following: <strong>Attack</strong>, <strong>Guard</strong>, <strong>Objective</strong>, <strong>Spell</strong>, or <strong>Skill</strong>. From now on, the chosen creature must spend 10 Mind points whenever they wish to perform that type of action. If they can’t, they must perform a different type of action. This effect lasts until the start of your next turn, or until you use this Skill again.</p><hr /><ul><li><p><strong>You Lose:</strong> @LOSS[20 mp]</p></li><li><p><strong>Target Suffers:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.SZAZdgiDWIvxWE00]{Effect: Iron Forest}</p></li></ul>"
+      "name": "Железный Лес",
+      "summary": "Заставляйте врагов тратить ОР на действие после удара копьём.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один из несколько Классов из следующих: <strong>Командир</strong> или <strong>Мастер Оружия</strong>.</p></blockquote><p>После того как Вы поразите одно или несколько существ атакой <strong>ближнего боя</strong> с использованием оружия, относящегося к Категории <strong>копьё</strong>, если у вас <strong>нет другого экипированного оружия</strong>, Вы можете потратить 20 Очков Разума и выбрать одно из этих существ. Если Вы сделаете это, атака нанесёт <strong>половину</strong> урона каждой из своих целей, и Вы выберете один тип действия из следующих: <strong>Атака</strong>, <strong>Оборона</strong>, <strong>Задача</strong>, <strong>Заклинание</strong> или <strong>Навык</strong>. Отныне выбранное существо должно тратить 10 Очков Разума всякий раз, когда оно желает выполнить такое действие. Если оно не может, оно должно совершить иное действие. Этот эффект действует до начала вашего следующего хода или до тех пор, пока Вы снова не воспользуетесь этим Навыком.</p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[20 mp]</p></li><li><p><strong>Цель страдает от:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.SZAZdgiDWIvxWE00]</p></li></ul>",
+      "class": "Командир или Мастер Оружия"
     },
     "It Lives!": {
       "name": "It Lives!",
@@ -991,9 +1333,10 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Esper</strong>, <strong>Loremaster </strong>and <strong>Rogue</strong>, and have acquired the <strong>Soul Steal</strong> Skill</p></blockquote><p>After you successfully use the <strong>Soul Steal</strong> Skill against one or more enemies, you may choose one of them. If you do, you immediately perform the <strong>Study</strong> action for free against that enemy: treat the Result and High Roll of this Open Check as being equal to the Result and High Roll of the Check you performed for <strong>Soul Steal</strong> (do not roll dice for this Open Check).</p><p>When you deal damage to an <strong>elite</strong> or <strong>champion</strong>-rank enemy, if you stole that enemy's <strong>soul treasure</strong> during this scene, you deal extra damage equal to <strong>【your Skill Level in Soul Steal】</strong> to that enemy.</p>"
     },
     "Magic Guard": {
-      "name": "Magic Guard",
-      "summary": "Negate enemy spells while you are in Guard.",
-      "description": "<blockquote><p><strong>Requirements: </strong>you must have mastered one or more Classes among <strong>Chimerist</strong>, <strong>Elementalist</strong>, <strong>Entropist</strong>, and <strong>Spiritist</strong>.</p></blockquote><p>When you perform the <strong>Guard </strong>action, if you choose not to provide cover to another creature, you gain the following benefit until the start of your next turn: when a creature you can see casts a spell, after that creature pays for the spell's MP cost, you may spend an amount of Mind Points equal to <strong>【10 + the spell's total MP cost】</strong> in order to completely stop the casting of the spell and negate its effects (the spell isn't cast, but the creature is still considered to have spent their action).</p>"
+      "name": "Магический Страж",
+      "summary": "Нейтрализуйте вражеские заклинания, пока Вы в Обороне.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один из несколько Классов из следующих: <strong>Химерист</strong>, <strong>Элементалист</strong>, <strong>Энтропист</strong> или <strong>Спиритист</strong>.</p></blockquote><p>Когда Вы выполняете действие <strong>Оборона</strong>, если Вы решите <strong>не</strong> обеспечивать прикрытие другому существу, Вы получаете следующее преимущество до начала вашего следующего хода: когда существо, которое Вы видите, накладывает заклинание, после того, как это существо оплатит стоимость ОР заклинания, Вы можете потратить количество Очков Разума равное <strong>【10 + общая стоимость ОР заклинания】</strong>, чтобы полностью остановить произнесение заклинания и свести на нет его эффекты (заклинание не произносится, но существо по-прежнему считается выполнившим своё действие).</p>",
+      "class": "Спиритист, Химерист, Элементалист или Энтропист"
     },
     "Make it or Break it": {
       "name": "Make it or Break it",
@@ -1003,7 +1346,7 @@
     "Mathemagic": {
       "name": "Матемагия",
       "summary": "Расширяйте действие заклинаний, направленных на одну цель.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Хранитель Знаний</strong>.</p></blockquote><p>Когда вы сотворяете заклинание с <strong>целью</strong> \"Одно существо\", вы можете <strong>удвоить общую стоимость ОР заклинания</strong>. Если вы это сделаете, выберите Характеристику (<strong>Ловкость</strong>, <strong>Проницательность</strong>, <strong>Могущество</strong> или <strong>Волю</strong>) и размер куба (<strong>d6</strong>, <strong>d8</strong>, <strong>d10</strong> или <strong>d12</strong>). Заклинание теперь нацелено на <strong>всех</strong> присутствующих в сцене существ, чей <strong>текущий</strong> размер куба соответствует выбранной вами Характеристике, независимо от того, друзья они или враги (в конечном итоге вы можете даже нацелиться на себя). Эффекты заклинания полностью применяются к каждой цели. Если заклинание является атакующим ( @ICON[offensive] ), оно выполняется по обычным правилам: вы выполняете одну Проверку Магии и сопоставьте её с Магической Защитой каждой цели, чтобы определить, в кого попало заклинание.</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Хранитель Знаний</strong>.</p></blockquote><p>Когда Вы сотворяете заклинание с <strong>целью</strong> \"Одно существо\", Вы можете <strong>удвоить общую стоимость ОР заклинания</strong>. Если Вы это сделаете, выберите Характеристику (<strong>Ловкость</strong>, <strong>Проницательность</strong>, <strong>Могущество</strong> или <strong>Волю</strong>) и размер куба (<strong>d6</strong>, <strong>d8</strong>, <strong>d10</strong> или <strong>d12</strong>). Заклинание теперь нацелено на <strong>всех</strong> присутствующих в сцене существ, чей <strong>текущий</strong> размер куба соответствует выбранной вами Характеристике, независимо от того, друзья они или враги (в конечном итоге Вы можете даже нацелиться на себя). Эффекты заклинания полностью применяются к каждой цели. Если заклинание является атакующим ( @ICON[offensive] ), оно выполняется по обычным правилам: Вы выполняете одну Проверку Магии и сопоставьте её с Магической Защитой каждой цели, чтобы определить, в кого попало заклинание.</p>",
       "class": "Хранитель Знаний"
     },
     "Mimeoclepsis": {
@@ -1038,14 +1381,64 @@
       "description": "<blockquote><p><strong>Requirements: </strong>you must have mastered the <strong>Pilot</strong> Class, and must have acquired the <strong>Compression Tech</strong> Skill.</p></blockquote><p>Choose a damage type among <strong>bolt</strong>, <strong>dark</strong>, <strong>fire</strong>, <strong>ice</strong>, and <strong>light</strong>.</p><p>When you are reduced to 0 Hit Points for the first time during a scene, if you are driving your <strong>personal vehicle</strong>, you may choose to be reduced to exactly 1 Hit Point instead. If you do, you and any passengers <strong>leave</strong> your <strong>personal vehicle</strong>, which <strong>disappears</strong> from the game world. Then, you may deal an amount of damage equal to your <strong>Crisis</strong> score to a single creature you can see. This damage is of the type you have chosen from the list above. If your <strong>personal vehicle</strong> disappears from the game world this way, the next use of your @UUID[Compendium.projectfu.skills.Item.kMQH13lhWY4Mlbh8]{Compression Tech} Skill will have an additional cost of 1 Fabula Point.</p><hr /><ul><li><p><strong>You Recover:</strong> @GAIN[1 hp]</p></li><li><p><strong>Target Loses:</strong> @DMG[@source.resources.hp.max/2 bolt]{Crisis HP}, @DMG[@source.resources.hp.max/2 dark]{Crisis HP}, @DMG[@source.resources.hp.max/2 fire]{Crisis HP}, @DMG[@source.resources.hp.max/2 ice]{Crisis HP}, or @DMG[@source.resources.hp.max/2 light]{Crisis HP}</p></li></ul>"
     },
     "Paso Doble": {
-      "name": "Paso Doble",
-      "summary": "Ignore the MP cost of Follow My Lead when you are in Crisis.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Dancer </strong>Class, and must have acquired the <strong>Follow My Lead</strong> Skill.</p></blockquote><p>While you are in <strong>Crisis</strong>, you ignore the MP cost for your @UUID[Compendium.projectfu.skills.Item.3mqtdzwMU62J1ogW]{Follow My Lead} Skill.</p>"
+      "name": "Пасодобль",
+      "summary": "Игнорируйте затраты ОР для Следуй Моему Примеру когда Вы в Кризисе.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Танцор</strong> и приобрести Навык <strong>Следуй Моему Примеру</strong>.</p></blockquote><p>Пока Вы находитесь в <strong>Кризисе</strong>, Вы игнорируете стоимость ОР Навыка @UUID[Compendium.projectfu.skills.Item.3mqtdzwMU62J1ogW]{Следуй Моему Примеру}.</p>",
+      "class": "Танцор",
+      "requirement": "Навык Следуй Моему Примеру",
+      "effects": [
+        {
+          "img": "icons/magic/control/control-influence-crown-yellow.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Пасодобль",
+          "_id": "MweUOFKxGRLnhA52",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "active"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "changes": [],
+          "description": "<p>Пока Вы находитесь в <strong>Кризисе</strong>, Вы игнорируете стоимость ОР Навыка <strong>Следуй Моему Примеру</strong>.</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Perfect Aim": {
       "name": "Идеальный Прицел",
       "summary": "Выберите два варианта при использовании Предупредительного Выстрела.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс <strong>Стрелок</strong> и приобрести Навык<strong> Предупредительный Выстрел</strong>.</p></blockquote><p>Когда вы поражаете одно или несколько существ атакой <strong>дальнего боя</strong> и решаете не наносить урона, чтобы получить преимущества Навыка @UUID[Compendium.projectfu.skills.Item.Ovmw7cMrN6qvagG4]{Предупредительный Выстрел}, вы можете выбрать <strong>два</strong> варианта вместо одного (например, вы могли бы нанести каждому существу как <strong>потрясение</strong>, так и <strong>замедление</strong>, или наложите состояние каждому существу, в то же время снижая их Очки Разума).</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс <strong>Стрелок</strong> и приобрести Навык<strong> Предупредительный Выстрел</strong>.</p></blockquote><p>Когда Вы поражаете одно или несколько существ атакой <strong>дальнего боя</strong> и решаете не наносить урона, чтобы получить преимущества Навыка @UUID[Compendium.projectfu.skills.Item.Ovmw7cMrN6qvagG4]{Предупредительный Выстрел}, Вы можете выбрать <strong>два</strong> варианта вместо одного (например, Вы могли бы нанести каждому существу как <strong>потрясение</strong>, так и <strong>замедление</strong>, или наложите состояние каждому существу, в то же время снижая их Очки Разума).</p>",
       "class": "Стрелок",
       "requirement": "Навык Предупредительный Выстрел"
     },
@@ -1057,14 +1450,53 @@
     "Pillage": {
       "name": "Грабёж",
       "summary": "Крадите у нескольких существ сразу.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Разбойник</strong> и приобрести Навык<strong> Кража Души</strong>.</p></blockquote><p>Когда вы используете Навык @UUID[Compendium.projectfu.skills.Item.bpCv5Vkr1aWZiFSw]{Кража Души}, вы можете нацелиться на любое количество существ одновременно (вы выполняете одну Проверку и сравниваете её с Магической Защитой каждого существа, у которого пытаетесь украсть).</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Разбойник</strong> и приобрести Навык<strong> Кража Души</strong>.</p></blockquote><p>Когда Вы используете Навык @UUID[Compendium.projectfu.skills.Item.bpCv5Vkr1aWZiFSw]{Кража Души}, Вы можете нацелиться на любое количество существ одновременно (Вы выполняете одну Проверку и сравниваете её с Магической Защитой каждого существа, у которого пытаетесь украсть).</p>",
       "class": "Разбойник",
       "requirement": "Навык Кража Души"
     },
     "Power Chord": {
-      "name": "Power Chord",
-      "summary": "Improve allies’ critical success chance with songs.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Chanter </strong>Class.</p></blockquote><p>When you sing a <strong>verse</strong> with <strong>medium</strong> or <strong>high</strong> volume, you may may double the <strong>verse</strong>’s cost in Mind Points, <strong>or</strong> spend 1 Fabula Point. If you do, you and every ally that is able to hear you gain the following benefit until the start of your next turn: your Accuracy Checks trigger a <strong>critical success</strong> when both dice show the same number (as long as the Check is not a <strong>fumble</strong>).</p><hr /><ul><li><p><strong>You Spend:</strong> @LOSS[1 fp]</p></li><li><p><strong>Targets Receive:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.BMx3YxxDpgUahmgI]{Effect: Power Chord}</p></li></ul>"
+      "name": "Мощный Аккорд",
+      "summary": "Повышайте шансы союзников на критический успех с помощью песен.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Певчий</strong>.</p></blockquote><p>Когда Вы поёте <strong>куплет</strong> на <strong>средней</strong> или <strong>высокой громкости</strong>, Вы можете удвоить стоимость <strong>куплета</strong> в Очках Разума <strong>или</strong> потратить 1 Очко Фабулы. Если Вы это сделаете, Вы и каждый союзник, способный вас слышать, получит следующее преимущество до начала вашего следующего хода: ваши Проверки Точности приведут к <strong>критическому успеху</strong>, если обе кости покажут одинаковое число (и Проверка не является <strong>заминкой</strong>).</p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[1 fp]</p></li><li><p><strong>Цель получает:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.BMx3YxxDpgUahmgI]</p></li></ul>",
+      "class": "Певчий",
+      "effects": [
+        {
+          "img": "icons/tools/instruments/harp-yellow-teal.webp",
+          "duration": {
+            "rounds": null,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Мощный Аккорд",
+          "_id": "TYD1cjlpKC05ENDg",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "startOfTurn",
+              "interval": 2,
+              "tracking": "self",
+              "remaining": 1
+            },
+            "rules": {}
+          },
+          "changes": [],
+          "description": "<p>Когда Вы поёте <strong>куплет</strong> на <strong>средней</strong> или <strong>высокой громкости</strong>, Вы можете удвоить стоимость <strong>куплета</strong> в Очках Разума <strong>или</strong> потратить 1 Очко Фабулы. Если Вы это сделаете, Вы и каждый союзник, способный вас слышать, получит следующее преимущество до начала вашего следующего хода: ваши Проверки Точности приведут к <strong>критическому успеху</strong>, если обе кости покажут одинаковое число (и Проверка не является <strong>заминкой</strong>).</p>",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0
+        }
+      ]
     },
     "Power Nap": {
       "name": "Power Nap",
@@ -1074,7 +1506,7 @@
     "Powerful Shot": {
       "name": "Мощный Выстрел",
       "summary": "Наносите дополнительный урон на расстоянии.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Стрелка</strong>.</p></blockquote><p>Когда вы поражаете одно или несколько существ атакой <strong>дальнего боя</strong>, эта атака наносит по 5 дополнительного урона каждому существу. Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Стрелка</strong>.</p></blockquote><p>Когда Вы поражаете одно или несколько существ атакой <strong>дальнего боя</strong>, эта атака наносит по 5 дополнительного урона каждому существу. Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
       "class": "Стрелок",
       "effects": [
         {
@@ -1098,7 +1530,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Когда вы поражаете одно или несколько существ атакой <strong>дальнего боя</strong>, эта атака наносит по 5 дополнительного урона каждому существу. Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
+          "description": "<p>Когда Вы поражаете одно или несколько существ атакой <strong>дальнего боя</strong>, эта атака наносит по 5 дополнительного урона каждому существу. Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
           "transfer": true,
           "statuses": [],
           "tint": "#ffffff",
@@ -1134,7 +1566,7 @@
     "Powerful Spell": {
       "name": "Мощное Заклинание",
       "summary": "Наносите дополнительный урон заклинаниями.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить один или несколько Классов из следующих: <strong>Химерист</strong>,<strong> Элементалист</strong>,<strong> Энтропист </strong>или <strong>Спиритист</strong>.</p></blockquote><p>Когда вы сотворяете заклинание, наносящее урон одному или нескольким существам, это заклинание наносит по 5 дополнительного урона каждому существу.</p><p>Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить один или несколько Классов из следующих: <strong>Химерист</strong>,<strong> Элементалист</strong>,<strong> Энтропист </strong>или <strong>Спиритист</strong>.</p></blockquote><p>Когда Вы сотворяете заклинание, наносящее урон одному или нескольким существам, это заклинание наносит по 5 дополнительного урона каждому существу.</p><p>Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
       "class": "Химерист, Элементалис, Энтропист или Спиритист",
       "effects": [
         {
@@ -1158,7 +1590,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Когда вы сотворяете заклинание, наносящее урон одному или нескольким существам, это заклинание наносит по 5 дополнительного урона каждому существу.</p><p>Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
+          "description": "<p>Когда Вы сотворяете заклинание, наносящее урон одному или нескольким существам, это заклинание наносит по 5 дополнительного урона каждому существу.</p><p>Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
           "transfer": true,
           "statuses": [],
           "tint": "#ffffff",
@@ -1194,7 +1626,7 @@
     "Powerful Strike": {
       "name": "Мощный Удар",
       "summary": "Наносите дополнительный урон в ближнем бою.",
-      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один или несколько Классов из следующих: <strong>Фурия </strong>или <strong>Мастер Оружия</strong>.</p></blockquote><p>Когда вы поражаете одно или несколько существ атакой <strong>ближнего боя</strong>, эта атака наносит по 5 дополнительного урона каждому существу. </p><p>Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один или несколько Классов из следующих: <strong>Фурия </strong>или <strong>Мастер Оружия</strong>.</p></blockquote><p>Когда Вы поражаете одно или несколько существ атакой <strong>ближнего боя</strong>, эта атака наносит по 5 дополнительного урона каждому существу. </p><p>Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
       "class": "Фурия или Мастер Оружия",
       "effects": [
         {
@@ -1218,7 +1650,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Когда вы поражаете одно или несколько существ атакой <strong>ближнего боя</strong>, эта атака наносит по 5 дополнительного урона каждому существу.</p><p>Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
+          "description": "<p>Когда Вы поражаете одно или несколько существ атакой <strong>ближнего боя</strong>, эта атака наносит по 5 дополнительного урона каждому существу.</p><p>Количество дополнительного урона увеличивается до 10, если у вас <strong>40-й уровень или выше</strong>.</p>",
           "transfer": true,
           "statuses": [],
           "tint": "#ffffff",
@@ -1254,7 +1686,7 @@
     "Predictable!": {
       "name": "Предсказуемо!",
       "summary": "Заставьте врага потратить ОР на выполнение определённых действий.",
-      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Хранитель Знаний</strong>.</span></p></blockquote><p><span>Во время конфликта вы можете выполнить действие и потратить 20 Очков Разума, чтобы предугадать предстоящие действия существа, которое вы видите, при условии, что вы знаете <strong>две или более</strong> Черты этого существа. Если вы сделаете это, выберите один тип действия из следующих: <strong>Атака</strong>, <strong>Оборона</strong>, <strong>Задачи</strong>, <strong>Заклинание</strong> или <strong>Навык</strong>. До начала вашего следующего хода существо должно потратить 20 Очков Разума всякий раз, когда оно захочет выполнить это действие. Если они не могут, они должны выполнить другое действие.</span></p><hr><ul><li><p><strong>Вы тратите:</strong> <span>@LOSS[20 mp]</span></p></li><li><p><strong>Цель страдает от:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.1Oq4CktThiUInrbk]{Эффект: Предсказуемо!}</p></li></ul>",
+      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Хранитель Знаний</strong>.</span></p></blockquote><p><span>Во время конфликта Вы можете выполнить действие и потратить 20 Очков Разума, чтобы предугадать предстоящие действия существа, которое Вы видите, при условии, что Вы знаете <strong>две или более</strong> Черты этого существа. Если Вы сделаете это, выберите один тип действия из следующих: <strong>Атака</strong>, <strong>Оборона</strong>, <strong>Задачи</strong>, <strong>Заклинание</strong> или <strong>Навык</strong>. До начала вашего следующего хода существо должно потратить 20 Очков Разума всякий раз, когда оно захочет выполнить это действие. Если они не могут, они должны выполнить другое действие.</span></p><hr><ul><li><p><strong>Вы тратите:</strong> <span>@LOSS[20 mp]</span></p></li><li><p><strong>Цель страдает от:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.1Oq4CktThiUInrbk]{Эффект: Предсказуемо!}</p></li></ul>",
       "class": "Хранитель Знаний"
     },
     "Psychic Field": {
@@ -1265,7 +1697,7 @@
     "Pulse of the Maggots": {
       "name": "Пульс Личинок",
       "summary": "Очки Могилы изменяют ваши Подверженности.",
-      "description": "<blockquote><p><strong>Требования:</strong> вы должны освоить Класс <strong>Некромант</strong>.</p></blockquote><p>Пока у вас есть <strong>хотя бы 1 Очко Могилы</strong>, вы получаете иммунитет к урону <strong>тьмой</strong> и <strong>ядом</strong>, устойчивость к <strong>физическому</strong> урону и уязвимость к урону <strong>светом</strong>. Эти Подверженности урону <strong>заменяют</strong> любые другие для этих типов урона и не могут быть изменены <strong>ни при каких обстоятельствах</strong>, пока у вас есть хотя бы 1 Очко Могилы.</p>",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Некромант</strong>.</p></blockquote><p>Пока у вас есть <strong>хотя бы 1 Очко Могилы</strong>, Вы получаете иммунитет к урону <strong>тьмой</strong> и <strong>ядом</strong>, устойчивость к <strong>физическому</strong> урону и уязвимость к урону <strong>светом</strong>. Эти Подверженности урону <strong>заменяют</strong> любые другие для этих типов урона и не могут быть изменены <strong>ни при каких обстоятельствах</strong>, пока у вас есть хотя бы 1 Очко Могилы.</p>",
       "class": "Некромант",
       "requirement": " ",
       "effects": [
@@ -1308,7 +1740,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Пока у вас есть <strong>хотя бы 1 Очко Могилы</strong>, вы получаете иммунитет к урону <strong>тьмой</strong> и <strong>ядом</strong>, устойчивость к <strong>физическому</strong> урону и уязвимость к урону <strong>светом</strong>. Эти Подверженности урону <strong>заменяют</strong> любые другие для этих типов урона и не могут быть изменены <strong>ни при каких обстоятельствах</strong>, пока у вас есть хотя бы 1 Очко Могилы.</p>",
+          "description": "<p>Пока у вас есть <strong>хотя бы 1 Очко Могилы</strong>, Вы получаете иммунитет к урону <strong>тьмой</strong> и <strong>ядом</strong>, устойчивость к <strong>физическому</strong> урону и уязвимость к урону <strong>светом</strong>. Эти Подверженности урону <strong>заменяют</strong> любые другие для этих типов урона и не могут быть изменены <strong>ни при каких обстоятельствах</strong>, пока у вас есть хотя бы 1 Очко Могилы.</p>",
           "transfer": true,
           "statuses": [],
           "flags": {
@@ -1345,9 +1777,11 @@
       ]
     },
     "Pulverizing Strike": {
-      "name": "Pulverizing Strike",
-      "summary": "Breach deals more damage with heavy weapons.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Darkblade</strong> , <strong>Fury</strong> , and <strong>Weaponmaster</strong> .</p></blockquote><p>After you hit a creature with @UUID[Compendium.projectfu.skills.Item.WZDdQfw9VF64La2P]{Breach}, if you attacked with a <strong>melee </strong>weapon that belongs to the <strong>heavy </strong>Category, you may have the attack deal damage equal to your <strong>High Roll (HR)</strong> instead of dealing no damage. Any source of extra damage, including the extra damage from the third option of the Breach Skill itself, still applies — ignore the damage dealt by the weapon.</p>"
+      "name": "Дробящий удар",
+      "summary": "Брешь наносит урон тяжёлым оружием.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один из несколько Классов из следующих: <strong>Клинок Тьмы</strong>, <strong>Фурия</strong> или <strong>Мастер Оружия</strong>.</p></blockquote><p>После того как Вы поразили существо Навыком @UUID[Compendium.projectfu.skills.Item.WZDdQfw9VF64La2P]{Брешь}, если Вы атаковали оружием <strong>ближнего боя</strong>, относящимся к Категории <strong>тяжёлое</strong>, атака может нанести урон, равный вашему <strong>Лучшему Броску (ЛБ)</strong>, вместо того, чтобы не наносить никакого урона. Любой источник дополнительного урона, включая дополнительный урон от третьего варианта самого Навыка Брешь, по-прежнему применяется — игнорируйте урон, наносимый оружием.</p>",
+      "class": "Клинок Тьмы, Мастер Оружия или Фурия",
+      "requirement": "Навык Брешь"
     },
     "Quantum Magicannon": {
       "name": "Quantum Magicannon",
@@ -1362,35 +1796,99 @@
     "Rampart": {
       "name": "Бастион",
       "summary": "Сопротивляйтесь повреждениям и состояниям в течение первого раунда.",
-      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Страж</strong>.</span></p></blockquote><p><span>Во время первого раунда каждой сцены конфликта у вас есть Сопротивление ко всем типам урона, и вы не можете пострадать от состояний (однако вы не очиститесь от ранее существовавших состояний). Эти преимущества действуют только до конца первого раунда.</span></p><hr><ul><li><p><strong>Цель получает:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.OpGuNhPQN1GOOxXQ e:eor i:1 t:self]{Эффект: Бастион}</p></li></ul>",
+      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Страж</strong>.</span></p></blockquote><p><span>Во время первого раунда каждой сцены конфликта у вас есть Сопротивление ко всем типам урона, и Вы не можете пострадать от состояний (однако Вы не очиститесь от ранее существовавших состояний). Эти преимущества действуют только до конца первого раунда.</span></p><hr><ul><li><p><strong>Цель получает:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.OpGuNhPQN1GOOxXQ e:eor i:1 t:self]{Эффект: Бастион}</p></li></ul>",
       "class": "Страж"
     },
     "Repetition": {
       "name": "Репетиция",
       "summary": "Удвоенные Обличение и Воодушевление.",
-      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Оратор</strong>.</span></p></blockquote><p><span>Один раз за ход во время конфликта, после использования Навыка @UUID[Compendium.projectfu.skills.Item.DtEiCkDsC1amYABn]{Обличение} или @UUID[Compendium.projectfu.skills.Item.04DiGVKhF3DtmJ4n]{Воодушевление}, вы можете немедленно применить тот же Навык снова (на той же цели или на другой). Вы всё равно должны оплатить стоимость Очков Разума за повторное использование Навыка.</span></p>",
+      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Оратор</strong>.</span></p></blockquote><p><span>Один раз за ход во время конфликта, после использования Навыка @UUID[Compendium.projectfu.skills.Item.DtEiCkDsC1amYABn]{Обличение} или @UUID[Compendium.projectfu.skills.Item.04DiGVKhF3DtmJ4n]{Воодушевление}, Вы можете немедленно применить тот же Навык снова (на той же цели или на другой). Вы всё равно должны оплатить стоимость Очков Разума за повторное использование Навыка.</span></p>",
       "class": "Оратор"
     },
     "Revelation": {
       "name": "Открытие",
       "summary": "Привяжите ранее неизвестную Аркану и улучшите эффекты отзыва.",
-      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Арканист</strong>.</span></p></blockquote><p><span>Вы вступаете в контакт с неизвестной Арканой и привязываете её к своей душе. Эта Аркана должна быть чем-то, что вы создаёте вместе с остальной группой; пока вы живы, никто другой в вашем мире не сможет связаться с этой Арканой.</span></p><p><span>Один раз за сцену, когда вы <strong>едины</strong> с Арканой, вы можете выполнить действие и потратить 2 Очка Фабулы, чтобы <strong>спровоцировать</strong> эффект <strong>отзыва</strong> этой Арканы (если таковой имеется), не отзывая её. При этом не активируется Навык @UUID[Compendium.projectfu.skills.Item.hEj8s21iAOPhDtJN]{Круг Арканы} (см. <strong>Основная Книга</strong>, стр. <strong>177</strong>).</span></p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[2 fp]</p></li></ul>",
+      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Арканист</strong>.</span></p></blockquote><p><span>Вы вступаете в контакт с неизвестной Арканой и привязываете её к своей душе. Эта Аркана должна быть чем-то, что Вы создаёте вместе с остальной группой; пока Вы живы, никто другой в вашем мире не сможет связаться с этой Арканой.</span></p><p><span>Один раз за сцену, когда Вы <strong>едины</strong> с Арканой, Вы можете выполнить действие и потратить 2 Очка Фабулы, чтобы <strong>спровоцировать</strong> эффект <strong>отзыва</strong> этой Арканы (если таковой имеется), не отзывая её. При этом не активируется Навык @UUID[Compendium.projectfu.skills.Item.hEj8s21iAOPhDtJN]{Круг Арканы} (см. <strong>Основная Книга</strong>, стр. <strong>177</strong>).</span></p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[2 fp]</p></li></ul>",
       "class": "Арканист"
     },
     "Rising Tide": {
-      "name": "Rising Tide",
-      "summary": "Gain benefits for consecutive attacks with brawling weapons.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Fury </strong>and <strong>Weaponmaster</strong>.</p></blockquote><p>When you perform a <strong>melee </strong>attack using a weapon that belongs to the <strong>brawling </strong>Category,<strong> if you have no martial armor and no shields equipped</strong>, you gain <strong>1 Bravery Point</strong>.</p><p>Your <strong>melee </strong>attacks using weapons that belong to the <strong>brawling </strong>Category deal extra damage equal to your current <strong>Bravery Points</strong>.</p><p>At the end of each scene, <strong>or </strong>if you have <strong>5 or more Bravery Points</strong> at the end of your turn, you <strong>must </strong>spend all your accumulated <strong>Bravery Points</strong> and recover 10 Hit Points and Mind Points.</p><hr /><ul><li><p><strong>Resource:</strong> @PROGRESS[rising-tide update 1]{Advance Bravery Point}, or @PROGRESS[rising-tide reset]{Reset Bravery Point}</p></li><li><p><strong>You Recover:</strong> @GAIN[10 hp] and/or @GAIN[10 mp]</p></li></ul>"
+      "name": "Нарастающий Прилив",
+      "summary": "Получайте преимущества за последовательные атаки рукопашным оружием.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один из несколько Классов из следующих: <strong>Фурия</strong> или <strong>Мастер Оружия</strong>.</p></blockquote><p>При выполнении атаки <strong>ближнего боя</strong> с использованием оружия, относящегося к Категории <strong>рукопашное</strong>, <strong>если у вас нет воинской брони и щитов</strong>, Вы получаете <strong>1 Очко Храбрости</strong>.</p><p>Ваши атаки <strong>ближнего боя</strong> с использованием оружия, относящегося к Категории <strong>рукопашное</strong>, наносят дополнительный урон, равный вашим текущим <strong>Очкам Храбрости</strong>.</p><p>В конце каждой сцены, <strong>или</strong> если у вас есть <strong>5 или более Очков Храбрости</strong> в конце вашего хода, Вы <strong>должны</strong> потратить все накопленные <strong>Очки Храбрости</strong> и восстановить 10 Очков Здоровья <strong>и</strong> Очков Разума.</p><hr><ul><li><p><strong>Ресурс:</strong> @PROGRESS[rising-tide update 1]{Получить Очко Храбрости} или @PROGRESS[rising-tide reset]{Откатить все Очки Храбрости}</p></li><li><p><strong>Вы восстанавливаете:</strong> @GAIN[10 hp] и/или @GAIN[10 mp]</p></li></ul>",
+      "class": "Мастер Оружия или Фурия",
+      "effects": [
+        {
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Нарастающий Прилив",
+          "_id": "lTgUUbrlqrtghr5V",
+          "changes": [
+            {
+              "key": "system.bonuses.damage.brawling",
+              "mode": 2,
+              "value": "$pg",
+              "priority": null
+            }
+          ],
+          "description": "<p>Ваши атаки <strong>ближнего боя</strong> с использованием оружия, относящегося к Категории <strong>рукопашное</strong>, наносят дополнительный урон, равный вашим текущим <strong>Очкам Храбрости</strong>.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {
+              "source": "FUHF158"
+            }
+          },
+          "tint": "#ffffff",
+          "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ],
+      "custom_point": "Очки Храбрости"
     },
     "Ritual Seals": {
-      "name": "Ritual Seals",
-      "summary": "Place Rituals into seals.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Symbolist </strong>Class.</p></blockquote><p>When you perform a Ritual outside a conflict scene, if that Ritual has a <strong>total cost equal to or lower than 60 Mind Points</strong>, you may stop the process immediately before the Magic Check and store the Ritual's effect inside a <strong>Ritual seal</strong> placed on a surface you can touch. If you do, name a <strong>condition </strong>— this can be anything from “when I enter <strong>Crisis</strong>” to “as soon as I snap my fingers”. When that condition is met, the <strong>seal </strong>vanishes and the Ritual is unleashed at the <strong>seal</strong>'s location: you perform the Magic Check and resolve the effects as normal (even if you are unconscious or not present on the scene).</p><p>You may only have<strong> one Ritual seal</strong> active at the same time — if you die or create a new <strong>Ritual seal</strong>, the one you previously created will vanish.</p>"
+      "name": "Ритуальные Печати",
+      "summary": "Поместите Ритуалы в печати.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Символист</strong>.</p></blockquote><p>Когда Вы проводите Ритуал вне сцены конфликта, если общая <strong>стоимость этого Ритуала равна или ниже 60 Очкам Разума</strong>, Вы можете остановить процесс непосредственно перед Проверкой Магии и сохранить эффект Ритуала внутри <strong>Ритуальной Печати</strong>, помещённой на поверхность, к которой Вы можете прикоснуться. Если Вы это сделаете, назовите <strong>условие</strong> — это может быть что угодно, от “когда я войду в <strong>Кризис</strong>” до “Как только я щёлкну пальцами”. Когда это условие выполнено, <strong>печать</strong> исчезает, и Ритуал запускается в месте расположения <strong>печати</strong>: Вы совершаете Проверку Магии и разрешаете эффекты как обычно (даже если Вы без сознания или отсутствуете на сцене).</p><p>У вас может быть активна только <strong>одна Ритуальная Печать</strong> одновременно — если Вы умрёте или создадите новую <strong>Ритуальная Печать</strong>, созданная вами ранее исчезнет.</p>",
+      "class": "Символист"
     },
     "Showstopper": {
-      "name": "Showstopper",
-      "summary": "Perform three dances, then take a temporary break.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Dancer</strong> Class.</p></blockquote><p>At the start of your turn during a conflict, if you have <strong>nomartial armor </strong>equipped, you may spend 1 Fabula Point to immediately perform<strong> up to three different dances </strong>among those you know, in the order you prefer and without paying their MP cost. If you do, you <strong>cannot perform dances in any way</strong> until the end of your next turn.</p><hr /><ul><li><p><strong>You Spend:</strong> @LOSS[1 fp]</p></li><li><p><strong>You Suffer:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.WJD7tqc73P24UFg4]{Effect: Showstopper}</p></li></ul>"
+      "name": "Фурор",
+      "summary": "Исполните три танца, затем сделайте временный перерыв.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Танцор</strong>.</p></blockquote><p>В начале своего хода во время конфликта, если у вас нет <strong>воинской брони</strong>, Вы можете потратить 1 Очко Фабулы, чтобы немедленно исполнить <strong>до трёх разных танцев</strong> среди известных вам, в том порядке, который Вы предпочитаете, и без оплаты их стоимости ОР. Если Вы это сделаете, <strong>Вы никаким образом не сможете исполнять танцы</strong> до конца вашего следующего хода.</p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[1 fp]</p></li><li><p><strong>Вы страдаете от:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.WJD7tqc73P24UFg4]</p></li></ul>",
+      "class": "Танцор"
     },
     "Side by Side": {
       "name": "Side by Side",
@@ -1413,9 +1911,10 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Gourmet</strong> Class</p></blockquote><p>When you acquire this Heroic Skill, choose <strong>three different tastes</strong> among <strong>bitter, salty, sour, sweet,</strong> and <strong>umami.</strong> Then, choose <strong>three different effects</strong> among the following:</p><ul><li>You deal 20 <strong>(choose one: </strong>@DMG[20 dark],<strong> </strong>@DMG[20 light]<strong>)</strong> damage to each of this <strong>delicacy's</strong> targets. This amount increases to 30 damage if you are <strong>level 30 or higher</strong>. Choose the type of this effect when you acquire this Heroic Skill.</li><li>During the next turn of each of this <strong>delicacy's</strong> targets, all damage they deal becomes <strong>(choose one: </strong>@TYPE[damage all dark], @TYPE[damage all light]<strong>)</strong> and its type cannot change. Choose the type of this effect when you acquire this Heroic Skill.</li><li>For each of this <strong>delicacy's</strong> targets, if they are affected by one or more spells with a <strong>duration</strong> of \"\"Scene\"\", instead they are no longer affected by any of those spells.</li><li>Choose yourself or an ally you can see. For each of this <strong>delicacy's</strong> targets, the next time that target performs an attack or cast an offensive spell ( @ICON[offensive] ) before the end of this scene, they must include the chosen creature among the targets of that attack or spell (if able).</li><li>Each of this <strong>delicacy</strong>'s targets suffers @EFFECT[enraged].</li><li>Each of this <strong>delicacy</strong>'s targets suffers<strong> </strong>@EFFECT[poisoned].</li><li>Each of this <strong>delicacy</strong>'s targets recovers @GAIN[30 hp] and @GAIN[30 mp], or @GAIN[40 hp] and @GAIN[40 mp] if you are <strong>level 30 or higher</strong>.</li><li>Each of this <strong>delicacy</strong>'s targets recovers from a single status of their choice.</li><li>Each of this <strong>delicacy</strong>'s targets recovers from <strong>dazed</strong>, <strong>enraged</strong>, and <strong>shaken</strong>.</li><li>Each of this <strong>delicacy</strong>'s targets recovers from <strong>poisoned</strong>, <strong>slow</strong>, and <strong>weak</strong>.</li></ul><p>When you create a <strong>delicacy</strong> using <strong>exactly 3 ingredients</strong> during a conflict, if each ingredient matches one of the <strong>tastes</strong> you chose when you acquired this Heroic Skill, you may ignore <strong>all</strong> of that <strong>delicacy</strong>'s normal effects. If you do, you may instead apply <strong>one</strong>, <strong>two</strong>, or <strong>all</strong> the effects you chose when you acquired this Heroic Skill.</p>"
     },
     "Spider’s Web": {
-      "name": "Spider’s Web",
-      "summary": "Attack twice with flails",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more classes among <strong>Fury</strong> and <strong>Weaponmaster</strong>.</p></blockquote><p>'When you perform the <strong>Attack </strong>action with a <strong>melee </strong>weapon that belongs to the <strong>flail </strong>Category, if you have <strong>no other weapon equipped</strong>, you may perform two separate attacks instead of one (against the same target or against different targets). If you do, both attacks follow the rules for <strong>two-weapon fighting</strong>: each attack loses the <strong>multi </strong>property and cannot gain it, and you treat the High Roll of each Accuracy Check as being equal to 0 when determining damage.</p><p>'Note that this Heroic Skill <strong>does not stack</strong> with a custom weapon's <strong>quick </strong>customization (using <strong>Spider's Web</strong> with a <strong>quick </strong>flail doesn't allow more than two attacks, in short).</p>"
+      "name": "Паучья Паутина",
+      "summary": "Дважды атакуйте цепами.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Мастер Оружия</strong>.</p></blockquote><p>Когда Вы совершаете действие <strong>Атака</strong> оружием <strong>ближнего боя</strong>, относящимся к Категории <strong>цеп</strong>, если у вас <strong>нет другого экипированного оружия</strong>, Вы можете выполнить две отдельные атаки вместо одной (против одной и той же цели или против разных целей). Если Вы это сделаете, обе атаки будут соответствовать правилам <strong>боя двумя оружиями</strong>: каждая атака теряет свойство <strong>мульти</strong> и не может его получить, и Вы рассматриваете Лучший Бросок каждой Проверки Точности как равный 0 при определении урона.</p><p>Обратите внимание, что этот Героический Навык <strong>не</strong> сочетается с <strong>быстрой</strong> настройкой персонального оружия (использование <strong>Паучьей Паутины</strong> с <strong>быстрым</strong> цепом не допускает более двух атак).</p>",
+      "class": "Мастер Оружия"
     },
     "Status Immunity": {
       "name": "Иммунитет к Состояниям",
@@ -1694,9 +2193,129 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Invoker</strong> Class</p></blockquote><p>After you perform an <strong>invocation</strong> during a conflict, you <strong>and</strong> up to one ally you can see increase one of your Attributes' die sizes by one (up to a maximum of <strong>d12</strong>). This increase lasts until the end of the scene or until you use this Skill again, and the Attribute is based on the <strong>wellspring</strong> you invoked: <strong>air (Insight)</strong>, <strong>earth (one Attribute of your choice)</strong>, <strong>fire (Dexterity)</strong>, <strong>lightning (Might)</strong>, or <strong>water (Willpower)</strong>.</p><hr><ul><li><p><strong>Target Receive:</strong> @EFFECT[Compendium.projectfu.actor-effects.Item.4G5iaieFDwGiIVrw e:eos i:1 t:source]{INS Up (Air)}, @EFFECT[Compendium.projectfu.actor-effects.Item.vv2cqUDHaCJLmEYw e:eos i:1 t:source]{DEX Up (Fire)}, @EFFECT[Compendium.projectfu.actor-effects.Item.hX70STpGG5fgAAkp e:eos i:1 t:source]{MIG Up (Lightning)}, or @EFFECT[Compendium.projectfu.actor-effects.Item.nXxz7GyqeIGtQpMG e:eos i:1 t:source]{WLP Up (Water)}</p></li></ul>"
     },
     "Swirling Swarm": {
-      "name": "Swirling Swarm",
-      "summary": "Gain benefits for consecutive attacks with thrown weapons.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Dancer</strong>, <strong>Fury</strong>, and <strong>Sharpshooter</strong>.</p></blockquote><p>When you perform a <strong>ranged </strong>attack using a weapon that belongs to the <strong>thrown </strong>Category, <strong>if you have no martial armor and no shields equipped</strong>, you gain <strong>1 Momentum Point</strong>.</p><p>You may never have more than <strong>5 Momentum Points</strong>.</p><p>Your <strong>ranged </strong>attacks using weapons that belong to the <strong>thrown </strong>Category deal extra damage equal to your current <strong>Momentum Points</strong>.</p><p>When a creature hits you with an attack targeting your <strong>Defense</strong>, you <strong>must </strong>spend all your accumulated <strong>Momentum Points</strong> and increase your Defense score by an equal amount against that attack (this may turn the hit into a miss).</p><p>You also lose all <strong>Momentum Points</strong> at the end of each scene.</p><hr /><ul><li><p><strong>Resource:</strong> @PROGRESS[swirling-swarm update 1]{Advance Momentum Point}, or @PROGRESS[swirling-swarm reset]{Reset Momentum Point}</p><p></p></li></ul>"
+      "name": "Кружащийся Рой",
+      "summary": "Получайте преимущества за последовательные атаки метательным оружием.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один из несколько Классов из следующих: <strong>Танцор</strong>, <strong>Фурия</strong> или <strong>Стрелок</strong>.</p></blockquote><p>При выполнении атаки <strong>дальнего боя</strong> с использованием оружия, относящегося к Категории <strong>метательное</strong>, <strong>если у вас нет воинской брони и щитов</strong>, Вы получаете <strong>1 Очко Импульса</strong>. </p><p>У вас не может быть больше <strong>5 Очков Импульса</strong>.</p><p>Ваши атаки <strong>дальнего боя</strong> с использованием оружия, относящегося к Категории <strong>метательное</strong>, наносят дополнительный урон, равный вашим текущим <strong>Очкам Импульса</strong>.</p><p>Когда существо поражает вас атакой, нацеленной на вашу <strong>Защиту</strong>, Вы <strong>должны</strong> потратить все накопленные <strong>Очки Импульса</strong> и увеличить свой показатель Защиты на равную величину против этой атаки (это может превратить попадание в промах). </p><p>Вы также теряете все <strong>Очки Импульса</strong> в конце каждой сцены.</p><hr><ul><li><p><strong>Ресурс:</strong> @PROGRESS[swirling-swarm update 1]{Получить Очко Импульса} или @PROGRESS[swirling-swarm reset]{Откатить все Очки Импульса}</p><p></p></li></ul>",
+      "class": "Стрелок, Танцор или Фурия",
+      "effects": [
+        {
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Кружащийся Рой (ЗАЩ)",
+          "_id": "bwyUMyTx9BWQX9pQ",
+          "changes": [
+            {
+              "key": "system.derived.def.bonus",
+              "mode": 2,
+              "value": "@system.rp.current",
+              "priority": null
+            }
+          ],
+          "description": "<p>Когда существо поражает вас атакой, нацеленной на вашу <strong>Защиту</strong>, Вы <strong>должны</strong> потратить все накопленные <strong>Очки Импульса</strong> и увеличить свой показатель Защиты на равную величину против этой атаки (это может превратить попадание в промах).</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {
+              "source": "FUHF160"
+            }
+          },
+          "tint": "#ffffff",
+          "img": "icons/skills/ranged/daggers-thrown-salvo-teal.webp",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        },
+        {
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Кружащийся Рой (Урон)",
+          "_id": "ARsH16oTsis6tG3R",
+          "changes": [
+            {
+              "key": "system.bonuses.damage.thrown",
+              "mode": 2,
+              "value": "@system.rp.current",
+              "priority": null
+            }
+          ],
+          "description": "<p>Ваши атаки <strong>дальнего боя</strong> с использованием оружия, относящегося к Категории <strong>метательное</strong>, наносят дополнительный урон, равный вашим текущим <strong>Очкам Импульса</strong>.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {
+              "source": "FUHF160"
+            }
+          },
+          "tint": "#ffffff",
+          "img": "icons/skills/ranged/daggers-thrown-salvo-teal.webp",
+          "type": "base",
+          "system": {
+            "type": "default",
+            "predicate": {
+              "crisisInteraction": "none"
+            },
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ],
+      "custom_point": "Очки Импульса"
     },
     "Symbiotic Roots": {
       "name": "Symbiotic Roots",
@@ -1704,14 +2323,66 @@
       "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered one or more Classes among <strong>Chimerist</strong>, <strong>Floralist</strong>, <strong>Mutant</strong> and <strong>Wayfarer</strong>, and have acquired the <strong>Faithful Companion </strong>(<strong>construct</strong> Species) Skill.</p></blockquote><p>When you recover Hit Points, you may choose to recover only <strong>half</strong> of that amount; if you do, your companion recovers that many Hit Points.</p><p>At the end of your turn during a conflict, if your companion's current Hit Points are <strong>equal to or higher than</strong> their maximum Hit Points and your companion has not performed actions or attacks during this turn, you may have your companion perform a <strong>free attack</strong> with one of their basic attacks.</p>"
     },
     "Tabula Rasa": {
-      "name": "Tabula Rasa",
-      "summary": "Your Skills cause HP loss.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Commander </strong>Class.</p></blockquote><p>After you use @UUID[Compendium.projectfu.skills.Item.FGihIPfif7yWsBCp]{Bishop’s Edict} or @UUID[Compendium.projectfu.skills.Item.79xGJD8jn4zGzYpX]{King’s Castle} Skills, if you are in <strong>Crisis</strong>, you may have every enemy creature present on the scene lose 10 Hit Points. This amount increases to 20 Hit Points if you are <strong>level 20 or higher,</strong> or 30 Hit Points if you are <strong>level 40 or higher</strong>.</p><hr /><ul><li><p><strong>Targets Loses:</strong> @LOSS[10 hp], @LOSS[20 hp], or @LOSS[30 hp]</p></li></ul>"
+      "name": "Табула Раса",
+      "summary": "Ваши Навыки приводят к потере ОЗ.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Командир</strong>.</p></blockquote><p>После использования Навыков <strong>Указ Епископа</strong> или <strong>Замок Короля</strong>, если Вы находитесь в <strong>Кризисе</strong>, Вы можете заставить каждое вражеское существо, присутствующее в сцене, потерять 10 Очков Здоровья. Этот урон увеличивается до 20 Очков Здоровья если у вас <strong>20-й уровень или выше</strong>, или 30 Очков Здоровья, если у вас <strong>40-й уровень или выше</strong>.</p><hr><ul><li><p><strong>Цель теряет:</strong> @LOSS[10 hp], @LOSS[20 hp] или @LOSS[30 hp]</p></li></ul>",
+      "class": "Командир",
+      "effects": [
+        {
+          "duration": {
+            "rounds": 1,
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": false,
+          "name": "Табула Раса",
+          "_id": "ZMs2CS4MAtGN1CEH",
+          "changes": [],
+          "description": "<p>После использования Навыков <strong>Указ Епископа</strong> или <strong>Замок Короля</strong>, если Вы находитесь в <strong>Кризисе</strong>, Вы можете заставить каждое вражеское существо, присутствующее в сцене, потерять 10 Очков Здоровья. Этот урон увеличивается до 20 Очков Здоровья если у вас <strong>20-й уровень или выше</strong>, или 30 Очков Здоровья, если у вас <strong>40-й уровень или выше</strong>.</p>",
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "projectfu": {}
+          },
+          "tint": "#ffffff",
+          "img": "icons/sundries/gaming/chess-knight-white-glass.webp",
+          "type": "base",
+          "system": {
+            "predicate": {
+              "crisisInteraction": "active"
+            },
+            "type": "default",
+            "duration": {
+              "event": "none",
+              "interval": 1,
+              "tracking": "self",
+              "remaining": 0
+            },
+            "rules": {
+              "progress": {
+                "enabled": false,
+                "id": "",
+                "name": "",
+                "current": 0,
+                "max": 6,
+                "style": "basic",
+                "step": 1
+              }
+            }
+          },
+          "origin": null,
+          "sort": 0
+        }
+      ]
     },
     "Tempest Strike": {
       "name": "Удар Бури",
       "summary": "Сконцентрируйте мульти на одной цели.",
-      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Мастер Оружия</strong>.</span></p></blockquote><p><span>Когда вы выполняете атаку <strong>ближнего боя</strong> со свойством <strong>мульти</strong>, если вы выбираете целью только одно существо, атака наносит 5 дополнительного урона, если в атаке было <strong>мульти (2)</strong>, или 10 дополнительного урона, если в атаке было <strong>мульти (3 или выше)</strong>.</span></p>",
+      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Мастер Оружия</strong>.</span></p></blockquote><p><span>Когда Вы выполняете атаку <strong>ближнего боя</strong> со свойством <strong>мульти</strong>, если Вы выбираете целью только одно существо, атака наносит 5 дополнительного урона, если в атаке было <strong>мульти (2)</strong>, или 10 дополнительного урона, если в атаке было <strong>мульти (3 или выше)</strong>.</span></p>",
       "class": "Мастер Оружия",
       "effects": [
         {
@@ -1759,7 +2430,7 @@
               "priority": null
             }
           ],
-          "description": "<p><span>Когда вы выполняете атаку <strong>ближнего боя</strong> со свойством <strong>мульти</strong>, если вы выбираете целью только одно существо, атака наносит 5 дополнительного урона, если в атаке было <strong>мульти (2)</strong>, или 10 дополнительного урона, если в атаке было <strong>мульти (3 или выше)</strong>.</span></p>",
+          "description": "<p><span>Когда Вы выполняете атаку <strong>ближнего боя</strong> со свойством <strong>мульти</strong>, если Вы выбираете целью только одно существо, атака наносит 5 дополнительного урона, если в атаке было <strong>мульти (2)</strong>, или 10 дополнительного урона, если в атаке было <strong>мульти (3 или выше)</strong>.</span></p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,
@@ -1811,7 +2482,7 @@
               "priority": null
             }
           ],
-          "description": "<p><span>Когда вы выполняете атаку <strong>ближнего боя</strong> со свойством <strong>мульти</strong>, если вы выбираете целью только одно существо, атака наносит 5 дополнительного урона, если в атаке было <strong>мульти (2)</strong>, или 10 дополнительного урона, если в атаке было <strong>мульти (3 или выше)</strong>.</span></p>",
+          "description": "<p><span>Когда Вы выполняете атаку <strong>ближнего боя</strong> со свойством <strong>мульти</strong>, если Вы выбираете целью только одно существо, атака наносит 5 дополнительного урона, если в атаке было <strong>мульти (2)</strong>, или 10 дополнительного урона, если в атаке было <strong>мульти (3 или выше)</strong>.</span></p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,
@@ -1821,25 +2492,27 @@
       ]
     },
     "Theme Song": {
-      "name": "Theme Song",
-      "summary": "Gain a theme song with a variety of benefits.",
-      "description": "<blockquote><p><strong>Requirements:</strong> you must have mastered the <strong>Chanter </strong>Class.</p></blockquote><p>When you acquire this Skill, you obtain a <strong>theme song</strong> – give it a name and assign it a <strong>key </strong>from the ones you have learned (you can also choose a real-world song for this).</p><p>Once per conflict scene after you sing a <strong>verse</strong> in your theme song's key, you may start your <strong>theme song</strong> — if it's a real song, it's a great idea to play it in the background!</p><p>While singing your theme song, you gain the following benefits:</p><ul><li><p>You gain Resistance to <strong>【theme song's key type】 </strong>damage.</p></li><li><p>When you deal <strong>【theme song's key type】 </strong>damage, you deal 5 extra damage and the type of that damage cannot be changed.</p></li><li><p>The MP cost for singing <strong>verses </strong>in the same key as your <strong>theme song</strong> is halved. This benefit applies to you and to <strong>any </strong>of your allies who are able to sing <strong>verses</strong>.</p></li></ul><p>The <strong>theme song</strong> lasts until the end of the scene or until you leave the scene, die, or fall unconscious. The <strong>theme song</strong> also ends as soon as you sing a <strong>verse </strong>in a <strong>key </strong>other than the <strong>theme song</strong>'s, if your turn ends and you have not sung any <strong>verse</strong>, or if another character starts their <strong>theme song</strong>.</p>"
+      "name": "Заглавная Тема",
+      "summary": "Получите музыкальную тему с целым рядом преимуществ.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить Класс <strong>Певчий</strong>.</p></blockquote><p>Когда Вы приобретёте этот Навык, Вы получите <strong>заглавную тему</strong> — дайте ей название и назначьте <strong>ключ</strong> из тех, которые Вы выучили (Вы также можете выбрать для этого песню из реального мира).</p><p>Один раз за конфликт, когда Вы поёте <strong>куплет</strong> с ключом вашей заглавной темы, Вы можете начать свою <strong>заглавную тему</strong> — если это настоящая песня, было бы отличной идеей воспроизвести её на фоне!</p><p>Во время исполнения вашей заглавной темы Вы получаете следующие преимущества:</p><ul><li><p>Вы получаете Сопротивление урону <strong>【ключа заглавной темы】</strong>.</p></li><li><p>Когда Вы наносите урон <strong>【ключа заглавной темы】</strong>, Вы наносите 5 дополнительного урона, и тип этого урона нельзя изменить.</p></li><li><p>Стоимость ОР за исполнение <strong>куплетов</strong> в том же ключе, что и ваша <strong>заглавная тема</strong>, уменьшается вдвое.</p></li></ul><p>Это преимущество распространяется на вас и на <strong>любых</strong> ваших союзников, которые умеют петь <strong>куплеты</strong>.</p><p><strong>Заглавная тема</strong> звучит до конца сцены или до тех пор, пока Вы не покинете сцену, не умрёте или не потеряете сознание. <strong>Заглавная тема</strong> также заканчивается, как только Вы споёте <strong>куплет</strong> в <strong>ключе</strong>, отличном от <strong>заглавной темы</strong>, если ваш ход заканчивается, а Вы не спели ни одного <strong>куплета</strong>, или если другой персонаж начинает свою <strong>заглавную тему</strong>.</p>",
+      "class": "Певчий"
     },
     "Triple Slash": {
-      "name": "Triple Slash",
-      "summary": "Equip three daggers/swords and perform triple attacks.",
-      "description": "<blockquote><p><strong>Requirements: </strong>you must have mastered one or more Classes among <strong>Dancer </strong>and <strong>Weaponmaster</strong>.</p></blockquote><p>As long as you have a one-handed <strong>melee </strong>weapon that belongs to the <strong>dagger </strong>or <strong>sword </strong>Categories equipped in each of your normal hand slots, you may treat your <strong>armor </strong>slot as if it were a second <strong>off-hand</strong> slot. You may only use this special slot to equip a one-handed <strong>melee </strong>weapon that belongs to the <strong>dagger </strong>or <strong>sword </strong>Categories — note that the <strong>Monkey Grip</strong> Skill does not turn two-handed weapons into one-handed weapons, and thus cannot be used in combination with <strong>Triple Slash</strong>.</p><p>When you perform the <strong>Attack </strong>action while you have three <strong>daggers </strong>and/or <strong>swords </strong>equipped, you may attack once with each weapon. This follows the normal rules for <strong>two-weapon fighting</strong>: each of the three attacks loses the multi property and cannot gain it, and you treat the <strong>High Roll (HR)</strong> of each Accuracy Check as being equal to 0 when determining damage.</p><hr /><ul><li><p>To <strong>automate</strong>, navigate to the '<strong>Items</strong>\" tab where the weapon you want to equip is located, and press <strong>Ctrl+Click</strong> on the icon in the '<strong>Equip?</strong>' column. The item will be added to the <strong>Phantom Slot</strong>. Equip weapons in both your main and off-hand slots. <strong>Shift+Click</strong> each weapon to roll as <strong>HR Zero</strong>. Make sure your <strong>Armor Slot</strong> is empty.</p></li></ul>"
+      "name": "Тройной Разрез",
+      "summary": "Вооружитесь тремя кинжалами/мечами и выполняйте тройные атаки.",
+      "description": "<blockquote><p><strong>Требования:</strong> Вы должны освоить один из несколько Классов из следующих: <strong>Танцор</strong> или <strong>Мастер Оружия</strong>.</p></blockquote><p>До тех пор, пока у вас есть одноручное оружие <strong>ближнего боя</strong>, относящееся к Категориям <strong>кинжал</strong> или <strong>меч</strong>, экипированное в каждой из обычных ячеек рук, Вы можете обращаться со своей ячейкой для <strong>доспехов</strong> так, как если бы это была вторая ячейка <strong>другой руки</strong>. Вы можете использовать эту ячейку только для экипировки одноручного оружия <strong>ближнего боя</strong>, относящегося к Категориям <strong>кинжал</strong> или <strong>меч</strong> — обратите внимание, что Навык <strong>Обезьянья Хватка не превращает</strong> двуручное оружие в одноручное и, следовательно, не может использоваться в сочетании с <strong>Тройным Разрезом</strong>.</p><p>Когда Вы совершаете действие <strong>Атака</strong>, пока у вас экипированы три оружия Категории <strong>кинжал</strong> и/или <strong>меч</strong>, Вы можете атаковать по одному разу каждым оружием. Это соответствует обычным правилам <strong>боя двумя оружиями</strong>: каждая из трёх атак теряет свойство <strong>мульти</strong>, не может его получить, и Вы рассматриваете <strong>Лучший Бросок (ЛБ)</strong> каждой Проверки Точности как равный 0 при определении урона.</p><hr><ul><li><p>Для <strong>автоматизации</strong> пройдите во вкладку \"<strong>Предметы</strong>\", где у вас экипировано оружие, и нажмите <strong>Ctrl+ЛКМ </strong>по иконке \"<strong>Экипировать?</strong>\". Предмет будет экипирован в <strong>Фантомную руку</strong>. Экипируйте оружие в <strong>основную</strong> и <strong>другую руки</strong>. <strong>Shift+ЛКМ</strong> по каждому оружию, чтобы <strong>ЛБ</strong> был <strong>0</strong>. Обратите внимание, что у нас не должен быть экипирован доспех.</p></li></ul>",
+      "class": "Мастер Оружия или Танцор"
     },
     "Unbreakable": {
       "name": "Несокрушимый",
       "summary": "Переживите фатальный удар раз за сцену.",
-      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Страж</strong>.</span></p></blockquote><p><span>Один раз за сцену, когда ваши Очки Здоровья должны опуститься до 0, вы можете вместо этого принять решение выдержать боль и оставить ровно 1 Очко Здоровья.</span></p><hr><ul><li><p><strong>Вы восстанавливаете:</strong> @GAIN[1 hp]</p></li></ul>",
+      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Страж</strong>.</span></p></blockquote><p><span>Один раз за сцену, когда ваши Очки Здоровья должны опуститься до 0, Вы можете вместо этого принять решение выдержать боль и оставить ровно 1 Очко Здоровья.</span></p><hr><ul><li><p><strong>Вы восстанавливаете:</strong> @GAIN[1 hp]</p></li></ul>",
       "class": "Страж"
     },
     "Upgrade": {
       "name": "Модификация",
       "summary": "Изменяйте способности экипировки.",
-      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Изобретатель</strong>.</span></p></blockquote><p><span>Один раз за <strong>отдых</strong> вы можете выбрать один вариант: добавить <strong>Свойство</strong> к отдельному оружию, броне или щиту, у которых его нет; <strong>или</strong> заменить текущее <strong>Свойство</strong> отдельного оружия, брони или щита другим <strong>Свойство</strong>.</span></p><p><span>Когда вы используете этот Навык, вы должны выбрать <strong>Свойство</strong> из списка по умолчанию для этого типа предмета, если модификатор стоимости, связанный с этой способностью, равен <strong>+1000 зенитов или ниже</strong>. Затем вы должны потратить количество зенита, равное <strong>удвоенной</strong> стоимости модификатора выбранной способности. Изменённый предмет будет готов к концу отдыха; вы можете изменять только <strong>один предмет за отдых</strong>.</span></p><p><span>Список <strong>способностей оружия</strong> можно найти на странице <strong>269 </strong>(<strong>Основная Книга</strong>), в то время как список <strong>способностей брони и щита</strong> можно найти на странице <strong>280</strong> (<strong>Основная Книга</strong>).</span></p>",
+      "description": "<blockquote><p><span><strong>Требования:</strong> Вы должны освоить Класс <strong>Изобретатель</strong>.</span></p></blockquote><p><span>Один раз за <strong>отдых</strong> Вы можете выбрать один вариант: добавить <strong>Свойство</strong> к отдельному оружию, броне или щиту, у которых его нет; <strong>или</strong> заменить текущее <strong>Свойство</strong> отдельного оружия, брони или щита другим <strong>Свойство</strong>.</span></p><p><span>Когда Вы используете этот Навык, Вы должны выбрать <strong>Свойство</strong> из списка по умолчанию для этого типа предмета, если модификатор стоимости, связанный с этой способностью, равен <strong>+1000 зенитов или ниже</strong>. Затем Вы должны потратить количество зенита, равное <strong>удвоенной</strong> стоимости модификатора выбранной способности. Изменённый предмет будет готов к концу отдыха; Вы можете изменять только <strong>один предмет за отдых</strong>.</span></p><p><span>Список <strong>способностей оружия</strong> можно найти на странице <strong>269 </strong>(<strong>Основная Книга</strong>), в то время как список <strong>способностей брони и щита</strong> можно найти на странице <strong>280</strong> (<strong>Основная Книга</strong>).</span></p>",
       "class": "Изобретатель",
       "effects": [
         {
@@ -1892,13 +2565,13 @@
     "Vanish": {
       "name": "Исчезновение",
       "summary": "Исчезните после атаки.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Разбойник</strong>.</p></blockquote><p><span>Когда вы поражаете атакой одно или несколько существ, вы можете потратить 1 Очко Фабулы. Если вы это сделаете, до начала вашего следующего хода каждое из этих существ не сможет выполнить никаких действий, требующих, чтобы они могли видеть вас.</span></p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[1 fp]</p></li><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.4suciB7e8kbt17Zh]{Эффект: Исчезновение}</p></li></ul>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Разбойник</strong>.</p></blockquote><p><span>Когда Вы поражаете атакой одно или несколько существ, Вы можете потратить 1 Очко Фабулы. Если Вы это сделаете, до начала вашего следующего хода каждое из этих существ не сможет выполнить никаких действий, требующих, чтобы они могли видеть вас.</span></p><hr><ul><li><p><strong>Вы тратите:</strong> @LOSS[1 fp]</p></li><li><p><strong>Вы получаете:</strong> @EFFECT[Compendium.projectfu.heroic-skills.Item.4suciB7e8kbt17Zh]{Эффект: Исчезновение}</p></li></ul>",
       "class": "Разбойник"
     },
     "Volcano": {
       "name": "Вулкан",
       "summary": "Выучите заклинание Вулкан.",
-      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Элементалист</strong>.</p></blockquote><p><span>Вы изучаете ультимативное заклинание <strong>Элементалиста</strong>: @UUID[Compendium.projectfu.spells.Item.BfZqKbr38FBxLtmH]{Вулкан}.</span></p><table style=\"width:96.2791%\" border=\"1\"><colgroup><col style=\"width:15.3584%\"><col style=\"width:12.9693%\"><col style=\"width:27.3038%\"><col style=\"width:44.3686%\"></colgroup><tbody><tr><td style=\"text-align:center\"><span>Вулкан</span></td><td style=\"text-align:center\"><strong>ОР:</strong> 40</td><td style=\"text-align:center\"><strong>Цель:</strong> Особая</td><td style=\"text-align:center\"><strong>Длительность:</strong> Мгновенно</td></tr></tbody></table><p>Вы направляете ярость планеты в мощную волну огня и магмы. Выберите один из вариантов: нанести @DMG[50 fire] урона <strong>огнём</strong> одному видимому существу; <strong>или</strong> нанести @DMG[30 fire] урона <strong>огнём</strong> любому количеству видимых существ. Эти суммы увеличиваются на 5, если вы <strong>20-го уровня или выше</strong>, или на 10, если вы <strong>40-го уровня или выше</strong>.</p><p>Урон, наносимый этим заклинанием, игнорирует Сопротивления и Иммунитеты.</p><hr><p>Добавьте заклинание <span>@UUID[Compendium.projectfu.spells.Item.BfZqKbr38FBxLtmH]{Вулкан}</span> в свой лист персонажа из списка заклинаний <span><strong>Элементалиста</strong></span>.</p>",
+      "description": "<blockquote><p><strong>Требования: </strong>Вы должны освоить Класс<strong> Элементалист</strong>.</p></blockquote><p><span>Вы изучаете ультимативное заклинание <strong>Элементалиста</strong>: @UUID[Compendium.projectfu.spells.Item.BfZqKbr38FBxLtmH]{Вулкан}.</span></p><table style=\"width:96.2791%\" border=\"1\"><colgroup><col style=\"width:15.3584%\"><col style=\"width:12.9693%\"><col style=\"width:27.3038%\"><col style=\"width:44.3686%\"></colgroup><tbody><tr><td style=\"text-align:center\"><span>Вулкан</span></td><td style=\"text-align:center\"><strong>ОР:</strong> 40</td><td style=\"text-align:center\"><strong>Цель:</strong> Особая</td><td style=\"text-align:center\"><strong>Длительность:</strong> Мгновенно</td></tr></tbody></table><p>Вы направляете ярость планеты в мощную волну огня и магмы. Выберите один из вариантов: нанести @DMG[50 fire] урона <strong>огнём</strong> одному видимому существу; <strong>или</strong> нанести @DMG[30 fire] урона <strong>огнём</strong> любому количеству видимых существ. Эти суммы увеличиваются на 5, если Вы <strong>20-го уровня или выше</strong>, или на 10, если Вы <strong>40-го уровня или выше</strong>.</p><p>Урон, наносимый этим заклинанием, игнорирует Сопротивления и Иммунитеты.</p><hr><p>Добавьте заклинание <span>@UUID[Compendium.projectfu.spells.Item.BfZqKbr38FBxLtmH]{Вулкан}</span> в свой лист персонажа из списка заклинаний <span><strong>Элементалиста</strong></span>.</p>",
       "class": "Элементалист"
     },
     "Wise Counsel": {
