@@ -4611,7 +4611,7 @@
               "priority": null
             }
           ],
-          "description": "<p>До <strong>начала вашего следующего хода</strong> вы <strong>уменьшаете весь получаемый урон вдвое</strong>. Применяется <strong>перед Подверженностью урону</strong>.</p>",
+          "description": "<p>До <strong>начала вашего следующего хода</strong> Вы <strong>уменьшаете весь получаемый урон вдвое</strong>. Применяется <strong>перед Подверженностью урону</strong>.</p>",
           "origin": null,
           "tint": "#ffffff",
           "transfer": true,

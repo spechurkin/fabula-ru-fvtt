@@ -1012,7 +1012,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Если у вас есть как минимум две <strong>Узы (выберите тип узы)</strong>, вы получаете бонус +1 к Защите и Магической Защите.</p>",
+          "description": "<p>Если у вас есть как минимум две <strong>Узы (выберите тип узы)</strong>, Вы получаете бонус +1 к Защите и Магической Защите.</p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -1120,7 +1120,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Наносит 1 дополнительный урон за каждое состояние, которое вы имеете.</p>",
+          "description": "<p>Наносит 1 дополнительный урон за каждое состояние, которое Вы имеете.</p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -1759,7 +1759,7 @@
           "img": "systems/projectfu/styles/static/statuses/Blank.webp",
           "type": "base",
           "changes": [],
-          "description": "<p>Когда вы используете Навык <strong>Заградительный Огонь </strong> (см. <strong>Основная Книга</strong>, стр. <strong>205</strong>), цена ОР ополовинивается.</p>",
+          "description": "<p>Когда Вы используете Навык <strong>Заградительный Огонь </strong> (см. <strong>Основная Книга</strong>, стр. <strong>205</strong>), цена ОР ополовинивается.</p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -1806,7 +1806,7 @@
           "img": "systems/projectfu/styles/static/statuses/Blank.webp",
           "type": "base",
           "changes": [],
-          "description": "<p>Когда вы поражаете существо этим оружием, если у атаки <strong>одна</strong> цель, вы можете выбрать одно заклинание с <strong>длительностью</strong> в Сцену, наложенное на цель, и закончить его эффект на существе.</p>",
+          "description": "<p>Когда Вы поражаете существо этим оружием, если у атаки <strong>одна</strong> цель, Вы можете выбрать одно заклинание с <strong>длительностью</strong> в Сцену, наложенное на цель, и закончить его эффект на существе.</p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -3117,7 +3117,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Если вы получили <strong>критический успех</strong> на Проверке Точности этим оружием, вы можете потратить вашу <strong>возможность</strong> на нанесение 10 дополнительного урона.</p>",
+          "description": "<p>Если Вы получили <strong>критический успех</strong> на Проверке Точности этим оружием, Вы можете потратить вашу <strong>возможность</strong> на нанесение 10 дополнительного урона.</p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -3422,7 +3422,7 @@
               "priority": null
             }
           ],
-          "description": "<p>Когда вы выполняете атаку с <strong>мульти</strong>, вы получаете +2 бонус к Проверке Точности.</p>",
+          "description": "<p>Когда Вы выполняете атаку с <strong>мульти</strong>, Вы получаете +2 бонус к Проверке Точности.</p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -3761,7 +3761,7 @@
           "img": "systems/projectfu/styles/static/statuses/Blank.webp",
           "type": "base",
           "changes": [],
-          "description": "<p>Урон заклинаний, которые вы сотворяете с общей стоимостью ОЗ <strong>равной или меньшей 20</strong>, игнорирует Иммунитеты и Сопротивления.</p>",
+          "description": "<p>Урон заклинаний, которые Вы сотворяете с общей стоимостью ОЗ <strong>равной или меньшей 20</strong>, игнорирует Иммунитеты и Сопротивления.</p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
@@ -4704,7 +4704,7 @@
           "img": "systems/projectfu/styles/static/statuses/Regen.webp",
           "type": "base",
           "changes": [],
-          "description": "<p>Когда вы восстанавливаете Очки Здоровья, вы восстанавливаете @GAIN[5 hp] дополнительных Очков Здоровья.</p>",
+          "description": "<p>Когда Вы восстанавливаете Очки Здоровья, Вы восстанавливаете @GAIN[5 hp] дополнительных Очков Здоровья.</p>",
           "tint": "#ffffff",
           "transfer": true,
           "statuses": [],
