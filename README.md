@@ -1,4 +1,4 @@
-# Translation: Russian [Fabula Ultima]
+# Translation: Russian [ProjectFU | Fabula Ultima]
 [![VK]][VK URL] [![tg]][tg URL]\
 [![Foundry]][Foundry URL] ![Version]
 
