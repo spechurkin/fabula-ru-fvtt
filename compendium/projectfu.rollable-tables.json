@@ -4,11 +4,11 @@
   "entries": {
     "Alchemy: Effect": {
       "name": "Алхимия: Эффект",
-      "description": "<p><span class=\"fontstyle0\">Когда вы создаёте смесь, бросьте количество двадцатигранных Костей, указанное в этой смеси, затем примените один результат к таблице </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.rollable-tables.RollTable.vZa3GMOzrEVma2Hv]{цели}</span><span class=\"fontstyle0\"> и один — таблице </span><span class=\"fontstyle2\"><strong>эффекта</strong> </span><span class=\"fontstyle0\">. Выбросьте все оставшиеся Кости, затем опишите эффекты смеси!</span></p>",
+      "description": "<p><span class=\"fontstyle0\">Когда Вы создаёте смесь, бросьте количество двадцатигранных Костей, указанное в этой смеси, затем примените один результат к таблице </span><span class=\"fontstyle2\">@UUID[Compendium.projectfu.rollable-tables.RollTable.vZa3GMOzrEVma2Hv]{цели}</span><span class=\"fontstyle0\"> и один — таблице </span><span class=\"fontstyle2\"><strong>эффекта</strong> </span><span class=\"fontstyle0\">. Выбросьте все оставшиеся Кости, затем опишите эффекты смеси!</span></p>",
       "results": {
         "1-1": "... считайте свои Кости Ловкости (@EFFECT[dex-up e:eot i:2 t:source]) и Могущества (@EFFECT[mig-up e:eot i:2 t:source]) на один размер больше (максимум до d12) до конца вашего следующего хода.",
         "2-2": "... Как эффект 1, но с Проницательностью (@EFFECT[ins-up e:eot i:2 t:source]) и Волей (@EFFECT[wlp-up e:eot i:2 t:source]).",
-        "3-3": "... получает 20 урона от воздуха @DMG[20 air]. Это количество увеличивается до 30 урона @DMG[30 air], если вы 20-го уровня или выше, или до 40 урона @DMG[40 air], если вы 40-го уровня или выше.",
+        "3-3": "... получает 20 урона от воздуха @DMG[20 air]. Это количество увеличивается до 30 урона @DMG[30 air], если Вы 20-го уровня или выше, или до 40 урона @DMG[40 air], если Вы 40-го уровня или выше.",
         "4-4": "Как эффект 3, но с уроном от молний. @DMG[20 bolt], @DMG[30 bolt], @DMG[40 bolt].",
         "5-5": "Как эффект 3, но с уроном от тьмы. @DMG[20 dark], @DMG[30 dark], @DMG[40 dark].",
         "6-6": "Как эффект 3, но с уроном от земли. @DMG[20 earth], @DMG[30 earth], @DMG[40 earth].",
@@ -29,10 +29,10 @@
     },
     "Alchemy: Target": {
       "name": "Алхимия: Цель",
-      "description": "<p><span class=\"fontstyle0\">Когда вы создаёте смесь, бросьте количество двадцатигранных Костей, указанное в этой смеси, затем примените один результат к таблице </span><span class=\"fontstyle2\"><strong>цели</strong></span><span class=\"fontstyle0\"> и один — таблице </span><span class=\"fontstyle2\">эффекта</span><span class=\"fontstyle0\"> @UUID[Compendium.projectfu.rollable-tables.RollTable.TvH7gOE0xQYeimUF]{Алхимия: Эффект}. Выбросьте все оставшиеся Кости, затем опишите эффекты смеси!</span> <br style=\"font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:-webkit-auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-size-adjust:auto;-webkit-text-stroke-width:0px\" /></p>",
+      "description": "<p><span class=\"fontstyle0\">Когда Вы создаёте смесь, бросьте количество двадцатигранных Костей, указанное в этой смеси, затем примените один результат к таблице </span><span class=\"fontstyle2\"><strong>цели</strong></span><span class=\"fontstyle0\"> и один — таблице </span><span class=\"fontstyle2\">эффекта</span><span class=\"fontstyle0\"> @UUID[Compendium.projectfu.rollable-tables.RollTable.TvH7gOE0xQYeimUF]{Алхимия: Эффект}. Выбросьте все оставшиеся Кости, затем опишите эффекты смеси!</span> <br style=\"font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:2;text-align:-webkit-auto;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;-webkit-text-size-adjust:auto;-webkit-text-stroke-width:0px\" /></p>",
       "results": {
-        "1-6": "<p>... вас <strong>или</strong> одного союзника, которого вы видите, присутствующего в сцене.</p>",
-        "7-11": "<p>... врага, которого вы видите, присутствующего в сцене.</p>",
+        "1-6": "<p>... вас <strong>или</strong> одного союзника, которого Вы видите, присутствующего в сцене.</p>",
+        "7-11": "<p>... врага, которого Вы видите, присутствующего в сцене.</p>",
         "12-16": "<p>... вас <strong>и</strong> каждого союзника, присутствующего в сцене.</p>",
         "17-20": "<p>... каждого врага, присутствующего в сцене.</p>"
       }
@@ -62,8 +62,8 @@
         "1-1": "<p>Вы теряете половину текущих Очков Здоровья (@LOSS[(@actor.resources.hp.value/2) hp]{Половина текущих ОЗ}) и половину текущих Очков Разума (@LOSS[(@actor.resources.mp.value/2) mp]{Половина текущих ОР})</p>",
         "2-3": "<p>Каждое существо, присутствующее в сцене, включая вас, страдает от <strong>отравления</strong> @EFFECT[poisoned].</p>",
         "4-6": "<p>Каждое существо, присутствующее в сцене, включая вас, страдает от <strong>замедления</strong> @EFFECT[slow].</p>",
-        "7-8": "<p>Выберите до трёх существ, которых вы можете видеть: каждое из них восстанавливает @GAIN[50 hp] Очков Здоровья, а также очищает все состояния.</p>",
-        "9-12": "<p>Выберите любое количество существ, которых вы можете видеть: каждое из них получает 30 урона. Тип урона определяется случайным образом путём броска <strong>d6</strong>: 1. @DMG[30 air] 2. @DMG[30 bolt] 3. @DMG[30 dark] 4. @DMG[30 earth] 5. @DMG[30 fire] 6. @DMG[30 poison]</p>"
+        "7-8": "<p>Выберите до трёх существ, которых Вы можете видеть: каждое из них восстанавливает @GAIN[50 hp] Очков Здоровья, а также очищает все состояния.</p>",
+        "9-12": "<p>Выберите любое количество существ, которых Вы можете видеть: каждое из них получает 30 урона. Тип урона определяется случайным образом путём броска <strong>d6</strong>: 1. @DMG[30 air] 2. @DMG[30 bolt] 3. @DMG[30 dark] 4. @DMG[30 earth] 5. @DMG[30 fire] 6. @DMG[30 poison]</p>"
       }
     },
     "Ingredient Taste": {
