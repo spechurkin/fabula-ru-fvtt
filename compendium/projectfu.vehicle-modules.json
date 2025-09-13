@@ -143,7 +143,7 @@
       "description": "<p>Каждый раз, когда Вы включаете этот модуль на своём <strong>транспорте</strong>, выберите тип урона: <strong>воздух</strong>, <strong>молния</strong>, <strong>земля</strong>, <strong>огонь</strong> или <strong>лёд</strong>. Существа, находящиеся на борту этого <strong>транспорта</strong> получают Сопротивление выбранному типу урона, пока этот модуль остаётся включённым.</p><hr><ul><li><p><strong>Цель получает:</strong> @TYPE[affinity air resistance], @TYPE[affinity bolt resistance], @TYPE[affinity earth resistance], @TYPE[affinity fire resistance] или @TYPE[affinity ice resistance]</p></li></ul>"
     },
     "Arcane Module": {
-      "name": "Магический",
+      "name": "Мистический",
       "description": ""
     },
     "Axe Module": {
