@@ -2,7 +2,7 @@
   "id": "fabula-ru",
   "title": "Translation: Russian [ProjectFU | Fabula Ultima]",
   "description": "<p>Русский перевод системы Fabula Ultima от команды Ultima Team</p>",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "compatibility": {
     "minimum": "12",
     "verified": "13.348",
