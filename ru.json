@@ -1298,7 +1298,7 @@
     "CombatHudDefault": "По умолчанию (Ретро)",
     "CombatHudModern": "Современный",
     "CombatHudMother": "Mother",
-    "CombatHudPixel": "Пиксель",
+    "CombatHudPixel": "Пиксельный",
     "CombatHudTrackedResource4": "Четвёртый отслеживаемый ресурс",
     "CombatHudTrackedResource4Hint": "Выберите четвёртый ресурс, отображаемый в виде полоски в боевом интерфейсе. Поддерживается не всеми темами.",
     "CombatHudShowNPCTurnsLeftMode": "Режим оставшихся ходов НИП",
